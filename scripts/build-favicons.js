@@ -13,7 +13,8 @@ const FAVICON_CONFIG = {
   'favicon-32x32.png': { size: 32, format: 'png' },
   'apple-touch-icon.png': { size: 180, format: 'png' },
   'icon-192x192.png': { size: 192, format: 'png' },
-  'icon-512x512.png': { size: 512, format: 'png' }
+  'icon-512x512.png': { size: 512, format: 'png' },
+  'og-image.jpg': { size: 1200, format: 'jpeg', aspectRatio: 1.91 }
 };
 
 // Path configuration
@@ -95,6 +96,25 @@ async function generateMultiSizeIco(sourceSvg, outputPath, sizes) {
   }
 }
 
+async function generateOpenGraphImage(sourceSvg, outputPath, width, aspectRatio) {
+  try {
+    const height = Math.round(width / aspectRatio);
+  
+    await sharp(sourceSvg, { density: 300 })
+      .resize(width, height, {
+        fit: 'contain',
+        background: { r: 0, g: 82, b: 180, alpha: 1 } // Nordum blue background
+      })
+      .jpeg({ quality: 90 })
+      .toFile(outputPath);
+  
+    console.log(`✓ Generated ${outputPath} (${width}x${height} jpeg)`);
+  } catch (error) {
+    console.error(`✗ Failed to generate ${outputPath}:`, error.message);
+    throw error;
+  }
+}
+
 async function buildFavicons() {
   console.log('🚀 Generating favicons...');
   
@@ -121,6 +141,9 @@ async function buildFavicons() {
       } else if (filename.includes('favicon')) {
         // All favicon.* files use the small logo
         await generateFavicon(LOGO_SMALL_PATH, outputPath, config.size, config.format);
+      } else if (filename === 'og-image.jpg') {
+        // Open Graph image uses the main logo with specific aspect ratio
+        await generateOpenGraphImage(LOGO_PATH, outputPath, config.size, config.aspectRatio);
       } else {
         // Larger icons (apple-touch-icon, icon-*) use the main logo
         await generateFavicon(LOGO_PATH, outputPath, config.size, config.format);
