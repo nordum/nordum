@@ -52,7 +52,9 @@ Nordum creates a balanced linguistic bridge that:
 - Strategic decisions favor forms that work best across all three languages
 
 **Examples**:
+
 ```
+
 arbeider (selected for majority agreement Norwegian/Danish on "d" form preferred over Swedish "arbetar" for verb consistency, "ei" over "ej" for [aj].)
 liten (selected for majority agreement and compatibility with comparative/superlative forms)
 høre (retained for pan-Scandinavian recognition; Swedish "höra" adapted via vowel alternatives)
@@ -65,7 +67,9 @@ høre (retained for pan-Scandinavian recognition; Swedish "höra" adapted via vo
 **Rule**: Loanwords in technical, digital, and contemporary domains remain unmodified.
 
 **Examples from English**:
+
 ```
+
 computer → computer (not datamaskin/dator)
 internet → internet
 email → email (not e-post/mejl)
@@ -82,7 +86,9 @@ basketball → basketball
 ```
 
 **Examples from other languages**:
+
 ```
+
 Schokolade → schokolade
 Doppelgänger → doppelgänger
 Zeitgeist → zeitgeist
@@ -116,7 +122,9 @@ baguette → baguette
 **Implementation**: Norwegian number system adopted for maximum regularity.
 
 **Numbers**:
+
 ```
+
 50 → femti (not halvtreds/femtio)
 60 → seksti (not tres/sextio)
 70 → sytti (not halvfjerds/sjuttio)
@@ -236,7 +244,9 @@ In cases where the letter `t` is used as the primary spelling for what is a [ð]
 **Rule**: Eliminate silent H, use clear v- pattern with pronunciation variants.
 
 **Transformations**:
+
 ```
+
 hvad/hva → vad/va (what)
 hvor → var (where)
 hvem → vem (who)
@@ -279,6 +289,7 @@ Both original and transformed forms accepted as alternatives. The normalized for
 **Rationale**: Clear distinction from noun plurals which always end in `-ar`.
 
 ```
+
 Infinitive → Present
 arbeide → arbeider (work → works)
 snakke → snakker (speak → speaks)
@@ -294,6 +305,7 @@ være → er (be → is)
 #### 4.2.2 Complete Verb Paradigm
 
 ```
+
 Infinitive:        arbeide
 Present:           arbeider (systematic -er)
 Past (formal):     arbeidede (regular -ede)
@@ -315,7 +327,9 @@ Imperative:        arbeid! (stem form)
 - **att**: Used exclusively as the conjunction meaning "that"
 
 **Examples**:
+
 ```
+
 Infinitive:        å arbeide (to work)
 Conjunction:       Jei vet att hun arbeider. (I know that she works.)
 
@@ -343,6 +357,7 @@ Swedish `-ar` verbs become `-er` in Nordum:
 **Rationale**: Clear distinction from verb present tense which always ends in `-er`.
 
 ```
+
 Singular → Plural
 flicka → flickar (girl → girls)
 jente → jentar (girl → girls)
@@ -353,7 +368,9 @@ barn → barnar (child → children - also accepted: barn/børn)
 #### 4.3.2 Complete Noun Inflection
 
 **Common Gender (en-words)**:
+
 ```
+
 Indefinite singular:  flicka
 Definite singular:    flickan
 Indefinite plural:    flickar
@@ -361,6 +378,7 @@ Definite plural:      flickarna
 ```
 
 ```
+
 Indefinite singular:  jente
 Definite singular:    jenten
 Indefinite plural:    jentar
@@ -368,6 +386,7 @@ Definite plural:      jentarna
 ```
 
 ```
+
 Indefinite singular:  pije (Danish: pige)
 Definite singular:    pijen
 Indefinite plural:    pijar
@@ -375,7 +394,9 @@ Definite plural:      pijarna
 ```
 
 **Neuter Gender (ett-words)**:
+
 ```
+
 Indefinite singular:  hus
 Definite singular:    huset
 Indefinite plural:    husar (also accepted: hus - irregular)
@@ -400,6 +421,7 @@ Definite plural:      husarna
 #### 4.4.1 Comparative: Always `-ere`
 
 ```
+
 Positive → Comparative → Superlative
 stor → større → størst (big → bigger → biggest)
 liten → mindre → mindst (small → smaller → smallest)
@@ -409,6 +431,7 @@ god → bedre → bedst (good → better → best)
 #### 4.4.2 Adjective Agreement
 
 ```
+
 Positive Forms:
 Common:    stor bil (big car)
 Neuter:    stort hus (big house)
@@ -421,6 +444,7 @@ Definite:  den store bilen (the big car)
 #### 4.5.1 Clear Grammatical Distinctions
 
 ```
+
 arbeider (verb) = "works" (present tense -er)
 arbeidere (noun) = "workers" (if this word existed, -ere ending)
 jentar (noun plural) = "girls" (-ar ending)
@@ -431,6 +455,7 @@ størst (adj superlative) = "biggest" (-est ending)
 #### 4.5.2 Sentence Analysis
 
 ```
+
 De store jentar arbeider i huset.
 The big girls work in the house.
 
@@ -523,21 +548,27 @@ When variants exist across Norwegian, Danish, and Swedish:
 
 #### 5.2.1 Perfect Cognates
 Words identical across all three languages:
+
 ```
+
 hus (house) - unanimous form adopted directly
 bil (car) - unanimous form adopted directly
 ```
 
 #### 5.2.2 Near Cognates
 Minor spelling differences resolved systematically:
+
 ```
+
 arbeta/arbeide/arbejde → arbeide (systematic morphology + strategic selection)
 liten/lille/liten → liten (majority form with regular inflection preferred, lille is accepted)
 ```
 
 #### 5.2.3 Divergent Forms
 When all three languages differ in spelling, prefer most systematic and secondly the form that maximizes mutual intelligibility and matches majority pronunciation:
+
 ```
+
 Swedish: kör, Norwegian: kjører, Danish: kører → kører (systematic + majority)
 Swedish: talar, Norwegian: snakker, Danish: snakker/taler → taler/snakker (systematic + majority)
 Danish: hedder, Norwegian: heter, Swedish: heter → heter (majority form, clearer pronunciation alignment)
@@ -607,13 +638,17 @@ For places with multiple valid historical names or names that vary by Scandinavi
 #### 6.1.1 Main Clauses (V2 Rule)
 
 **Basic**: Subject + Verb + Object
+
 ```
+
 Jei læser en bok/bog.
 I read a book.
 ```
 
 **V2 with adverbial**: Adverbial + Verb + Subject + ...
+
 ```
+
 I dag arbeider jei jemme/hemma.
 Today I work at home.
 ```
@@ -621,7 +656,9 @@ Today I work at home.
 #### 6.1.2 Subordinate Clauses
 
 **Pattern**: Conjunction + Subject + Verb + ...
+
 ```
+
 Jei vet att hun arbeider.
 I know that she works.
 ```
@@ -629,13 +666,17 @@ I know that she works.
 #### 6.1.3 Questions
 
 **Yes/No Questions**: Verb + Subject + ...
+
 ```
+
 Arbeider du i dag?
 Do you work today?
 ```
 
 **Wh-Questions**: Question word + Verb + Subject + ...
+
 ```
+
 Vor/var arbeider du? (Where do you work?)
 Vad/va gør du? (What do you do?)
 Vem kommer? (Who is coming?)
@@ -644,7 +685,9 @@ Vem kommer? (Who is coming?)
 ### 6.2 Negation
 
 **Main Clauses**: `ikke` after finite verb
+
 ```
+
 Jei arbeider ikke.
 I don't work.
 
@@ -653,7 +696,9 @@ She can't come.
 ```
 
 **Subordinate Clauses**: `ikke` before main verb
+
 ```
+
 Jei vet att hun ikke arbeider.
 I know that she doesn't work.
 ```
@@ -667,7 +712,9 @@ I know that she doesn't work.
 | Definite (free) | den | det | de |
 
 **Examples**:
+
 ```
+
 en bil → bilen → bilar → bilarna
 ett hus → huset → husar → husarna
 den store bilen (the big car)
@@ -677,6 +724,7 @@ det store huset (the big house)
 Preserved: option of using indefinite versions with den/det:
 
 ```
+
 den store bil (the big car)
 det store hus (the big house)
 ```
@@ -698,7 +746,9 @@ det store hus (the big house)
 - International Germanic appearance
 
 **Examples**:
+
 ```
+
 Primary:     Alternative:
 hæst        häst (horse)
 døra        döra (door)
@@ -712,6 +762,7 @@ høj         höj (high)
 **Multiple valid forms to accommodate regional pronunciation**:
 
 ```
+
 Primary → Alternatives
 vad     → va (short form, common in speech)
 varför  → vorfor (Norwegian/Danish pronunciation)
@@ -723,7 +774,9 @@ ven     → vornår, når, när (multiple "when" variants)
 ### 7.3 Sound Pattern Alternatives
 
 **Danish Sound Pattern Support**:
+
 ```
+
 Normalized: Preserved Alternative:
 jei        jeg (Danish ej pattern)
 vær       vejr (Danish ej pattern)
@@ -794,6 +847,7 @@ They like to game in the evening.
 
 **Using Primary Vowels (æ/ø)**:
 ```
+
 Jei køber/køper en hæst till døren.
 I buy a horse for the door.
 
@@ -806,6 +860,7 @@ It is fun to learn Nordum.
 
 **Using Alternative Vowels (ä/ö)**:
 ```
+
 Jei köber/köper en häst till dören.
 I buy a horse for the door.
 
@@ -818,6 +873,7 @@ It is fun to learn Nordum.
 
 **Using Question Word Variants**:
 ```
+
 Vad/Va gør du?
 What do you do?
 
@@ -829,6 +885,7 @@ Why are you coming?
 
 **English Loanword Integration**:
 ```
+
 Jei arbeider med software development på min computer.
 I work with software development on my computer.
 
@@ -841,12 +898,18 @@ We will download the new app from the website.
 
 ### 8.4 Morphological Distinctions in Context
 
-```
 Verb vs Noun Plural:
+
+```
+
 Kvinnan arbeider. (The woman works - VERB)
 Jentar arbeider hær. (Girls work here - NOUN + VERB)
+```
 
 Adjective Comparison:
+
+```
+
 Huset er stort. (The house is big)
 Huset er større æn bilen. (The house is bigger than the car)
 Det er det største huset. (It is the biggest house)
@@ -855,6 +918,7 @@ Det er det største huset. (It is the biggest house)
 ### 8.5 Numbers in Context
 
 ```
+
 Jei er femti år gammel. (I am fifty years old)
 Vi har seksti studenter. (We have sixty students)
 Hun bor på syttiende gatan. (She lives on seventieth street)
@@ -863,6 +927,7 @@ Hun bor på syttiende gatan. (She lives on seventieth street)
 ### 8.6 Comprehensive Text Example
 
 ```
+
 I dag arbeider de store jentar i huset med sina nya computere.
 De snakker nordum mykket bra och kann skrive email på språket.
 Varfør lærer de nordum? Fordi det er en praktisk språk for alla skandinavere.
@@ -875,7 +940,9 @@ What do you think about it?
 ```
 
 **Alternative Spelling Version**:
+
 ```
+
 I dag arbeider de stora jäntar i huset med sina nya computere.
 De snakker nordum mykket bra og kann skrive email på språket.
 Vorfor lærer de nordum? Fordi det er ett praktisk språk for alle skandinavare.
