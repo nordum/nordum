@@ -36,7 +36,7 @@ async function ensureDirectoryExists(dirPath) {
 async function generateFavicon(sourceSvg, outputPath, size, format) {
   try {
     const image = sharp(sourceSvg, { density: 300 });
-    
+
     if (format === 'ico') {
       // For ICO format, we need to handle it differently
       const buffer = await image
@@ -46,7 +46,7 @@ async function generateFavicon(sourceSvg, outputPath, size, format) {
         })
         .png()
         .toBuffer();
-      
+
       // Convert PNG buffer to ICO (simple approach for single size)
       // Note: For multi-size ICO, we'd need a proper ICO library
       await fs.promises.writeFile(outputPath, buffer);
@@ -59,7 +59,7 @@ async function generateFavicon(sourceSvg, outputPath, size, format) {
         .toFormat(format)
         .toFile(outputPath);
     }
-    
+
     console.log(`✓ Generated ${outputPath} (${size}x${size} ${format})`);
   } catch (error) {
     console.error(`✗ Failed to generate ${outputPath}:`, error.message);
@@ -70,7 +70,7 @@ async function generateFavicon(sourceSvg, outputPath, size, format) {
 async function generateMultiSizeIco(sourceSvg, outputPath, sizes) {
   try {
     const buffers = [];
-    
+
     for (const { size } of sizes) {
       const buffer = await sharp(sourceSvg, { density: 300 })
         .resize(size, size, {
@@ -79,16 +79,16 @@ async function generateMultiSizeIco(sourceSvg, outputPath, sizes) {
         })
         .png()
         .toBuffer();
-      
+
       buffers.push({ buffer, size });
     }
-    
+
     // Since sharp doesn't support ICO format directly, we'll use the largest size for favicon.ico
     // This is a common practice as browsers will use the appropriate size
     const largestSize = Math.max(...sizes.map(s => s.size));
     const largestBuffer = buffers.find(b => b.size === largestSize).buffer;
     await fs.promises.writeFile(outputPath, largestBuffer);
-    
+
     console.log(`✓ Generated ${outputPath} with sizes: ${sizes.map(s => s.size).join(', ')}px`);
   } catch (error) {
     console.error(`✗ Failed to generate multi-size ICO ${outputPath}:`, error.message);
@@ -99,15 +99,23 @@ async function generateMultiSizeIco(sourceSvg, outputPath, sizes) {
 async function generateOpenGraphImage(sourceSvg, outputPath, width, aspectRatio) {
   try {
     const height = Math.round(width / aspectRatio);
-  
+    const blue = { r: 0, g: 82, b: 180, alpha: 1 }; // Nordum blue background
     await sharp(sourceSvg, { density: 300 })
-      .resize(width, height, {
+      .resize(width-20, height-20, {
         fit: 'contain',
-        background: { r: 0, g: 82, b: 180, alpha: 1 } // Nordum blue background
+        background: blue
       })
+      .extend({
+          top: 10,
+          bottom: 10,
+          left: 10,
+          right: 10,
+          background: blue
+      })
+      .flatten({ background: blue })
       .jpeg({ quality: 90 })
       .toFile(outputPath);
-  
+
     console.log(`✓ Generated ${outputPath} (${width}x${height} jpeg)`);
   } catch (error) {
     console.error(`✗ Failed to generate ${outputPath}:`, error.message);
@@ -117,24 +125,24 @@ async function generateOpenGraphImage(sourceSvg, outputPath, width, aspectRatio)
 
 async function buildFavicons() {
   console.log('🚀 Generating favicons...');
-  
+
   try {
     // Ensure build directory exists
     await ensureDirectoryExists(BUILD_DIR);
-    
+
     // Check if source files exist
     if (!fs.existsSync(LOGO_SMALL_PATH)) {
       throw new Error(`Source SVG not found: ${LOGO_SMALL_PATH}`);
     }
-    
+
     if (!fs.existsSync(LOGO_PATH)) {
       throw new Error(`Source SVG not found: ${LOGO_PATH}`);
     }
-    
+
     // Generate favicons from logo-small.svg (for favicon.ico and smaller sizes)
     for (const [filename, config] of Object.entries(FAVICON_CONFIG)) {
       const outputPath = path.join(BUILD_DIR, filename);
-      
+
       if (filename === 'favicon.ico') {
         // Handle multi-size ICO
         await generateMultiSizeIco(LOGO_SMALL_PATH, outputPath, config);
@@ -149,18 +157,18 @@ async function buildFavicons() {
         await generateFavicon(LOGO_PATH, outputPath, config.size, config.format);
       }
     }
-    
+
     // Copy the webmanifest file
     const webmanifestSource = path.join(SOURCE_DIR, 'site.webmanifest');
     const webmanifestDest = path.join(BUILD_DIR, 'site.webmanifest');
-    
+
     if (fs.existsSync(webmanifestSource)) {
       await fs.promises.copyFile(webmanifestSource, webmanifestDest);
       console.log('✓ Copied site.webmanifest');
     }
-    
+
     console.log('✅ All favicons generated successfully!');
-    
+
   } catch (error) {
     console.error('❌ Error generating favicons:', error.message);
     process.exit(1);

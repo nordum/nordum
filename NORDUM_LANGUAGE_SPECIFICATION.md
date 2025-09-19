@@ -359,7 +359,7 @@ Swedish `-ar` verbs become `-er` in Nordum:
 ```
 
 Singular → Plural
-flicka → flickar (girl → girls)
+flikka → flikkar (girl → girls)
 jente → jentar (girl → girls)
 hus → husar (house → houses - also accepted: hus)
 barn → barnar (child → children - also accepted: barn/børn)
@@ -371,10 +371,10 @@ barn → barnar (child → children - also accepted: barn/børn)
 
 ```
 
-Indefinite singular:  flicka
-Definite singular:    flickan
-Indefinite plural:    flickar
-Definite plural:      flickarna
+Indefinite singular:  flikka
+Definite singular:    flikkan
+Indefinite plural:    flikkar
+Definite plural:      flikkarna
 ```
 
 ```
@@ -966,7 +966,7 @@ Va tykker du om det?
 
 - Numbers: Uses `sytti, åtti, nitti` instead of Danish `halvfjerds, firs, halvfems`.
 - Past tense: `arbeidede` matches Danish well, but optional `arbeida` reflects Norwegian/Swedish youth usage.
-- Plural forms: `flickar`/`jentar`/`pijar` vs Danish `piger`; expect more -ar endings than in Danish.
+- Plural forms: `flikkar`/`jentar`/`pijar` vs Danish `piger`; expect more -ar endings than in Danish.
 - Question words: `va, vorfor, vornår` instead of Danish `hvad, hvorfor, hvornår`.
 - Double consonants: Are allowed even at the end of words for consistency. So `katt, skakk` instead of `kat, skak`. Note: The conjunction "att" (meaning "that") is spelled with double t to distinguish it from the infinitive marker "å".
 - Some cases of [ð] will always spelled with `d` while others will have a primary spelling with `t` (`flod` vs `heter`). These are not always consistent with Danish pronounciation as Norwegian/Swedish pronounciation determine which spelling is used. Spelling with `d` is allowed as a secondary option when `t` is the primary spelling.
@@ -976,7 +976,7 @@ Va tykker du om det?
 ### 9.3 Swedish Writers
 
 - Present tense verbs: Always `-er` (e.g. `arbeider`) instead of Swedish `-ar` (`arbetar`).
-- Plural forms: `pijar`, `jentar` or `flickar` instead of Swedish `flickor`.
+- Plural forms: `pijar`, `jentar` or `flikkar` instead of Swedish `flickor`.
 - Definite plural suffix: `-arna` is familiar but may appear after unfamiliar stems.
 - Numbers: `sytti, åtti, nitti` instead of Swedish `sjuttio, åttio, nittio`.
 - Question words: `va, var, varfor, när`—close to Swedish but even Dansih/Norwegian versions may appear (`vor, vorfor, når`).
