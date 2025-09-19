@@ -14,7 +14,7 @@ const FAVICON_CONFIG = {
   'apple-touch-icon.png': { size: 180, format: 'png' },
   'icon-192x192.png': { size: 192, format: 'png' },
   'icon-512x512.png': { size: 512, format: 'png' },
-  'og-image.jpg': { size: 1200, format: 'jpeg', aspectRatio: 1.91 }
+  'opengraph.jpg': { size: 1200, format: 'jpeg', aspectRatio: 1.91 }
 };
 
 // Path configuration
@@ -149,7 +149,7 @@ async function buildFavicons() {
       } else if (filename.includes('favicon')) {
         // All favicon.* files use the small logo
         await generateFavicon(LOGO_SMALL_PATH, outputPath, config.size, config.format);
-      } else if (filename === 'og-image.jpg') {
+      } else if (filename === 'opengraph.jpg') {
         // Open Graph image uses the main logo with specific aspect ratio
         await generateOpenGraphImage(LOGO_PATH, outputPath, config.size, config.aspectRatio);
       } else {

@@ -22,11 +22,14 @@ class SpecificationParser {
         });
         
         this.specPath = path.join(__dirname, '../NORDUM_LANGUAGE_SPECIFICATION.md');
-        this.outputPath = path.join(__dirname, '../data/specification.json');
+        this.outputPath = path.join(__dirname, '../build/specification.json');
     }
 
     async parseSpecification() {
         try {
+            // Ensure build directory exists
+            await fs.mkdir(path.dirname(this.outputPath), { recursive: true });
+            
             // Read the markdown file
             const content = await fs.readFile(this.specPath, 'utf8');
             
@@ -39,13 +42,13 @@ class SpecificationParser {
             for (const [sectionId, sectionContent] of Object.entries(sections)) {
                 parsedSections[sectionId] = {
                     title: this.extractTitle(sectionContent),
-                    html: this.md.render(sectionContent),
+                    html: this.addAnchorIdsToHtml(this.md.render(sectionContent), sectionId),
                     markdown: sectionContent,
                     subsections: this.extractSubsections(sectionContent)
                 };
             }
             
-            // Generate table of contents
+            // Generate table of contents with proper subsection links
             const tableOfContents = this.generateTableOfContents(parsedSections);
             
             const result = {
@@ -139,12 +142,25 @@ class SpecificationParser {
             const tocItem = {
                 id: sectionId,
                 title: section.title,
-                subsections: section.subsections
+                subsections: section.subsections.map(subsection => ({
+                    id: subsection.id,
+                    title: subsection.title,
+                    link: `#${sectionId}-${subsection.id}` // Proper link format
+                }))
             };
             toc.push(tocItem);
         }
         
         return toc;
+    }
+    
+    addAnchorIdsToHtml(html, sectionId) {
+        // Add anchor IDs to h3 headers (subsections)
+        return html.replace(/<h3>(.+?)<\/h3>/g, (match, headerText) => {
+            const cleanText = headerText.replace(/<[^>]*>/g, '').trim();
+            const subsectionId = this.titleToId(cleanText);
+            return `<h3 id="${sectionId}-${subsectionId}">${headerText}</h3>`;
+        });
     }
     
     titleToId(title) {

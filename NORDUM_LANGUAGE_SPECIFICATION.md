@@ -1,22 +1,5 @@
 # Nordum Language Specification
 
-## Table of Contents
-
-1. [Introduction](#1-introduction)
-2. [Design Principles](#2-design-principles)
-3. [Orthography and Phonology](#3-orthography-and-phonology)
-4. [Morphological System](#4-morphological-system)
-5. [Lexical Selection Rules](#5-lexical-selection-rules)
-6. [Syntax](#6-syntax)
-7. [Alternative Spellings](#7-alternative-spellings)
-8. [Examples and Usage](#8-examples-and-usage)
-9. [Quality Metrics](#9-quality-metrics)
-10. [Norwegian Writers: Key Differences](#10-norwegian-writers-key-differences)
-11. [Danish Writers: Key Differences](#11-danish-writers-key-differences)
-12. [Swedish Writers: Key Differences](#12-swedish-writers-key-differences)
-
----
-
 ## 1. Introduction
 
 **Nordum** is a constructed pan-Scandinavian written language designed to maximize mutual intelligibility between Norwegian (Bokmål), Danish, and Swedish while maintaining systematic regularity and practical modern usage.
@@ -162,7 +145,9 @@ baguette → baguette
 ### 3.2 Vowel System
 
 #### 3.2.1 Primary Vowels (Phonemic Representation)
+
 | Letter | Phoneme | Common Realizations (IPA) | Examples | Notes |
+|--------|---------|---------------------------|----------|-------|
 | A, a | /a/ | [ɑ], [a], [æ] | katt, hav | Realization depends on dialect (e.g., Danish [æ] in 'mad'). |
 | E, e | /e/ | [e], [ɛ], [ə] | hest, tre | Often [e] stressed, [ə] unstressed. |
 | I, i | /i/ | [i], [ɪ] | bil, tid | Always [i], never [ɪ]. |

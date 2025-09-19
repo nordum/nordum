@@ -34,13 +34,13 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{url}}{{#unless (eq lang 'en')}}/{{lang}}{{/unless}}{{currentPath}}">
     <meta property="og:site_name" content="Nordum">
-    <meta property="og:image" content="{{url}}{{asset 'images/og-image.jpg'}}">
+    <meta property="og:image" content="{{url}}{{asset 'images/opengraph.jpg'}}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{#if pageTitle}}{{pageTitle}} - {{/if}}{{t 'site.title'}}">
     <meta name="twitter:description" content="{{#if pageDescription}}{{pageDescription}}{{else}}{{t 'site.description'}}{{/if}}">
-    <meta name="twitter:image" content="{{url}}{{asset 'images/og-image.jpg'}}">
+    <meta name="twitter:image" content="{{url}}{{asset 'images/opengraph.jpg'}}">
 
     <!-- Language alternates -->
     <link rel="alternate" hreflang="en" href="{{url}}{{currentPath}}">
