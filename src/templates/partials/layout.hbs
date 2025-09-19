@@ -8,7 +8,12 @@
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset 'images/favicon.ico'}}" type="image/x-icon">
-    <link rel="apple-touch-icon" href="{{asset 'images/apple-touch-icon.png'}}">
+    <link rel="icon" href="{{asset 'images/favicon-32x32.png'}}" type="image/png" sizes="32x32">
+    <link rel="icon" href="{{asset 'images/favicon-16x16.png'}}" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="{{asset 'images/apple-touch-icon.png'}}" sizes="180x180">
+    <link rel="manifest" href="{{asset 'images/site.webmanifest'}}">
+    <meta name="msapplication-TileColor" content="#0052B4">
+    <meta name="theme-color" content="#0052B4">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{asset 'css/main.css'}}">
@@ -85,8 +90,8 @@
                 <div class="nav-container">
                     <div class="nav-logo">
                         <a href="{{#if (eq lang 'en')}}/{{else}}/{{lang}}/{{/if}}" aria-label="{{t 'site.title'}} - {{t 'nav.home'}}">
-                            <span class="logo-text">Nordum</span>
-                            <span class="logo-tagline">{{t 'site.tagline'}}</span>
+                            <img src="{{asset 'images/logo.svg'}}" alt="Nordum Logo" class="logo-main-svg">
+                            <span class="logo-tagline">{{t 'hero.subtitle'}}</span>
                         </a>
                     </div>
 
@@ -267,6 +272,9 @@
                 </div>
 
                 <div class="footer-bottom">
+                    <div class="footer-logo">
+                        <img src="{{asset 'images/logo-small.svg'}}" alt="Nordum Logo" class="footer-logo-svg">
+                    </div>
                     <p>{{t 'footer.copyright'}}</p>
                     <div class="footer-links">
                         <a href="{{#if (eq lang 'en')}}/privacy.html{{else}}/{{lang}}/privacy.html{{/if}}">{{t 'footer.privacy'}}</a>

@@ -90,6 +90,21 @@
     align-items: center;
     padding-top: var(--space-xl);
     border-top: 1px solid var(--color-border);
+    
+    .footer-logo {
+      margin-right: var(--space-lg);
+      
+      .footer-logo-svg {
+        width: 40px;
+        height: auto;
+        opacity: 0.7;
+        transition: opacity var(--transition-fast);
+        
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
 
     p {
       color: var(--color-text-light);
@@ -119,6 +134,18 @@
 @media (max-width: 768px) {
   .footer {
     padding: var(--space-xl) 0 var(--space-lg);
+      
+    &-bottom {
+      .footer-logo {
+        margin-right: 0;
+        margin-bottom: var(--space-md);
+        order: -1;
+          
+        .footer-logo-svg {
+          width: 35px;
+        }
+      }
+    }
 
     &-content {
       grid-template-columns: 1fr;
