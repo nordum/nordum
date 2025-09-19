@@ -14,7 +14,7 @@
   "hero": {
     "title": "Nordum",
     "subtitle": "Ett felles skriftspråg for Skandinavia",
-    "description": "Ett enhetlig skriftspråg designet for å bygge broar mellem norsk, dansk og svensk - fremme gensidig forståelse over Skandinavia gennem språglig sammenheng og enkelhet.",
+    "description": "Ett enhetlig skriftspråg designet for å bygge broar mellem norsk, dansk og svensk - fremme gensidig forståelse i Skandinavia gennem språglig sammenheng og enkelhet.",
     "learnMore": "Lære Mer",
     "tryTools": "Teste Verktøi"
   },
@@ -26,7 +26,7 @@
     "whyCreated": "Vorfor ble Nordum opprettet?",
     "whyCreatedAnswer": "Nordum ble opprettet som svar på flere moderne realiteter:",
     "changingLandscape": "Endret språglig landskap: Engelsk har i økende grad blitt hovedspråget for international kommunikation, mens skandinaviske språg bruges i mindre grad i globale sammenhenger",
-    "geographicMobility": "Geografisk mobilitet: Folk reiser hyppigere på tvers av Skandinavia, noe som skaper behov for enklere grenseoverskridende kommunikation",
+    "geographicMobility": "Geografisk mobilitet: Folk reiser hyppigere på tvers av Skandinavia, noe som skaper behov for enklere grænseoverskridende kommunikation",
     "digitalCommunication": "Digital kommunikation: Internet og digitale plattformar krever enkle, konsistente språgstandardar",
     "replacementQuestion": "Er Nordum ment å erstatte eksisterende skandinaviske språg?",
     "replacementAnswer1": "Absolutt ikke. Nordum er ikke designet for å forby eller erstatte de nåværende skriftsprågarne (norsk, dansk, svensk). I stedet gir det et tilleggsalternativ for de som ønsker å bruge en felles skandinavisk standard for å gøre kommunikation enklere på tværs av nationale grænser.",
@@ -42,7 +42,7 @@
     "historicalAnswer2": "Nordum anerkjenner denne felles arven og skaper en moderne skriftlig standard som hedrer alle tre traditioner samtidig som den gir praktisk nytte for samtidens kommunikationsbehov.",
     "targetAudience": "Vem kan bruge Nordum?",
     "targetAudienceList": "Nordum er designet for:",
-    "scandinavians": "Skandinaver som kommuniserer på tvers av grenser",
+    "scandinavians": "Skandinaver som kommuniserer på tvers av grænser",
     "internationalCompanies": "Internationale selskaper som opererer i flere nordiske land",
     "educationalInstitutions": "Utdanningsinstitutioner som underviser i skandinaviske studier",
     "travelers": "Reisende og ekspatriater som bor i Skandinavia",
@@ -74,7 +74,7 @@
     },
     "philosophy": {
       "title": "Filosofi",
-      "description": "Gennem å identifisere felles språglige mønstre og velge de mest vidt forståtte formene, søker Nordum å redusere hindringer for kommunikation over nordiske grenser."
+      "description": "Gennem å identifisere felles språglige mønstre og velge de mest vidt forståtte formene, søker Nordum å redusere hindringer for kommunikation over nordiske grænser."
     },
     "vision": {
       "title": "Vision",
