@@ -1,7 +1,7 @@
 # Nordum - Pan-Scandinavian Language Platform
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Build Status](https://github.com/nordum/nordum/workflows/CI/badge.svg)](https://github.com/nordum/nordum/actions)
+[![Build Status](https://github.com/nordum/nordum/actions/workflows/deploy.yml/badge.svg)](https://github.com/nordum/nordum/actions)
 [![Website](https://img.shields.io/badge/Website-nordum.org-blue.svg)](https://nordum.org)
 
 **Nordum** is a constructed pan-Scandinavian written language designed to maximize mutual intelligibility between Norwegian (Bokmål), Danish, and Swedish while maintaining systematic regularity and practical modern usage.
@@ -150,7 +150,7 @@ Wiktionary downloads are now **10-20x faster** with intelligent caching:
 # Cache management
 npm run cache:setup              # Auto setup (recommended)
 npm run cache:warm               # Quick warm-up (5 min)
-npm run cache:warm-full          # Full warm-up (25 min) 
+npm run cache:warm-full          # Full warm-up (25 min)
 npm run cache:stats              # Performance statistics
 npm run cache:analyze            # Detailed analysis
 npm run cache:clean              # Remove expired entries
@@ -490,7 +490,7 @@ GET /api/dictionary/stats
   },
   "etymology": {
     "norwegian": "arbeider",
-    "danish": "arbejder", 
+    "danish": "arbejder",
     "swedish": "arbetar"
   },
   "selectionReason": "Systematic morphology: verbs end in -er",
