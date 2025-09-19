@@ -2,60 +2,17 @@
 
 const fs = require('fs').promises;
 const path = require('path');
+const PO = require('pofile');
 
-class I18nBuilder {
+// Dynamic import for ESM module
+let gettextParser;
+
+class I18nPoBuilder {
     constructor() {
         this.srcDir = path.join(__dirname, '../src');
         this.buildDir = path.join(__dirname, '../build');
-        this.i18nDir = path.join(this.srcDir, 'i18n');
-    }
-
-    async build() {
-        console.log('Starting i18n build...');
-        
-        try {
-            // Copy i18n files to build directory
-            await this.ensureDir(path.join(this.buildDir, 'assets', 'i18n'));
-            
-            try {
-                const files = await fs.readdir(this.i18nDir);
-                for (const file of files) {
-                    if (file.endsWith('.json')) {
-                        const sourcePath = path.join(this.i18nDir, file);
-                        const destPath = path.join(this.buildDir, 'assets', 'i18n', file);
-                        await fs.copyFile(sourcePath, destPath);
-                        console.log(`Copied: ${file}`);
-                    }
-                }
-            } catch (error) {
-                console.warn('No i18n files found, creating default translations...');
-                
-                // Create default English translations
-                const defaultTranslations = {
-                    site: {
-                        title: 'Nordum - A Pan-Scandinavian Language',
-                        description: 'A unified written language for Scandinavia'
-                    },
-                    nav: {
-                        home: 'Home',
-                        about: 'About',
-                        grammar: 'Grammar',
-                        tools: 'Tools',
-                        resources: 'Resources',
-                        community: 'Community'
-                    }
-                };
-                
-                const defaultPath = path.join(this.buildDir, 'assets', 'i18n', 'en.json');
-                await fs.writeFile(defaultPath, JSON.stringify(defaultTranslations, null, 2));
-                console.log('Created default translations');
-            }
-            
-            console.log('I18n build completed successfully!');
-        } catch (error) {
-            console.error('I18n build failed:', error);
-            process.exit(1);
-        }
+        this.poDir = path.join(this.srcDir, 'i18n');
+        this.i18nDir = path.join(this.buildDir, 'assets', 'i18n');
     }
 
     async ensureDir(dir) {
@@ -65,12 +22,80 @@ class I18nBuilder {
             if (error.code !== 'EEXIST') throw error;
         }
     }
+
+    async compileMoFiles() {
+        console.log('Compiling MO files...');
+
+        await this.ensureDir(this.i18nDir);
+
+        const languages = ['en', 'da', 'nb', 'nn', 'sv', 'nordum'];
+
+        for (const lang of languages) {
+            try {
+                const poPath = path.join(this.poDir, `${lang}.po`);
+                const moPath = path.join(this.i18nDir, `${lang}.mo`);
+
+                // Load and compile PO to MO using gettext-parser
+                const poContent = await fs.readFile(poPath, 'utf-8');
+                const po = gettextParser.po.parse(poContent);
+
+                // Convert to MO using gettext-parser
+                const mo = gettextParser.mo.compile(po);
+
+                // Write MO file
+                await fs.writeFile(moPath, mo);
+                console.log(`✅ Compiled: ${lang}.mo`);
+
+            } catch (error) {
+                console.error(`❌ Failed to compile ${lang}.mo:`, error.message);
+            }
+        }
+    }
+
+    async copyPoFiles() {
+        console.log('Copying PO files for development...');
+
+        await this.ensureDir(this.i18nDir);
+
+        const languages = ['en', 'da', 'nb', 'nn', 'sv', 'nordum'];
+
+        for (const lang of languages) {
+            try {
+                const sourcePath = path.join(this.poDir, `${lang}.po`);
+                const destPath = path.join(this.i18nDir, `${lang}.po`);
+
+                await fs.copyFile(sourcePath, destPath);
+                console.log(`✅ Copied: ${lang}.po`);
+
+            } catch (error) {
+                console.error(`❌ Failed to copy ${lang}.po:`, error.message);
+            }
+        }
+    }
+
+    async build() {
+        console.log('Starting i18n PO/MO build...');
+
+        try {
+            // Load gettext-parser dynamically
+            const gettextParserModule = await import('gettext-parser');
+            gettextParser = gettextParserModule.default;
+
+            await this.compileMoFiles();
+            await this.copyPoFiles();
+
+            console.log('I18n PO/MO build completed successfully!');
+        } catch (error) {
+            console.error('I18n build failed:', error);
+            process.exit(1);
+        }
+    }
 }
 
 // Run if called directly
 if (require.main === module) {
-    const builder = new I18nBuilder();
+    const builder = new I18nPoBuilder();
     builder.build();
 }
 
-module.exports = I18nBuilder;
+module.exports = I18nPoBuilder;

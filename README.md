@@ -234,9 +234,9 @@ More content...
 - **Text Editor** - Integrated writing environment
 - **Translation Tools** - Bidirectional conversion
 
-### Internationalization
+### Internationalization & Translation
 
-The platform supports 6 languages:
+The platform supports 6 languages using GNU gettext PO/MO format:
 - English (`en`) - Base language
 - Danish (`da`) - Dansk  
 - Norwegian Bokmål (`nb`) - Norsk (Bokmål)
@@ -248,8 +248,48 @@ The platform supports 6 languages:
 - `nordum.org/` - English
 - `nordum.org/da/` - Danish
 - `nordum.org/sv/` - Swedish
-- `nordum.org/nordum/` - Nordum
-- etc.
+
+#### Translation Workflow
+
+Nordum uses standard PO/MO files for translations with professional tooling support:
+
+**File Structure:**
+```
+src/
+├── i18n/           # PO files (primary translation source)
+│   ├── en.po       # English translations
+│   ├── da.po       # Danish translations
+│   ├── nb.po       # Norwegian Bokmål translations
+│   ├── nn.po       # Norwegian Nynorsk translations
+│   ├── sv.po       # Swedish translations
+│   ├── nordum.po   # Nordum language translations
+│   └── messages.pot # Translation template
+└── templates/      # Handlebars templates with {{t 'key'}} calls
+```
+
+**Translation Management:**
+```bash
+# Extract new keys from templates and update POT file
+npm run translations:convert
+
+# Update language PO files from template
+npm run translations:update
+
+# Check translation coverage and missing keys
+npm run translations:check
+
+# Build compiled MO files for production
+npm run build:i18n
+```
+
+**Translation Keys:**
+Keys follow hierarchical dot notation: `category.subcategory.key`
+- `site.title` - Website title
+- `nav.home` - Navigation home link
+- `faq.whatIsNordum` - FAQ question
+- `tools.dictionary.title` - Tool title
+
+
 
 ## Development
 
@@ -378,9 +418,10 @@ npm run validate:dictionary      # Validate dictionary data
 ### 🔧 Build & Development
 ```bash
 npm run dev                      # Development server with live reload
-npm run build                    # Production build
+npm run build                    # Production build (includes translations)
 npm run build:dictionary         # Generate Nordum dictionary
 npm run build:specification      # Parse language specification
+npm run build:i18n               # Build translation files only
 npm run serve                    # Serve built site locally
 npm run deploy                   # Deploy to production
 ```
@@ -393,6 +434,15 @@ npm run version:minor            # Increment minor version
 npm run version:patch            # Increment patch version
 npm run version:history          # Show version changelog
 ```
+
+### 🌍 Translation Management
+```bash
+npm run translations:convert      # Extract keys from templates to POT
+npm run translations:update       # Update language PO files
+npm run translations:check        # Check translation coverage
+npm run translations:cleanup      # Clean up legacy JSON translations
+```
+
 - **Dictionary Entries**: 170+ validated entries with inflections
 
 **Quality Assurance Framework:**

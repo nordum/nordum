@@ -12,6 +12,7 @@ process.emit = function (name, data) {
 const fs = require('fs').promises;
 const path = require('path');
 const Handlebars = require('handlebars');
+
 const SpecificationParser = require('./parse-specification');
 
 class TemplateBuilder {
@@ -22,28 +23,32 @@ class TemplateBuilder {
         this.partialsDir = path.join(this.templatesDir, 'partials');
         this.i18nDir = path.join(this.srcDir, 'i18n');
         this.dataDir = path.join(__dirname, '../data');
-        
+
         this.translations = {};
         this.siteData = {};
         this.specificationData = {};
+        this.gettextParser = null;
     }
 
     async init() {
         // Create build directory
         await this.ensureDir(this.buildDir);
-        
+
+        // Load gettext-parser dynamically
+        this.gettextParser = await import('gettext-parser');
+
         // Load translations
         await this.loadTranslations();
-        
+
         // Load site data
         await this.loadSiteData();
-        
+
         // Load specification data
         await this.loadSpecification();
-        
+
         // Register Handlebars helpers
         this.registerHelpers();
-        
+
         // Register partials
         await this.registerPartials();
     }
@@ -59,14 +64,15 @@ class TemplateBuilder {
     async loadTranslations() {
         try {
             const langs = ['en', 'da', 'nb', 'nn', 'sv', 'nordum'];
-            
+
             for (const lang of langs) {
-                const langFile = path.join(this.i18nDir, `${lang}.json`);
+                const moPath = path.join(this.buildDir, 'assets', 'i18n', `${lang}.mo`);
                 try {
-                    const content = await fs.readFile(langFile, 'utf-8');
-                    this.translations[lang] = JSON.parse(content);
+                    const moContent = await fs.readFile(moPath);
+                    const parsed = this.gettextParser.mo.parse(moContent);
+                    this.translations[lang] = this.moToJson(parsed);
                 } catch (error) {
-                    console.warn(`Warning: Could not load translations for ${lang}`);
+                    console.warn(`Warning: Could not load MO translations for ${lang}`);
                     this.translations[lang] = {};
                 }
             }
@@ -93,12 +99,33 @@ class TemplateBuilder {
                 title: 'Nordum',
                 description: 'A pan-Scandinavian written language',
                 url: 'https://nordum.org',
-                version: '1.0.0'
+                version: '0.9.0'
             };
         }
     }
 
-    registerHelpers() {
+
+    moToJson(moData) {
+        const result = {};
+
+        for (const [key, translation] of Object.entries(moData.translations[''])) {
+            if (key && translation.msgstr && translation.msgstr[0]) {
+                const keys = key.split('.');
+                let current = result;
+
+                for (let i = 0; i < keys.length - 1; i++) {
+                    if (!current[keys[i]]) {
+                        current[keys[i]] = {};
+                    }
+                    current = current[keys[i]];
+                }
+
+                current[keys[keys.length - 1]] = translation.msgstr[0];
+            }
+        }
+
+        return result;
+    }registerHelpers() {
         // Translation helper
         Handlebars.registerHelper('t', (key, options) => {
             // Handle case where options might be undefined or missing data
@@ -106,18 +133,18 @@ class TemplateBuilder {
             if (options && options.data && options.data.root && options.data.root.lang) {
                 lang = options.data.root.lang;
             }
-            
+
             const translation = this.translations[lang] || this.translations['en'] || {};
-            
+
             // Support nested keys like 'nav.home'
             const keys = (key || '').split('.');
             let value = translation;
-            
+
             for (const k of keys) {
                 value = value?.[k];
                 if (value === undefined) break;
             }
-            
+
             return value || key || 'Missing Translation';
         });
 
@@ -230,14 +257,14 @@ class TemplateBuilder {
     async registerPartials() {
         try {
             const partialFiles = await fs.readdir(this.partialsDir);
-            
+
             for (const file of partialFiles) {
                 if (!file.endsWith('.hbs')) continue;
-                
+
                 const partialName = path.basename(file, '.hbs');
                 const partialPath = path.join(this.partialsDir, file);
                 const partialContent = await fs.readFile(partialPath, 'utf-8');
-                
+
                 Handlebars.registerPartial(partialName, partialContent);
             }
         } catch (error) {
@@ -265,7 +292,7 @@ class TemplateBuilder {
         try {
             const templateContent = await fs.readFile(templatePath, 'utf-8');
             const template = Handlebars.compile(templateContent);
-            
+
             const context = {
                 ...this.siteData,
                 ...data,
@@ -275,12 +302,12 @@ class TemplateBuilder {
                 currentPath: data.currentPath || '/',
                 env: process.env.NODE_ENV || 'development'
             };
-            
+
             const html = template(context);
-            
+
             // Ensure output directory exists
             await this.ensureDir(path.dirname(outputPath));
-            
+
             await fs.writeFile(outputPath, html, 'utf-8');
             console.log(`Built: ${path.relative(this.buildDir, outputPath)}`);
         } catch (error) {
@@ -304,10 +331,10 @@ class TemplateBuilder {
 
         for (const lang of languages) {
             console.log(`Building templates for language: ${lang}`);
-            
+
             for (const page of pages) {
                 const templatePath = path.join(this.templatesDir, page.template);
-                
+
                 // Check if template exists
                 try {
                     await fs.access(templatePath);
@@ -315,7 +342,7 @@ class TemplateBuilder {
                     console.warn(`Template not found: ${page.template}, skipping`);
                     continue;
                 }
-                
+
                 let outputPath;
                 if (lang === 'en') {
                     // English is the default, no language prefix
@@ -324,8 +351,8 @@ class TemplateBuilder {
                     // Other languages get a prefix
                     outputPath = path.join(this.buildDir, lang, page.output);
                 }
-                
-                await this.buildTemplate(templatePath, outputPath, { 
+
+                await this.buildTemplate(templatePath, outputPath, {
                     lang,
                     currentPath: '/' + page.output.replace('index.html', ''),
                     currentPage: page.template.split('/')[0] || 'home'
@@ -336,15 +363,15 @@ class TemplateBuilder {
 
     async copyStaticAssets() {
         const assetsDir = path.join(this.srcDir, 'static');
-        
+
         try {
             const copyRecursive = async (src, dest) => {
                 const stat = await fs.lstat(src);
-                
+
                 if (stat.isDirectory()) {
                     await this.ensureDir(dest);
                     const files = await fs.readdir(src);
-                    
+
                     for (const file of files) {
                         await copyRecursive(
                             path.join(src, file),
@@ -355,7 +382,7 @@ class TemplateBuilder {
                     await fs.copyFile(src, dest);
                 }
             };
-            
+
             await copyRecursive(assetsDir, path.join(this.buildDir, 'assets'));
             console.log('Copied static assets');
         } catch (error) {
@@ -385,7 +412,7 @@ class TemplateBuilder {
                 } else {
                     url = `${baseUrl}/${lang}/${page}`;
                 }
-                
+
                 urls.push({
                     url: url.replace(/\/$/, ''), // Remove trailing slash
                     lang: lang,
@@ -403,7 +430,7 @@ ${urls.map(url => `    <url>
         <lastmod>${url.lastmod}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-        ${languages.map(lang => 
+        ${languages.map(lang =>
             `<xhtml:link rel="alternate" hreflang="${lang}" href="${url.url.replace(/\/(da|nb|nn|sv|nordum)\//, lang === 'en' ? '/' : `/${lang}/`)}" />`
         ).join('\n        ')}
     </url>`).join('\n')}
@@ -415,13 +442,13 @@ ${urls.map(url => `    <url>
 
     async build() {
         console.log('Starting template build...');
-        
+
         try {
             await this.init();
             await this.buildAllTemplates();
             await this.copyStaticAssets();
             await this.generateSitemap();
-            
+
             console.log('Template build completed successfully!');
         } catch (error) {
             console.error('Template build failed:', error);

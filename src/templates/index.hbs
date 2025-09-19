@@ -10,8 +10,8 @@
         <p class="hero-description">{{t 'hero.description'}}</p>
 
         <div class="hero-buttons">
-            <a href="#about" class="btn btn-primary">Learn More</a>
-            <a href="#tools" class="btn btn-secondary">Try Tools</a>
+            <a href="#about" class="btn btn-primary">{{t 'hero.learnMore'}}</a>
+            <a href="#tools" class="btn btn-secondary">{{t 'hero.tryTools'}}</a>
         </div>
     </div>
 </section>
@@ -19,7 +19,7 @@
 <!-- About Section -->
 <section id="about" class="about-section">
     <div class="container">
-        <h2 class="section-title">About Nordum</h2>
+        <h2 class="section-title">{{t 'about.title'}}</h2>
         <div class="about-cards">
             <div class="about-card">
                 <div class="card-icon">🎯</div>
@@ -43,7 +43,7 @@
 <!-- Grammar Section -->
 <section id="grammar" class="grammar-section">
     <div class="container">
-        <h2 class="section-title">Grammar Principles</h2>
+        <h2 class="section-title">{{t 'grammar.title'}}</h2>
         <div class="grammar-principles">
             <div class="principle-item">
                 <div class="principle-icon">📝</div>
@@ -66,7 +66,7 @@
 <!-- Tools Section -->
 <section id="tools" class="tools-section">
     <div class="container">
-        <h2 class="section-title">Digital Tools</h2>
+        <h2 class="section-title">{{t 'tools.title'}}</h2>
         <div class="tools-grid">
             <a href="{{#if (eq lang 'en')}}/tools/dictionary.html{{else}}/{{lang}}/tools/dictionary.html{{/if}}" class="tool-card">
                 <div class="tool-icon">📖</div>
@@ -82,7 +82,7 @@
                 <h3>{{t 'tools.spellcheck.title'}}</h3>
                 <p>{{t 'tools.spellcheck.description'}}</p>
                 <div class="tool-stats">
-                    <span class="stat">Real-time checking</span>
+                    <span class="stat">{{t 'tools.spellcheck.realTimeChecking'}}</span>
                 </div>
             </a>
 
@@ -91,7 +91,7 @@
                 <h3>{{t 'tools.translator.title'}}</h3>
                 <p>{{t 'tools.translator.description'}}</p>
                 <div class="tool-stats">
-                    <span class="stat">4 Languages</span>
+                    <span class="stat">4 {{t 'tools.translator.languages'}}</span>
                 </div>
             </a>
 
@@ -100,7 +100,7 @@
                 <h3>{{t 'tools.editor.title'}}</h3>
                 <p>{{t 'tools.editor.description'}}</p>
                 <div class="tool-stats">
-                    <span class="stat">Full-featured</span>
+                    <span class="stat">{{t 'tools.editor.features'}}</span>
                 </div>
             </a>
         </div>
