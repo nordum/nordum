@@ -26,14 +26,14 @@
     "whyCreated": "Vorfor ble Nordum opprettet?",
     "whyCreatedAnswer": "Nordum ble opprettet som svar på flere moderne realiteter:",
     "changingLandscape": "Endret språglig landskap: Engelsk har i økende grad blitt hovedspråget for international kommunikation, mens skandinaviske språg bruges i mindre grad i globale sammenhenger",
-    "geographicMobility": "Geografisk mobilitet: Folk reiser hyppigere på tvers av Skandinavia, noe som skaper behov for enklere grænseoverskridende kommunikation",
+    "geographicMobility": "Geografisk mobilitet: Folk reiser hyppigere på tværs av Skandinavia, noe som skaper behov for enklere grænseoverskridende kommunikation",
     "digitalCommunication": "Digital kommunikation: Internet og digitale plattformar krever enkle, konsistente språgstandardar",
     "replacementQuestion": "Er Nordum ment å erstatte eksisterende skandinaviske språg?",
-    "replacementAnswer1": "Absolutt ikke. Nordum er ikke designet for å forby eller erstatte de nåværende skriftsprågarne (norsk, dansk, svensk). I stedet gir det et tilleggsalternativ for de som ønsker å bruge en felles skandinavisk standard for å gøre kommunikation enklere på tværs av nationale grænser.",
-    "replacementAnswer2": "Målet er å tillate brug av Nordum som et supplerende skriftspråg som gør det mulig for skandinaver å kommunisere uten å måtte bytte språg alla par kilometer når de reiser gennem Skandinavien.",
+    "replacementAnswer1": "Absolutt ikke. Nordum er ikke designet for å forby eller erstatte de nåværende skriftsprågarne (norsk, dansk, svensk). I stedet gir det ett tilleggsalternativ for de som ønsker å bruge en felles skandinavisk standard for å gøre kommunikation enklere på tværs av nationale grænser.",
+    "replacementAnswer2": "Målet er å tillate brug av Nordum som ett supplerende skriftspråg som gør det mulig for skandinaver å kommunisere uten å måtte bytte språg alla par kilometer når de reiser gennem Skandinavien.",
     "nynorskRelationship": "Vordan forholder Nordum sei till nynorsk?",
     "nynorskAnswer1": "Nordum tar en annen tilnærming enn nynorsk, som ble opprettet på 1800-tallet som en del av den norske nationalistbevegelsen. Nynorsk ble specifikt designet for å skille sei fra danske og svenske påvirkningar så mye som mulig, og trakk tungt fra norske landsmålsdialektar.",
-    "nynorskAnswer2": "I kontrast till dett omfavner Nordum det felles skandinaviske arvet og tar sikte på å bygge broer mellem språgarne snarere enn å skille dem. Der nynorsk søkte distinktion, søker Nordum tilkobling og gensidig forståelighet.",
+    "nynorskAnswer2": "I kontrast till det omfavner Nordum det felles skandinaviske arvet og tar sikte på å bygge broer mellem språgarne snarere enn å skille dem. Der nynorsk søgte distinktion, søger Nordum tilkobling og gensidig forståelighet.",
     "historicalContext": "Vad er den historiske konteksten for skandinaviske språg?",
     "historicalAnswer1": "Historisk sett dannet de skandinaviske språgarne en dialektkontinuum der nærliggende dialekter var gensidig forståelige. De moderne standardiserte språgarne oppsto gennem separate standardiseringsprosesser:",
     "danishStandardization": "Dansk: Standardisert gennem administration og Luthers bibeloversettelse",
@@ -42,15 +42,15 @@
     "historicalAnswer2": "Nordum anerkjenner denne felles arven og skaper en moderne skriftlig standard som hedrer alle tre traditioner samtidig som den gir praktisk nytte for samtidens kommunikationsbehov.",
     "targetAudience": "Vem kan bruge Nordum?",
     "targetAudienceList": "Nordum er designet for:",
-    "scandinavians": "Skandinaver som kommuniserer på tvers av grænser",
+    "scandinavians": "Skandinaver som kommuniserer på tværs av grænser",
     "internationalCompanies": "Internationale selskaper som opererer i flere nordiske land",
     "educationalInstitutions": "Utdanningsinstitutioner som underviser i skandinaviske studier",
     "travelers": "Reisende og ekspatriater som bor i Skandinavia",
     "anyoneInterested": "Alle som er interessert i pan-skandinavisk kommunikation",
     "learningDifficulty": "Er Nordum lett å lære for skandinaviske talere?",
-    "learningAnswer": "Ja! Nordum er designet for å være umiddelbart tilgengelig for talere av etvert skandinavisk språg. Den leksikalske utvelgelsen prioriterer ord som allerede er kjente på tvers av alle tre språgarne, og det grammatiske systemet forenkler mange av uregelmessighetarne som finnes i de enkelte språgarne.",
+    "learningAnswer": "Ja! Nordum er designet for å være umiddelbart tilgengelig for talere av etvert skandinavisk språg. Den leksikalske utvelgelsen prioriterer ord som allerede er kjente på tværs av alle tre språgarne, og det grammatiske systemet forenkler mange av uregelmessighetarne som finnes i de enkelte språgarne.",
     "englishLoanwords": "Vordan håndterer Nordum engelske lånord?",
-    "englishAnswer": "Nordum bevarer engelske lånord for tekniske og moderne termer der de allerede er mye brugt på tvers av Skandinavia. Dette reflekterer virkeligheten i moderne skandinavisk kommunikation der engelske termer vanligvis er integrert, spesielt innen teknologi, næringsliv og akademiske sammenhenger.",
+    "englishAnswer": "Nordum bevarer engelske lånord for tekniske og moderne termer der de allerede er mye brugt på tværs av Skandinavia. Dette reflekterer virkeligheten i moderne skandinavisk kommunikation der engelske termer vanligvis er integrert, spesielt innen teknologi, næringsliv og akademiske sammenhenger.",
     "contribution": "Vordan kan jei bidra till Nordum?",
     "contributionAnswer1": "Nordum ønsker velkommen bidrag fra lingvister, developers og skandinaviske språgtalere. Du kan:",
     "submitEntries": "Sende inn ordboksoppføringer og forslag",
@@ -74,7 +74,7 @@
     },
     "philosophy": {
       "title": "Filosofi",
-      "description": "Gennem å identifisere felles språglige mønstre og velge de mest vidt forståtte formene, søker Nordum å redusere hindringer for kommunikation over nordiske grænser."
+      "description": "Gennem å identifisere felles språglige mønstre og velge de mest vidt forståtte formene, søger Nordum å redusere hindringer for kommunikation over nordiske grænser."
     },
     "vision": {
       "title": "Vision",
@@ -152,7 +152,7 @@
   },
   "community": {
     "title": "Ta kontakt",
-    "description": "Nordum er et åpent, samarbeidende projekt. Vi velkommer lingvister, utviklere og alle interesserte i skandinaviske språg å bidra till dette ambisiøse foretak.",
+    "description": "Nordum er ett åpent, samarbeidende projekt. Vi velkommer lingvister, utviklere og alle interesserte i skandinaviske språg å bidra till dette ambisiøse foretak.",
     "stats": {
       "entries": "Ordboksposter",
       "contributors": "Bidragere",
@@ -220,11 +220,11 @@
     },
     "quickBrowse": "Hurtig Bla",
     "noResults": "Ingen resultater funnet for \"{query}\"",
-    "tryDifferent": "Prøve å søke med et annet ord eller bla etter bokstav.",
+    "tryDifferent": "Prøve å søge med ett annet ord eller bla etter bokstav.",
     "resultsFound": "Søkeresultater for \"{query}\" ({count} funnet)",
     "welcome": {
       "title": "Velkommen till Nordum Ordbok",
-      "description": "Begynne å skrive for å søke etter ord, eller bruge alfabetnavigationen ovenfor for å bla etter bokstav.",
+      "description": "Begynne å skrive for å søge etter ord, eller bruge alfabetnavigationen ovenfor for å bla etter bokstav.",
       "featuredWords": "Utvalgte Ord"
     },
     "wordDetails": {
