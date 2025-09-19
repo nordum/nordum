@@ -1,0 +1,131 @@
+{{#> layout pageTitle="Home" currentPage="home" bodyClass="home-page"}}
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1 class="hero-title">{{t 'hero.title'}}</h1>
+        <p class="hero-subtitle">{{t 'hero.subtitle'}}</p>
+        <p class="hero-description">{{t 'hero.description'}}</p>
+
+        <div class="hero-buttons">
+            <a href="#about" class="btn btn-primary">Learn More</a>
+            <a href="#tools" class="btn btn-secondary">Try Tools</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2 class="section-title">About Nordum</h2>
+        <div class="about-cards">
+            <div class="about-card">
+                <div class="card-icon">🎯</div>
+                <h3>{{t 'about.purpose.title'}}</h3>
+                <p>{{t 'about.purpose.description'}}</p>
+            </div>
+            <div class="about-card">
+                <div class="card-icon">🧠</div>
+                <h3>{{t 'about.philosophy.title'}}</h3>
+                <p>{{t 'about.philosophy.description'}}</p>
+            </div>
+            <div class="about-card">
+                <div class="card-icon">🌍</div>
+                <h3>{{t 'about.vision.title'}}</h3>
+                <p>{{t 'about.vision.description'}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Grammar Section -->
+<section id="grammar" class="grammar-section">
+    <div class="container">
+        <h2 class="section-title">Grammar Principles</h2>
+        <div class="grammar-principles">
+            <div class="principle-item">
+                <div class="principle-icon">📝</div>
+                <div class="principle-content">
+                    <h3>{{t 'grammar.orthography.title'}}</h3>
+                    <p>{{t 'grammar.orthography.description'}}</p>
+                </div>
+            </div>
+            <div class="principle-item">
+                <div class="principle-icon">🔄</div>
+                <div class="principle-content">
+                    <h3>{{t 'grammar.morphology.title'}}</h3>
+                    <p>{{t 'grammar.morphology.description'}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tools Section -->
+<section id="tools" class="tools-section">
+    <div class="container">
+        <h2 class="section-title">Digital Tools</h2>
+        <div class="tools-grid">
+            <a href="{{#if (eq lang 'en')}}/tools/dictionary.html{{else}}/{{lang}}/tools/dictionary.html{{/if}}" class="tool-card">
+                <div class="tool-icon">📖</div>
+                <h3>{{t 'tools.dictionary.title'}}</h3>
+                <p>{{t 'tools.dictionary.description'}}</p>
+                <div class="tool-stats">
+                    <span class="stat">100+ {{t 'dictionary.stats.totalEntries'}}</span>
+                </div>
+            </a>
+
+            <a href="{{#if (eq lang 'en')}}/tools/spellcheck.html{{else}}/{{lang}}/tools/spellcheck.html{{/if}}" class="tool-card">
+                <div class="tool-icon">✅</div>
+                <h3>{{t 'tools.spellcheck.title'}}</h3>
+                <p>{{t 'tools.spellcheck.description'}}</p>
+                <div class="tool-stats">
+                    <span class="stat">Real-time checking</span>
+                </div>
+            </a>
+
+            <a href="{{#if (eq lang 'en')}}/tools/translator.html{{else}}/{{lang}}/tools/translator.html{{/if}}" class="tool-card">
+                <div class="tool-icon">🔄</div>
+                <h3>{{t 'tools.translator.title'}}</h3>
+                <p>{{t 'tools.translator.description'}}</p>
+                <div class="tool-stats">
+                    <span class="stat">4 Languages</span>
+                </div>
+            </a>
+
+            <a href="{{#if (eq lang 'en')}}/tools/editor.html{{else}}/{{lang}}/tools/editor.html{{/if}}" class="tool-card">
+                <div class="tool-icon">📝</div>
+                <h3>{{t 'tools.editor.title'}}</h3>
+                <p>{{t 'tools.editor.description'}}</p>
+                <div class="tool-stats">
+                    <span class="stat">Full-featured</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Community Section -->
+<section class="community-section">
+    <div class="container">
+        <h2 class="section-title">Join Our Community</h2>
+        <p>Nordum aims to be an open, collaborative project. Join us in creating this pan-Scandinavian language!</p>
+
+        <div class="community-stats">
+            <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Dictionary Entries</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Languages</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">95%</span>
+                <span class="stat-label">Intelligibility (hopefully)</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/layout}}

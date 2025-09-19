@@ -1,0 +1,356 @@
+{
+  "site": {
+    "title": "Nordum - Ett Pan-Skandinaviskt Språk",
+    "tagline": "Bygge broer gennem språk",
+    "description": "Et enhetlig skriftspråk designet for å forstås av talere av norsk, dansk og svensk"
+  },
+  "nav": {
+    "home": "Hem",
+    "about": "Om",
+    "grammar": "Grammatik",
+    "tools": "Verktøi",
+    "resources": "Resurser",
+    "community": "Gemenskap"
+  },
+  "hero": {
+    "title": "Nordum",
+    "subtitle": "Ett felles skriftspråk for Skandinavia",
+    "description": "Ett enhetlig skriftspråk designet for å bygge broer mellom norsk, dansk og svensk - fremme gjensidig forståelse over Skandinavia gjennom språklig sammenheng og enkelhet.",
+    "learnMore": "Lære Mer",
+    "tryTools": "Teste Verktyg"
+  },
+  "about": {
+    "title": "Om Nordum",
+    "purpose": {
+      "title": "Formål",
+      "description": "Nordum sikter på å skape en skriftlig standard som maksimerer gjensidig forståelighet mellom norske, danske og svenske talere mens det beholder Skandinavias rike språklige arv."
+    },
+    "philosophy": {
+      "title": "Filosofi",
+      "description": "Gjennom å identifisere felles språklige mønstre og velge de mest vidt forståtte formene, søker Nordum å redusere hindringer for kommunikation over nordiske grenser."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "En fremtid hvor skandinaver kan kommunisere skriftlig uten å måtte bruke engelsk, fremme større kulturelt og økonomisk samarbeid."
+    }
+  },
+  "grammar": {
+    "title": "Grammatiske Prinsipper",
+    "orthography": {
+      "title": "Ortografisk Forenkling",
+      "description": "Nordum antar de mest fonetisk konsistente staveformene felles over de tre språkene, eliminerer stumme bokstaver der mulig.",
+      "example": "Eksempel: \"hus\" (hus) - konsistent over alle tre språk"
+    },
+    "morphology": {
+      "title": "Enhetlig Morfologi",
+      "description": "Verbbøining og substantivbøining følger de mest regulære mønstre funnet i kildespråkene, prioriterer klarhet og enkelhet.",
+      "example": "Eksempel: Regulær verbending \"-er\" for presens (han arbeider - han arbeider)"
+    },
+    "lexicon": {
+      "title": "Leksikalt Valg",
+      "description": "Når varianter eksisterer, velger Nordum ord som er mest vidt anerkjent over alle tre språk, eller skaper transparente sammensetninger.",
+      "example": "Eksempel: \"bil\" (bil) istedenfor \"automobil\" - universelt forstått"
+    },
+    "syntax": {
+      "title": "Syntaktisk Harmoni",
+      "description": "Ordfølge følger de mest vanlige mønstre, typisk Subjekt-Verb-Objekt med V2 ordfølge i hovedsetninger.",
+      "example": "Eksempel: \"I dag arbeider jei\""
+    }
+  },
+  "tools": {
+    "title": "Digitale Verktøi",
+    "dictionary": {
+      "title": "Ordbok",
+      "description": "Enkel Nordum-engelsk ordbok med etymologisk information og kryssreferanser till norsk, dansk og svensk.",
+      "button": "Åpne Ordbok"
+    },
+    "spellcheck": {
+      "title": "Stavekontroll",
+      "description": "Realtids stave- og grammatikkontroll spesifikt designet for Nordums ortografiske og morfologiske regler.",
+      "button": "Teste Stavekontroll"
+    },
+    "translator": {
+      "title": "Oversetter",
+      "description": "Konvertere tekst mellom Nordum og de individuelle skandinaviske språkene for å hjelpe innlæring og sammenligning.",
+      "button": "Bruke Oversetter"
+    },
+    "editor": {
+      "title": "Teksteditor",
+      "description": "Skrive og redigere dokumenter i Nordum med integrert stavekontroll, grammatikkforslag og formateringsverktyg.",
+      "button": "Åpne Editor"
+    }
+  },
+  "resources": {
+    "title": "Resurser",
+    "learning": {
+      "title": "Innlæringsmateriale",
+      "grammarGuide": "Komplett Grammatikkguide",
+      "vocabulary": "Ordforråd",
+      "exercises": "Øvingsoppgaver"
+    },
+    "research": {
+      "title": "Språklig Forskning",
+      "methodology": "Språkdesign Metodologi",
+      "comparison": "Skandinavisk Språksammenligning",
+      "corpus": "Nordum Tekstkorpus",
+      "statistics": "Bruksstatistikk"
+    },
+    "developer": {
+      "title": "Utviklerresurser",
+      "api": "Nordum API Dokumentation",
+      "datasets": "Språkdatasett",
+      "contribute": "Bidragsretningslinjer",
+      "github": "GitHub Repository"
+    }
+  },
+  "community": {
+    "title": "Ta kontakt",
+    "description": "Nordum er et åpent, samarbeidende prosjekt. Vi velkommer lingvister, utviklere og alle interesserte i skandinaviske språk å bidra til dette ambisiøse foretak.",
+    "stats": {
+      "entries": "Ordboksposter",
+      "contributors": "Bidragere",
+      "intelligibility": "Gjensidig Forståelighet"
+    },
+    "links": {
+      "discord": "Discord Server",
+      "reddit": "Reddit Gemenskap",
+      "contact": "Kontakte Oss"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Nordum Prosjekt. Lisensiert under Creative Commons Attribution 4.0",
+    "project": {
+      "title": "Prosjekt",
+      "about": "Om",
+      "contribute": "Bidra",
+      "methodology": "Metodologi"
+    },
+    "tools": {
+      "title": "Verktyg",
+      "dictionary": "Ordbok",
+      "spellcheck": "Stavekontroll",
+      "translator": "Oversetter"
+    },
+    "community": {
+      "title": "Gemenskap",
+      "discord": "Discord",
+      "github": "GitHub",
+      "contact": "Kontakt"
+    }
+  },
+  "common": {
+    "loading": "Laster...",
+    "error": "Feil",
+    "success": "Suksess",
+    "close": "Lukke",
+    "save": "Lagre",
+    "cancel": "Avbryte",
+    "delete": "Slette",
+    "edit": "Redigere",
+    "search": "Søke",
+    "clear": "Tømme",
+    "copy": "Kopiere",
+    "paste": "Lim inn",
+    "undo": "Angre",
+    "redo": "Gjøre om",
+    "help": "Hjelp",
+    "settings": "Innstillinger",
+    "previous": "Forrige",
+    "next": "Neste",
+    "back": "Tilbake",
+    "forward": "Fremover",
+    "home": "Hem",
+    "language": "Språk"
+  },
+  "dictionary": {
+    "title": "Nordum Ordbok",
+    "subtitle": "Utforske Nordums enhetlige ordforråd med oversettelser og etymologisk information",
+    "searchPlaceholder": "Søke etter ord i Nordum, norsk, dansk, svensk eller engelsk...",
+    "searchFilters": {
+      "all": "Alle Språk",
+      "nordum": "Kun Nordum",
+      "translations": "Oversettelser"
+    },
+    "quickBrowse": "Hurtig Bla",
+    "noResults": "Ingen resultater funnet for \"{query}\"",
+    "tryDifferent": "Prøve å søke med et annet ord eller bla etter bokstav.",
+    "resultsFound": "Søkeresultater for \"{query}\" ({count} funnet)",
+    "welcome": {
+      "title": "Velkommen til Nordum Ordbok",
+      "description": "Begynne å skrive for å søke etter ord, eller bruke alfabetnavigationen ovenfor for å bla etter bokstav.",
+      "featuredWords": "Utvalgte Ord"
+    },
+    "wordDetails": {
+      "definition": "Definition",
+      "translations": "Oversettelser",
+      "etymology": "Etymologi",
+      "examples": "Eksempler"
+    },
+    "languages": {
+      "norwegian": "Norsk",
+      "danish": "Dansk",
+      "swedish": "Svensk",
+      "english": "Engelsk",
+      "nordum": "Nordum"
+    },
+    "stats": {
+      "totalEntries": "Totale Poster",
+      "newThisMonth": "Nye Denne Måned",
+      "coverage": "Dekning"
+    }
+  },
+  "spellcheck": {
+    "title": "Nordum Stavekontroll",
+    "subtitle": "Kontrollere din Nordum-tekst for stave- og grammatikkfeil med realtidsforslag",
+    "toolbar": {
+      "clear": "Tømme",
+      "paste": "Lim inn",
+      "spelling": "Staving",
+      "grammar": "Grammatikk",
+      "style": "Stil"
+    },
+    "placeholder": "Begynne å skrive din Nordum-tekst her, eller lim inn eksisterende tekst for å kontrollere feil...",
+    "suggestions": {
+      "title": "Forslag",
+      "noIssues": "Ingen problemer funnet!",
+      "textLooksGood": "Din tekst ser bra ut.",
+      "issuesFound": "problemer funnet",
+      "ignore": "Ignorere"
+    },
+    "stats": {
+      "characters": "Tegn:",
+      "words": "Ord:",
+      "sentences": "Setninger:",
+      "readability": "Lesbarhet:"
+    },
+    "samples": {
+      "title": "Teste Eksempeltekster",
+      "correct": "Korrekt Tekst",
+      "errors": "Tekst med Feil",
+      "mixed": "Blandede Språk"
+    },
+    "readabilityLevels": {
+      "simple": "Enkel",
+      "good": "Bra",
+      "complex": "Kompleks"
+    }
+  },
+  "translator": {
+    "title": "Nordum Oversetter",
+    "subtitle": "Oversette tekst mellom Nordum og de skandinaviske språkene",
+    "from": "Fra:",
+    "to": "Til:",
+    "swap": "Bytt språk",
+    "languages": {
+      "nordum": "Nordum",
+      "norwegian": "Norsk (Bokmål)",
+      "danish": "Dansk",
+      "swedish": "Svensk",
+      "auto": "Auto-oppdage"
+    },
+    "inputPlaceholder": "Skrive tekst å oversette...",
+    "outputPlaceholder": "Oversettelse kommer til å vises her...",
+    "characterLimit": "tegn",
+    "confidence": "Sikkerhet:",
+    "detected": "Oppdaget:",
+    "quickTranslations": "Hurtige Oversettelser",
+    "phrases": {
+      "hello": "Hei, hvordan har du det?",
+      "thanks": "Takk for hjelpen",
+      "understand": "Jei forstår ikke",
+      "help": "Kan du hjelpe meg?",
+      "cost": "Hvor mye koster det?",
+      "goodbye": "Ha det bra / Adjö"
+    },
+    "history": {
+      "title": "Siste Oversettelser",
+      "clear": "Tømme Historikk",
+      "empty": "Ingen siste oversettelser"
+    },
+    "toolbar": {
+      "clear": "Tømme tekst",
+      "paste": "Lim inn fra utklipp",
+      "copy": "Kopiere oversettelse",
+      "speak": "Lytte till oversettelse"
+    }
+  },
+  "editor": {
+    "title": "Nordum Teksteditor",
+    "subtitle": "Skrive og redigere dokumenter i Nordum med integrert språkstøtte",
+    "toolbar": {
+      "new": "Ny",
+      "open": "Åpne",
+      "save": "Lagre",
+      "undo": "Angre",
+      "redo": "Gøre om",
+      "bold": "Fet",
+      "italic": "Kursiv",
+      "underline": "Understreket",
+      "fontSize": "Tegnstørrelse",
+      "spellCheck": "Stavekontroll",
+      "wordCount": "Ordtelling",
+      "fullscreen": "Fullskjerm"
+    },
+    "status": {
+      "line": "Rad",
+      "column": "Kolonne",
+      "saved": "Lagret",
+      "modified": "Modifisert",
+      "words": "ord",
+      "characters": "tegn"
+    },
+    "statistics": {
+      "title": "Dokumentstatistikk",
+      "words": "Ord:",
+      "characters": "Tegn:",
+      "charactersNoSpaces": "Tegn (uten mellemrum):",
+      "paragraphs": "Avsnitt:",
+      "lines": "Rader:",
+      "readingTime": "Lesetid:",
+      "minutes": "min"
+    },
+    "welcome": "Velkommen till Nordum teksteditor!"
+  },
+  "grammarGuide": {
+    "title": "Nordum Grammatikkguide",
+    "subtitle": "Komplett referanse for det pan-skandinaviske skriftspråket",
+    "toc": "Innholdsfortegnelse",
+    "sections": {
+      "introduction": "Introduktion",
+      "orthography": "Ortografi",
+      "phonology": "Fonologi",
+      "nouns": "Substantiv",
+      "articles": "Artikler",
+      "adjectives": "Adjektiver",
+      "pronouns": "Pronomen",
+      "verbs": "Verb",
+      "adverbs": "Adverb",
+      "prepositions": "Prepositioner",
+      "wordOrder": "Ordfølge",
+      "questions": "Spørsmål",
+      "negation": "Negation",
+      "numbers": "Tall",
+      "examples": "Eksempler"
+    }
+  },
+  "errors": {
+    "fileNotFound": "Fil ikke funnet",
+    "networkError": "Nettverksfeil",
+    "loadingFailed": "Lasting mislyktes",
+    "saveFailed": "Lagring mislyktes",
+    "invalidInput": "Ugyldig inndata",
+    "permissionDenied": "Tillatelse nektet",
+    "timeout": "Timeout for forespørsel",
+    "unknownError": "Ukjent feil oppstod"
+  },
+  "validation": {
+    "required": "Dette feltet er obligatorisk",
+    "tooShort": "Tekst er for kort",
+    "tooLong": "Tekst er for lang",
+    "invalidFormat": "Ugyldig format",
+    "invalidEmail": "Ugyldig e-postadresse",
+    "noSpaces": "Ingen mellomrom tillatt",
+    "onlyLetters": "Kun bokstaver tillatt",
+    "onlyNumbers": "Kun tall tillatt"
+  }
+}

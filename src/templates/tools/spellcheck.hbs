@@ -1,0 +1,76 @@
+{{#> layout pageTitle=(t 'tools.spellcheck.title') currentPage="spellcheck" currentSection="tools" bodyClass="spellcheck-page"}}
+
+{{> tool-header toolTitle=(t 'tools.spellcheck.title') toolSubtitle=(t 'spellcheck.subtitle')}}
+
+<section class="spellcheck-tool">
+    <div class="container">
+        <div class="spellcheck-toolbar">
+            <button class="toolbar-btn" id="clear-text">{{t 'spellcheck.toolbar.clear'}}</button>
+            <button class="toolbar-btn" id="paste-text">{{t 'spellcheck.toolbar.paste'}}</button>
+            <div class="toolbar-divider"></div>
+            <label class="toolbar-option">
+                <input type="checkbox" id="check-spelling" checked>
+                {{t 'spellcheck.toolbar.spelling'}}
+            </label>
+            <label class="toolbar-option">
+                <input type="checkbox" id="check-grammar" checked>
+                {{t 'spellcheck.toolbar.grammar'}}
+            </label>
+        </div>
+
+        <div class="spellcheck-editor">
+            <div class="editor-container">
+                <textarea id="spellcheck-text"
+                          class="spellcheck-input"
+                          placeholder="{{t 'spellcheck.placeholder'}}"
+                          spellcheck="false"></textarea>
+                <div class="editor-overlay" id="editor-overlay"></div>
+            </div>
+
+            <div class="suggestions-panel">
+                <div class="suggestions-header">
+                    <h3>{{t 'spellcheck.suggestions.title'}}</h3>
+                </div>
+                <div class="suggestions-content" id="suggestions-content">
+                    <div class="no-issues">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                        </svg>
+                        <p>{{t 'spellcheck.suggestions.noIssues'}}</p>
+                        <small>{{t 'spellcheck.suggestions.textLooksGood'}}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spellcheck-stats">
+            <div class="stat-item">
+                <span class="stat-label">{{t 'spellcheck.stats.characters'}}</span>
+                <span class="stat-value" id="char-count">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">{{t 'spellcheck.stats.words'}}</span>
+                <span class="stat-value" id="word-count">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">{{t 'spellcheck.stats.sentences'}}</span>
+                <span class="stat-value" id="sentence-count">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">{{t 'spellcheck.stats.readability'}}</span>
+                <span class="stat-value" id="readability">{{t 'spellcheck.readabilityLevels.good'}}</span>
+            </div>
+        </div>
+
+        <div class="sample-texts">
+            <h3>{{t 'spellcheck.samples.title'}}</h3>
+            <div class="sample-buttons">
+                <button class="sample-btn" data-sample="correct">{{t 'spellcheck.samples.correct'}}</button>
+                <button class="sample-btn" data-sample="errors">{{t 'spellcheck.samples.errors'}}</button>
+                <button class="sample-btn" data-sample="mixed">{{t 'spellcheck.samples.mixed'}}</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/layout}}

@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+// Import custom properties and variables first
+@use 'abstracts/variables';
+@use 'abstracts/functions';
+@use 'abstracts/mixins';
+
+// Import base styles
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/global';
+
+// Import layout components
+@use 'layout/header';
+@use 'layout/navigation';
+@use 'layout/footer';
+@use 'layout/grid';
+
+// Import component styles
+@use 'components/buttons';
+@use 'components/forms';
+@use 'components/cards';
+@use 'components/modals';
+@use 'components/alerts';
+@use 'components/language-switcher';
+
+// Import page-specific styles
+@use 'pages/home';
+@use 'pages/tools';
+@use 'pages/resources';
+
+// Import tool-specific styles
+@use 'tools/dictionary';
+@use 'tools/spellcheck';
+@use 'tools/translator';
+@use 'tools/editor';
+
+// Import utility classes
+@use 'utilities/spacing';
+@use 'utilities/text';
+@use 'utilities/display';
+@use 'utilities/accessibility';
+
+// Import print styles
+@use 'utilities/print';
+
+// Import animations
+@use 'utilities/animations';
+
+// CSS Custom Properties
+:root {
+  // Color system
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-primary-light: #3b82f6;
+  
+  --color-secondary: #1e40af;
+  --color-accept: #dc2626;
+  
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+  
+  // Text colors
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #6b7280;
+  --color-text-light: #9ca3af;
+  --color-text-inverse: #ffffff;
+  
+  // Background colors
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-bg-accent: #f3f4f6;
+  --color-bg-overlay: rgba(0, 0, 0, 0.5);
+  
+  // Border colors
+  --color-border: #e5e7eb;
+  --color-border-focus: var(--color-primary);
+  
+  // Shadows
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  // Spacing scale
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  
+  // Typography scale
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  
+  // Font weights
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  
+  // Border radius
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+  
+  // Transitions
+  --transition-fast: 0.15s ease-in-out;
+  --transition-base: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+  
+  // Z-index scale
+  --z-dropdown: 1000;
+  --z-modal: 1050;
+  --z-tooltip: 1100;
+  --z-notification: 1200;
+  
+  // Breakpoints (for JavaScript)
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+// Dark mode support (future enhancement)
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text-primary: #f9fafb;
+    --color-text-secondary: #d1d5db;
+    --color-text-light: #9ca3af;
+    
+    --color-bg-primary: #1f2937;
+    --color-bg-secondary: #374151;
+    --color-bg-accent: #4b5563;
+    
+    --color-border: #4b5563;
+  }
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  :root {
+    --color-border: #000000;
+    --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+// Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0.01ms;
+    --transition-base: 0.01ms;
+    --transition-slow: 0.01ms;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+// Language-specific styles
+.lang-nordum {
+  // Nordum-specific typography adjustments
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+.lang-da,
+.lang-nb,
+.lang-nn,
+.lang-sv {
+  // Scandinavian language adjustments
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+}
+
+// Print optimizations
+@media print {
+  :root {
+    --color-primary: #000000;
+    --color-text-primary: #000000;
+    --color-text-secondary: #333333;
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #ffffff;
+    --shadow-sm: none;
+    --shadow-md: none;
+    --shadow-lg: none;
+  }
+}

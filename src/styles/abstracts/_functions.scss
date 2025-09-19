@@ -1,0 +1,42 @@
+// SCSS Functions
+// Utility functions for the Nordum design system
+
+@use "sass:map";
+@use "./variables" as vars;
+
+@function get($map, $key, $fallback: null) {
+  @if map.has-key($map, $key) {
+    @return map.get($map, $key);
+  }
+  @return $fallback;
+}
+
+// Function to get spacing value
+@function spacing($key) {
+  @return get(vars.$spacing, $key, 1rem);
+}
+
+// Function to get color value
+@function color($key) {
+  @return get(vars.$colors, $key, #000);
+}
+
+// Function to get font size
+@function font-size($key) {
+  @return get(vars.$font-sizes, $key, 1rem);
+}
+
+// Function to get shadow value
+@function shadow($key) {
+  @return get(vars.$shadows, $key, none);
+}
+
+// Function to convert px to rem
+@function rem($px, $base: 16px) {
+  @return ($px / $base) * 1rem;
+}
+
+// Function to create media query
+@function breakpoint($key) {
+  @return get(vars.$breakpoints, $key, 0);
+}

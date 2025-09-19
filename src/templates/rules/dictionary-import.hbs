@@ -1,0 +1,508 @@
+{{#> layout pageTitle="Dictionary Import - Nordum" currentPage="dictionary-import" bodyClass="dictionary-import-page"}}
+
+<div class="page-header">
+    <div class="container">
+        <h1>{{t "import.title" "Dictionary Import System"}}</h1>
+        <p class="lead">{{t "import.subtitle" "Scaling Nordum to 10,000+ words per language using public linguistic data"}}</p>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <div class="import-sections">
+            <!-- Data Sources -->
+            <section class="import-section">
+                <h2>{{t "import.sources.title" "Public Data Sources"}}</h2>
+                <div class="source-grid">
+                    <div class="source-card norwegian">
+                        <h3>{{t "common.norwegian" "Norwegian (Bokmål)"}}</h3>
+                        <div class="source-list">
+                            <div class="source-item">
+                                <strong>Språkrådet Word List</strong>
+                                <span class="url">ordlisten.no</span>
+                                <span class="count">~50,000 words</span>
+                            </div>
+                            <div class="source-item">
+                                <strong>NBU Corpus</strong>
+                                <span class="url">tekstlab.uio.no</span>
+                                <span class="count">Frequency data</span>
+                            </div>
+                            <div class="source-item">
+                                <strong>Wiktionary Norwegian</strong>
+                                <span class="url">no.wiktionary.org</span>
+                                <span class="count">~30,000 entries</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="source-card danish">
+                        <h3>{{t "common.danish" "Danish"}}</h3>
+                        <div class="source-list">
+                            <div class="source-item">
+                                <strong>Dansk Sprog- og Litteraturselskab</strong>
+                                <span class="url">ordnet.dk</span>
+                                <span class="count">~80,000 words</span>
+                            </div>
+                            <div class="source-item">
+                                <strong>KorpusDK</strong>
+                                <span class="url">korpus.dsl.dk</span>
+                                <span class="count">Frequency data</span>
+                            </div>
+                            <div class="source-item">
+                                <strong>Wiktionary Danish</strong>
+                                <span class="url">da.wiktionary.org</span>
+                                <span class="count">~25,000 entries</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="source-card swedish">
+                        <h3>{{t "common.swedish" "Swedish"}}</h3>
+                        <div class="source-list">
+                            <div class="source-item">
+                                <strong>SAOL (Svenska Akademien)</strong>
+                                <span class="url">svenska.se</span>
+                                <span class="count">~65,000 words</span>
+                            </div>
+                            <div class="source-item">
+                                <strong>Språkbanken</strong>
+                                <span class="url">spraakbanken.gu.se</span>
+                                <span class="count">Corpus data</span>
+                            </div>
+                            <div class="source-item">
+                                <strong>Wiktionary Swedish</strong>
+                                <span class="url">sv.wiktionary.org</span>
+                                <span class="count">~40,000 entries</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Import Process -->
+            <section class="import-section">
+                <h2>{{t "import.process.title" "Import Process"}}</h2>
+                <div class="process-flow">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>{{t "import.process.fetch" "Data Fetching"}}</h3>
+                            <p>{{t "import.process.fetch_desc" "Automated scripts download and parse data from public APIs and datasets"}}</p>
+                            <div class="code-block">
+                                <code>npm run import:norwegian --source=spraakraadet</code>
+                                <code>npm run import:danish --source=ordnet</code>
+                                <code>npm run import:swedish --source=saol</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>{{t "import.process.normalize" "Data Normalization"}}</h3>
+                            <p>{{t "import.process.normalize_desc" "Convert different source formats into unified CSV structure"}}</p>
+                            <div class="format-example">
+                                <strong>Standard Format:</strong>
+                                <code>word,english,pos,gender,frequency,ipa,definition</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>{{t "import.process.phonetic" "Phonetic Analysis"}}</h3>
+                            <p>{{t "import.process.phonetic_desc" "Extract or generate IPA transcriptions for pronunciation-based spelling decisions"}}</p>
+                            <div class="phonetic-example">
+                                <div class="phonetic-row">
+                                    <span>Norwegian: arbeider</span>
+                                    <span class="ipa">[ɑɾˈbɛɪdɛɾ]</span>
+                                </div>
+                                <div class="phonetic-row">
+                                    <span>Danish: arbejder</span>
+                                    <span class="ipa">[ɑˈbɑjdɐ]</span>
+                                </div>
+                                <div class="phonetic-row">
+                                    <span>Analysis: Common [ɑɾ] + [bɛɪd] pattern</span>
+                                    <span class="result">→ arbeider</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>{{t "import.process.cognate" "Cognate Analysis"}}</h3>
+                            <p>{{t "import.process.cognate_desc" "Advanced algorithms identify related words across languages and select optimal Nordum forms"}}</p>
+                            <div class="algorithm-box">
+                                <strong>Selection Priority:</strong>
+                                <ol>
+                                    <li>Bokmål/Danish agreement (2 points)</li>
+                                    <li>Phonetic similarity (1.5 points)</li>
+                                    <li>Frequency weight (1 point)</li>
+                                    <li>Morphological regularity (0.5 points)</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>{{t "import.process.generate" "Nordum Generation"}}</h3>
+                            <p>{{t "import.process.generate_desc" "Apply systematic rules to generate final Nordum dictionary with inflections"}}</p>
+                            <div class="generation-rules">
+                                <div class="rule-item">✓ English loanwords preserved</div>
+                                <div class="rule-item">✓ Norwegian number system</div>
+                                <div class="rule-item">✓ 'V' question words (no silent H)</div>
+                                <div class="rule-item">✓ Bokmål/Danish preference</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Usage Instructions -->
+            <section class="import-section">
+                <h2>{{t "import.usage.title" "Running Import Scripts"}}</h2>
+                
+                <div class="command-reference">
+                    <div class="command-category">
+                        <h3>{{t "import.usage.single" "Single Language Import"}}</h3>
+                        <div class="command-list">
+                            <div class="command-item">
+                                <code>npm run import:norwegian --batch=5000</code>
+                                <span>Import 5000 Norwegian words</span>
+                            </div>
+                            <div class="command-item">
+                                <code>npm run import:danish --source=ordnet --limit=10000</code>
+                                <span>Import from specific Danish source</span>
+                            </div>
+                            <div class="command-item">
+                                <code>npm run import:swedish --frequency-min=100</code>
+                                <span>Only words with frequency ≥100</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="command-category">
+                        <h3>{{t "import.usage.batch" "Batch Operations"}}</h3>
+                        <div class="command-list">
+                            <div class="command-item">
+                                <code>npm run import:all --parallel</code>
+                                <span>Import all languages simultaneously</span>
+                            </div>
+                            <div class="command-item">
+                                <code>npm run import:update --incremental</code>
+                                <span>Update only changed entries</span>
+                            </div>
+                            <div class="command-item">
+                                <code>npm run import:validate --fix-errors</code>
+                                <span>Validate and auto-fix common issues</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="command-category">
+                        <h3>{{t "import.usage.analysis" "Analysis Tools"}}</h3>
+                        <div class="command-list">
+                            <div class="command-item">
+                                <code>npm run analyze:coverage</code>
+                                <span>Check vocabulary coverage gaps</span>
+                            </div>
+                            <div class="command-item">
+                                <code>npm run analyze:phonetic --output-ipa</code>
+                                <span>Generate phonetic analysis report</span>
+                            </div>
+                            <div class="command-item">
+                                <code>npm run analyze:cognates --threshold=0.8</code>
+                                <span>Find high-similarity cognate groups</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="page-navigation">
+            <a href="/rules/" class="nav-link">
+                ← {{t "nav.back_rules" "Back to Rules"}}
+            </a>
+            <a href="/tools/dictionary/" class="nav-link">
+                {{t "nav.dictionary_tool" "Dictionary Tool"}} →
+            </a>
+        </nav>
+    </div>
+</div>
+
+<style>
+    .import-sections {
+        display: grid;
+        gap: 3rem;
+        margin: 2rem 0;
+    }
+    
+    .import-section {
+        background: var(--bg-light);
+        border-radius: 12px;
+        padding: 2rem;
+        border: 1px solid var(--border-color);
+    }
+    
+    .source-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .source-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: 2px solid var(--border-color);
+    }
+    
+    .source-card.norwegian {
+        border-left-color: #FF6B6B;
+    }
+    
+    .source-card.danish {
+        border-left-color: #4ECDC4;
+    }
+    
+    .source-card.swedish {
+        border-left-color: #45B7D1;
+    }
+    
+    .source-list {
+        margin-top: 1rem;
+    }
+    
+    .source-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 0.75rem;
+        margin: 0.5rem 0;
+        background: var(--bg-secondary);
+        border-radius: 4px;
+    }
+    
+    .source-item .url {
+        font-family: monospace;
+        color: var(--text-secondary);
+        font-size: 0.9em;
+    }
+    
+    .source-item .count {
+        color: var(--primary-color);
+        font-weight: 500;
+        font-size: 0.9em;
+    }
+    
+    .process-flow {
+        display: grid;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .process-step {
+        display: flex;
+        gap: 1rem;
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+    }
+    
+    .step-number {
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        background: var(--primary-color);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    
+    .step-content h3 {
+        margin-top: 0;
+        color: var(--primary-color);
+    }
+    
+    .code-block {
+        background: var(--bg-code);
+        padding: 1rem;
+        border-radius: 4px;
+        margin-top: 0.5rem;
+    }
+    
+    .code-block code {
+        display: block;
+        font-family: monospace;
+        margin: 0.25rem 0;
+        color: var(--text-code);
+    }
+    
+    .format-example {
+        background: var(--bg-code);
+        padding: 1rem;
+        border-radius: 4px;
+        margin-top: 0.5rem;
+    }
+    
+    .format-example code {
+        font-family: monospace;
+        color: var(--text-code);
+    }
+    
+    .phonetic-example {
+        background: var(--bg-secondary);
+        padding: 1rem;
+        border-radius: 4px;
+        margin-top: 0.5rem;
+    }
+    
+    .phonetic-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .phonetic-row:last-child {
+        border-bottom: none;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    
+    .ipa {
+        font-family: monospace;
+        color: var(--text-secondary);
+    }
+    
+    .algorithm-box {
+        background: var(--bg-secondary);
+        padding: 1rem;
+        border-radius: 4px;
+        margin-top: 0.5rem;
+    }
+    
+    .generation-rules {
+        display: grid;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    .rule-item {
+        color: var(--success-color);
+        font-weight: 500;
+    }
+    
+    .command-reference {
+        display: grid;
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
+    
+    .command-category {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+    }
+    
+    .command-category h3 {
+        margin-top: 0;
+        color: var(--primary-color);
+    }
+    
+    .command-list {
+        display: grid;
+        gap: 0.75rem;
+        margin-top: 1rem;
+    }
+    
+    .command-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.75rem;
+        background: var(--bg-secondary);
+        border-radius: 4px;
+    }
+    
+    .command-item code {
+        font-family: monospace;
+        background: var(--bg-code);
+        padding: 0.25rem 0.5rem;
+        border-radius: 3px;
+        color: var(--text-code);
+        white-space: nowrap;
+    }
+    
+    .command-item span {
+        color: var(--text-secondary);
+        font-size: 0.9em;
+    }
+    
+    .page-navigation {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border-color);
+    }
+    
+    .nav-link {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: background 0.2s;
+    }
+    
+    .nav-link:hover {
+        background: var(--primary-dark);
+    }
+    
+    @media (max-width: 768px) {
+        .source-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .process-step {
+            flex-direction: column;
+        }
+        
+        .phonetic-row {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.25rem;
+        }
+        
+        .command-item {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        
+        .page-navigation {
+            flex-direction: column;
+        }
+    }
+</style>
+
+{{/layout}}

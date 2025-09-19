@@ -1,0 +1,155 @@
+{{#> layout pageTitle=(t 'tools.editor.title') currentPage="editor" currentSection="tools" bodyClass="editor-page"}}
+
+{{> tool-header toolTitle=(t 'tools.editor.title') toolSubtitle=(t 'editor.subtitle')}}
+
+<section class="editor-tool">
+    <div class="container">
+        <!-- Editor Toolbar -->
+        <div class="editor-toolbar">
+            <div class="toolbar-group">
+                <button class="toolbar-btn" id="new-doc" title="{{t 'editor.toolbar.new'}}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                    </svg>
+                    {{t 'editor.toolbar.new'}}
+                </button>
+                <button class="toolbar-btn" id="save-doc" title="{{t 'editor.toolbar.save'}}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15,9H5V5H15M12,19A3,3 0 0,1 9,16A3,3 0 0,1 12,13A3,3 0 0,1 15,16A3,3 0 0,1 12,19M17,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V7L17,3Z"/>
+                    </svg>
+                    {{t 'editor.toolbar.save'}}
+                </button>
+            </div>
+
+            <div class="toolbar-group">
+                <button class="toolbar-btn" id="undo-btn" title="{{t 'editor.toolbar.undo'}}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.5,8C9.85,8 7.45,9 5.6,10.6L2,7V16H11L7.38,12.38C8.77,11.22 10.54,10.5 12.5,10.5C16.04,10.5 19.05,12.81 20.1,16L22.47,15.22C21.08,11.03 17.15,8 12.5,8Z"/>
+                    </svg>
+                </button>
+                <button class="toolbar-btn" id="redo-btn" title="{{t 'editor.toolbar.redo'}}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.4,10.6C16.55,9 14.15,8 11.5,8C6.85,8 2.92,11.03 1.53,15.22L3.9,16C4.95,12.81 7.96,10.5 11.5,10.5C13.46,10.5 15.23,11.22 16.62,12.38L13,16H22V7L18.4,10.6Z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="toolbar-group">
+                <button class="toolbar-btn format-btn" id="bold-btn" data-command="bold" title="{{t 'editor.toolbar.bold'}}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M13.5,15.5H10V12.5H13.5A1.5,1.5 0 0,1 15,14A1.5,1.5 0 0,1 13.5,15.5M10,6.5H13A1.5,1.5 0 0,1 14.5,8A1.5,1.5 0 0,1 13,9.5H10M15.6,10.79C16.57,10.11 17.25,9.02 17.25,8C17.25,5.74 15.5,4 13.25,4H7V18H14.04C16.14,18 17.75,16.3 17.75,14.21C17.75,12.69 16.89,11.39 15.6,10.79Z"/>
+                    </svg>
+                </button>
+                <button class="toolbar-btn format-btn" id="italic-btn" data-command="italic" title="{{t 'editor.toolbar.italic'}}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10,4V7H12.21L8.79,15H6V18H14V15H11.79L15.21,7H18V4H10Z"/>
+                    </svg>
+                </button>
+                <button class="toolbar-btn format-btn" id="underline-btn" data-command="underline" title="{{t 'editor.toolbar.underline'}}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M5,21H19V19H5V21M12,17A6,6 0 0,0 18,11V3H15.5V11A3.5,3.5 0 0,1 12,14.5A3.5,3.5 0 0,1 8.5,11V3H6V11A6,6 0 0,0 12,17Z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="toolbar-group">
+                <select class="font-size-select" id="font-size">
+                    <option value="12">12px</option>
+                    <option value="14" selected>14px</option>
+                    <option value="16">16px</option>
+                    <option value="18">18px</option>
+                    <option value="20">20px</option>
+                    <option value="24">24px</option>
+                </select>
+            </div>
+
+            <div class="toolbar-group">
+                <button class="toolbar-btn" id="spell-check-toggle" title="{{t 'editor.toolbar.spellCheck'}}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21.59,11.59L13.5,19.68L9.83,16L8.42,17.41L13.5,22.5L23,13M6.43,11L8.5,5.5L10.57,11M12.8,2H4.2L0,14H2.25L3.27,11.5H9.72L10.74,14H13L12.8,2Z"/>
+                    </svg>
+                </button>
+                <button class="toolbar-btn" id="word-count-btn" title="{{t 'editor.toolbar.wordCount'}}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3,3H21A1,1 0 0,1 22,4V20A1,1 0 0,1 21,21H3A1,1 0 0,1 2,20V4A1,1 0 0,1 3,3M4,5V19H20V5H4M6,7H10V9H6V7M12,7H18V9H12V7M6,11H14V13H6V11M16,11H18V13H16V11M6,15H10V17H6V15M12,15H18V17H12V15Z"/>
+                    </svg>
+                </button>
+                <button class="toolbar-btn" id="fullscreen-btn" title="{{t 'editor.toolbar.fullscreen'}}">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M5,5H10V7H7V10H5V5M14,5H19V10H17V7H14V5M17,14H19V19H14V17H17V14M10,17V19H5V14H7V17H10Z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Editor Content Area -->
+        <div class="editor-content">
+            <div class="editor-main">
+                <div class="editor-wrapper">
+                    <div class="editor-textarea-wrapper">
+                        <div class="line-numbers" id="line-numbers">1</div>
+                        <textarea 
+                            id="editor-textarea" 
+                            class="editor-textarea"
+                            placeholder="{{t 'editor.welcome'}}"
+                            spellcheck="true"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="editor-sidebar" id="editor-sidebar">
+                <div class="sidebar-section">
+                    <h4>{{t 'editor.statistics.title'}}</h4>
+                    <div class="stat-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">{{t 'editor.statistics.words'}}</span>
+                            <span class="stat-value" id="word-count">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">{{t 'editor.statistics.characters'}}</span>
+                            <span class="stat-value" id="char-count">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">{{t 'editor.statistics.charactersNoSpaces'}}</span>
+                            <span class="stat-value" id="char-count-no-spaces">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">{{t 'editor.statistics.paragraphs'}}</span>
+                            <span class="stat-value" id="paragraph-count">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">{{t 'editor.statistics.lines'}}</span>
+                            <span class="stat-value" id="line-count">1</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">{{t 'editor.statistics.readingTime'}}</span>
+                            <span class="stat-value" id="reading-time">0 {{t 'editor.statistics.minutes'}}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h4>{{t 'spellcheck.suggestions.title'}}</h4>
+                    <div class="spell-check-results" id="spell-check-results">
+                        <p class="no-issues">{{t 'spellcheck.suggestions.noIssues'}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Editor Status Bar -->
+        <div class="editor-status">
+            <div class="status-left">
+                <span class="status-item">{{t 'editor.status.line'}} <span id="current-line">1</span></span>
+                <span class="status-item">{{t 'editor.status.column'}} <span id="current-column">1</span></span>
+                <span class="status-item save-status" id="save-status">{{t 'editor.status.saved'}}</span>
+            </div>
+            <div class="status-right">
+                <span class="status-item"><span id="status-word-count">0</span> {{t 'editor.status.words'}}</span>
+                <span class="status-item"><span id="status-char-count">0</span> {{t 'editor.status.characters'}}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/layout}}

@@ -1,0 +1,583 @@
+{
+  "site": {
+    "title": "Nordum - A Pan-Scandinavian Language",
+    "tagline": "Building bridges through language",
+    "description": "A unified written language designed to be understood by speakers of Norwegian, Danish, and Swedish"
+  },
+  "language_specification": {
+    "language_specification_title": "Nordum Language Specification",
+    "table_of_contents": "Table of Contents",
+    "introduction": "Introduction",
+    "design_principles": "Design Principles",
+    "orthography_phonology": "Orthography and Phonology",
+    "morphological_system": "Morphological System",
+    "lexical_selection": "Lexical Selection Rules",
+    "syntax": "Syntax",
+    "alternative_spellings": "Alternative Spellings",
+    "examples_usage": "Examples and Usage",
+    "nordum_definition": "Nordum is a constructed pan-Scandinavian written language designed to maximize mutual intelligibility between Norwegian (Bokmål), Danish, and Swedish while maintaining systematic regularity and practical modern usage.",
+    "core_philosophy": "Core Philosophy",
+    "equal_respect": "Equal Respect for All Languages",
+    "equal_respect_desc": "Respects all three source languages equally without favoring any single tradition",
+    "regional_accommodation": "Regional Accommodation",
+    "regional_accommodation_desc": "Accommodates pronunciation differences through alternative spellings",
+    "modern_practicality": "Modern Practicality",
+    "modern_practicality_desc": "Integrates modern practicality with English loanword preservation",
+    "systematic_regularity": "Systematic Regularity",
+    "systematic_regularity_desc": "Maintains systematic regularity while supporting linguistic variation",
+    "transparency": "Transparency",
+    "transparency_desc": "Provides transparency in all linguistic decision-making",
+    "target_audience": "Target Audience",
+    "native_speakers": "Native Speakers",
+    "native_speakers_desc": "Norwegian, Danish, and Swedish speakers seeking a shared written standard",
+    "language_learners": "Language Learners",
+    "language_learners_desc": "Students of Scandinavian languages",
+    "researchers": "Researchers",
+    "researchers_desc": "Linguists studying pan-regional constructed languages",
+    "developers": "Developers",
+    "developers_desc": "Building tools and applications for Scandinavian communication",
+    "balanced_selection": "Balanced Pan-Scandinavian Selection",
+    "balanced_selection_desc": "Equal respect for all three source languages with strategic selection for optimal clarity",
+    "norwegian_danish_agreement": "Norwegian/Danish agreement for broad recognition",
+    "norwegian_swedish_systematic": "Norwegian/Swedish over Danish for systematic inflection",
+    "optimal_cross_language": "Optimal cross-language comprehension",
+    "english_integration": "English Loanword Integration",
+    "english_integration_desc": "Modern technical terms preserved unchanged following established Scandinavian practice",
+    "not": "not",
+    "morphological_distinctions": "Systematic Morphological Distinctions",
+    "morphological_distinctions_desc": "Each grammatical category has distinctive endings to prevent confusion and enable clear parsing",
+    "category": "Category",
+    "ending": "Ending",
+    "purpose": "Purpose",
+    "examples": "Examples",
+    "verb_present": "Verb Present",
+    "active_verbal_action": "Active verbal action",
+    "noun_plurals": "Noun Plurals",
+    "multiple_entities": "Multiple entities",
+    "adj_comparative": "Adj. Comparative",
+    "comparison": "Comparison",
+    "adj_superlative": "Adj. Superlative",
+    "maximum_degree": "Maximum degree",
+    "regular_numbers": "Regular Number System",
+    "regular_numbers_desc": "Use the most regular decimal system to eliminate complexity",
+    "alphabet_system": "Alphabet System",
+    "basic_latin": "Basic Latin",
+    "letters": "letters",
+    "scandinavian_extensions": "Scandinavian Extensions",
+    "universal": "universal",
+    "plus_alternatives": "plus alternatives",
+    "primary": "Primary",
+    "norwegian_danish_pattern": "Norwegian/Danish pattern",
+    "alternative": "Alternative",
+    "swedish_german_pattern": "Swedish/German pattern",
+    "vowel_systems": "Vowel Systems",
+    "primary_system": "Primary System",
+    "norwegian_danish": "Norwegian/Danish",
+    "letter": "Letter",
+    "ipa": "IPA",
+    "alternative_system": "Alternative System",
+    "swedish_german": "Swedish/German",
+    "horse": "horse",
+    "door": "door",
+    "vegetables": "vegetables",
+    "bread": "bread",
+    "question_words": "Question Words",
+    "rule": "Rule",
+    "question_words_rule": "Eliminate silent H, use clear v- pattern with pronunciation variants",
+    "what": "what",
+    "where": "where",
+    "who": "who",
+    "why": "why",
+    "when": "when",
+    "which": "which",
+    "distinctive_endings_principle": "Distinctive Endings Principle",
+    "distinctive_endings_desc": "Each grammatical category has distinctive endings to eliminate ambiguity and improve parsing",
+    "verb_system": "Verb System",
+    "present_tense": "Present Tense",
+    "always": "Always",
+    "verb_er_rule": "All verbs in present tense end in -er, never -ar. Clear distinction from noun plurals which always end in -ar.",
+    "infinitive": "Infinitive",
+    "present": "Present",
+    "meaning": "Meaning",
+    "work_works": "work → works",
+    "speak_speaks": "speak → speaks",
+    "come_comes": "come → comes",
+    "be_is": "be → is",
+    "complete_verb_paradigm": "Complete Verb Paradigm",
+    "systematic_er": "systematic -er",
+    "past": "Past",
+    "regular_ede": "regular -ede",
+    "supine": "Supine",
+    "regular_et": "regular -et",
+    "imperative": "Imperative",
+    "stem_form": "stem form",
+    "noun_system": "Noun System",
+    "plural": "Plural",
+    "noun_ar_rule": "All noun plurals end in -ar, never -er. Clear distinction from verb present tense which always ends in -er.",
+    "common_gender": "Common Gender",
+    "words": "words",
+    "indefinite_singular": "Indefinite singular",
+    "definite_singular": "Definite singular",
+    "indefinite_plural": "Indefinite plural",
+    "definite_plural": "Definite plural",
+    "neuter_gender": "Neuter Gender",
+    "adjective_system": "Adjective System",
+    "positive": "Positive",
+    "comparative": "Comparative",
+    "superlative": "Superlative",
+    "big_bigger_biggest": "big → bigger → biggest",
+    "small_smaller_smallest": "small → smaller → smallest",
+    "good_better_best": "good → better → best",
+    "adjective_agreement": "Adjective Agreement",
+    "common": "Common",
+    "big_car": "big car",
+    "neuter": "Neuter",
+    "big_house": "big house",
+    "big_cars": "big cars",
+    "definite": "Definite",
+    "the_big_car": "the big car",
+    "lexical_selection_rules": "Lexical Selection Rules",
+    "selection_priority_system": "Selection Priority System",
+    "english_loanword_detection": "English loanword detection",
+    "preserve_unchanged": "preserve unchanged",
+    "norwegian_number_system": "Norwegian number system",
+    "systematic_replacement": "systematic replacement",
+    "question_word_transformation": "Question word transformation",
+    "hv_v_pattern": "hv→v pattern with alternatives",
+    "strategic_selection": "Strategic pan-Scandinavian selection",
+    "optimize_intelligibility": "optimize for mutual intelligibility",
+    "alternative_generation": "Alternative spelling generation",
+    "pronunciation_variants": "accommodate pronunciation variants",
+    "morphological_systematization": "Morphological systematization",
+    "distinctive_endings": "apply distinctive endings",
+    "cognate_analysis": "Cognate Analysis",
+    "perfect_cognates": "Perfect Cognates",
+    "perfect_cognates_desc": "Words identical across all three languages",
+    "house": "house",
+    "car": "car",
+    "book": "book",
+    "near_cognates": "Near Cognates",
+    "near_cognates_desc": "Minor spelling differences resolved systematically",
+    "divergent_forms": "Divergent Forms",
+    "divergent_forms_desc": "When all three languages differ, select most systematic",
+    "word_order": "Word Order",
+    "main_clauses": "Main Clauses",
+    "i_read_a_book": "I read a book",
+    "today_i_work_at_home": "Today I work at home",
+    "questions": "Questions",
+    "yes_no_questions": "Yes/No Questions",
+    "verb_subject": "Verb + Subject",
+    "do_you_work_today": "Do you work today?",
+    "wh_questions": "Wh-Questions",
+    "question_word_verb_subject": "Question word + Verb + Subject",
+    "where_do_you_work": "Where do you work?",
+    "negation": "Negation",
+    "after_finite_verb": "after finite verb",
+    "i_dont_work": "I don't work",
+    "alternatives_philosophy": "Nordum supports both Scandinavian vowel traditions as valid alternatives, accommodating different pronunciation preferences while maintaining systematic consistency.",
+    "vowel_alternatives": "Vowel System Alternatives",
+    "primary_norwegian_danish": "Primary (Norwegian/Danish)",
+    "uses_ae_o_tradition": "Uses æ/ø following Norwegian and Danish orthographic tradition",
+    "familiar_to_norwegian_danish": "Familiar to Norwegian and Danish speakers",
+    "traditional_scandinavian": "Traditional Scandinavian appearance",
+    "alternative_swedish_german": "Alternative (Swedish/German)",
+    "uses_a_o_tradition": "Uses ä/ö following Swedish and German orthographic tradition",
+    "familiar_to_swedish": "Familiar to Swedish speakers",
+    "international_germanic": "International Germanic appearance",
+    "question_word_alternatives": "Question Word Alternatives",
+    "short_form_common_speech": "short form, common in speech",
+    "norwegian_danish_pronunciation": "Norwegian/Danish pronunciation",
+    "multiple_variants": "multiple variants",
+    "sound_pattern_alternatives": "Sound Pattern Alternatives",
+    "danish_sound_pattern_support": "Danish Sound Pattern Support",
+    "danish_ej_pattern": "Danish ej pattern",
+    "alternative_spelling_policy": "Alternative Spelling Policy",
+    "morphological_consistency": "Morphological consistency preserved",
+    "morphological_consistency_desc": "Alternative spellings don't affect grammatical endings",
+    "recognition_over_production": "Recognition over production",
+    "recognition_over_production_desc": "All forms recognized, one form recommended for learning",
+    "regional_accommodation_policy_desc": "Reflects natural pronunciation differences",
+    "systematic_application": "Systematic application",
+    "systematic_application_desc": "Alternatives generated systematically, not ad-hoc",
+    "user_choice": "User choice",
+    "user_choice_desc": "Individuals can choose preferred spelling system",
+    "examples_and_usage": "Examples and Usage",
+    "basic_sentences": "Basic Sentences",
+    "alternative_spelling_examples": "Alternative Spelling Examples",
+    "primary_vowels": "Primary Vowels",
+    "alternative_vowels": "Alternative Vowels",
+    "technical_communication": "Technical Communication",
+    "comprehensive_text_example": "Comprehensive Text Example",
+    "standard_version": "Standard Version"
+  },
+  "specification": {
+    "generated_from": "Generated from",
+    "on": "on"
+  },
+  "rules": {
+    "language_specification_title": "Nordum Language Specification",
+    "table_of_contents": "Table of Contents"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "grammar": "Grammar",
+    "tools": "Tools",
+    "resources": "Resources",
+    "community": "Community",
+    "main": "Main Navigation",
+    "toggleMenu": "Toggle menu"
+  },
+  "hero": {
+    "title": "Nordum",
+    "subtitle": "A common written language for Scandinavia",
+    "description": "A unified written language designed to bridge Norwegian, Danish, and Swedish - promoting mutual understanding across Scandinavia through linguistic coherence and simplicity.",
+    "learnMore": "Learn More",
+    "tryTools": "Try Tools"
+  },
+  "about": {
+    "title": "About Nordum",
+    "purpose": {
+      "title": "Purpose",
+      "description": "Nordum aims to create a written standard that maximizes mutual intelligibility between Norwegian, Danish, and Swedish speakers while maintaining the rich linguistic heritage of Scandinavia."
+    },
+    "philosophy": {
+      "title": "Philosophy",
+      "description": "By identifying common linguistic patterns and selecting the most widely understood forms, Nordum seeks to reduce barriers to communication across Nordic borders."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "A future where Scandinavians can communicate in writing without having to use English, fostering greater cultural and economic cooperation."
+    }
+  },
+  "grammar": {
+    "title": "Grammar Principles",
+    "orthography": {
+      "title": "Orthographic Simplification",
+      "description": "Nordum adopts the most phonetically consistent spelling patterns common across the three languages, eliminating silent letters where possible.",
+      "example": "Example: \"hus\" (house) - consistent across all three languages"
+    },
+    "morphology": {
+      "title": "Unified Morphology",
+      "description": "Verb conjugations and noun declensions follow the most regular patterns found in the source languages, prioritizing clarity and simplicity.",
+      "example": "Example: Regular verb ending \"-er\" for present tense (han arbeider - he works)"
+    },
+    "lexicon": {
+      "title": "Lexical Selection",
+      "description": "When variants exist, Nordum chooses words that are most widely recognized across all three languages, or creates transparent compounds.",
+      "example": "Example: \"bil\" (car) instead of \"automobil\" - universally understood"
+    },
+    "syntax": {
+      "title": "Syntactic Harmony",
+      "description": "Word order follows the most common patterns, typically Subject-Verb-Object with V2 word order in main clauses.",
+      "example": "Example: \"I dag arbetar jag\" (Today work I = Today I work)"
+    }
+  },
+  "tools": {
+    "title": "Digital Tools",
+    "dictionary": {
+      "title": "Dictionary",
+      "description": "Comprehensive Nordum-English dictionary with etymological information and cross-references to Norwegian, Danish, and Swedish.",
+      "button": "Open Dictionary"
+    },
+    "spellcheck": {
+      "title": "Spell Checker",
+      "description": "Real-time spelling and grammar checker specifically designed for Nordum orthographic and morphological rules.",
+      "button": "Try Spell Checker"
+    },
+    "translator": {
+      "title": "Translator",
+      "description": "Convert text between Nordum and the individual Scandinavian languages to aid in learning and comparison.",
+      "button": "Use Translator"
+    },
+    "editor": {
+      "title": "Text Editor",
+      "description": "Write and edit documents in Nordum with integrated spell-checking, grammar suggestions, and formatting tools.",
+      "button": "Open Editor"
+    }
+  },
+  "resources": {
+    "title": "Resources",
+    "learning": {
+      "title": "Learning Materials",
+      "grammarGuide": "Complete Grammar Guide",
+      "vocabulary": "Core Vocabulary List",
+      "exercises": "Practice Exercises",
+      "pronunciation": "Pronunciation Guide"
+    },
+    "research": {
+      "title": "Linguistic Research",
+      "methodology": "Language Design Methodology",
+      "comparison": "Scandinavian Language Comparison",
+      "corpus": "Nordum Text Corpus",
+      "statistics": "Usage Statistics"
+    },
+    "developer": {
+      "title": "Developer Resources",
+      "api": "Nordum API Documentation",
+      "datasets": "Language Datasets",
+      "contribute": "Contribution Guidelines",
+      "github": "GitHub Repository"
+    }
+  },
+  "community": {
+    "title": "Join Our Community",
+    "description": "Nordum is an open, collaborative project. We welcome linguists, developers, and anyone interested in Scandinavian languages to contribute to this ambitious endeavor.",
+    "stats": {
+      "entries": "Dictionary Entries",
+      "contributors": "Contributors",
+      "intelligibility": "Mutual Intelligibility"
+    },
+    "links": {
+      "discord": "Discord Server",
+      "reddit": "Reddit Community",
+      "contact": "Contact Us"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Nordum Project. Licensed under Creative Commons Attribution 4.0",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "project": {
+      "title": "Project",
+      "about": "About",
+      "contribute": "Contribute",
+      "methodology": "Methodology"
+    },
+    "tools": {
+      "title": "Tools",
+      "dictionary": "Dictionary",
+      "spellcheck": "Spell Checker",
+      "translator": "Translator"
+    },
+    "community": {
+      "title": "Community",
+      "discord": "Discord",
+      "github": "GitHub",
+      "contact": "Contact"
+    }
+  },
+  "cookies": {
+    "title": "Cookie Notice",
+    "description": "This website uses cookies to ensure you get the best experience on our website.",
+    "accept": "Accept All",
+    "settings": "Cookie Settings",
+    "decline": "Decline"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "clear": "Clear",
+    "copy": "Copy",
+    "paste": "Paste",
+    "undo": "Undo",
+    "redo": "Redo",
+    "help": "Help",
+    "settings": "Settings",
+    "previous": "Previous",
+    "next": "Next",
+    "back": "Back",
+    "forward": "Forward",
+    "home": "Home",
+    "language": "Language",
+    "skipToContent": "Skip to content"
+  },
+  "dictionary": {
+    "title": "Nordum Dictionary",
+    "subtitle": "Explore the unified vocabulary of Nordum with translations and etymological information",
+    "searchPlaceholder": "Search for words in Nordum, Norwegian, Danish, Swedish, or English...",
+    "searchFilters": {
+      "all": "All Languages",
+      "nordum": "Nordum Only",
+      "translations": "Translations"
+    },
+    "quickBrowse": "Quick Browse",
+    "noResults": "No results found for \"{query}\"",
+    "tryDifferent": "Try searching with a different term or browse by letter.",
+    "resultsFound": "Search Results for \"{query}\" ({count} found)",
+    "welcome": {
+      "title": "Welcome to the Nordum Dictionary",
+      "description": "Start typing to search for words, or use the alphabet navigation above to browse by letter.",
+      "featuredWords": "Featured Words"
+    },
+    "wordDetails": {
+      "definition": "Definition",
+      "translations": "Translations",
+      "etymology": "Etymology",
+      "examples": "Examples"
+    },
+    "languages": {
+      "norwegian": "Norwegian",
+      "danish": "Danish",
+      "swedish": "Swedish",
+      "english": "English",
+      "nordum": "Nordum"
+    },
+    "stats": {
+      "totalEntries": "Total Entries",
+      "newThisMonth": "New This Month",
+      "coverage": "Coverage"
+    }
+  },
+  "spellcheck": {
+    "title": "Nordum Spell Checker",
+    "subtitle": "Check your Nordum text for spelling and grammar errors with real-time suggestions",
+    "toolbar": {
+      "clear": "Clear",
+      "paste": "Paste",
+      "spelling": "Spelling",
+      "grammar": "Grammar",
+      "style": "Style"
+    },
+    "placeholder": "Start typing your Nordum text here, or paste existing text to check for errors...",
+    "suggestions": {
+      "title": "Suggestions",
+      "noIssues": "No issues found!",
+      "textLooksGood": "Your text looks good.",
+      "issuesFound": "issues found",
+      "ignore": "Ignore"
+    },
+    "stats": {
+      "characters": "Characters:",
+      "words": "Words:",
+      "sentences": "Sentences:",
+      "readability": "Readability:"
+    },
+    "samples": {
+      "title": "Try Sample Texts",
+      "correct": "Correct Text",
+      "errors": "Text with Errors",
+      "mixed": "Mixed Languages"
+    },
+    "readabilityLevels": {
+      "simple": "Simple",
+      "good": "Good",
+      "complex": "Complex"
+    }
+  },
+  "translator": {
+    "title": "Nordum Translator",
+    "subtitle": "Translate text between Nordum and the Scandinavian languages",
+    "from": "From:",
+    "to": "To:",
+    "swap": "Swap languages",
+    "languages": {
+      "nordum": "Nordum",
+      "norwegian": "Norwegian (Bokmål)",
+      "danish": "Danish",
+      "swedish": "Swedish",
+      "auto": "Auto-detect"
+    },
+    "inputPlaceholder": "Enter text to translate...",
+    "outputPlaceholder": "Translation will appear here...",
+    "characterLimit": "characters",
+    "confidence": "Confidence:",
+    "detected": "Detected:",
+    "quickTranslations": "Quick Translations",
+    "phrases": {
+      "hello": "Hello, how are you?",
+      "thanks": "Thank you for the help",
+      "understand": "I don't understand",
+      "help": "Can you help me?",
+      "cost": "How much does it cost?",
+      "goodbye": "Take care / Goodbye"
+    },
+    "history": {
+      "title": "Recent Translations",
+      "clear": "Clear History",
+      "empty": "No recent translations"
+    },
+    "toolbar": {
+      "clear": "Clear text",
+      "paste": "Paste from clipboard",
+      "copy": "Copy translation",
+      "speak": "Listen to translation"
+    }
+  },
+  "editor": {
+    "title": "Nordum Text Editor",
+    "subtitle": "Write and edit documents in Nordum with integrated language support",
+    "toolbar": {
+      "new": "New",
+      "open": "Open",
+      "save": "Save",
+      "undo": "Undo",
+      "redo": "Redo",
+      "bold": "Bold",
+      "italic": "Italic",
+      "underline": "Underline",
+      "fontSize": "Font Size",
+      "spellCheck": "Spell Check",
+      "wordCount": "Word Count",
+      "fullscreen": "Fullscreen"
+    },
+    "status": {
+      "line": "Line",
+      "column": "Column",
+      "saved": "Saved",
+      "modified": "Modified",
+      "words": "words",
+      "characters": "characters"
+    },
+    "statistics": {
+      "title": "Document Statistics",
+      "words": "Words:",
+      "characters": "Characters:",
+      "charactersNoSpaces": "Characters (no spaces):",
+      "paragraphs": "Paragraphs:",
+      "lines": "Lines:",
+      "readingTime": "Reading time:",
+      "minutes": "min"
+    },
+    "welcome": "Welcome to the Nordum text editor!"
+  },
+  "grammarGuide": {
+    "title": "Nordum Grammar Guide",
+    "subtitle": "Complete reference for the pan-Scandinavian written language",
+    "toc": "Table of Contents",
+    "sections": {
+      "introduction": "Introduction",
+      "orthography": "Orthography",
+      "phonology": "Phonology",
+      "nouns": "Nouns",
+      "articles": "Articles",
+      "adjectives": "Adjectives",
+      "pronouns": "Pronouns",
+      "verbs": "Verbs",
+      "adverbs": "Adverbs",
+      "prepositions": "Prepositions",
+      "wordOrder": "Word Order",
+      "questions": "Questions",
+      "negation": "Negation",
+      "numbers": "Numbers",
+      "examples": "Examples"
+    }
+  },
+  "errors": {
+    "fileNotFound": "File not found",
+    "networkError": "Network error",
+    "loadingFailed": "Loading failed",
+    "saveFailed": "Save failed",
+    "invalidInput": "Invalid input",
+    "permissionDenied": "Permission denied",
+    "timeout": "Request timeout",
+    "unknownError": "Unknown error occurred"
+  },
+  "validation": {
+    "required": "This field is required",
+    "tooShort": "Text is too short",
+    "tooLong": "Text is too long",
+    "invalidFormat": "Invalid format",
+    "invalidEmail": "Invalid email address",
+    "noSpaces": "No spaces allowed",
+    "onlyLetters": "Only letters allowed",
+    "onlyNumbers": "Only numbers allowed"
+  }
+}

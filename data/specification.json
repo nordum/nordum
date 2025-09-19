@@ -1,0 +1,488 @@
+{
+  "tableOfContents": [
+    {
+      "id": "table-of-contents",
+      "title": "Table of Contents",
+      "subsections": []
+    },
+    {
+      "id": "introduction",
+      "title": "Introduction",
+      "subsections": [
+        {
+          "id": "11-core-philosophy",
+          "title": "1.1 Core Philosophy"
+        },
+        {
+          "id": "12-target-audience",
+          "title": "1.2 Target Audience"
+        }
+      ]
+    },
+    {
+      "id": "design-principles",
+      "title": "Design Principles",
+      "subsections": [
+        {
+          "id": "21-balanced-pan-scandinavian-selection",
+          "title": "2.1 Balanced Pan-Scandinavian Selection"
+        },
+        {
+          "id": "22-loanword-integration",
+          "title": "2.2 Loanword Integration"
+        },
+        {
+          "id": "23-systematic-morphological-distinctions",
+          "title": "2.3 Systematic Morphological Distinctions"
+        },
+        {
+          "id": "24-regular-number-system",
+          "title": "2.4 Regular Number System"
+        },
+        {
+          "id": "25-phonetic-transparency",
+          "title": "2.5 Phonetic Transparency"
+        }
+      ]
+    },
+    {
+      "id": "orthography-and-phonology",
+      "title": "Orthography and Phonology",
+      "subsections": [
+        {
+          "id": "31-alphabet",
+          "title": "3.1 Alphabet"
+        },
+        {
+          "id": "32-vowel-system",
+          "title": "3.2 Vowel System"
+        },
+        {
+          "id": "33-consonant-system",
+          "title": "3.3 Consonant System"
+        },
+        {
+          "id": "34-special-combinations",
+          "title": "3.4 Special Combinations"
+        },
+        {
+          "id": "35-question-words-v-pattern",
+          "title": "3.5 Question Words (V- Pattern)"
+        },
+        {
+          "id": "36-sound-pattern-transformations",
+          "title": "3.6 Sound Pattern Transformations"
+        }
+      ]
+    },
+    {
+      "id": "morphological-system",
+      "title": "Morphological System",
+      "subsections": [
+        {
+          "id": "41-systematic-distinctions-principle",
+          "title": "4.1 Systematic Distinctions Principle"
+        },
+        {
+          "id": "42-verb-system",
+          "title": "4.2 Verb System"
+        },
+        {
+          "id": "43-noun-system",
+          "title": "4.3 Noun System"
+        },
+        {
+          "id": "44-adjective-system",
+          "title": "4.4 Adjective System"
+        },
+        {
+          "id": "45-morphological-examples",
+          "title": "4.5 Morphological Examples"
+        }
+      ]
+    },
+    {
+      "id": "6-pronoun-system",
+      "title": "6 Pronoun System",
+      "subsections": [
+        {
+          "id": "461-personal-pronouns",
+          "title": "4.6.1 Personal Pronouns"
+        },
+        {
+          "id": "463-examples-in-sentences",
+          "title": "4.6.3 Examples in Sentences"
+        }
+      ]
+    },
+    {
+      "id": "lexical-selection-rules",
+      "title": "Lexical Selection Rules",
+      "subsections": [
+        {
+          "id": "51-selection-priority-system",
+          "title": "5.1 Selection Priority System"
+        },
+        {
+          "id": "52-cognate-analysis-process",
+          "title": "5.2 Cognate Analysis Process"
+        },
+        {
+          "id": "53-frequency-and-usage-considerations",
+          "title": "5.3 Frequency and Usage Considerations"
+        },
+        {
+          "id": "54-quality-scoring",
+          "title": "5.4 Quality Scoring"
+        },
+        {
+          "id": "55-treatment-of-geographic-names",
+          "title": "5.5 Treatment of Geographic Names"
+        }
+      ]
+    },
+    {
+      "id": "syntax",
+      "title": "Syntax",
+      "subsections": [
+        {
+          "id": "61-word-order",
+          "title": "6.1 Word Order"
+        },
+        {
+          "id": "62-negation",
+          "title": "6.2 Negation"
+        },
+        {
+          "id": "63-article-system",
+          "title": "6.3 Article System"
+        }
+      ]
+    },
+    {
+      "id": "alternative-spellings",
+      "title": "Alternative Spellings",
+      "subsections": [
+        {
+          "id": "71-vowel-system-alternatives",
+          "title": "7.1 Vowel System Alternatives"
+        },
+        {
+          "id": "72-question-word-alternatives",
+          "title": "7.2 Question Word Alternatives"
+        },
+        {
+          "id": "73-sound-pattern-alternatives",
+          "title": "7.3 Sound Pattern Alternatives"
+        },
+        {
+          "id": "74-alternative-spelling-policy",
+          "title": "7.4 Alternative Spelling Policy"
+        }
+      ]
+    },
+    {
+      "id": "examples-and-usage",
+      "title": "Examples and Usage",
+      "subsections": [
+        {
+          "id": "81-basic-sentences",
+          "title": "8.1 Basic Sentences"
+        },
+        {
+          "id": "82-alternative-spelling-examples",
+          "title": "8.2 Alternative Spelling Examples"
+        },
+        {
+          "id": "83-technical-communication",
+          "title": "8.3 Technical Communication"
+        },
+        {
+          "id": "84-morphological-distinctions-in-context",
+          "title": "8.4 Morphological Distinctions in Context"
+        },
+        {
+          "id": "85-numbers-in-context",
+          "title": "8.5 Numbers in Context"
+        },
+        {
+          "id": "86-comprehensive-text-example",
+          "title": "8.6 Comprehensive Text Example"
+        }
+      ]
+    },
+    {
+      "id": "key-differences-for-native-speakers",
+      "title": "Key Differences for native speakers",
+      "subsections": [
+        {
+          "id": "91-norwegian-writers",
+          "title": "9.1 Norwegian Writers"
+        },
+        {
+          "id": "92-danish-writers",
+          "title": "9.2 Danish Writers"
+        },
+        {
+          "id": "93-swedish-writers",
+          "title": "9.3 Swedish Writers"
+        }
+      ]
+    },
+    {
+      "id": "version-control",
+      "title": "Version Control",
+      "subsections": []
+    }
+  ],
+  "sections": {
+    "table-of-contents": {
+      "title": "Table of Contents",
+      "html": "<h2>Table of Contents</h2>\n<ol>\n<li><a href=\"#1-introduction\">Introduction</a></li>\n<li><a href=\"#2-design-principles\">Design Principles</a></li>\n<li><a href=\"#3-orthography-and-phonology\">Orthography and Phonology</a></li>\n<li><a href=\"#4-morphological-system\">Morphological System</a></li>\n<li><a href=\"#5-lexical-selection-rules\">Lexical Selection Rules</a></li>\n<li><a href=\"#6-syntax\">Syntax</a></li>\n<li><a href=\"#7-alternative-spellings\">Alternative Spellings</a></li>\n<li><a href=\"#8-examples-and-usage\">Examples and Usage</a></li>\n<li><a href=\"#9-quality-metrics\">Quality Metrics</a></li>\n<li><a href=\"#10-norwegian-writers-key-differences\">Norwegian Writers: Key Differences</a></li>\n<li><a href=\"#11-danish-writers-key-differences\">Danish Writers: Key Differences</a></li>\n<li><a href=\"#12-swedish-writers-key-differences\">Swedish Writers: Key Differences</a></li>\n</ol>\n<hr>\n",
+      "markdown": "## Table of Contents\n\n1. [Introduction](#1-introduction)\n2. [Design Principles](#2-design-principles)\n3. [Orthography and Phonology](#3-orthography-and-phonology)\n4. [Morphological System](#4-morphological-system)\n5. [Lexical Selection Rules](#5-lexical-selection-rules)\n6. [Syntax](#6-syntax)\n7. [Alternative Spellings](#7-alternative-spellings)\n8. [Examples and Usage](#8-examples-and-usage)\n9. [Quality Metrics](#9-quality-metrics)\n10. [Norwegian Writers: Key Differences](#10-norwegian-writers-key-differences)\n11. [Danish Writers: Key Differences](#11-danish-writers-key-differences)\n12. [Swedish Writers: Key Differences](#12-swedish-writers-key-differences)\n\n---",
+      "subsections": []
+    },
+    "introduction": {
+      "title": "Introduction",
+      "html": "<h2>1. Introduction</h2>\n<p><strong>Nordum</strong> is a constructed pan-Scandinavian written language designed to maximize mutual intelligibility between Norwegian (Bokmål), Danish, and Swedish while maintaining systematic regularity and practical modern usage.</p>\n<h3>1.1 Core Philosophy</h3>\n<p>Nordum creates a balanced linguistic bridge that:</p>\n<ul>\n<li><strong>Respects all three source languages equally</strong> without favoring any single tradition</li>\n<li><strong>Accommodates regional pronunciation differences</strong> through alternative spellings</li>\n<li><strong>Integrates modern practicality</strong> with English loanword preservation</li>\n<li><strong>Maintains systematic regularity</strong> while supporting linguistic variation</li>\n<li><strong>Provides transparency</strong> in all linguistic decision-making</li>\n</ul>\n<h3>1.2 Target Audience</h3>\n<ul>\n<li><strong>Native Speakers</strong>: Norwegian, Danish, and Swedish speakers seeking a shared written standard</li>\n<li><strong>Language Learners</strong>: Students of Scandinavian languages</li>\n<li><strong>Researchers</strong>: Linguists studying pan-regional constructed languages</li>\n<li><strong>Developers</strong>: Building tools and applications for Scandinavian communication</li>\n</ul>\n<hr>\n",
+      "markdown": "## 1. Introduction\n\n**Nordum** is a constructed pan-Scandinavian written language designed to maximize mutual intelligibility between Norwegian (Bokmål), Danish, and Swedish while maintaining systematic regularity and practical modern usage.\n\n### 1.1 Core Philosophy\n\nNordum creates a balanced linguistic bridge that:\n- **Respects all three source languages equally** without favoring any single tradition\n- **Accommodates regional pronunciation differences** through alternative spellings\n- **Integrates modern practicality** with English loanword preservation\n- **Maintains systematic regularity** while supporting linguistic variation\n- **Provides transparency** in all linguistic decision-making\n\n### 1.2 Target Audience\n\n- **Native Speakers**: Norwegian, Danish, and Swedish speakers seeking a shared written standard\n- **Language Learners**: Students of Scandinavian languages\n- **Researchers**: Linguists studying pan-regional constructed languages\n- **Developers**: Building tools and applications for Scandinavian communication\n\n---",
+      "subsections": [
+        {
+          "id": "11-core-philosophy",
+          "title": "1.1 Core Philosophy"
+        },
+        {
+          "id": "12-target-audience",
+          "title": "1.2 Target Audience"
+        }
+      ]
+    },
+    "design-principles": {
+      "title": "Design Principles",
+      "html": "<h2>2. Design Principles</h2>\n<h3>2.1 Balanced Pan-Scandinavian Selection</h3>\n<p><strong>Principle</strong>: Equal respect for all three source languages with strategic selection for optimal clarity.</p>\n<p><strong>Implementation</strong>:</p>\n<ul>\n<li>Norwegian, Danish, and Swedish contribute as equal partners</li>\n<li>Selection based on pan-Scandinavian intelligibility optimization</li>\n<li>No language treated as subordinate or “less important”</li>\n<li>Strategic decisions favor forms that work best across all three languages</li>\n</ul>\n<p><strong>Examples</strong>:</p>\n<pre><code>arbeider (selected for majority agreement Norwegian/Danish on &quot;d&quot; form preferred over Swedish &quot;arbetar&quot; for verb consistency, &quot;ei&quot; over &quot;ej&quot; for [aj].)\nliten (selected for majority agreement and compatibility with comparative/superlative forms)\nhøre (retained for pan-Scandinavian recognition; Swedish &quot;höra&quot; adapted via vowel alternatives)\n</code></pre>\n<h3>2.2 Loanword Integration</h3>\n<p><strong>Principle</strong>: Modern technical terms preserved unchanged following established Scandinavian practice.</p>\n<p><strong>Rule</strong>: Loanwords in technical, digital, and contemporary domains remain unmodified.</p>\n<p><strong>Examples from English</strong>:</p>\n<pre><code>computer → computer (not datamaskin/dator)\ninternet → internet\nemail → email (not e-post/mejl)\nsoftware → software (not programvare/mjukvara)\nwebsite → website (not nettside/webbsida)\napp → app\nsmartphone → smartphone\nbrowser → browser\npassword → password\ncheck → check\nchocolate → chocolate\nsocial media → social media\nbasketball → basketball\n</code></pre>\n<p><strong>Examples from other languages</strong>:</p>\n<pre><code>Schokolade → schokolade\nDoppelgänger → doppelgänger\nZeitgeist → zeitgeist\nmosquito → mosquito\npatio → patio\nbaguette → baguette\n</code></pre>\n<p><strong>Rationale</strong>: Follows established Danish/Norwegian practice for technical terminology, making Nordum immediately practical for modern multilingual communication. Note that sometimes there are multiple possible ways of spelling a word depending on which loanword one chooses (e.g., “chocolate” vs. “schokolade”) or whether to use a word in native Nordum (“sjokolade”), but in all cases, the same rules of capitalization apply, even for proper nouns.</p>\n<h3>2.3 Systematic Morphological Distinctions</h3>\n<p><strong>Principle</strong>: Each grammatical category has distinctive endings to prevent confusion and enable clear parsing.</p>\n<p><strong>Core System</strong>:</p>\n<ul>\n<li><strong>Verbs (present)</strong>: Always <code>-er</code> ending (except irregulars: er, har, går)</li>\n<li><strong>Noun plurals</strong>: Usually <code>-ar</code> ending — invariant for common neuter nouns (hus, barn, øye, ben, år)</li>\n<li><strong>Adjective comparatives</strong>: Usually <code>-ere</code> ending (except irregulars: god→bedre, liten→mindre)</li>\n<li><strong>Adjective superlatives</strong>: Usually <code>-est</code> ending (except irregulars: god→bedst, liten→mindst)</li>\n</ul>\n<p><strong>Benefits</strong>:</p>\n<ul>\n<li>Immediate grammatical category identification</li>\n<li>No confusion between verbs and noun plurals</li>\n<li>Clear parsing for humans and machines</li>\n<li>Systematic learning patterns</li>\n</ul>\n<h3>2.4 Regular Number System</h3>\n<p><strong>Principle</strong>: Use the most regular decimal system to eliminate complexity.</p>\n<p><strong>Implementation</strong>: Norwegian number system adopted for maximum regularity.</p>\n<p><strong>Numbers</strong>:</p>\n<pre><code>50 → femti (not halvtreds/femtio)\n60 → seksti (not tres/sextio)\n70 → sytti (not halvfjerds/sjuttio)\n80 → åtti (not firs/åttio)\n90 → nitti (not halvfems/nittio)\n100 → hundre\n1000 → tusen\n</code></pre>\n<p><strong>Rationale</strong>: Eliminates Danish vigesimal complexity while remaining clear to Swedish speakers.</p>\n<h3>2.5 Phonetic Transparency</h3>\n<p><strong>Principle</strong>: Spelling should consistently reflect pronunciation with systematic sound-symbol correspondence.</p>\n<p><strong>Implementation</strong>:</p>\n<ul>\n<li>Eliminate silent letters where possible</li>\n<li>Clear question word patterns (v- without silent h)</li>\n<li>Systematic vowel representations</li>\n<li>Alternative spellings for pronunciation variants</li>\n</ul>\n<hr>\n",
+      "markdown": "## 2. Design Principles\n\n### 2.1 Balanced Pan-Scandinavian Selection\n\n**Principle**: Equal respect for all three source languages with strategic selection for optimal clarity.\n\n**Implementation**:\n- Norwegian, Danish, and Swedish contribute as equal partners\n- Selection based on pan-Scandinavian intelligibility optimization\n- No language treated as subordinate or \"less important\"\n- Strategic decisions favor forms that work best across all three languages\n\n**Examples**:\n```\narbeider (selected for majority agreement Norwegian/Danish on \"d\" form preferred over Swedish \"arbetar\" for verb consistency, \"ei\" over \"ej\" for [aj].)\nliten (selected for majority agreement and compatibility with comparative/superlative forms)\nhøre (retained for pan-Scandinavian recognition; Swedish \"höra\" adapted via vowel alternatives)\n```\n\n### 2.2 Loanword Integration\n\n**Principle**: Modern technical terms preserved unchanged following established Scandinavian practice.\n\n**Rule**: Loanwords in technical, digital, and contemporary domains remain unmodified.\n\n**Examples from English**:\n```\ncomputer → computer (not datamaskin/dator)\ninternet → internet\nemail → email (not e-post/mejl)\nsoftware → software (not programvare/mjukvara)\nwebsite → website (not nettside/webbsida)\napp → app\nsmartphone → smartphone\nbrowser → browser\npassword → password\ncheck → check\nchocolate → chocolate\nsocial media → social media\nbasketball → basketball\n```\n\n**Examples from other languages**:\n```\nSchokolade → schokolade\nDoppelgänger → doppelgänger\nZeitgeist → zeitgeist\nmosquito → mosquito\npatio → patio\nbaguette → baguette\n```\n\n**Rationale**: Follows established Danish/Norwegian practice for technical terminology, making Nordum immediately practical for modern multilingual communication. Note that sometimes there are multiple possible ways of spelling a word depending on which loanword one chooses (e.g., \"chocolate\" vs. \"schokolade\") or whether to use a word in native Nordum (\"sjokolade\"), but in all cases, the same rules of capitalization apply, even for proper nouns.\n\n### 2.3 Systematic Morphological Distinctions\n\n**Principle**: Each grammatical category has distinctive endings to prevent confusion and enable clear parsing.\n\n**Core System**:\n- **Verbs (present)**: Always `-er` ending (except irregulars: er, har, går)\n- **Noun plurals**: Usually `-ar` ending — invariant for common neuter nouns (hus, barn, øye, ben, år)\n- **Adjective comparatives**: Usually `-ere` ending (except irregulars: god→bedre, liten→mindre)\n- **Adjective superlatives**: Usually `-est` ending (except irregulars: god→bedst, liten→mindst)\n\n**Benefits**:\n- Immediate grammatical category identification\n- No confusion between verbs and noun plurals\n- Clear parsing for humans and machines\n- Systematic learning patterns\n\n### 2.4 Regular Number System\n\n**Principle**: Use the most regular decimal system to eliminate complexity.\n\n**Implementation**: Norwegian number system adopted for maximum regularity.\n\n**Numbers**:\n```\n50 → femti (not halvtreds/femtio)\n60 → seksti (not tres/sextio)\n70 → sytti (not halvfjerds/sjuttio)\n80 → åtti (not firs/åttio)\n90 → nitti (not halvfems/nittio)\n100 → hundre\n1000 → tusen\n```\n\n**Rationale**: Eliminates Danish vigesimal complexity while remaining clear to Swedish speakers.\n\n### 2.5 Phonetic Transparency\n\n**Principle**: Spelling should consistently reflect pronunciation with systematic sound-symbol correspondence.\n\n**Implementation**:\n- Eliminate silent letters where possible\n- Clear question word patterns (v- without silent h)\n- Systematic vowel representations\n- Alternative spellings for pronunciation variants\n\n---",
+      "subsections": [
+        {
+          "id": "21-balanced-pan-scandinavian-selection",
+          "title": "2.1 Balanced Pan-Scandinavian Selection"
+        },
+        {
+          "id": "22-loanword-integration",
+          "title": "2.2 Loanword Integration"
+        },
+        {
+          "id": "23-systematic-morphological-distinctions",
+          "title": "2.3 Systematic Morphological Distinctions"
+        },
+        {
+          "id": "24-regular-number-system",
+          "title": "2.4 Regular Number System"
+        },
+        {
+          "id": "25-phonetic-transparency",
+          "title": "2.5 Phonetic Transparency"
+        }
+      ]
+    },
+    "orthography-and-phonology": {
+      "title": "Orthography and Phonology",
+      "html": "<h2>3. Orthography and Phonology</h2>\n<h3>3.1 Alphabet</h3>\n<p><strong>Basic Latin</strong>: A-Z (26 letters)\n<strong>Scandinavian Extensions</strong>: Å or Aa (universal), plus alternative vowel systems:</p>\n<ul>\n<li><strong>Primary</strong>: Æ, Ø (Norwegian/Danish pattern)</li>\n<li><strong>Alternative</strong>: Ä, Ö (Swedish/German pattern) or Ae, Oe (International).</li>\n</ul>\n<p><strong>Policy</strong>: The choice of æ/ø, ä/ö, aa/ae/oe has <strong>no grammatical consequences</strong> — it is purely orthographic. Text books and official documents should use the primary vowel system. When keyboard layouts do not support these characters, they should be substituted with their primary counterparts.</p>\n<h3>3.2 Vowel System</h3>\n<h4>3.2.1 Primary Vowels (Phonemic Representation)</h4>\n<p>| Letter | Phoneme | Common Realizations (IPA) | Examples | Notes |\n| A, a | /a/ | [ɑ], [a], [æ] | katt, hav | Realization depends on dialect (e.g., Danish [æ] in ‘mad’). |\n| E, e | /e/ | [e], [ɛ], [ə] | hest, tre | Often [e] stressed, [ə] unstressed. |\n| I, i | /i/ | [i], [ɪ] | bil, tid | Always [i], never [ɪ]. |\n| O, o | /o/ | [o], [ɔ], [ʊ] | bok, stor | Always [o], never [ɔ]. |\n| U, u | /u/ | [u], [ʊ], [ʉ] | hus, tur | Always [u], never [ʊ]. |\n| Y, y | /y/ | [y] | ny, fyra | Retained from all three. |\n| Å, å | /oː/ | [oː] | år, båt | Long close-mid back vowel. |\n| Æ, æ | /æ/ | [æ], [ɛ] | kær, hæst | Open front vowel. |\n| Ø, ø | /ø/ | [ø], [œ] | hør, rød | Close-mid front rounded. |</p>\n<p><strong>Policy:</strong> The orthography represents phonemes (distinct sound units). The precise pronunciation (phonetic realization) of these phonemes varies by regional accent. All common regional variations are accepted and considered correct. For example, the phoneme /a/ can be pronounced as a back [ɑ] (Norwegian/Standard Swedish), a central [a] (Finnish Swedish), or a front [æ] (Danish).</p>\n<h4>3.2.2 Alternative Vowel Spellings (Swedish/German)</h4>\n<table>\n<thead>\n<tr>\n<th>Primary</th>\n<th>Alternative</th>\n<th>Examples</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>æ</td>\n<td>ä</td>\n<td>hæst/häst (horse)</td>\n</tr>\n<tr>\n<td>ø</td>\n<td>ö</td>\n<td>dørr/dörr (door)</td>\n</tr>\n<tr>\n<td>ø</td>\n<td>ö</td>\n<td>grønnsaker/grönnsaker (vegetables)</td>\n</tr>\n<tr>\n<td>ø</td>\n<td>ö</td>\n<td>brød/bröd (bread)</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Policy</strong>: Both forms accepted as valid. Users may choose preferred system. <strong>No other grammatical or lexical elements change based on this choice.</strong></p>\n<h3>3.3 Consonant System</h3>\n<table>\n<thead>\n<tr>\n<th>Letter</th>\n<th>IPA</th>\n<th>Examples</th>\n<th>Rules</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>B, b</td>\n<td>[b]</td>\n<td>bil, god</td>\n<td>Never silent</td>\n</tr>\n<tr>\n<td>C, c</td>\n<td>[k]/[s]</td>\n<td>computer, centrum</td>\n<td>Loanwords only</td>\n</tr>\n<tr>\n<td>D, d</td>\n<td>[d]/[ð]</td>\n<td>dag, god</td>\n<td>Silent d eliminated</td>\n</tr>\n<tr>\n<td>F, f</td>\n<td>[f]</td>\n<td>fisk, kaffe</td>\n<td>Consistent</td>\n</tr>\n<tr>\n<td>G, g</td>\n<td>[g]</td>\n<td>god, lag</td>\n<td>Always hard [g]</td>\n</tr>\n<tr>\n<td>H, h</td>\n<td>[h]</td>\n<td>hus, hånd</td>\n<td>Never silent (eliminated in question words)</td>\n</tr>\n<tr>\n<td>J, j</td>\n<td>[j]</td>\n<td>ja, arbeide</td>\n<td>Consistent [j] sound</td>\n</tr>\n<tr>\n<td>K, k</td>\n<td>[k]</td>\n<td>katt, kjøpe</td>\n<td>Replaces ck combinations</td>\n</tr>\n<tr>\n<td>L, l</td>\n<td>[l]</td>\n<td>liten, fall</td>\n<td>Clear lateral</td>\n</tr>\n<tr>\n<td>M, m</td>\n<td>[m]</td>\n<td>mann, komme</td>\n<td>Bilabial nasal</td>\n</tr>\n<tr>\n<td>N, n</td>\n<td>[n]</td>\n<td>ny, ingen</td>\n<td>Alveolar nasal</td>\n</tr>\n<tr>\n<td>P, p</td>\n<td>[p]</td>\n<td>penge, kop</td>\n<td>Consistent</td>\n</tr>\n<tr>\n<td>R, r</td>\n<td>[r]/[ʁ]</td>\n<td>rød, vor</td>\n<td>Regional variation</td>\n</tr>\n<tr>\n<td>S, s</td>\n<td>[s]</td>\n<td>stor, hus</td>\n<td>Unvoiced sibilant</td>\n</tr>\n<tr>\n<td>T, t</td>\n<td>[t]/[ð]</td>\n<td>tid, hat, heter</td>\n<td>Clear stop</td>\n</tr>\n<tr>\n<td>V, v</td>\n<td>[v]</td>\n<td>vad, have</td>\n<td>Used in question words</td>\n</tr>\n<tr>\n<td>W, w</td>\n<td>[v]/[w]</td>\n<td>website</td>\n<td>English loanwords</td>\n</tr>\n<tr>\n<td>X, x</td>\n<td>[ks]</td>\n<td>taxi</td>\n<td>Rare, loanwords</td>\n</tr>\n<tr>\n<td>Z, z</td>\n<td>[s]/[z]</td>\n<td>zoo</td>\n<td>Loanwords only</td>\n</tr>\n</tbody>\n</table>\n<h4>3.3.1 Special Note: The Letter d and Regional Pronunciation</h4>\n<p>In cases where the letter <code>d</code> is used in all three languages, it is always written in its standard orthographic position, regardless of whether it is pronounced as a voiced dental fricative [ð], an alveolar stop [d], or a bilabial stop [t] in different regional variations. Regional variation is accepted and expected:</p>\n<p>Danish speakers: May pronounce d as voiced dental fricative [ð], especially between vowels or word-finally.\nNorwegian speakers: Typically pronounce d as alveolar stop [d].\nSwedish speakers: Typically pronounce d as [d], but may devoice to [t] in casual or final position.</p>\n<h4>3.3.2 Clarification: When to Use d vs t</h4>\n<p>The letter d is retained in words spelled with d across all or most source languages (e.g., mad, god, ved), with regional pronunciation accepted.</p>\n<p>However, in lexical items where Norwegian and Swedish consistently use <code>t</code> and Danish uses <code>d</code> for the same meaning and morphological position (e.g., heter), Nordum adopts <code>t</code> to align with majority usage and pronunciation clarity.</p>\n<p>This is a lexical selection decision, not a phonetic one. It ensures Nordum remains intuitive and recognizable to all users.</p>\n<p>In cases where the letter <code>t</code> is used as the primary spelling for what is a [ð]-sound in Danish, it is a secondary option to spell it with <code>d</code>.</p>\n<h3>3.4 Special Combinations</h3>\n<table>\n<thead>\n<tr>\n<th>Combination</th>\n<th>IPA</th>\n<th>Examples</th>\n<th>Origin</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>sk</td>\n<td>[sk]</td>\n<td>skog, fisk</td>\n<td>Before front vowels</td>\n</tr>\n<tr>\n<td>skj</td>\n<td>[ʃ]</td>\n<td>skjorte</td>\n<td>Norwegian pattern</td>\n</tr>\n<tr>\n<td>sj</td>\n<td>[ʃ]</td>\n<td>sjokolade</td>\n<td>Danish/Norwegian pattern</td>\n</tr>\n<tr>\n<td>tj</td>\n<td>[ç]</td>\n<td>tjæne</td>\n<td>Swedish pattern</td>\n</tr>\n<tr>\n<td>kj</td>\n<td>[ç]</td>\n<td>kjær</td>\n<td>Norwegian pattern</td>\n</tr>\n<tr>\n<td>ng</td>\n<td>[ŋ]</td>\n<td>ring, sang</td>\n<td>Final position</td>\n</tr>\n</tbody>\n</table>\n<h3>3.5 Question Words (V- Pattern)</h3>\n<p><strong>Rule</strong>: Eliminate silent H, use clear v- pattern with pronunciation variants.</p>\n<p><strong>Transformations</strong>:</p>\n<pre><code>hvad/hva → vad/va (what)\nhvor → var (where)\nhvem → vem (who)\nhvorfor → varför/vorfor (why)\nhvilken → vilken (which)\nhvornår → ven/vornår/når/när (when)\n</code></pre>\n<p><strong>Alternative Forms</strong>:</p>\n<ul>\n<li><code>va</code> - Short form of <code>vad</code> (common in speech)</li>\n<li><code>vorfor</code> - Norwegian/Danish pronunciation variant</li>\n<li><code>vornår</code> - Full form variant (Danish hvornår → vornår)</li>\n<li><code>när</code> - Swedish pronunciation variant</li>\n<li><code>når</code> - Norwegian pronunciation variant</li>\n</ul>\n<h3>3.6 Sound Pattern Transformations</h3>\n<p><strong>Sound Pattern Normalization</strong>:</p>\n<ul>\n<li><strong>ej → ei</strong>: jeg → jei, vejr → veir, nej → nei (wherever the [ej] sound appears)</li>\n<li><strong>aj → ei</strong>: maj → mei (wherever the [aj] sound appears, using ei instead of aj)</li>\n<li><strong>øj → øi</strong>: høj → høi (wherever the [øj] sound appears, using øi instead of øj)</li>\n<li><strong>øy → øi</strong>: høy → høi (wherever the [øy] sound appears, using øi instead of øy)</li>\n</ul>\n<p>Both original and transformed forms accepted as alternatives. The normalized forms (ei, øi) are recommended for consistency and phonetic clarity, while traditional spellings (ej, øj, aj, øy) are preserved as valid alternatives for those accustomed to them.</p>\n<hr>\n",
+      "markdown": "## 3. Orthography and Phonology\n\n### 3.1 Alphabet\n\n**Basic Latin**: A-Z (26 letters)\n**Scandinavian Extensions**: Å or Aa (universal), plus alternative vowel systems:\n- **Primary**: Æ, Ø (Norwegian/Danish pattern)\n- **Alternative**: Ä, Ö (Swedish/German pattern) or Ae, Oe (International).\n\n**Policy**: The choice of æ/ø, ä/ö, aa/ae/oe has **no grammatical consequences** — it is purely orthographic. Text books and official documents should use the primary vowel system. When keyboard layouts do not support these characters, they should be substituted with their primary counterparts.\n\n### 3.2 Vowel System\n\n#### 3.2.1 Primary Vowels (Phonemic Representation)\n| Letter | Phoneme | Common Realizations (IPA) | Examples | Notes |\n| A, a | /a/ | [ɑ], [a], [æ] | katt, hav | Realization depends on dialect (e.g., Danish [æ] in 'mad'). |\n| E, e | /e/ | [e], [ɛ], [ə] | hest, tre | Often [e] stressed, [ə] unstressed. |\n| I, i | /i/ | [i], [ɪ] | bil, tid | Always [i], never [ɪ]. |\n| O, o | /o/ | [o], [ɔ], [ʊ] | bok, stor | Always [o], never [ɔ]. |\n| U, u | /u/ | [u], [ʊ], [ʉ] | hus, tur | Always [u], never [ʊ]. |\n| Y, y | /y/ | [y] | ny, fyra | Retained from all three. |\n| Å, å | /oː/ | [oː] | år, båt | Long close-mid back vowel. |\n| Æ, æ | /æ/ | [æ], [ɛ] | kær, hæst | Open front vowel. |\n| Ø, ø | /ø/ | [ø], [œ] | hør, rød | Close-mid front rounded. |\n\n**Policy:** The orthography represents phonemes (distinct sound units). The precise pronunciation (phonetic realization) of these phonemes varies by regional accent. All common regional variations are accepted and considered correct. For example, the phoneme /a/ can be pronounced as a back [ɑ] (Norwegian/Standard Swedish), a central [a] (Finnish Swedish), or a front [æ] (Danish).\n\n#### 3.2.2 Alternative Vowel Spellings (Swedish/German)\n\n| Primary | Alternative | Examples |\n|---------|-------------|----------|\n| æ | ä | hæst/häst (horse) |\n| ø | ö | dørr/dörr (door) |\n| ø | ö | grønnsaker/grönnsaker (vegetables) |\n| ø | ö | brød/bröd (bread) |\n\n**Policy**: Both forms accepted as valid. Users may choose preferred system. **No other grammatical or lexical elements change based on this choice.**\n\n### 3.3 Consonant System\n\n| Letter | IPA | Examples | Rules |\n|--------|-----|----------|-------|\n| B, b | [b] | bil, god | Never silent |\n| C, c | [k]/[s] | computer, centrum | Loanwords only |\n| D, d | [d]/[ð] | dag, god | Silent d eliminated |\n| F, f | [f] | fisk, kaffe | Consistent |\n| G, g | [g] | god, lag | Always hard [g] |\n| H, h | [h] | hus, hånd | Never silent (eliminated in question words) |\n| J, j | [j] | ja, arbeide | Consistent [j] sound |\n| K, k | [k] | katt, kjøpe | Replaces ck combinations |\n| L, l | [l] | liten, fall | Clear lateral |\n| M, m | [m] | mann, komme | Bilabial nasal |\n| N, n | [n] | ny, ingen | Alveolar nasal |\n| P, p | [p] | penge, kop | Consistent |\n| R, r | [r]/[ʁ] | rød, vor | Regional variation |\n| S, s | [s] | stor, hus | Unvoiced sibilant |\n| T, t | [t]/[ð] | tid, hat, heter | Clear stop |\n| V, v | [v] | vad, have | Used in question words |\n| W, w | [v]/[w] | website | English loanwords |\n| X, x | [ks] | taxi | Rare, loanwords |\n| Z, z | [s]/[z] | zoo | Loanwords only |\n\n#### 3.3.1 Special Note: The Letter d and Regional Pronunciation\n\nIn cases where the letter `d` is used in all three languages, it is always written in its standard orthographic position, regardless of whether it is pronounced as a voiced dental fricative [ð], an alveolar stop [d], or a bilabial stop [t] in different regional variations. Regional variation is accepted and expected:\n\nDanish speakers: May pronounce d as voiced dental fricative [ð], especially between vowels or word-finally.\nNorwegian speakers: Typically pronounce d as alveolar stop [d].\nSwedish speakers: Typically pronounce d as [d], but may devoice to [t] in casual or final position.\n\n#### 3.3.2 Clarification: When to Use d vs t\n\nThe letter d is retained in words spelled with d across all or most source languages (e.g., mad, god, ved), with regional pronunciation accepted.\n\nHowever, in lexical items where Norwegian and Swedish consistently use `t` and Danish uses `d` for the same meaning and morphological position (e.g., heter), Nordum adopts `t` to align with majority usage and pronunciation clarity.\n\nThis is a lexical selection decision, not a phonetic one. It ensures Nordum remains intuitive and recognizable to all users.\n\nIn cases where the letter `t` is used as the primary spelling for what is a [ð]-sound in Danish, it is a secondary option to spell it with `d`.\n\n### 3.4 Special Combinations\n\n| Combination | IPA | Examples | Origin |\n|-------------|-----|----------|--------|\n| sk | [sk] | skog, fisk | Before front vowels |\n| skj | [ʃ] | skjorte | Norwegian pattern |\n| sj | [ʃ] | sjokolade | Danish/Norwegian pattern |\n| tj | [ç] | tjæne | Swedish pattern |\n| kj | [ç] | kjær | Norwegian pattern |\n| ng | [ŋ] | ring, sang | Final position |\n\n### 3.5 Question Words (V- Pattern)\n\n**Rule**: Eliminate silent H, use clear v- pattern with pronunciation variants.\n\n**Transformations**:\n```\nhvad/hva → vad/va (what)\nhvor → var (where)\nhvem → vem (who)\nhvorfor → varför/vorfor (why)\nhvilken → vilken (which)\nhvornår → ven/vornår/når/när (when)\n```\n\n**Alternative Forms**:\n- `va` - Short form of `vad` (common in speech)\n- `vorfor` - Norwegian/Danish pronunciation variant\n- `vornår` - Full form variant (Danish hvornår → vornår)\n- `när` - Swedish pronunciation variant\n- `når` - Norwegian pronunciation variant\n\n### 3.6 Sound Pattern Transformations\n\n**Sound Pattern Normalization**:\n- **ej → ei**: jeg → jei, vejr → veir, nej → nei (wherever the [ej] sound appears)\n- **aj → ei**: maj → mei (wherever the [aj] sound appears, using ei instead of aj)\n- **øj → øi**: høj → høi (wherever the [øj] sound appears, using øi instead of øj)\n- **øy → øi**: høy → høi (wherever the [øy] sound appears, using øi instead of øy)\n\nBoth original and transformed forms accepted as alternatives. The normalized forms (ei, øi) are recommended for consistency and phonetic clarity, while traditional spellings (ej, øj, aj, øy) are preserved as valid alternatives for those accustomed to them.\n\n---",
+      "subsections": [
+        {
+          "id": "31-alphabet",
+          "title": "3.1 Alphabet"
+        },
+        {
+          "id": "32-vowel-system",
+          "title": "3.2 Vowel System"
+        },
+        {
+          "id": "33-consonant-system",
+          "title": "3.3 Consonant System"
+        },
+        {
+          "id": "34-special-combinations",
+          "title": "3.4 Special Combinations"
+        },
+        {
+          "id": "35-question-words-v-pattern",
+          "title": "3.5 Question Words (V- Pattern)"
+        },
+        {
+          "id": "36-sound-pattern-transformations",
+          "title": "3.6 Sound Pattern Transformations"
+        }
+      ]
+    },
+    "morphological-system": {
+      "title": "Morphological System",
+      "html": "<h2>4. Morphological System</h2>\n<h3>4.1 Systematic Distinctions Principle</h3>\n<p><strong>Core Innovation</strong>: Each grammatical category has distinctive endings to eliminate ambiguity and improve parsing.</p>\n<h3>4.2 Verb System</h3>\n<h4>4.2.1 Present Tense: Always <code>-er</code></h4>\n<p><strong>Rule</strong>: All verbs in present tense end in <code>-er</code>, never <code>-ar</code> — except irregulars.</p>\n<p><strong>Rationale</strong>: Clear distinction from noun plurals which always end in <code>-ar</code>.</p>\n<pre><code>Infinitive → Present\narbeide → arbeider (work → works)\nsnakke → snakker (speak → speaks)\nkomme → kommer (come → comes)\nvære → er (be → is)\n</code></pre>\n<p><strong>Irregular Verbs</strong>:</p>\n<ul>\n<li><code>være → er</code></li>\n<li><code>ha → har</code></li>\n<li><code>gå → går</code></li>\n</ul>\n<h4>4.2.2 Complete Verb Paradigm</h4>\n<pre><code>Infinitive:        arbeide\nPresent:           arbeider (systematic -er)\nPast (formal):     arbeidede (regular -ede)\nPast (informal):   arbeida (regular -a)\nSupine:            arbeidet (regular -et)\nPast Participle:   arbeidet (regular -et)\nPresent Participle: arbeidende (-ende)\nImperative:        arbeid! (stem form)\n</code></pre>\n<p><strong>Note</strong>: <code>-ede</code> remains the primary form, but the shorter <code>-a</code> past (arbeida) is <strong>accepted as an optional secondary form</strong>, reflecting widespread Scandinavian colloquial use.</p>\n<h4>4.2.3 Infinitive Marker: Distinction between “å” and “att”</h4>\n<p><strong>Principle</strong>: Nordum maintains a clear distinction between “å” (the infinitive marker) and “att” (the conjunction meaning “that”), similar to the Norwegian distinction between “å” and “at”.</p>\n<p><strong>Implementation</strong>:</p>\n<ul>\n<li><strong>å</strong>: Used exclusively as the infinitive marker before verbs</li>\n<li><strong>att</strong>: Used exclusively as the conjunction meaning “that”</li>\n</ul>\n<p><strong>Examples</strong>:</p>\n<pre><code>Infinitive:        å arbeide (to work)\nConjunction:       Jei vet att hun arbeider. (I know that she works.)\n\nInfinitive:        å snakke (to speak)\nConjunction:       Hun sier att hun kan snakke nordum. (She says that she can speak Nordum.)\n\nInfinitive:        å lære (to learn)\nConjunction:       Det er viktig att lære språket. (It is important to learn the language.)\n</code></pre>\n<p><strong>Rationale</strong>: This distinction provides clarity and prevents ambiguity, especially for Norwegian speakers who are accustomed to the “å”/“at” distinction. It also aligns with the systematic approach of Nordum to maintain clear grammatical distinctions.</p>\n<h4>4.2.4 Swedish Verb Transformation</h4>\n<p>Swedish <code>-ar</code> verbs become <code>-er</code> in Nordum:</p>\n<ul>\n<li><code>arbeta</code> → <code>arbeide</code> → <code>arbeider</code></li>\n<li><code>tala</code> → <code>tale</code> → <code>snakker</code> (strategic lexical selection)</li>\n<li><code>köra</code> → <code>kjøre</code> → <code>kører</code></li>\n</ul>\n<h3>4.3 Noun System</h3>\n<h4>4.3.1 Plural: Usually <code>-ar</code></h4>\n<p><strong>Rule</strong>: Most noun plurals end in <code>-ar</code>. Common neuter nouns (hus, barn, øye, ben, år) are invariant.\n<strong>Rationale</strong>: Clear distinction from verb present tense which always ends in <code>-er</code>.</p>\n<pre><code>Singular → Plural\nflicka → flickar (girl → girls)\njente → jentar (girl → girls)\nhus → husar (house → houses - also accepted: hus)\nbarn → barnar (child → children - also accepted: barn/børn)\n</code></pre>\n<h4>4.3.2 Complete Noun Inflection</h4>\n<p><strong>Common Gender (en-words)</strong>:</p>\n<pre><code>Indefinite singular:  flicka\nDefinite singular:    flickan\nIndefinite plural:    flickar\nDefinite plural:      flickarna\n</code></pre>\n<pre><code>Indefinite singular:  jente\nDefinite singular:    jenten\nIndefinite plural:    jentar\nDefinite plural:      jentarna\n</code></pre>\n<pre><code>Indefinite singular:  pije (Danish: pige)\nDefinite singular:    pijen\nIndefinite plural:    pijar\nDefinite plural:      pijarna\n</code></pre>\n<p><strong>Neuter Gender (ett-words)</strong>:</p>\n<pre><code>Indefinite singular:  hus\nDefinite singular:    huset\nIndefinite plural:    husar (also accepted: hus - irregular)\nDefinite plural:      husarna\n</code></pre>\n<h4>4.3.3 Gender System (Simplified)</h4>\n<p><strong>Common Gender (en)</strong>:</p>\n<ul>\n<li>Animates (people, animals)</li>\n<li>Most concrete objects</li>\n<li>Abstract concepts ending in -het, -skap</li>\n</ul>\n<p><strong>Neuter Gender (ett)</strong>:</p>\n<ul>\n<li>Collective nouns</li>\n<li>Materials and substances</li>\n<li>Infinitives used as nouns</li>\n<li>Words ending in -ande, -ende</li>\n</ul>\n<h3>4.4 Adjective System</h3>\n<h4>4.4.1 Comparative: Always <code>-ere</code></h4>\n<pre><code>Positive → Comparative → Superlative\nstor → større → størst (big → bigger → biggest)\nliten → mindre → mindst (small → smaller → smallest)\ngod → bedre → bedst (good → better → best)\n</code></pre>\n<h4>4.4.2 Adjective Agreement</h4>\n<pre><code>Positive Forms:\nCommon:    stor bil (big car)\nNeuter:    stort hus (big house)\nPlural:    store bilar (big cars)\nDefinite:  den store bilen (the big car)\n</code></pre>\n<h3>4.5 Morphological Examples</h3>\n<h4>4.5.1 Clear Grammatical Distinctions</h4>\n<pre><code>arbeider (verb) = &quot;works&quot; (present tense -er)\narbeidere (noun) = &quot;workers&quot; (if this word existed, -ere ending)\njentar (noun plural) = &quot;girls&quot; (-ar ending)\nstørre (adj comparative) = &quot;bigger&quot; (-ere ending)\nstørst (adj superlative) = &quot;biggest&quot; (-est ending)\n</code></pre>\n<h4>4.5.2 Sentence Analysis</h4>\n<pre><code>De store jentar arbeider i huset.\nThe big girls work in the house.\n\nAnalysis:\n- de = definite article (plural)\n- store = adjective plural (-e ending)\n- jentar = noun plural (-ar ending)\n- arbeider = verb present (-er ending)\n- i = preposition\n- huset = definite neuter (-et ending)\n</code></pre>\n",
+      "markdown": "## 4. Morphological System\n\n### 4.1 Systematic Distinctions Principle\n\n**Core Innovation**: Each grammatical category has distinctive endings to eliminate ambiguity and improve parsing.\n\n### 4.2 Verb System\n\n#### 4.2.1 Present Tense: Always `-er`\n\n**Rule**: All verbs in present tense end in `-er`, never `-ar` — except irregulars.\n\n**Rationale**: Clear distinction from noun plurals which always end in `-ar`.\n\n```\nInfinitive → Present\narbeide → arbeider (work → works)\nsnakke → snakker (speak → speaks)\nkomme → kommer (come → comes)\nvære → er (be → is)\n```\n\n**Irregular Verbs**:\n- `være → er`\n- `ha → har`\n- `gå → går`\n\n#### 4.2.2 Complete Verb Paradigm\n\n```\nInfinitive:        arbeide\nPresent:           arbeider (systematic -er)\nPast (formal):     arbeidede (regular -ede)\nPast (informal):   arbeida (regular -a)\nSupine:            arbeidet (regular -et)\nPast Participle:   arbeidet (regular -et)\nPresent Participle: arbeidende (-ende)\nImperative:        arbeid! (stem form)\n```\n\n**Note**: `-ede` remains the primary form, but the shorter `-a` past (arbeida) is **accepted as an optional secondary form**, reflecting widespread Scandinavian colloquial use.\n\n#### 4.2.3 Infinitive Marker: Distinction between \"å\" and \"att\"\n\n**Principle**: Nordum maintains a clear distinction between \"å\" (the infinitive marker) and \"att\" (the conjunction meaning \"that\"), similar to the Norwegian distinction between \"å\" and \"at\".\n\n**Implementation**:\n- **å**: Used exclusively as the infinitive marker before verbs\n- **att**: Used exclusively as the conjunction meaning \"that\"\n\n**Examples**:\n```\nInfinitive:        å arbeide (to work)\nConjunction:       Jei vet att hun arbeider. (I know that she works.)\n\nInfinitive:        å snakke (to speak)\nConjunction:       Hun sier att hun kan snakke nordum. (She says that she can speak Nordum.)\n\nInfinitive:        å lære (to learn)\nConjunction:       Det er viktig att lære språket. (It is important to learn the language.)\n```\n\n**Rationale**: This distinction provides clarity and prevents ambiguity, especially for Norwegian speakers who are accustomed to the \"å\"/\"at\" distinction. It also aligns with the systematic approach of Nordum to maintain clear grammatical distinctions.\n\n#### 4.2.4 Swedish Verb Transformation\n\nSwedish `-ar` verbs become `-er` in Nordum:\n- `arbeta` → `arbeide` → `arbeider`\n- `tala` → `tale` → `snakker` (strategic lexical selection)\n- `köra` → `kjøre` → `kører`\n\n### 4.3 Noun System\n\n#### 4.3.1 Plural: Usually `-ar`\n\n**Rule**: Most noun plurals end in `-ar`. Common neuter nouns (hus, barn, øye, ben, år) are invariant.\n**Rationale**: Clear distinction from verb present tense which always ends in `-er`.\n\n```\nSingular → Plural\nflicka → flickar (girl → girls)\njente → jentar (girl → girls)\nhus → husar (house → houses - also accepted: hus)\nbarn → barnar (child → children - also accepted: barn/børn)\n```\n\n#### 4.3.2 Complete Noun Inflection\n\n**Common Gender (en-words)**:\n```\nIndefinite singular:  flicka\nDefinite singular:    flickan\nIndefinite plural:    flickar\nDefinite plural:      flickarna\n```\n\n```\nIndefinite singular:  jente\nDefinite singular:    jenten\nIndefinite plural:    jentar\nDefinite plural:      jentarna\n```\n\n```\nIndefinite singular:  pije (Danish: pige)\nDefinite singular:    pijen\nIndefinite plural:    pijar\nDefinite plural:      pijarna\n```\n\n**Neuter Gender (ett-words)**:\n```\nIndefinite singular:  hus\nDefinite singular:    huset\nIndefinite plural:    husar (also accepted: hus - irregular)\nDefinite plural:      husarna\n```\n\n#### 4.3.3 Gender System (Simplified)\n\n**Common Gender (en)**:\n- Animates (people, animals)\n- Most concrete objects\n- Abstract concepts ending in -het, -skap\n\n**Neuter Gender (ett)**:\n- Collective nouns\n- Materials and substances\n- Infinitives used as nouns\n- Words ending in -ande, -ende\n\n### 4.4 Adjective System\n\n#### 4.4.1 Comparative: Always `-ere`\n\n```\nPositive → Comparative → Superlative\nstor → større → størst (big → bigger → biggest)\nliten → mindre → mindst (small → smaller → smallest)\ngod → bedre → bedst (good → better → best)\n```\n\n#### 4.4.2 Adjective Agreement\n\n```\nPositive Forms:\nCommon:    stor bil (big car)\nNeuter:    stort hus (big house)\nPlural:    store bilar (big cars)\nDefinite:  den store bilen (the big car)\n```\n\n### 4.5 Morphological Examples\n\n#### 4.5.1 Clear Grammatical Distinctions\n\n```\narbeider (verb) = \"works\" (present tense -er)\narbeidere (noun) = \"workers\" (if this word existed, -ere ending)\njentar (noun plural) = \"girls\" (-ar ending)\nstørre (adj comparative) = \"bigger\" (-ere ending)\nstørst (adj superlative) = \"biggest\" (-est ending)\n```\n\n#### 4.5.2 Sentence Analysis\n\n```\nDe store jentar arbeider i huset.\nThe big girls work in the house.\n\nAnalysis:\n- de = definite article (plural)\n- store = adjective plural (-e ending)\n- jentar = noun plural (-ar ending)\n- arbeider = verb present (-er ending)\n- i = preposition\n- huset = definite neuter (-et ending)\n```",
+      "subsections": [
+        {
+          "id": "41-systematic-distinctions-principle",
+          "title": "4.1 Systematic Distinctions Principle"
+        },
+        {
+          "id": "42-verb-system",
+          "title": "4.2 Verb System"
+        },
+        {
+          "id": "43-noun-system",
+          "title": "4.3 Noun System"
+        },
+        {
+          "id": "44-adjective-system",
+          "title": "4.4 Adjective System"
+        },
+        {
+          "id": "45-morphological-examples",
+          "title": "4.5 Morphological Examples"
+        }
+      ]
+    },
+    "6-pronoun-system": {
+      "title": "6 Pronoun System",
+      "html": "<h2>4.6 Pronoun System</h2>\n<p><strong>Principle</strong>: Personal pronouns are standardized to forms that maximize pan-Scandinavian intelligibility and consistency, following the lexical selection rules outlined in Section 5.2.</p>\n<h3>4.6.1 Personal Pronouns</h3>\n<p>The standard forms of personal pronouns in Nordum are as follows:</p>\n<table>\n<thead>\n<tr>\n<th>Person</th>\n<th>Subject Form</th>\n<th>Object Form</th>\n<th>Possessive Adjective</th>\n<th>Possessive Pronoun</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1st sing.</td>\n<td>jei (I)</td>\n<td>mei (me)</td>\n<td>min/mitt/mina (my)</td>\n<td>min/mitt/mina (mine)</td>\n</tr>\n<tr>\n<td>2nd sing.</td>\n<td>du (you)</td>\n<td>dei (you)</td>\n<td>din/ditt/dina (your)</td>\n<td>din/ditt/dina (yours)</td>\n</tr>\n<tr>\n<td>3rd sing. masc.</td>\n<td>han (he)</td>\n<td>ham (him)</td>\n<td>hans (his)</td>\n<td>hans (his)</td>\n</tr>\n<tr>\n<td>3rd sing. fem.</td>\n<td>hun (she)</td>\n<td>henne (her)</td>\n<td>hennas (her)</td>\n<td>hennas (hers)</td>\n</tr>\n<tr>\n<td>3rd sing. common</td>\n<td>den (it)</td>\n<td>den (it)</td>\n<td>dens (its)</td>\n<td>dens (its)</td>\n</tr>\n<tr>\n<td>3rd sing. neuter</td>\n<td>det (it)</td>\n<td>det (it)</td>\n<td>dets (its)</td>\n<td>dets (its)</td>\n</tr>\n<tr>\n<td>1st plur.</td>\n<td>vi (we)</td>\n<td>oss (us)</td>\n<td>vår/vårt/våra (our)</td>\n<td>vår/vårt/våra (ours)</td>\n</tr>\n<tr>\n<td>2nd plur.</td>\n<td>ni (you)</td>\n<td>er (you)</td>\n<td>er/ert/era (your)</td>\n<td>er/ert/era (yours)</td>\n</tr>\n<tr>\n<td>3rd plur.</td>\n<td>de (they)</td>\n<td>dem (them)</td>\n<td>deras (their)</td>\n<td>deras (theirs)</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Notes and Explanations</strong>:</p>\n<ul>\n<li><strong>Subject and Object Forms</strong>: The object forms are used when the pronoun is the object of a verb or preposition. For example: “Jei ser dei” (I see you), “Hun jælper mig” (She helps me).</li>\n<li><strong>Possessive Forms</strong>: Possessive adjectives modify nouns (e.g., “min bil” for “my car”), while possessive pronouns stand alone (e.g., “Bilen er min” for “The car is mine”). The forms agree with the gender and number of the noun they reference:\n<ul>\n<li><code>min</code> (common gender singular), <code>mitt</code> (neuter gender singular), <code>mina</code> (plural).</li>\n<li>Similarly for <code>din</code>, <code>vår</code>, <code>er</code>, etc.</li>\n</ul>\n</li>\n<li><strong>Intelligibility Considerations</strong>: The forms chosen are based on majority usage across Norwegian, Danish, and Swedish. For example:\n<ul>\n<li><code>jei</code> is derived from Norwegian/Danish <code>jeg</code> with the [ej] → <code>ei</code> transformation.</li>\n<li><code>mei</code>/<code>dei</code> is derived from Danish/Swedish <code>mig</code>/<code>dig</code> with the [ej] → <code>ei</code> transformation.</li>\n<li><code>ni</code> for the second person plural subject is adopted from Swedish and is widely understood in Danish and Norwegian contexts.</li>\n<li><code>er</code> for the second person plural object is from Swedish, and is recognizable to Norwegian and Danish speakers.</li>\n</ul>\n</li>\n</ul>\n<h4>4.6.2 Reflexive Pronouns</h4>\n<p><strong>Principle</strong>: Reflexive pronouns are used when the subject and object of a verb are the same entity. Nordum standardizes these forms for clarity and consistency across all persons, except the 1st and 2nd person plural which often use the possessive adjective reflexively.</p>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:left\">Person</th>\n<th style=\"text-align:left\">Reflexive Pronoun</th>\n<th style=\"text-align:left\">Example (with verb)</th>\n<th style=\"text-align:left\">Example (with preposition)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:left\">1st sing.</td>\n<td style=\"text-align:left\"><strong>mei</strong> (myself)</td>\n<td style=\"text-align:left\">Jei vasker <strong>mei</strong>. (I wash myself.)</td>\n<td style=\"text-align:left\">Hun snakker till <strong>mei</strong>. (She talks to me.)</td>\n</tr>\n<tr>\n<td style=\"text-align:left\">2nd sing.</td>\n<td style=\"text-align:left\"><strong>dei</strong> (yourself)</td>\n<td style=\"text-align:left\">Du kjeder <strong>dei</strong>. (You bore yourself.)</td>\n<td style=\"text-align:left\">Det er en gave till <strong>dei</strong>. (It’s a gift for you.)</td>\n</tr>\n<tr>\n<td style=\"text-align:left\">3rd sing.</td>\n<td style=\"text-align:left\"><strong>sei</strong> (himself/herself/itself)</td>\n<td style=\"text-align:left\">Han ser <strong>sei</strong> i speilet. (He sees himself in the mirror.)</td>\n<td style=\"text-align:left\">Hun lagde mat till <strong>sei</strong> selv. (She made food for herself.)</td>\n</tr>\n<tr>\n<td style=\"text-align:left\">1st plur.</td>\n<td style=\"text-align:left\"><strong>vår</strong> (our/ourselves)</td>\n<td style=\"text-align:left\">Vi vasker <strong>vår</strong> bil. (We wash our car.)</td>\n<td style=\"text-align:left\">Vi må gjøre det for <strong>oss</strong> selv. (We must do it for ourselves.)</td>\n</tr>\n<tr>\n<td style=\"text-align:left\">2nd plur.</td>\n<td style=\"text-align:left\"><strong>er</strong> (your/yourselves)</td>\n<td style=\"text-align:left\">Ni låner <strong>er</strong> bok. (You borrow your book.)</td>\n<td style=\"text-align:left\">Tenk på <strong>er</strong> selv! (Think of yourselves!)</td>\n</tr>\n<tr>\n<td style=\"text-align:left\">3rd plur.</td>\n<td style=\"text-align:left\"><strong>sei</strong> (themselves)</td>\n<td style=\"text-align:left\">De beskytter <strong>sei</strong>. (They protect themselves.)</td>\n<td style=\"text-align:left\">De bygde ett hus till <strong>sei</strong> selv. (They built a house for themselves.)</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Notes and Explanations</strong>:</p>\n<ul>\n<li><strong>Standardization</strong>: The forms <code>mei</code>, <code>dei</code>, and <code>sei</code> are chosen for their high intelligibility across all three source languages (cf. Norwegian <code>meg/deg/seg</code>, Danish <code>mig/dig/sig</code>, Swedish <code>mig/dig/sig</code>).</li>\n<li><strong><code>Sei</code> for 3rd Person</strong>: The pronoun <code>sei</code> is used for all third-person singular and plural reflexive contexts, identical to the pattern in Norwegian and Danish.</li>\n<li><strong>Possessive vs. Reflexive in 1st/2nd Plural</strong>: Note the distinction:\n<ul>\n<li><strong>Vår/er</strong> is used as a possessive adjective (<em>our car</em>, <em>your book</em>).</li>\n<li><strong>Oss selv/er selv</strong> is the reflexive form used with prepositions (<em>for ourselves</em>, <em>of yourselves</em>). The form <code>selv</code> (self) is added for emphasis and clarity, following Scandinavian patterns.</li>\n</ul>\n</li>\n<li><strong>Ambiguity Avoidance</strong>: The systematic use of <code>sei</code> prevents confusion that can arise from the Swedish use of <code>sig</code> (reflexive) vs. <code>deras</code> (non-reflexive, their).</li>\n</ul>\n<h3>4.6.3 Examples in Sentences</h3>\n<ul>\n<li><strong>Subject</strong>: “Ni arbeider her” (You work here).</li>\n<li><strong>Object</strong>: “Jei ser er” (I see you all).</li>\n<li><strong>Possessive Adjective</strong>: “Vår bil er rød” (Our car is red).</li>\n<li><strong>Possessive Pronoun</strong>: “Computerene er våra” (The computers are ours).</li>\n<li><strong>Reflexive</strong>: “De må vaske sei selv” (They must wash themselves).</li>\n</ul>\n<p>This standardization ensures clarity and reduces ambiguity in written Nordum, aligning with the design principles of mutual intelligibility and systematic regularity.</p>\n",
+      "markdown": "## 4.6 Pronoun System\n\n**Principle**: Personal pronouns are standardized to forms that maximize pan-Scandinavian intelligibility and consistency, following the lexical selection rules outlined in Section 5.2.\n\n### 4.6.1 Personal Pronouns\n\nThe standard forms of personal pronouns in Nordum are as follows:\n\n| Person | Subject Form | Object Form | Possessive Adjective | Possessive Pronoun |\n|--------|--------------|-------------|----------------------|---------------------|\n| 1st sing. | jei (I) | mei (me) | min/mitt/mina (my) | min/mitt/mina (mine) |\n| 2nd sing. | du (you) | dei (you) | din/ditt/dina (your) | din/ditt/dina (yours) |\n| 3rd sing. masc. | han (he) | ham (him) | hans (his) | hans (his) |\n| 3rd sing. fem. | hun (she) | henne (her) | hennas (her) | hennas (hers) |\n| 3rd sing. common | den (it) | den (it) | dens (its) | dens (its) |\n| 3rd sing. neuter | det (it) | det (it) | dets (its) | dets (its) |\n| 1st plur. | vi (we) | oss (us) | vår/vårt/våra (our) | vår/vårt/våra (ours) |\n| 2nd plur. | ni (you) | er (you) | er/ert/era (your) | er/ert/era (yours) |\n| 3rd plur. | de (they) | dem (them) | deras (their) | deras (theirs) |\n\n**Notes and Explanations**:\n- **Subject and Object Forms**: The object forms are used when the pronoun is the object of a verb or preposition. For example: \"Jei ser dei\" (I see you), \"Hun jælper mig\" (She helps me).\n- **Possessive Forms**: Possessive adjectives modify nouns (e.g., \"min bil\" for \"my car\"), while possessive pronouns stand alone (e.g., \"Bilen er min\" for \"The car is mine\"). The forms agree with the gender and number of the noun they reference:\n  - `min` (common gender singular), `mitt` (neuter gender singular), `mina` (plural).\n  - Similarly for `din`, `vår`, `er`, etc.\n- **Intelligibility Considerations**: The forms chosen are based on majority usage across Norwegian, Danish, and Swedish. For example:\n  - `jei` is derived from Norwegian/Danish `jeg` with the [ej] → `ei` transformation.\n  - `mei`/`dei` is derived from Danish/Swedish `mig`/`dig` with the [ej] → `ei` transformation.\n  - `ni` for the second person plural subject is adopted from Swedish and is widely understood in Danish and Norwegian contexts.\n  - `er` for the second person plural object is from Swedish, and is recognizable to Norwegian and Danish speakers.\n\n#### 4.6.2 Reflexive Pronouns\n\n**Principle**: Reflexive pronouns are used when the subject and object of a verb are the same entity. Nordum standardizes these forms for clarity and consistency across all persons, except the 1st and 2nd person plural which often use the possessive adjective reflexively.\n\n| Person | Reflexive Pronoun | Example (with verb) | Example (with preposition) |\n| :--- | :--- | :--- | :--- |\n| 1st sing. | **mei** (myself) | Jei vasker **mei**. (I wash myself.) | Hun snakker till **mei**. (She talks to me.) |\n| 2nd sing. | **dei** (yourself) | Du kjeder **dei**. (You bore yourself.) | Det er en gave till **dei**. (It's a gift for you.) |\n| 3rd sing. | **sei** (himself/herself/itself) | Han ser **sei** i speilet. (He sees himself in the mirror.) | Hun lagde mat till **sei** selv. (She made food for herself.) |\n| 1st plur. | **vår** (our/ourselves) | Vi vasker **vår** bil. (We wash our car.) | Vi må gjøre det for **oss** selv. (We must do it for ourselves.) |\n| 2nd plur. | **er** (your/yourselves) | Ni låner **er** bok. (You borrow your book.) | Tenk på **er** selv! (Think of yourselves!) |\n| 3rd plur. | **sei** (themselves) | De beskytter **sei**. (They protect themselves.) | De bygde ett hus till **sei** selv. (They built a house for themselves.) |\n\n**Notes and Explanations**:\n*   **Standardization**: The forms `mei`, `dei`, and `sei` are chosen for their high intelligibility across all three source languages (cf. Norwegian `meg/deg/seg`, Danish `mig/dig/sig`, Swedish `mig/dig/sig`).\n*   **`Sei` for 3rd Person**: The pronoun `sei` is used for all third-person singular and plural reflexive contexts, identical to the pattern in Norwegian and Danish.\n*   **Possessive vs. Reflexive in 1st/2nd Plural**: Note the distinction:\n    *   **Vår/er** is used as a possessive adjective (*our car*, *your book*).\n    *   **Oss selv/er selv** is the reflexive form used with prepositions (*for ourselves*, *of yourselves*). The form `selv` (self) is added for emphasis and clarity, following Scandinavian patterns.\n*   **Ambiguity Avoidance**: The systematic use of `sei` prevents confusion that can arise from the Swedish use of `sig` (reflexive) vs. `deras` (non-reflexive, their).\n\n### 4.6.3 Examples in Sentences\n\n- **Subject**: \"Ni arbeider her\" (You work here).\n- **Object**: \"Jei ser er\" (I see you all).\n- **Possessive Adjective**: \"Vår bil er rød\" (Our car is red).\n- **Possessive Pronoun**: \"Computerene er våra\" (The computers are ours).\n- **Reflexive**: \"De må vaske sei selv\" (They must wash themselves).\n\nThis standardization ensures clarity and reduces ambiguity in written Nordum, aligning with the design principles of mutual intelligibility and systematic regularity.",
+      "subsections": [
+        {
+          "id": "461-personal-pronouns",
+          "title": "4.6.1 Personal Pronouns"
+        },
+        {
+          "id": "463-examples-in-sentences",
+          "title": "4.6.3 Examples in Sentences"
+        }
+      ]
+    },
+    "lexical-selection-rules": {
+      "title": "Lexical Selection Rules",
+      "html": "<h2>5. Lexical Selection Rules</h2>\n<h3>5.1 Selection Priority System</h3>\n<p>When variants exist across Norwegian, Danish, and Swedish:</p>\n<ol>\n<li><strong>English loanword detection</strong> → preserve unchanged</li>\n<li><strong>Norwegian number system</strong> → apply systematic replacement</li>\n<li><strong>Question word transformation</strong> → hv→v pattern with alternatives</li>\n<li><strong>Strategic pan-Scandinavian selection</strong> → optimize for mutual intelligibility</li>\n<li><strong>Alternative spelling generation</strong> → accommodate pronunciation variants</li>\n<li><strong>Morphological systematization</strong> → apply distinctive endings</li>\n</ol>\n<h3>5.2 Cognate Analysis Process</h3>\n<h4>5.2.1 Perfect Cognates</h4>\n<p>Words identical across all three languages:</p>\n<pre><code>hus (house) - unanimous form adopted directly\nbil (car) - unanimous form adopted directly\n</code></pre>\n<h4>5.2.2 Near Cognates</h4>\n<p>Minor spelling differences resolved systematically:</p>\n<pre><code>arbeta/arbeide/arbejde → arbeide (systematic morphology + strategic selection)\nliten/lille/liten → liten (majority form with regular inflection preferred, lille is accepted)\n</code></pre>\n<h4>5.2.3 Divergent Forms</h4>\n<p>When all three languages differ in spelling, prefer most systematic and secondly the form that maximizes mutual intelligibility and matches majority pronunciation:</p>\n<pre><code>Swedish: kör, Norwegian: kjører, Danish: kører → kører (systematic + majority)\nSwedish: talar, Norwegian: snakker, Danish: snakker/taler → taler/snakker (systematic + majority)\nDanish: hedder, Norwegian: heter, Swedish: heter → heter (majority form, clearer pronunciation alignment)\nDanish: ikke, Norwegian: ikke, Swedish: inte → ikke (majority form, preserves Danish/Norwegian unity)\n</code></pre>\n<p>Note: In cases where Danish uses d for [ð] but Norwegian/Swedish use t for the same morpheme (e.g., hedder/heter), Nordum selects t to align with majority spelling and avoid forcing non-native pronunciations on Norwegian/Swedish speakers. This does not contradict the general d-pronunciation rule — it reflects lexical selection for optimal intelligibility.</p>\n<h3>5.3 Frequency and Usage Considerations</h3>\n<p><strong>Weighting System</strong>:</p>\n<ul>\n<li><strong>Common vocabulary</strong>: Higher priority for systematic forms</li>\n<li><strong>Technical terms</strong>: Preserve English where established</li>\n<li><strong>Regional variants</strong>: Support through alternative spellings</li>\n<li><strong>Historical forms</strong>: Modernize systematically</li>\n</ul>\n<h3>5.4 Quality Scoring</h3>\n<p>Each lexical decision scored on:</p>\n<ul>\n<li><strong>Mutual intelligibility</strong>: 0-1 scale across three languages</li>\n<li><strong>Systematic regularity</strong>: Adherence to morphological patterns</li>\n<li><strong>Practical utility</strong>: Modern usage and learnability</li>\n<li><strong>Pan-Scandinavian balance</strong>: Equal treatment of source languages</li>\n</ul>\n<h3>5.5 Treatment of Geographic Names</h3>\n<p><strong>Principle</strong>: Geographic place names (toponyms) shall, as a default, retain their most common endonym (name used within that place) to promote international recognition and neutrality, following the precedent set by modern Norwegian. A limited set of well-established exonyms (locally used names for foreign places) is permitted.</p>\n<h4>5.5.1 General Rule: Use of Endonyms</h4>\n<p>The primary name for a country, region, or major city should be its common endonym, not a Scandinavian exonym.</p>\n<p><strong>Examples:</strong></p>\n<ul>\n<li><code>Argentina</code> (not <em>Argentinien</em>)</li>\n<li><code>Hellas</code> (not <em>Grækenland</em>)</li>\n<li><code>España</code> (not <em>Spanien</em>)</li>\n<li><code>Italia</code> (not <em>Italien</em>)</li>\n<li><code>Nederland</code> (not <em>Holland</em>)</li>\n<li><code>Deutschland</code> (primary form, see exception below)</li>\n<li><code>Praha</code> (not <em>Prag</em>)</li>\n<li><code>Bruxelles</code> (not <em>Bryssel</em>)</li>\n</ul>\n<h4>5.5.2 Permitted Exonyms</h4>\n<p>A short list of common, pan-Scandinavian exonyms are permitted as official alternatives. The most notable exceptions are:</p>\n<ul>\n<li><code>Tyskland</code> (as an accepted alternative to <code>Deutschland</code>)</li>\n<li><code>Østerrike</code> (for <code>Österreich</code>)</li>\n</ul>\n<h4>5.5.3 Historical and Regional Variants</h4>\n<p>For places with multiple valid historical names or names that vary by Scandinavian dialect, multiple forms are acceptable. This often applies to regions with shared cultural history.</p>\n<p><strong>Examples:</strong></p>\n<ul>\n<li><code>Slesvig</code> or <code>Schleswig</code></li>\n<li><code>Flensborg</code> or <code>Flensburg</code></li>\n<li><code>Hamborg</code> or <code>Hamburg</code></li>\n<li><code>Kjøbenhavn</code> or <code>København</code></li>\n<li><code>Göteborg</code> (endonym) / <code>Gøteborg</code> (Danish/Nordum primary) / <code>Gothenburg</code></li>\n</ul>\n<p><strong>Policy</strong>: The choice between endonyms, permitted exonyms, or historical variants is considered an orthographic preference and has no grammatical consequences. Consistency within a single text is encouraged.</p>\n",
+      "markdown": "## 5. Lexical Selection Rules\n\n### 5.1 Selection Priority System\n\nWhen variants exist across Norwegian, Danish, and Swedish:\n\n1. **English loanword detection** → preserve unchanged\n2. **Norwegian number system** → apply systematic replacement\n3. **Question word transformation** → hv→v pattern with alternatives\n4. **Strategic pan-Scandinavian selection** → optimize for mutual intelligibility\n5. **Alternative spelling generation** → accommodate pronunciation variants\n6. **Morphological systematization** → apply distinctive endings\n\n### 5.2 Cognate Analysis Process\n\n#### 5.2.1 Perfect Cognates\nWords identical across all three languages:\n```\nhus (house) - unanimous form adopted directly\nbil (car) - unanimous form adopted directly\n```\n\n#### 5.2.2 Near Cognates\nMinor spelling differences resolved systematically:\n```\narbeta/arbeide/arbejde → arbeide (systematic morphology + strategic selection)\nliten/lille/liten → liten (majority form with regular inflection preferred, lille is accepted)\n```\n\n#### 5.2.3 Divergent Forms\nWhen all three languages differ in spelling, prefer most systematic and secondly the form that maximizes mutual intelligibility and matches majority pronunciation:\n```\nSwedish: kör, Norwegian: kjører, Danish: kører → kører (systematic + majority)\nSwedish: talar, Norwegian: snakker, Danish: snakker/taler → taler/snakker (systematic + majority)\nDanish: hedder, Norwegian: heter, Swedish: heter → heter (majority form, clearer pronunciation alignment)\nDanish: ikke, Norwegian: ikke, Swedish: inte → ikke (majority form, preserves Danish/Norwegian unity)\n```\n\nNote: In cases where Danish uses d for [ð] but Norwegian/Swedish use t for the same morpheme (e.g., hedder/heter), Nordum selects t to align with majority spelling and avoid forcing non-native pronunciations on Norwegian/Swedish speakers. This does not contradict the general d-pronunciation rule — it reflects lexical selection for optimal intelligibility.\n\n### 5.3 Frequency and Usage Considerations\n\n**Weighting System**:\n- **Common vocabulary**: Higher priority for systematic forms\n- **Technical terms**: Preserve English where established\n- **Regional variants**: Support through alternative spellings\n- **Historical forms**: Modernize systematically\n\n### 5.4 Quality Scoring\n\nEach lexical decision scored on:\n- **Mutual intelligibility**: 0-1 scale across three languages\n- **Systematic regularity**: Adherence to morphological patterns\n- **Practical utility**: Modern usage and learnability\n- **Pan-Scandinavian balance**: Equal treatment of source languages\n\n### 5.5 Treatment of Geographic Names\n\n**Principle**: Geographic place names (toponyms) shall, as a default, retain their most common endonym (name used within that place) to promote international recognition and neutrality, following the precedent set by modern Norwegian. A limited set of well-established exonyms (locally used names for foreign places) is permitted.\n\n#### 5.5.1 General Rule: Use of Endonyms\n\nThe primary name for a country, region, or major city should be its common endonym, not a Scandinavian exonym.\n\n**Examples:**\n*   `Argentina` (not *Argentinien*)\n*   `Hellas` (not *Grækenland*)\n*   `España` (not *Spanien*)\n*   `Italia` (not *Italien*)\n*   `Nederland` (not *Holland*)\n*   `Deutschland` (primary form, see exception below)\n*   `Praha` (not *Prag*)\n*   `Bruxelles` (not *Bryssel*)\n\n#### 5.5.2 Permitted Exonyms\n\nA short list of common, pan-Scandinavian exonyms are permitted as official alternatives. The most notable exceptions are:\n*   `Tyskland` (as an accepted alternative to `Deutschland`)\n*   `Østerrike` (for `Österreich`)\n\n\n#### 5.5.3 Historical and Regional Variants\n\nFor places with multiple valid historical names or names that vary by Scandinavian dialect, multiple forms are acceptable. This often applies to regions with shared cultural history.\n\n**Examples:**\n*   `Slesvig` or `Schleswig`\n*   `Flensborg` or `Flensburg`\n*   `Hamborg` or `Hamburg`\n*   `Kjøbenhavn` or `København`\n*   `Göteborg` (endonym) / `Gøteborg` (Danish/Nordum primary) / `Gothenburg`\n\n**Policy**: The choice between endonyms, permitted exonyms, or historical variants is considered an orthographic preference and has no grammatical consequences. Consistency within a single text is encouraged.",
+      "subsections": [
+        {
+          "id": "51-selection-priority-system",
+          "title": "5.1 Selection Priority System"
+        },
+        {
+          "id": "52-cognate-analysis-process",
+          "title": "5.2 Cognate Analysis Process"
+        },
+        {
+          "id": "53-frequency-and-usage-considerations",
+          "title": "5.3 Frequency and Usage Considerations"
+        },
+        {
+          "id": "54-quality-scoring",
+          "title": "5.4 Quality Scoring"
+        },
+        {
+          "id": "55-treatment-of-geographic-names",
+          "title": "5.5 Treatment of Geographic Names"
+        }
+      ]
+    },
+    "syntax": {
+      "title": "Syntax",
+      "html": "<h2>6. Syntax</h2>\n<h3>6.1 Word Order</h3>\n<h4>6.1.1 Main Clauses (V2 Rule)</h4>\n<p><strong>Basic</strong>: Subject + Verb + Object</p>\n<pre><code>Jei læser en bok/bog.\nI read a book.\n</code></pre>\n<p><strong>V2 with adverbial</strong>: Adverbial + Verb + Subject + …</p>\n<pre><code>I dag arbeider jei jemme/hemma.\nToday I work at home.\n</code></pre>\n<h4>6.1.2 Subordinate Clauses</h4>\n<p><strong>Pattern</strong>: Conjunction + Subject + Verb + …</p>\n<pre><code>Jei vet att hun arbeider.\nI know that she works.\n</code></pre>\n<h4>6.1.3 Questions</h4>\n<p><strong>Yes/No Questions</strong>: Verb + Subject + …</p>\n<pre><code>Arbeider du i dag?\nDo you work today?\n</code></pre>\n<p><strong>Wh-Questions</strong>: Question word + Verb + Subject + …</p>\n<pre><code>Vor/var arbeider du? (Where do you work?)\nVad/va gør du? (What do you do?)\nVem kommer? (Who is coming?)\n</code></pre>\n<h3>6.2 Negation</h3>\n<p><strong>Main Clauses</strong>: <code>ikke</code> after finite verb</p>\n<pre><code>Jei arbeider ikke.\nI don't work.\n\nHun kan ikke komme.\nShe can't come.\n</code></pre>\n<p><strong>Subordinate Clauses</strong>: <code>ikke</code> before main verb</p>\n<pre><code>Jei vet att hun ikke arbeider.\nI know that she doesn't work.\n</code></pre>\n<h3>6.3 Article System</h3>\n<table>\n<thead>\n<tr>\n<th>Type</th>\n<th>Common</th>\n<th>Neuter</th>\n<th>Plural</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Indefinite</td>\n<td>en</td>\n<td>ett</td>\n<td>-</td>\n</tr>\n<tr>\n<td>Definite (bound)</td>\n<td>-en</td>\n<td>-et</td>\n<td>-arna</td>\n</tr>\n<tr>\n<td>Definite (free)</td>\n<td>den</td>\n<td>det</td>\n<td>de</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Examples</strong>:</p>\n<pre><code>en bil → bilen → bilar → bilarna\nett hus → huset → husar → husarna\nden store bilen (the big car)\ndet store huset (the big house)\n</code></pre>\n<p>Preserved: option of using indefinite versions with den/det:</p>\n<pre><code>den store bil (the big car)\ndet store hus (the big house)\n</code></pre>\n",
+      "markdown": "## 6. Syntax\n\n### 6.1 Word Order\n\n#### 6.1.1 Main Clauses (V2 Rule)\n\n**Basic**: Subject + Verb + Object\n```\nJei læser en bok/bog.\nI read a book.\n```\n\n**V2 with adverbial**: Adverbial + Verb + Subject + ...\n```\nI dag arbeider jei jemme/hemma.\nToday I work at home.\n```\n\n#### 6.1.2 Subordinate Clauses\n\n**Pattern**: Conjunction + Subject + Verb + ...\n```\nJei vet att hun arbeider.\nI know that she works.\n```\n\n#### 6.1.3 Questions\n\n**Yes/No Questions**: Verb + Subject + ...\n```\nArbeider du i dag?\nDo you work today?\n```\n\n**Wh-Questions**: Question word + Verb + Subject + ...\n```\nVor/var arbeider du? (Where do you work?)\nVad/va gør du? (What do you do?)\nVem kommer? (Who is coming?)\n```\n\n### 6.2 Negation\n\n**Main Clauses**: `ikke` after finite verb\n```\nJei arbeider ikke.\nI don't work.\n\nHun kan ikke komme.\nShe can't come.\n```\n\n**Subordinate Clauses**: `ikke` before main verb\n```\nJei vet att hun ikke arbeider.\nI know that she doesn't work.\n```\n\n### 6.3 Article System\n\n| Type | Common | Neuter | Plural |\n|------|--------|--------|--------|\n| Indefinite | en | ett | - |\n| Definite (bound) | -en | -et | -arna |\n| Definite (free) | den | det | de |\n\n**Examples**:\n```\nen bil → bilen → bilar → bilarna\nett hus → huset → husar → husarna\nden store bilen (the big car)\ndet store huset (the big house)\n```\n\nPreserved: option of using indefinite versions with den/det:\n\n```\nden store bil (the big car)\ndet store hus (the big house)\n```",
+      "subsections": [
+        {
+          "id": "61-word-order",
+          "title": "6.1 Word Order"
+        },
+        {
+          "id": "62-negation",
+          "title": "6.2 Negation"
+        },
+        {
+          "id": "63-article-system",
+          "title": "6.3 Article System"
+        }
+      ]
+    },
+    "alternative-spellings": {
+      "title": "Alternative Spellings",
+      "html": "<h2>7. Alternative Spellings</h2>\n<h3>7.1 Vowel System Alternatives</h3>\n<p><strong>Philosophy</strong>: Support both Scandinavian vowel traditions as valid alternatives.</p>\n<p><strong>Primary System (Norwegian/Danish)</strong>:</p>\n<ul>\n<li>Uses æ, ø following Norwegian and Danish orthographic tradition</li>\n<li>Familiar to Norwegian and Danish speakers</li>\n<li>Traditional Scandinavian appearance</li>\n</ul>\n<p><strong>Alternative System (Swedish/German)</strong>:</p>\n<ul>\n<li>Uses ä, ö following Swedish and German orthographic tradition</li>\n<li>Familiar to Swedish speakers and German language learners</li>\n<li>International Germanic appearance</li>\n</ul>\n<p><strong>Examples</strong>:</p>\n<pre><code>Primary:     Alternative:\nhæst        häst (horse)\ndøra        döra (door)\ngrønnsaker  grönsaker (vegetables)\nbrød        bröd (bread)\nhøj         höj (high)\n</code></pre>\n<h3>7.2 Question Word Alternatives</h3>\n<p><strong>Multiple valid forms to accommodate regional pronunciation</strong>:</p>\n<pre><code>Primary → Alternatives\nvad     → va (short form, common in speech)\nvarför  → vorfor (Norwegian/Danish pronunciation)\nven     → vornår, når, när (multiple &quot;when&quot; variants)\n</code></pre>\n<p><strong>Rationale</strong>: Recognizes that different Scandinavian speakers pronounce question words differently, providing flexibility while maintaining the systematic v- pattern.</p>\n<h3>7.3 Sound Pattern Alternatives</h3>\n<p><strong>Danish Sound Pattern Support</strong>:</p>\n<pre><code>Normalized: Preserved Alternative:\njei        jeg (Danish ej pattern)\nvær       vejr (Danish ej pattern)\nnei        nej (Danish ej pattern)\n</code></pre>\n<p><strong>Both forms accepted</strong>: Speakers can choose between normalized (phonetic) and traditional (etymological) spellings.</p>\n<h3>7.4 Alternative Spelling Policy</h3>\n<p><strong>Implementation Principles</strong>:</p>\n<ol>\n<li><strong>Morphological consistency preserved</strong>: Alternative spellings don’t affect grammatical endings</li>\n<li><strong>Recognition over production</strong>: All forms recognized, one form recommended for learning</li>\n<li><strong>Regional accommodation</strong>: Reflects natural pronunciation differences</li>\n<li><strong>Systematic application</strong>: Alternatives generated systematically, not ad-hoc</li>\n<li><strong>User choice</strong>: Individuals can choose preferred spelling system</li>\n</ol>\n",
+      "markdown": "## 7. Alternative Spellings\n\n### 7.1 Vowel System Alternatives\n\n**Philosophy**: Support both Scandinavian vowel traditions as valid alternatives.\n\n**Primary System (Norwegian/Danish)**:\n- Uses æ, ø following Norwegian and Danish orthographic tradition\n- Familiar to Norwegian and Danish speakers\n- Traditional Scandinavian appearance\n\n**Alternative System (Swedish/German)**:\n- Uses ä, ö following Swedish and German orthographic tradition\n- Familiar to Swedish speakers and German language learners\n- International Germanic appearance\n\n**Examples**:\n```\nPrimary:     Alternative:\nhæst        häst (horse)\ndøra        döra (door)\ngrønnsaker  grönsaker (vegetables)\nbrød        bröd (bread)\nhøj         höj (high)\n```\n\n### 7.2 Question Word Alternatives\n\n**Multiple valid forms to accommodate regional pronunciation**:\n\n```\nPrimary → Alternatives\nvad     → va (short form, common in speech)\nvarför  → vorfor (Norwegian/Danish pronunciation)\nven     → vornår, når, när (multiple \"when\" variants)\n```\n\n**Rationale**: Recognizes that different Scandinavian speakers pronounce question words differently, providing flexibility while maintaining the systematic v- pattern.\n\n### 7.3 Sound Pattern Alternatives\n\n**Danish Sound Pattern Support**:\n```\nNormalized: Preserved Alternative:\njei        jeg (Danish ej pattern)\nvær       vejr (Danish ej pattern)\nnei        nej (Danish ej pattern)\n```\n\n**Both forms accepted**: Speakers can choose between normalized (phonetic) and traditional (etymological) spellings.\n\n### 7.4 Alternative Spelling Policy\n\n**Implementation Principles**:\n1. **Morphological consistency preserved**: Alternative spellings don't affect grammatical endings\n2. **Recognition over production**: All forms recognized, one form recommended for learning\n3. **Regional accommodation**: Reflects natural pronunciation differences\n4. **Systematic application**: Alternatives generated systematically, not ad-hoc\n5. **User choice**: Individuals can choose preferred spelling system",
+      "subsections": [
+        {
+          "id": "71-vowel-system-alternatives",
+          "title": "7.1 Vowel System Alternatives"
+        },
+        {
+          "id": "72-question-word-alternatives",
+          "title": "7.2 Question Word Alternatives"
+        },
+        {
+          "id": "73-sound-pattern-alternatives",
+          "title": "7.3 Sound Pattern Alternatives"
+        },
+        {
+          "id": "74-alternative-spelling-policy",
+          "title": "7.4 Alternative Spelling Policy"
+        }
+      ]
+    },
+    "examples-and-usage": {
+      "title": "Examples and Usage",
+      "html": "<h2>8. Examples and Usage</h2>\n<h3>8.1 Basic Sentences</h3>\n<pre><code>\nJei arbeider i Stockholm.\nI work in Stockholm.\n\nDe store jentar snakker nordum.\nThe big girls speak Nordum.\n\nKan du jælpe mig?\nCan you help me?\n\nVi skal køpe en ny computer.\nWe will buy a new computer.\n\nVi gamer hele natta.\nWe game all night.\n\nHun streamer på Twitch.\nShe streams on Twitch.\n\nDe sender memes i chatten.\nThey send memes in the chat.\n\nHan spiller e-sport turnering på helga/i weekenden.\nHe plays an e-sports tournament on the weekend.\n\nVi chatter og lager/laver content på TikTok.\nWe chat and create content on TikTok.\n\nJei vil å lære nordum.\nI want to learn Nordum.\n\nDet er lett å snakke språket.\nIt is easy to speak the language.\n\nHun begynte å arbeide i går.\nShe began to work yesterday.\n\nVi skal prøve å skrive en email.\nWe will try to write an email.\n\nDe liker å game om kvelden.\nThey like to game in the evening.\n</code></pre>\n<h3>8.2 Alternative Spelling Examples</h3>\n<p><strong>Using Primary Vowels (æ/ø)</strong>:</p>\n<pre><code>Jei køber/køper en hæst till døren.\nI buy a horse for the door.\n\nÅ køpe en ny computer er viktig.\nTo buy a new computer is important.\n\nDet er gøy å lære nordum.\nIt is fun to learn Nordum.\n</code></pre>\n<p><strong>Using Alternative Vowels (ä/ö)</strong>:</p>\n<pre><code>Jei köber/köper en häst till dören.\nI buy a horse for the door.\n\nÅ köpe en ny computer er viktig.\nTo buy a new computer is important.\n\nDet är göy å läre nordum.\nIt is fun to learn Nordum.\n</code></pre>\n<p><strong>Using Question Word Variants</strong>:</p>\n<pre><code>Vad/Va gør du?\nWhat do you do?\n\nVarfør/Vorfor kommer du?\nWhy are you coming?\n</code></pre>\n<h3>8.3 Technical Communication</h3>\n<p><strong>English Loanword Integration</strong>:</p>\n<pre><code>Jei arbeider med software development på min computer.\nI work with software development on my computer.\n\nKan du sende en email till teamet?\nCan you send an email to the team?\n\nVi skal downloade den nye app fra websitet.\nWe will download the new app from the website.\n</code></pre>\n<h3>8.4 Morphological Distinctions in Context</h3>\n<pre><code>Verb vs Noun Plural:\nKvinnan arbeider. (The woman works - VERB)\nJentar arbeider hær. (Girls work here - NOUN + VERB)\n\nAdjective Comparison:\nHuset er stort. (The house is big)\nHuset er større æn bilen. (The house is bigger than the car)\nDet er det største huset. (It is the biggest house)\n</code></pre>\n<h3>8.5 Numbers in Context</h3>\n<pre><code>Jei er femti år gammel. (I am fifty years old)\nVi har seksti studenter. (We have sixty students)\nHun bor på syttiende gatan. (She lives on seventieth street)\n</code></pre>\n<h3>8.6 Comprehensive Text Example</h3>\n<pre><code>I dag arbeider de store jentar i huset med sina nya computere.\nDe snakker nordum mykket bra och kann skrive email på språket.\nVarfør lærer de nordum? Fordi det er en praktisk språk for alla skandinavere.\nVad tykker du om det?\n\nToday the big girls work in the house with their new computers.\nThey speak Nordum very well and can write email in the language.\nWhy do they learn Nordum? Because it is a practical language for all Scandinavians.\nWhat do you think about it?\n</code></pre>\n<p><strong>Alternative Spelling Version</strong>:</p>\n<pre><code>I dag arbeider de stora jäntar i huset med sina nya computere.\nDe snakker nordum mykket bra og kann skrive email på språket.\nVorfor lærer de nordum? Fordi det er ett praktisk språk for alle skandinavare.\nVa tykker du om det?\n</code></pre>\n",
+      "markdown": "## 8. Examples and Usage\n\n### 8.1 Basic Sentences\n\n```\n\nJei arbeider i Stockholm.\nI work in Stockholm.\n\nDe store jentar snakker nordum.\nThe big girls speak Nordum.\n\nKan du jælpe mig?\nCan you help me?\n\nVi skal køpe en ny computer.\nWe will buy a new computer.\n\nVi gamer hele natta.\nWe game all night.\n\nHun streamer på Twitch.\nShe streams on Twitch.\n\nDe sender memes i chatten.\nThey send memes in the chat.\n\nHan spiller e-sport turnering på helga/i weekenden.\nHe plays an e-sports tournament on the weekend.\n\nVi chatter og lager/laver content på TikTok.\nWe chat and create content on TikTok.\n\nJei vil å lære nordum.\nI want to learn Nordum.\n\nDet er lett å snakke språket.\nIt is easy to speak the language.\n\nHun begynte å arbeide i går.\nShe began to work yesterday.\n\nVi skal prøve å skrive en email.\nWe will try to write an email.\n\nDe liker å game om kvelden.\nThey like to game in the evening.\n```\n\n### 8.2 Alternative Spelling Examples\n\n**Using Primary Vowels (æ/ø)**:\n```\nJei køber/køper en hæst till døren.\nI buy a horse for the door.\n\nÅ køpe en ny computer er viktig.\nTo buy a new computer is important.\n\nDet er gøy å lære nordum.\nIt is fun to learn Nordum.\n```\n\n**Using Alternative Vowels (ä/ö)**:\n```\nJei köber/köper en häst till dören.\nI buy a horse for the door.\n\nÅ köpe en ny computer er viktig.\nTo buy a new computer is important.\n\nDet är göy å läre nordum.\nIt is fun to learn Nordum.\n```\n\n**Using Question Word Variants**:\n```\nVad/Va gør du?\nWhat do you do?\n\nVarfør/Vorfor kommer du?\nWhy are you coming?\n```\n\n### 8.3 Technical Communication\n\n**English Loanword Integration**:\n```\nJei arbeider med software development på min computer.\nI work with software development on my computer.\n\nKan du sende en email till teamet?\nCan you send an email to the team?\n\nVi skal downloade den nye app fra websitet.\nWe will download the new app from the website.\n```\n\n### 8.4 Morphological Distinctions in Context\n\n```\nVerb vs Noun Plural:\nKvinnan arbeider. (The woman works - VERB)\nJentar arbeider hær. (Girls work here - NOUN + VERB)\n\nAdjective Comparison:\nHuset er stort. (The house is big)\nHuset er større æn bilen. (The house is bigger than the car)\nDet er det største huset. (It is the biggest house)\n```\n\n### 8.5 Numbers in Context\n\n```\nJei er femti år gammel. (I am fifty years old)\nVi har seksti studenter. (We have sixty students)\nHun bor på syttiende gatan. (She lives on seventieth street)\n```\n\n### 8.6 Comprehensive Text Example\n\n```\nI dag arbeider de store jentar i huset med sina nya computere.\nDe snakker nordum mykket bra och kann skrive email på språket.\nVarfør lærer de nordum? Fordi det er en praktisk språk for alla skandinavere.\nVad tykker du om det?\n\nToday the big girls work in the house with their new computers.\nThey speak Nordum very well and can write email in the language.\nWhy do they learn Nordum? Because it is a practical language for all Scandinavians.\nWhat do you think about it?\n```\n\n**Alternative Spelling Version**:\n```\nI dag arbeider de stora jäntar i huset med sina nya computere.\nDe snakker nordum mykket bra og kann skrive email på språket.\nVorfor lærer de nordum? Fordi det er ett praktisk språk for alle skandinavare.\nVa tykker du om det?\n```",
+      "subsections": [
+        {
+          "id": "81-basic-sentences",
+          "title": "8.1 Basic Sentences"
+        },
+        {
+          "id": "82-alternative-spelling-examples",
+          "title": "8.2 Alternative Spelling Examples"
+        },
+        {
+          "id": "83-technical-communication",
+          "title": "8.3 Technical Communication"
+        },
+        {
+          "id": "84-morphological-distinctions-in-context",
+          "title": "8.4 Morphological Distinctions in Context"
+        },
+        {
+          "id": "85-numbers-in-context",
+          "title": "8.5 Numbers in Context"
+        },
+        {
+          "id": "86-comprehensive-text-example",
+          "title": "8.6 Comprehensive Text Example"
+        }
+      ]
+    },
+    "key-differences-for-native-speakers": {
+      "title": "Key Differences for native speakers",
+      "html": "<h2>9. Key Differences for native speakers</h2>\n<h3>9.1 Norwegian Writers</h3>\n<ul>\n<li>Past tense forms: <code>arbeidede</code> may feel Danish/archaic; optional <code>arbeida</code> is closer to spoken Norwegian.</li>\n<li>Plural forms of nouns: <code>jentar</code> may look odd initially.</li>\n<li>Articles: Bound definite suffixes (<code>-en, -et</code>) function much like Bokmål, but plural definite <code>-arna</code> differs from Norwegian <code>-ene</code>.</li>\n<li>Question words: <code>va, vor, når</code> instead of Norwegian <code>hva, hvor, når</code>.</li>\n<li>English loanwords: <code>computer</code> and <code>internet</code> rather than <code>datamaskin</code> and <code>internett</code>.</li>\n</ul>\n<hr>\n<h3>9.2 Danish Writers</h3>\n<ul>\n<li>Numbers: Uses <code>sytti, åtti, nitti</code> instead of Danish <code>halvfjerds, firs, halvfems</code>.</li>\n<li>Past tense: <code>arbeidede</code> matches Danish well, but optional <code>arbeida</code> reflects Norwegian/Swedish youth usage.</li>\n<li>Plural forms: <code>flickar</code>/<code>jentar</code>/<code>pijar</code> vs Danish <code>piger</code>; expect more -ar endings than in Danish.</li>\n<li>Question words: <code>va, vorfor, vornår</code> instead of Danish <code>hvad, hvorfor, hvornår</code>.</li>\n<li>Double consonants: Are allowed even at the end of words for consistency. So <code>katt, skakk</code> instead of <code>kat, skak</code>. Note: The conjunction “att” (meaning “that”) is spelled with double t to distinguish it from the infinitive marker “å”.</li>\n<li>Some cases of [ð] will always spelled with <code>d</code> while others will have a primary spelling with <code>t</code> (<code>flod</code> vs <code>heter</code>). These are not always consistent with Danish pronounciation as Norwegian/Swedish pronounciation determine which spelling is used. Spelling with <code>d</code> is allowed as a secondary option when <code>t</code> is the primary spelling.</li>\n</ul>\n<hr>\n<h3>9.3 Swedish Writers</h3>\n<ul>\n<li>Present tense verbs: Always <code>-er</code> (e.g. <code>arbeider</code>) instead of Swedish <code>-ar</code> (<code>arbetar</code>).</li>\n<li>Plural forms: <code>pijar</code>, <code>jentar</code> or <code>flickar</code> instead of Swedish <code>flickor</code>.</li>\n<li>Definite plural suffix: <code>-arna</code> is familiar but may appear after unfamiliar stems.</li>\n<li>Numbers: <code>sytti, åtti, nitti</code> instead of Swedish <code>sjuttio, åttio, nittio</code>.</li>\n<li>Question words: <code>va, var, varfor, när</code>—close to Swedish but even Dansih/Norwegian versions may appear (<code>vor, vorfor, når</code>).</li>\n<li>English loanwords: <code>computer</code> and <code>cool</code> rather than <code>dator</code> and <code>kul</code>.</li>\n<li><code>kk</code> instead of <code>ck</code></li>\n</ul>\n",
+      "markdown": "## 9. Key Differences for native speakers\n\n### 9.1 Norwegian Writers\n\n- Past tense forms: `arbeidede` may feel Danish/archaic; optional `arbeida` is closer to spoken Norwegian.\n- Plural forms of nouns: `jentar` may look odd initially.\n- Articles: Bound definite suffixes (`-en, -et`) function much like Bokmål, but plural definite `-arna` differs from Norwegian `-ene`.\n- Question words: `va, vor, når` instead of Norwegian `hva, hvor, når`.\n- English loanwords: `computer` and `internet` rather than `datamaskin` and `internett`.\n\n\n---\n\n### 9.2 Danish Writers\n\n- Numbers: Uses `sytti, åtti, nitti` instead of Danish `halvfjerds, firs, halvfems`.\n- Past tense: `arbeidede` matches Danish well, but optional `arbeida` reflects Norwegian/Swedish youth usage.\n- Plural forms: `flickar`/`jentar`/`pijar` vs Danish `piger`; expect more -ar endings than in Danish.\n- Question words: `va, vorfor, vornår` instead of Danish `hvad, hvorfor, hvornår`.\n- Double consonants: Are allowed even at the end of words for consistency. So `katt, skakk` instead of `kat, skak`. Note: The conjunction \"att\" (meaning \"that\") is spelled with double t to distinguish it from the infinitive marker \"å\".\n- Some cases of [ð] will always spelled with `d` while others will have a primary spelling with `t` (`flod` vs `heter`). These are not always consistent with Danish pronounciation as Norwegian/Swedish pronounciation determine which spelling is used. Spelling with `d` is allowed as a secondary option when `t` is the primary spelling.\n\n---\n\n### 9.3 Swedish Writers\n\n- Present tense verbs: Always `-er` (e.g. `arbeider`) instead of Swedish `-ar` (`arbetar`).\n- Plural forms: `pijar`, `jentar` or `flickar` instead of Swedish `flickor`.\n- Definite plural suffix: `-arna` is familiar but may appear after unfamiliar stems.\n- Numbers: `sytti, åtti, nitti` instead of Swedish `sjuttio, åttio, nittio`.\n- Question words: `va, var, varfor, när`—close to Swedish but even Dansih/Norwegian versions may appear (`vor, vorfor, når`).\n- English loanwords: `computer` and `cool` rather than `dator` and `kul`.\n- `kk` instead of `ck`",
+      "subsections": [
+        {
+          "id": "91-norwegian-writers",
+          "title": "9.1 Norwegian Writers"
+        },
+        {
+          "id": "92-danish-writers",
+          "title": "9.2 Danish Writers"
+        },
+        {
+          "id": "93-swedish-writers",
+          "title": "9.3 Swedish Writers"
+        }
+      ]
+    },
+    "version-control": {
+      "title": "Version Control",
+      "html": "<h2>10 Version Control</h2>\n<p><strong>Semantic Versioning Implementation</strong>:</p>\n<ul>\n<li>Current version: MAJOR.MINOR.PATCH+timestamp format</li>\n<li>Change tracking: Complete changelog with rationale</li>\n<li>Breaking change identification: Clear version increment rules</li>\n<li>Release stability: Production-ready version management</li>\n</ul>\n<hr>\n<p><strong>Document Version</strong>: 0.9.1\n<strong>Last Updated</strong>: 2025-09-19\n<strong>Status</strong>: Complete Linguistic Reference\n<strong>Language Version</strong>: Nordum 0.9.0+production</p>\n<p>This specification serves as the authoritative reference for the Nordum pan-Scandinavian language, covering all linguistic features, rules, and usage patterns. For technical implementation details, build systems, and development information, see the project <a href=\"http://README.md\">README.md</a> and developer documentation.</p>\n",
+      "markdown": "## 10 Version Control\n\n**Semantic Versioning Implementation**:\n- Current version: MAJOR.MINOR.PATCH+timestamp format\n- Change tracking: Complete changelog with rationale\n- Breaking change identification: Clear version increment rules\n- Release stability: Production-ready version management\n\n---\n\n**Document Version**: 0.9.1\n**Last Updated**: 2025-09-19\n**Status**: Complete Linguistic Reference\n**Language Version**: Nordum 0.9.0+production\n\nThis specification serves as the authoritative reference for the Nordum pan-Scandinavian language, covering all linguistic features, rules, and usage patterns. For technical implementation details, build systems, and development information, see the project README.md and developer documentation.",
+      "subsections": []
+    }
+  },
+  "generatedAt": "2025-09-19T08:08:50.245Z",
+  "sourceFile": "NORDUM_LANGUAGE_SPECIFICATION.md"
+}

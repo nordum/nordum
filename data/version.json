@@ -1,0 +1,44 @@
+{
+  "major": 0,
+  "minor": 9,
+  "patch": 0,
+  "build": 1758124142536,
+  "prerelease": null,
+  "created": "2025-09-17T15:48:57.666Z",
+  "lastModified": "2025-09-19T08:08:54.192Z",
+  "features": {
+    "balancedPanScandinavian": true,
+    "englishLoanwords": true,
+    "norwegianNumbers": true,
+    "questionWordsV": true,
+    "alternativeSpellings": true,
+    "morphologicalDistinctions": true,
+    "soundPatterns": true,
+    "systematicVerbEndings": true,
+    "pronounSystem": true,
+    "geographicNamesPolicy": true
+  },
+  "statistics": {
+    "totalEntries": 6980,
+    "alternativeSpellings": 1055,
+    "languages": [
+      "norwegian",
+      "danish",
+      "swedish"
+    ],
+    "ruleCompliance": 100,
+    "averageCognateScore": 0.5668721488392886,
+    "lastBuild": "2025-09-19T08:08:54.192Z",
+    "lastUpdated": "2025-09-19T08:08:54.192Z"
+  },
+  "changelog": [
+    {
+      "version": "0.9.0",
+      "date": "2025-09-18",
+      "type": "minor",
+      "description": "Complete language specification with systematic morphological distinctions, pronoun system, and geographic names policy",
+      "breakingChanges": false,
+      "oldVersion": "0.8.0"
+    }
+  ]
+}

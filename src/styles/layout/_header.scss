@@ -1,0 +1,294 @@
+// Header layout styles
+// Main header layout and structure for the Nordum project
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--color-bg-primary);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4rem;
+  position: relative;
+}
+
+// Logo area
+.header-logo {
+  flex-shrink: 0;
+  
+  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--transition-fast);
+    
+    &:hover,
+    &:focus {
+      color: var(--color-primary);
+    }
+    
+    &:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+      border-radius: var(--radius-sm);
+    }
+  }
+}
+
+.logo-main {
+  font-size: 1.75rem;
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+  color: var(--color-primary);
+  letter-spacing: -0.025em;
+}
+
+.logo-subtitle {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  line-height: 1;
+  margin-top: -2px;
+  font-weight: var(--font-normal);
+  letter-spacing: 0.025em;
+}
+
+// Header actions (right side)
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+// Search toggle button (for mobile)
+.header-search-toggle {
+  display: none;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  border-radius: var(--radius-md);
+  transition: var(--transition-fast);
+  
+  &:hover,
+  &:focus {
+    background-color: var(--color-bg-accent);
+    color: var(--color-primary);
+  }
+  
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
+// Quick search in header
+.header-search {
+  position: relative;
+  max-width: 300px;
+  flex: 1;
+  
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 100%;
+    left: 1rem;
+    right: 1rem;
+    max-width: none;
+    background: var(--color-bg-primary);
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+    
+    &.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    font-size: 0.875rem;
+    transition: var(--transition-fast);
+    
+    &:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+    
+    &::placeholder {
+      color: var(--color-text-light);
+    }
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-light);
+    pointer-events: none;
+  }
+}
+
+// Header announcements bar (optional)
+.header-announcement {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
+  color: var(--color-text-inverse);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  position: relative;
+  
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    
+    &:hover {
+      text-decoration-thickness: 2px;
+    }
+  }
+  
+  .announcement-close {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: var(--radius-sm);
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 1024px) {
+  .header-container {
+    padding: 0 1rem;
+  }
+  
+  .logo-main {
+    font-size: 1.5rem;
+  }
+  
+  .logo-subtitle {
+    font-size: 0.6875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    min-height: 3.5rem;
+  }
+  
+  .logo-main {
+    font-size: 1.25rem;
+  }
+  
+  .logo-subtitle {
+    display: none;
+  }
+  
+  .header-search {
+    display: none;
+    
+    &.active {
+      display: block;
+    }
+  }
+}
+
+// Dark mode adjustments
+@media (prefers-color-scheme: dark) {
+  .header {
+    background-color: var(--color-bg-primary);
+    border-bottom-color: var(--color-border);
+  }
+  
+  .header-search input {
+    background-color: var(--color-bg-accent);
+  }
+}
+
+// High contrast mode
+@media (prefers-contrast: high) {
+  .header {
+    border-bottom-width: 2px;
+  }
+  
+  .header-search input {
+    border-width: 2px;
+    
+    &:focus {
+      border-width: 3px;
+    }
+  }
+}
+
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
+  .header-search {
+    transition: none;
+  }
+  
+  .logo-main,
+  .logo-subtitle,
+  .header-search input {
+    transition: none;
+  }
+}
+
+// Print styles
+@media print {
+  .header {
+    position: static;
+    box-shadow: none;
+    border-bottom: 1px solid #000;
+  }
+  
+  .header-search,
+  .header-search-toggle,
+  .header-announcement {
+    display: none;
+  }
+  
+  .logo-main {
+    color: #000;
+  }
+  
+  .logo-subtitle {
+    color: #666;
+  }
+}

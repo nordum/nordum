@@ -1,0 +1,260 @@
+// SCSS Mixins
+// Reusable mixins for the Nordum design system
+
+@use "sass:map";
+@use "./variables" as vars;
+@use "./functions" as func;
+
+// Responsive breakpoints mixin
+@mixin media($breakpoint) {
+  $value: func.breakpoint($breakpoint);
+  @if $value != 0 {
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+// Media query for max-width
+@mixin media-max($breakpoint) {
+  $value: func.breakpoint($breakpoint);
+  @if $value != 0 {
+    @media (max-width: $value - 1px) {
+      @content;
+    }
+  }
+}
+
+// Media query for range
+@mixin media-between($min, $max) {
+  $min-value: func.breakpoint($min);
+  $max-value: func.breakpoint($max);
+
+  @media (min-width: $min-value) and (max-width: $max-value - 1px) {
+    @content;
+  }
+}
+
+// Button mixin
+@mixin button-base() {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: vars.$btn-padding-y vars.$btn-padding-x;
+  border: 1px solid transparent;
+  border-radius: vars.$btn-border-radius;
+  font-weight: map.get(vars.$font-weights, medium);
+  text-decoration: none;
+  cursor: pointer;
+  transition: map.get(vars.$transitions, all);
+  user-select: none;
+  white-space: nowrap;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+@mixin button-variant($bg, $color: #fff, $border: $bg, $hover-bg: null, $active-bg: null) {
+  background-color: $bg;
+  color: $color;
+  border-color: $border;
+
+  &:hover:not(:disabled) {
+    background-color: $hover-bg or $bg;
+    border-color: $hover-bg or $border;
+    filter: brightness(0.9);
+  }
+
+  &:active:not(:disabled) {
+    background-color: $active-bg or $bg;
+    border-color: $active-bg or $border;
+    filter: brightness(0.85);
+  }
+}
+
+// Form input mixin
+@mixin input-base() {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: vars.$input-border-width solid var(--color-border);
+  border-radius: vars.$input-border-radius;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: map.get(vars.$transitions, colors);
+
+  &:focus {
+    outline: 0;
+    border-color: var(--color-border-focus);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: var(--color-bg-accent);
+  }
+
+  &::placeholder {
+    color: var(--color-text-light);
+  }
+}
+
+// Card mixin
+@mixin card() {
+  background-color: var(--color-bg-primary);
+  border: vars.$card-border-width solid var(--color-border);
+  border-radius: vars.$card-border-radius;
+  padding: vars.$card-padding;
+  box-shadow: map.get(vars.$shadows, sm);
+}
+
+// Flex utilities
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Text utilities
+@mixin text-truncate() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin text-clamp($lines: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// Visually hidden but accessible
+@mixin sr-only() {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+// Focus styles
+@mixin focus-ring($color: var(--color-primary)) {
+  outline: 2px solid $color;
+  outline-offset: 2px;
+}
+
+// Animation mixins
+@mixin fade-in($duration: 0.3s) {
+  opacity: 0;
+  animation: fade-in $duration ease-out forwards;
+}
+
+@mixin slide-up($duration: 0.3s) {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slide-up $duration ease-out forwards;
+}
+
+// Container mixin
+@mixin container($max-width: map.get(vars.$container-max-widths, xl)) {
+  width: 100%;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: func.spacing(4);
+  padding-right: func.spacing(4);
+
+  @include media(sm) {
+    padding-left: func.spacing(6);
+    padding-right: func.spacing(6);
+  }
+}
+
+// Grid mixins
+@mixin grid-columns($columns: vars.$grid-columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: vars.$grid-gutter-width;
+}
+
+@mixin grid-responsive($sm: 1, $md: 2, $lg: 3, $xl: 4) {
+  display: grid;
+  gap: vars.$grid-gutter-width;
+  grid-template-columns: repeat($sm, 1fr);
+
+  @include media(sm) {
+    grid-template-columns: repeat($md, 1fr);
+  }
+
+  @include media(lg) {
+    grid-template-columns: repeat($lg, 1fr);
+  }
+
+  @include media(xl) {
+    grid-template-columns: repeat($xl, 1fr);
+  }
+}
+
+// Language-specific mixins
+@mixin nordum-text() {
+  font-feature-settings: "kern" 1, "liga" 1;
+  letter-spacing: 0.01em;
+  word-spacing: 0.02em;
+}
+
+@mixin scandinavian-text() {
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-last: always;
+  hyphenate-limit-zone: 8%;
+}
+
+// High contrast mode support
+@mixin high-contrast() {
+  @media (prefers-contrast: high) {
+    @content;
+  }
+}
+
+// Reduced motion support
+@mixin reduced-motion() {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
+
+// Dark mode support
+@mixin dark-mode() {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
+
+// Print styles
+@mixin print() {
+  @media print {
+    @content;
+  }
+}

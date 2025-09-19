@@ -1,0 +1,288 @@
+{
+  "title": "Nordum",
+  "description": "A pan-Scandinavian written language designed for maximum mutual intelligibility across Norwegian, Danish, and Swedish",
+  "url": "https://nordum.org",
+  "version": "0.9.0",
+  "languages": {
+    "supported": ["en", "da", "nb", "nn", "sv", "nordum"],
+    "default": "en",
+    "nordum": {
+      "name": "Nordum",
+      "nativeName": "Nordum",
+      "direction": "ltr",
+      "locale": "nordum"
+    }
+  },
+  "linguistic": {
+    "designPrinciples": [
+      "Maximum mutual intelligibility across Norwegian, Danish, and Swedish",
+      "Systematic regularity and phonetic transparency",
+      "Balanced pan-Scandinavian selection respecting all three source languages equally",
+      "Modern practicality with English loanword preservation",
+      "Accommodation of regional pronunciation differences through alternative spellings"
+    ],
+    "orthographicRules": {
+      "vowelSystem": "Primary: Norwegian/Danish æ/ø with Swedish/German ä/ö alternatives",
+      "consonantSystem": "Regular patterns, no silent letters except morphologically motivated",
+      "wordFinalDoubleConsonants": true,
+      "compoundWriting": "Single word when semantically unified",
+      "capitalization": ["sentence_beginnings", "proper_nouns"],
+      "questionWordPattern": "V- pattern without silent H (Swedish influence)",
+      "alternativeSpellings": {
+        "vowels": ["æ/ä", "ø/ö", "aa/å"],
+        "questionWords": ["vad/va", "varför/vorfor", "ven/vornår/når/när"],
+        "soundPatterns": ["ej/ei", "øj/øy", "aj/ai"]
+      }
+    },
+    "phonologicalRules": {
+      "vowels": {
+        "a": "/a/ - [ɑ], [a], [æ] (regional variation accepted)",
+        "e": "/e/ - [e], [ɛ], [ə] (stressed/unstressed variation)",
+        "i": "/i/ - [i] (never [ɪ])",
+        "o": "/o/ - [o] (never [ɔ])",
+        "u": "/u/ - [u], [ʊ], [ʉ] (regional variation)",
+        "y": "/y/ - [y]",
+        "å": "/oː/ - [oː]",
+        "æ": "/æ/ - [æ], [ɛ]",
+        "ø": "/ø/ - [ø], [œ]"
+      },
+      "consonants": {
+        "d": "[d]/[ð]/[t] - regional pronunciation accepted",
+        "g": "[g] - always hard",
+        "r": "[r]/[ʁ] - regional variation",
+        "t": "[t]/[ð] - regional variation"
+      },
+      "specialCombinations": {
+        "sk": "[sk] before front vowels",
+        "skj": "[ʃ] (Norwegian pattern)",
+        "sj": "[ʃ] (Danish/Norwegian pattern)",
+        "tj": "[ç] (Swedish pattern)",
+        "kj": "[ç] (Norwegian pattern)",
+        "ng": "[ŋ] in final position"
+      },
+      "stressRules": [
+        "Primary stress on first syllable in native words",
+        "Secondary stress every second syllable after primary",
+        "Compound words: stress on first element",
+        "Loanwords: preserve source language stress"
+      ]
+    },
+    "morphologicalRules": {
+      "systematicDistinctions": {
+        "verbsPresent": "-er ending (always)",
+        "nounPlurals": "-ar ending (usually)",
+        "adjectiveComparative": "-ere ending",
+        "adjectiveSuperlative": "-est ending"
+      },
+      "nouns": {
+        "genders": ["common", "neuter"],
+        "genderAssignment": {
+          "common": ["animates", "most_concrete_objects", "abstracts_in_-het_-skap"],
+          "neuter": ["collectives", "materials", "infinitives_as_nouns", "words_in_-ande_-ende"]
+        },
+        "declension": {
+          "singular": {
+            "indefinite": "",
+            "definite": {
+              "common": "-en",
+              "neuter": "-et"
+            }
+          },
+          "plural": {
+            "indefinite": "-ar",
+            "definite": "-arna"
+          }
+        },
+        "irregularPlurals": {
+          "preserved": ["hus→hus", "barn→barn", "øye→øie", "ben→ben", "år→år"],
+          "criterion": "Invariant common neuter nouns"
+        }
+      },
+      "verbs": {
+        "regularConjugation": {
+          "infinitive": "-e",
+          "present": "-er",
+          "pastFormal": "-ede",
+          "pastInformal": "-a",
+          "supine": "-et",
+          "pastParticiple": "-et",
+          "presentParticiple": "-ende",
+          "imperative": "stem"
+        },
+        "irregularVerbs": ["være→er", "ha→har", "gå→går"],
+        "auxiliaries": {
+          "perfective": "har + supine",
+          "pluperfect": "hade + supine",
+          "future": "ska/vil + infinitive",
+          "conditional": "skulle + infinitive",
+          "passive": "blir + past_participle"
+        }
+      },
+      "adjectives": {
+        "inflection": {
+          "positive": {
+            "common": "",
+            "neuter": "-t",
+            "plural": "-e",
+            "definite": "-e"
+          },
+          "comparative": "-ere",
+          "superlative": "-est"
+        },
+        "irregulars": ["god→bedre→bedst", "liten→mindre→mindst"]
+      },
+      "pronouns": {
+        "personal": {
+          "subject": ["jei", "du", "han", "hun", "den", "det", "vi", "ni", "de"],
+          "object": ["mei", "dei", "ham", "henne", "den", "det", "oss", "er", "dem"],
+          "reflexive": ["mei", "dei", "sei", "oss selv", "er selv", "sei"],
+          "possessive": ["min/mitt/mina", "din/ditt/dina", "hans", "hennas", "dens", "dets", "vår/vårt/våra", "er/ert/era", "deras"]
+        }
+      }
+    },
+    "syntacticRules": {
+      "wordOrder": {
+        "main": "Subject-Verb-Object with V2 rule",
+        "subordinate": "Conjunction + Subject + Verb + ...",
+        "questions": {
+          "yesNo": "Verb + Subject + ...",
+          "wh": "Question_word + Verb + Subject + ..."
+        }
+      },
+      "negation": {
+        "primary": "ikke",
+        "position": {
+          "main": "after_finite_verb",
+          "subordinate": "before_main_verb"
+        }
+      },
+      "articleSystem": {
+        "indefinite": {
+          "common": "en",
+          "neuter": "ett"
+        },
+        "definiteBound": {
+          "common": "-en",
+          "neuter": "-et",
+          "plural": "-arna"
+        },
+        "definiteFree": {
+          "common": "den",
+          "neuter": "det",
+          "plural": "de"
+        }
+      }
+    },
+    "lexicalRules": {
+      "selectionCriteria": [
+        "English loanword detection → preserve unchanged",
+        "Norwegian number system → apply systematic replacement",
+        "Question word transformation → hv→v pattern with alternatives",
+        "Strategic pan-Scandinavian selection → optimize for mutual intelligibility",
+        "Alternative spelling generation → accommodate pronunciation variants",
+        "Morphological systematization → apply distinctive endings"
+      ],
+      "prioritySystem": [
+        "Perfect cognates (identical in all three)",
+        "Near cognates (minor spelling differences) → choose most regular",
+        "Partial cognates (present in two) → choose more regular form",
+        "No cognates → create compound or choose most international"
+      ],
+      "englishLoanwords": [
+        "computer", "internet", "email", "software", "website", "app", "smartphone",
+        "browser", "password", "check", "chocolate", "social media", "basketball"
+      ],
+      "numberSystem": {
+        "base": "Norwegian system (most regular)",
+        "rationale": "Eliminates Danish vigesimal complexity while remaining clear to Swedish speakers",
+        "numbers": {
+          "50": "femti",
+          "60": "seksti",
+          "70": "sytti",
+          "80": "åtti",
+          "90": "nitti",
+          "100": "hundre",
+          "1000": "tusen"
+        }
+      },
+      "geographicNames": {
+        "policy": "Use endonyms as default with limited established exonyms",
+        "endonyms": ["Argentina", "Hellas", "España", "Italia", "Nederland", "Deutschland", "Praha", "Bruxelles"],
+        "permittedExonyms": ["Tyskland", "Østerrike"]
+      }
+    }
+  },
+  "punctuationRules": {
+    "commaRules": [
+      "List separation: rød, blå og gul",
+      "Before subordinating conjunctions: Jei vet att hun arbeider",
+      "Around non-restrictive clauses",
+      "No comma before 'og/eller' in short lists"
+    ],
+    "hyphenation": [
+      "Clarity in complex compounds only",
+      "Foreign element + native word",
+      "Temporary formations"
+    ]
+  },
+  "qualityMetrics": {
+    "regularityScore": "Percentage of words following regular patterns",
+    "intelligibilityScore": "Comprehension rate across source languages",
+    "coverageScore": "Percentage of common vocabulary represented",
+    "mutualIntelligibility": "Score from 0-1 across three languages",
+    "systematicRegularity": "Adherence to morphological patterns",
+    "practicalUtility": "Modern usage and learnability",
+    "panScandinavianBalance": "Equal treatment of source languages",
+    "targets": {
+      "regularity": ">95%",
+      "intelligibility": ">85%",
+      "coverage": ">90%",
+      "mutualIntelligibility": ">0.8",
+      "balance": ">0.9"
+    }
+  },
+  "tools": {
+    "dictionary": {
+      "entryCount": 6978,
+      "languages": ["nordum", "english", "norwegian", "danish", "swedish"],
+      "features": ["etymology", "cognate_analysis", "frequency_data", "inflections", "alternative_spellings"]
+    },
+    "spellchecker": {
+      "type": "morphological",
+      "features": ["compound_analysis", "inflection_validation", "suggestion_generation", "alternative_spelling_support"],
+      "accuracy": ">98%"
+    },
+    "translator": {
+      "pairs": [
+        "nordum-norwegian",
+        "nordum-danish",
+        "nordum-swedish",
+        "nordum-english"
+      ],
+      "method": "rule_based_with_statistical_fallback"
+    }
+  },
+  "community": {
+    "contributors": 1,
+    "languages_represented": ["Norwegian", "Danish", "Swedish", "English"],
+    "expertise": ["Linguistics", "Software Development", "Language Education"],
+    "governance": "Open collaborative model"
+  },
+  "technical": {
+    "buildSystem": "Node.js with Handlebars templating",
+    "i18n": "JSON-based with interpolation support",
+    "deployment": "Static site generation with CDN",
+    "analytics": "Privacy-focused usage statistics",
+    "accessibility": "WCAG 2.1 AA compliance",
+    "versioning": "Semantic Versioning (MAJOR.MINOR.PATCH+timestamp)"
+  },
+  "contact": {
+    "email": "hello@nordum.org",
+    "github": "https://github.com/nordum/nordum"
+  },
+  "legal": {
+    "license": "CC-BY-4.0",
+    "privacy": "GDPR compliant",
+    "terms": "Open source contribution model"
+  }
+}

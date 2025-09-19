@@ -1,0 +1,336 @@
+// Navigation styles
+// Main navigation and header styling for the Nordum project
+
+.header {
+  background-color: var(--color-bg-primary);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4rem;
+}
+
+// Logo and branding
+.nav-logo {
+  a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    display: flex;
+    flex-direction: column;
+    
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+.logo-tagline {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  line-height: 1;
+  margin-top: -2px;
+}
+
+// Main navigation menu
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 2rem;
+  
+  @media (max-width: 768px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-bg-primary);
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+    
+    &.active {
+      display: flex;
+    }
+  }
+  
+  li {
+    position: relative;
+  }
+}
+
+// Navigation links
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-weight: var(--font-medium);
+  border-radius: var(--radius-md);
+  transition: var(--transition-fast);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  
+  &:hover,
+  &:focus {
+    color: var(--color-primary);
+    background-color: var(--color-bg-accent);
+  }
+  
+  &.active {
+    color: var(--color-primary);
+    background-color: var(--color-bg-accent);
+  }
+  
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+// Dropdown menu
+.nav-dropdown {
+  position: relative;
+  
+  .dropdown-toggle {
+    gap: 0.25rem;
+    
+    .dropdown-arrow {
+      transition: transform var(--transition-fast);
+    }
+    
+    &[aria-expanded="true"] .dropdown-arrow {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  min-width: 200px;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-0.5rem);
+  transition: all var(--transition-fast);
+  
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  li {
+    margin: 0;
+  }
+  
+  a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: var(--transition-fast);
+    
+    &:hover,
+    &:focus {
+      background-color: var(--color-bg-accent);
+      color: var(--color-primary);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background: var(--color-bg-secondary);
+    margin: 0.5rem 0 0 1rem;
+    border-radius: 0;
+  }
+}
+
+// Language switcher
+.nav-language {
+  position: relative;
+  
+  .lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    
+    &:hover {
+      border-color: var(--color-primary);
+    }
+  }
+  
+  .lang-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    min-width: 180px;
+    padding: 0.5rem 0;
+    margin: 0.25rem 0 0 0;
+    list-style: none;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-0.5rem);
+    transition: all var(--transition-fast);
+    
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  }
+  
+  .lang-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: var(--transition-fast);
+    
+    &:hover,
+    &:focus {
+      background-color: var(--color-bg-accent);
+      color: var(--color-primary);
+    }
+    
+    &.active {
+      background-color: var(--color-bg-accent);
+      color: var(--color-primary);
+      font-weight: var(--font-medium);
+    }
+  }
+}
+
+// Mobile menu toggle
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  
+  @media (max-width: 768px) {
+    display: flex;
+  }
+  
+  .bar {
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-text-primary);
+    transition: var(--transition-fast);
+    transform-origin: center;
+  }
+  
+  &[aria-expanded="true"] {
+    .bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .bar:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  }
+}
+
+// Accessibility improvements
+@media (prefers-reduced-motion: reduce) {
+  .nav-link,
+  .dropdown-menu,
+  .lang-dropdown,
+  .hamburger .bar {
+    transition: none;
+  }
+}
+
+// High contrast mode
+@media (prefers-contrast: high) {
+  .header {
+    border-bottom-width: 2px;
+  }
+  
+  .nav-link,
+  .lang-toggle {
+    border: 1px solid transparent;
+    
+    &:hover,
+    &:focus {
+      border-color: currentColor;
+    }
+  }
+}
+
+// Print styles
+@media print {
+  .header {
+    position: static;
+    box-shadow: none;
+  }
+  
+  .nav-menu li:not(:first-child) {
+    display: none;
+  }
+  
+  .hamburger,
+  .nav-language {
+    display: none;
+  }
+}

@@ -1,0 +1,491 @@
+@use "sass:map";
+@use "../abstracts/variables" as vars;
+
+// Translator Tool Styles
+.translator-tool {
+  .translation-controls {
+    background: map.get(vars.$colors, bg-primary);
+    border: 1px solid map.get(vars.$colors, border);
+    border-radius: vars.$card-border-radius;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: map.get(vars.$shadows, sm);
+
+    .language-selector {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: center;
+
+      .from-language,
+      .to-language {
+        flex: 1;
+        max-width: 200px;
+
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-weight: map.get(vars.$font-weights, semibold);
+          color: map.get(vars.$colors, text-secondary);
+          font-size: map.get(vars.$font-sizes, sm);
+        }
+
+        .lang-select {
+          width: 100%;
+          padding: 0.75rem;
+          border: 1px solid map.get(vars.$colors, border);
+          border-radius: vars.$input-border-radius;
+          background: map.get(vars.$colors, bg-primary);
+          color: map.get(vars.$colors, text-secondary);
+          font-size: map.get(vars.$font-sizes, sm);
+          cursor: pointer;
+          transition: map.get(vars.$transitions, all);
+
+          &:focus {
+            outline: none;
+            border-color: map.get(vars.$colors, border-focus);
+            box-shadow: 0 0 0 2px rgba(map.get(vars.$colors, primary), 0.2);
+          }
+
+          &:hover {
+            border-color: map.get(vars.$colors, text-light);
+          }
+        }
+      }
+
+      .swap-languages {
+        background: map.get(vars.$colors, primary);
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: map.get(vars.$colors, text-inverse);
+        cursor: pointer;
+        transition: map.get(vars.$transitions, all);
+        margin-top: 1.5rem;
+
+        &:hover {
+          background: map.get(vars.$colors, primary-dark);
+          transform: rotate(180deg);
+        }
+
+        &:active {
+          transform: rotate(180deg) scale(0.95);
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .translation-interface {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    .input-panel,
+    .output-panel {
+      background: map.get(vars.$colors, bg-primary);
+      border: 1px solid map.get(vars.$colors, border);
+      border-radius: vars.$card-border-radius;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 300px;
+
+      .panel-header {
+        background: map.get(vars.$colors, bg-secondary);
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid map.get(vars.$colors, border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: map.get(vars.$font-sizes, sm);
+
+        .detected-language,
+        .confidence-indicator {
+          color: map.get(vars.$colors, text-secondary);
+          font-style: italic;
+
+          span {
+            font-weight: map.get(vars.$font-weights, semibold);
+            color: map.get(vars.$colors, primary);
+          }
+        }
+
+        .panel-actions {
+          display: flex;
+          gap: 0.5rem;
+
+          .panel-btn {
+            background: transparent;
+            border: none;
+            padding: 0.375rem;
+            border-radius: vars.$btn-border-radius;
+            color: map.get(vars.$colors, text-light);
+            cursor: pointer;
+            transition: map.get(vars.$transitions, all);
+
+            &:hover {
+              background: map.get(vars.$colors, bg-accent);
+              color: map.get(vars.$colors, text-secondary);
+            }
+
+            svg {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+
+      .panel-footer {
+        background: map.get(vars.$colors, bg-secondary);
+        padding: 0.5rem 1rem;
+        border-top: 1px solid map.get(vars.$colors, border);
+        font-size: map.get(vars.$font-sizes, xs);
+        color: map.get(vars.$colors, text-light);
+        text-align: right;
+      }
+    }
+
+    .input-panel {
+      .translation-textarea {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 1rem;
+        font-family: inherit;
+        font-size: map.get(vars.$font-sizes, base);
+        line-height: map.get(vars.$line-heights, normal);
+        resize: none;
+        background: transparent;
+        color: map.get(vars.$colors, text-primary);
+
+        &::placeholder {
+          color: map.get(vars.$colors, text-light);
+        }
+
+        &:focus {
+          background: map.get(vars.$colors, bg-primary);
+        }
+      }
+    }
+
+    .output-panel {
+      .translation-output {
+        flex: 1;
+        padding: 1rem;
+        font-family: inherit;
+        font-size: map.get(vars.$font-sizes, base);
+        line-height: map.get(vars.$line-heights, normal);
+        color: map.get(vars.$colors, text-primary);
+        overflow-y: auto;
+
+        .output-placeholder {
+          color: map.get(vars.$colors, text-light);
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  .quick-translations {
+    background: map.get(vars.$colors, bg-primary);
+    border: 1px solid map.get(vars.$colors, border);
+    border-radius: vars.$card-border-radius;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+
+    h3 {
+      margin: 0 0 1rem 0;
+      font-size: map.get(vars.$font-sizes, lg);
+      font-weight: map.get(vars.$font-weights, semibold);
+      color: map.get(vars.$colors, text-primary);
+    }
+
+    .phrase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+
+      .phrase-btn {
+        background: map.get(vars.$colors, bg-secondary);
+        border: 1px solid map.get(vars.$colors, border);
+        border-radius: vars.$btn-border-radius;
+        padding: 0.75rem 1rem;
+        text-align: left;
+        cursor: pointer;
+        transition: map.get(vars.$transitions, all);
+
+        &:hover {
+          background: map.get(vars.$colors, primary);
+          color: map.get(vars.$colors, text-inverse);
+          border-color: map.get(vars.$colors, primary);
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(map.get(vars.$colors, primary), 0.3);
+        }
+
+        .phrase-text {
+          font-size: map.get(vars.$font-sizes, sm);
+          line-height: map.get(vars.$line-heights, snug);
+        }
+      }
+    }
+  }
+
+  .translation-history {
+    background: map.get(vars.$colors, bg-primary);
+    border: 1px solid map.get(vars.$colors, border);
+    border-radius: vars.$card-border-radius;
+    padding: 1.5rem;
+
+    .history-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      h3 {
+        margin: 0;
+        font-size: map.get(vars.$font-sizes, lg);
+        font-weight: map.get(vars.$font-weights, semibold);
+        color: map.get(vars.$colors, text-primary);
+      }
+
+      .clear-history-btn {
+        background: transparent;
+        border: 1px solid map.get(vars.$colors, border);
+        border-radius: vars.$btn-border-radius;
+        padding: 0.5rem 1rem;
+        font-size: map.get(vars.$font-sizes, sm);
+        color: map.get(vars.$colors, text-secondary);
+        cursor: pointer;
+        transition: map.get(vars.$transitions, all);
+
+        &:hover {
+          background: map.get(vars.$colors, error);
+          color: map.get(vars.$colors, text-inverse);
+          border-color: map.get(vars.$colors, error);
+        }
+      }
+    }
+
+    .history-list {
+      .history-empty {
+        color: map.get(vars.$colors, text-light);
+        font-style: italic;
+        text-align: center;
+        padding: 2rem 0;
+        margin: 0;
+      }
+
+      .history-entry {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: auto auto;
+        gap: 0.5rem;
+        padding: 1rem;
+        border: 1px solid map.get(vars.$colors, bg-accent);
+        border-radius: vars.$input-border-radius;
+        margin-bottom: 0.75rem;
+        transition: map.get(vars.$transitions, all);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          background: map.get(vars.$colors, bg-secondary);
+          border-color: map.get(vars.$colors, primary);
+        }
+
+        .history-input {
+          grid-column: 1;
+          grid-row: 1;
+          font-size: map.get(vars.$font-sizes, sm);
+          color: map.get(vars.$colors, text-secondary);
+        }
+
+        .history-arrow {
+          grid-column: 2;
+          grid-row: 1;
+          display: flex;
+          align-items: center;
+          color: map.get(vars.$colors, primary);
+          font-weight: map.get(vars.$font-weights, semibold);
+        }
+
+        .history-output {
+          grid-column: 3;
+          grid-row: 1;
+          font-size: map.get(vars.$font-sizes, sm);
+          color: map.get(vars.$colors, text-primary);
+          font-weight: map.get(vars.$font-weights, medium);
+        }
+
+        .history-meta {
+          grid-column: 1 / -1;
+          grid-row: 2;
+          font-size: map.get(vars.$font-sizes, xs);
+          color: map.get(vars.$colors, text-light);
+          border-top: 1px solid map.get(vars.$colors, bg-accent);
+          padding-top: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .char-count {
+    font-size: map.get(vars.$font-sizes, xs);
+    color: map.get(vars.$colors, text-light);
+
+    &.near-limit {
+      color: map.get(vars.$colors, warning);
+    }
+
+    &.over-limit {
+      color: map.get(vars.$colors, error);
+    }
+  }
+
+  // Copy feedback animation
+  .panel-btn.copied {
+    background: map.get(vars.$colors, success) !important;
+    color: map.get(vars.$colors, text-inverse) !important;
+  }
+
+  // Responsive design
+  @media (max-width: map.get(vars.$breakpoints, md)) {
+    .translation-controls .language-selector {
+      flex-direction: column;
+      gap: 1rem;
+
+      .from-language,
+      .to-language {
+        max-width: none;
+        width: 100%;
+      }
+
+      .swap-languages {
+        margin-top: 0;
+        transform: rotate(90deg);
+
+        &:hover {
+          transform: rotate(270deg);
+        }
+      }
+    }
+
+    .translation-interface {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+
+      .input-panel,
+      .output-panel {
+        min-height: 200px;
+      }
+    }
+
+    .quick-translations .phrase-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .translation-history .history-list .history-entry {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+
+      .history-input {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .history-arrow {
+        grid-column: 1;
+        grid-row: 2;
+        justify-content: center;
+        padding: 0.25rem 0;
+      }
+
+      .history-output {
+        grid-column: 1;
+        grid-row: 3;
+      }
+
+      .history-meta {
+        grid-column: 1;
+        grid-row: 4;
+      }
+    }
+  }
+
+  @media (max-width: map.get(vars.$breakpoints, sm)) {
+    .translation-controls {
+      padding: 1rem;
+    }
+
+    .quick-translations,
+    .translation-history {
+      padding: 1rem;
+    }
+
+    .translation-interface {
+      .input-panel,
+      .output-panel {
+        .panel-header {
+          padding: 0.5rem;
+          font-size: map.get(vars.$font-sizes, xs);
+        }
+
+        .panel-footer {
+          padding: 0.375rem 0.5rem;
+        }
+      }
+
+      .translation-textarea,
+      .translation-output {
+        padding: 0.75rem;
+        font-size: map.get(vars.$font-sizes, sm);
+      }
+    }
+  }
+}
+
+// Animation for language detection
+@keyframes detectLanguage {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.detected-language {
+  animation: detectLanguage 0.3s ease-out;
+}
+
+// Animation for translation confidence
+@keyframes showConfidence {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.confidence-indicator {
+  animation: showConfidence 0.3s ease-out;
+}

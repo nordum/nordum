@@ -1,0 +1,333 @@
+// Button component styles
+// Button styling for the Nordum project
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  font-weight: var(--font-semibold);
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+  white-space: nowrap;
+  min-height: 2.75rem;
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+  
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  // Size variations
+  &.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    min-height: 2.25rem;
+  }
+  
+  &.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    min-height: 3.25rem;
+  }
+  
+  // Width variations
+  &.btn-block {
+    width: 100%;
+  }
+  
+  &.btn-auto {
+    width: auto;
+  }
+}
+
+// Primary button
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-color: var(--color-primary);
+  
+  &:hover,
+  &:focus {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    color: var(--color-text-inverse);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Secondary button
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  
+  &:hover,
+  &:focus {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Success button
+.btn-success {
+  background-color: var(--color-success);
+  color: var(--color-text-inverse);
+  border-color: var(--color-success);
+  
+  &:hover,
+  &:focus {
+    background-color: #059669;
+    border-color: #059669;
+    color: var(--color-text-inverse);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Warning button
+.btn-warning {
+  background-color: var(--color-warning);
+  color: var(--color-text-inverse);
+  border-color: var(--color-warning);
+  
+  &:hover,
+  &:focus {
+    background-color: #d97706;
+    border-color: #d97706;
+    color: var(--color-text-inverse);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Danger/Error button
+.btn-danger {
+  background-color: var(--color-error);
+  color: var(--color-text-inverse);
+  border-color: var(--color-error);
+  
+  &:hover,
+  &:focus {
+    background-color: #dc2626;
+    border-color: #dc2626;
+    color: var(--color-text-inverse);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Text button (minimal styling)
+.btn-text {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: transparent;
+  padding: 0.5rem 1rem;
+  
+  &:hover,
+  &:focus {
+    background-color: var(--color-bg-accent);
+    color: var(--color-primary-dark);
+    text-decoration: none;
+  }
+  
+  &:active {
+    background-color: var(--color-bg-accent);
+  }
+}
+
+// Ghost button (outline only)
+.btn-ghost {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+  
+  &:hover,
+  &:focus {
+    background-color: var(--color-bg-accent);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Icon buttons
+.btn-icon {
+  padding: 0.75rem;
+  min-width: 2.75rem;
+  
+  &.btn-sm {
+    padding: 0.5rem;
+    min-width: 2.25rem;
+  }
+  
+  &.btn-lg {
+    padding: 1rem;
+    min-width: 3.25rem;
+  }
+}
+
+// Button with icon
+.btn-with-icon {
+  .btn-icon-left {
+    margin-right: 0.5rem;
+    margin-left: -0.25rem;
+  }
+  
+  .btn-icon-right {
+    margin-left: 0.5rem;
+    margin-right: -0.25rem;
+  }
+}
+
+// Button group
+.btn-group {
+  display: inline-flex;
+  
+  .btn {
+    border-radius: 0;
+    
+    &:first-child {
+      border-top-left-radius: var(--radius-md);
+      border-bottom-left-radius: var(--radius-md);
+    }
+    
+    &:last-child {
+      border-top-right-radius: var(--radius-md);
+      border-bottom-right-radius: var(--radius-md);
+    }
+    
+    &:not(:first-child) {
+      margin-left: -2px;
+    }
+    
+    &:hover,
+    &:focus {
+      z-index: 1;
+    }
+  }
+}
+
+// Loading state
+.btn-loading {
+  position: relative;
+  color: transparent !important;
+  pointer-events: none;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: btn-spin 1s linear infinite;
+  }
+  
+  &.btn-primary::after,
+  &.btn-success::after,
+  &.btn-warning::after,
+  &.btn-danger::after {
+    border-color: var(--color-text-inverse);
+    border-top-color: transparent;
+  }
+}
+
+@keyframes btn-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// High contrast mode
+@media (prefers-contrast: high) {
+  .btn {
+    border-width: 3px;
+    
+    &:focus {
+      outline-width: 3px;
+    }
+  }
+}
+
+// Reduced motion
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+    
+    &:hover,
+    &:focus,
+    &:active {
+      transform: none;
+    }
+  }
+  
+  .btn-loading::after {
+    animation: none;
+  }
+}
+
+// Print styles
+@media print {
+  .btn {
+    background: none !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+  
+  .btn-loading::after {
+    display: none;
+  }
+}

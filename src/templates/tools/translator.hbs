@@ -1,0 +1,138 @@
+{{#> layout pageTitle=(t 'tools.translator.title') currentPage="translator" currentSection="tools" bodyClass="translator-page"}}
+
+{{> tool-header toolTitle=(t 'tools.translator.title') toolSubtitle=(t 'translator.subtitle')}}
+
+<section class="translator-tool">
+    <div class="container">
+        <!-- Language Selection -->
+        <div class="translation-controls">
+            <div class="language-selector">
+                <div class="from-language">
+                    <label for="from-lang">{{t 'translator.from'}}</label>
+                    <select id="from-lang" class="lang-select">
+                        <option value="auto">{{t 'translator.languages.auto'}}</option>
+                        <option value="nordum">{{t 'translator.languages.nordum'}}</option>
+                        <option value="norwegian">{{t 'translator.languages.norwegian'}}</option>
+                        <option value="danish">{{t 'translator.languages.danish'}}</option>
+                        <option value="swedish">{{t 'translator.languages.swedish'}}</option>
+                    </select>
+                </div>
+
+                <button class="swap-languages" id="swap-btn" title="{{t 'translator.swap'}}">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z"/>
+                    </svg>
+                </button>
+
+                <div class="to-language">
+                    <label for="to-lang">{{t 'translator.to'}}</label>
+                    <select id="to-lang" class="lang-select">
+                        <option value="nordum" selected>{{t 'translator.languages.nordum'}}</option>
+                        <option value="norwegian">{{t 'translator.languages.norwegian'}}</option>
+                        <option value="danish">{{t 'translator.languages.danish'}}</option>
+                        <option value="swedish">{{t 'translator.languages.swedish'}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Translation Interface -->
+        <div class="translation-interface">
+            <div class="input-panel">
+                <div class="panel-header">
+                    <div class="detected-language" id="detected-lang" style="display: none;">
+                        {{t 'translator.detected'}}: <span id="detected-lang-name"></span>
+                    </div>
+                    <div class="panel-actions">
+                        <button class="panel-btn" id="clear-input" title="{{t 'translator.toolbar.clear'}}">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+                            </svg>
+                        </button>
+                        <button class="panel-btn" id="paste-input" title="{{t 'translator.toolbar.paste'}}">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19,20H5V4H7V7H17V4H19M12,2A1,1 0 0,1 13,3A1,1 0 0,1 12,4A1,1 0 0,1 11,3A1,1 0 0,1 12,2M19,2H14.82C14.4,0.84 13.3,0 12,0C10.7,0 9.6,0.84 9.18,2H5A2,2 0 0,0 3,4V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V4A2,2 0 0,0 19,2Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <textarea 
+                    id="input-text" 
+                    class="translation-textarea"
+                    placeholder="{{t 'translator.inputPlaceholder'}}"
+                    maxlength="5000"></textarea>
+                <div class="panel-footer">
+                    <span class="char-count">
+                        <span id="input-char-count">0</span>/5000 {{t 'translator.characterLimit'}}
+                    </span>
+                </div>
+            </div>
+
+            <div class="output-panel">
+                <div class="panel-header">
+                    <div class="confidence-indicator" id="confidence" style="display: none;">
+                        {{t 'translator.confidence'}}: <span id="confidence-value">--</span>%
+                    </div>
+                    <div class="panel-actions">
+                        <button class="panel-btn" id="copy-output" title="{{t 'translator.toolbar.copy'}}">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"/>
+                            </svg>
+                        </button>
+                        <button class="panel-btn" id="speak-output" title="{{t 'translator.toolbar.speak'}}">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="translation-output" id="output-text">
+                    <span class="output-placeholder">{{t 'translator.outputPlaceholder'}}</span>
+                </div>
+                <div class="panel-footer">
+                    <span class="char-count">
+                        <span id="output-char-count">0</span> {{t 'translator.characterLimit'}}
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Translations -->
+        <div class="quick-translations">
+            <h3>{{t 'translator.quickTranslations'}}</h3>
+            <div class="phrase-grid">
+                <button class="phrase-btn" data-phrase="hello">
+                    <span class="phrase-text">{{t 'translator.phrases.hello'}}</span>
+                </button>
+                <button class="phrase-btn" data-phrase="thanks">
+                    <span class="phrase-text">{{t 'translator.phrases.thanks'}}</span>
+                </button>
+                <button class="phrase-btn" data-phrase="understand">
+                    <span class="phrase-text">{{t 'translator.phrases.understand'}}</span>
+                </button>
+                <button class="phrase-btn" data-phrase="help">
+                    <span class="phrase-text">{{t 'translator.phrases.help'}}</span>
+                </button>
+                <button class="phrase-btn" data-phrase="cost">
+                    <span class="phrase-text">{{t 'translator.phrases.cost'}}</span>
+                </button>
+                <button class="phrase-btn" data-phrase="goodbye">
+                    <span class="phrase-text">{{t 'translator.phrases.goodbye'}}</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Translation History -->
+        <div class="translation-history" id="translation-history" style="display: none;">
+            <div class="history-header">
+                <h3>{{t 'translator.history.title'}}</h3>
+                <button class="clear-history-btn" id="clear-history">{{t 'translator.history.clear'}}</button>
+            </div>
+            <div class="history-list" id="history-list">
+                <p class="history-empty">{{t 'translator.history.empty'}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/layout}}

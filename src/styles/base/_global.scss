@@ -1,0 +1,109 @@
+// Global styles
+// Base styles applied globally
+
+@use "../abstracts/mixins" as mixins;
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Container
+.container {
+  @include mixins.container();
+}
+
+// Links
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition-base);
+
+  &:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    @include mixins.focus-ring();
+  }
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-primary);
+  font-weight: var(--font-semibold);
+  line-height: 1.25;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: var(--text-4xl);
+}
+
+h2 {
+  font-size: var(--text-3xl);
+}
+
+h3 {
+  font-size: var(--text-2xl);
+}
+
+h4 {
+  font-size: var(--text-xl);
+}
+
+h5 {
+  font-size: var(--text-lg);
+}
+
+h6 {
+  font-size: var(--text-base);
+}
+
+// Paragraphs
+p {
+  margin-bottom: 1em;
+}
+
+// Lists
+ul, ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.25em;
+}
+
+// Basic utilities
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+// Focus styles
+.focus-visible {
+  @include mixins.focus-ring();
+}
+
+// Loading state
+.js-loaded {
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

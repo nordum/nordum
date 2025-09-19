@@ -1,0 +1,119 @@
+{{#> layout pageTitle=(t 'tools.dictionary.title') currentPage="dictionary" currentSection="tools" bodyClass="dictionary-page"}}
+
+{{> tool-header toolTitle=(t 'tools.dictionary.title') toolSubtitle=(t 'dictionary.subtitle')}}
+
+<section class="dictionary-tool">
+    <div class="container">
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text"
+                       id="dictionary-search"
+                       class="search-input"
+                       placeholder="{{t 'dictionary.searchPlaceholder'}}"
+                       autocomplete="off">
+                <button class="search-button" type="button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="search-filters">
+                <label class="filter-label">{{t 'dictionary.searchFilters.all'}}</label>
+                <label class="filter-option">
+                    <input type="radio" name="search-filter" value="all" checked>
+                    {{t 'dictionary.searchFilters.all'}}
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="search-filter" value="nordum">
+                    {{t 'dictionary.searchFilters.nordum'}}
+                </label>
+            </div>
+        </div>
+
+        <div class="dictionary-content">
+            <div class="alphabet-nav">
+                <div class="alphabet-letters">
+                    <button class="letter-btn" data-letter="a">A</button>
+                    <button class="letter-btn" data-letter="b">B</button>
+                    <button class="letter-btn" data-letter="c">C</button>
+                    <button class="letter-btn" data-letter="d">D</button>
+                    <button class="letter-btn" data-letter="e">E</button>
+                    <button class="letter-btn" data-letter="f">F</button>
+                    <button class="letter-btn" data-letter="g">G</button>
+                    <button class="letter-btn" data-letter="h">H</button>
+                    <button class="letter-btn" data-letter="i">I</button>
+                    <button class="letter-btn" data-letter="j">J</button>
+                    <button class="letter-btn" data-letter="k">K</button>
+                    <button class="letter-btn" data-letter="l">L</button>
+                    <button class="letter-btn" data-letter="m">M</button>
+                    <button class="letter-btn" data-letter="n">N</button>
+                    <button class="letter-btn" data-letter="o">O</button>
+                    <button class="letter-btn" data-letter="p">P</button>
+                    <button class="letter-btn" data-letter="q">Q</button>
+                    <button class="letter-btn" data-letter="r">R</button>
+                    <button class="letter-btn" data-letter="s">S</button>
+                    <button class="letter-btn" data-letter="t">T</button>
+                    <button class="letter-btn" data-letter="u">U</button>
+                    <button class="letter-btn" data-letter="v">V</button>
+                    <button class="letter-btn" data-letter="w">W</button>
+                    <button class="letter-btn" data-letter="x">X</button>
+                    <button class="letter-btn" data-letter="y">Y</button>
+                    <button class="letter-btn" data-letter="z">Z</button>
+                    <button class="letter-btn" data-letter="å">Å</button>
+                    <button class="letter-btn" data-letter="ä">Ä</button>
+                    <button class="letter-btn" data-letter="ö">Ö</button>
+                </div>
+            </div>
+
+            <div class="dictionary-results">
+                <div class="welcome-message">
+                    <h3>{{t 'dictionary.welcome.title'}}</h3>
+                    <p>{{t 'dictionary.welcome.description'}}</p>
+
+                    <div class="featured-words">
+                        <h4>{{t 'dictionary.welcome.featuredWords'}}</h4>
+                        <div class="word-samples">
+                            <div class="word-sample">
+                                <strong>hus</strong>
+                                <span class="word-pos">noun</span>
+                                <span class="word-definition">house</span>
+                            </div>
+                            <div class="word-sample">
+                                <strong>arbetar</strong>
+                                <span class="word-pos">verb</span>
+                                <span class="word-definition">works</span>
+                            </div>
+                            <div class="word-sample">
+                                <strong>stor</strong>
+                                <span class="word-pos">adjective</span>
+                                <span class="word-definition">big</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-results" id="search-results" style="display: none;">
+                    <!-- Results will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <div class="dictionary-stats">
+            <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">{{t 'dictionary.stats.totalEntries'}}</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Source Languages</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">95%</span>
+                <span class="stat-label">{{t 'dictionary.stats.coverage'}}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/layout}}

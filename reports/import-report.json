@@ -1,0 +1,77 @@
+{
+  "summary": {
+    "totalEntries": 12623,
+    "entriesByLanguage": {
+      "norwegian": 3384,
+      "danish": 5027,
+      "swedish": 4212
+    },
+    "duration": "13778.7s",
+    "errors": 0,
+    "successRate": "100.0%"
+  },
+  "analysis": {
+    "coverage": {
+      "norwegian": {
+        "total": 3384,
+        "byPOS": {
+          "noun": 2165,
+          "verb": 722,
+          "adjective": 465,
+          "adverb": 3,
+          "pronoun": 9,
+          "numeral": 20
+        },
+        "highFrequency": 1051,
+        "withIPA": 3284
+      },
+      "danish": {
+        "total": 5027,
+        "byPOS": {
+          "pronoun": 32,
+          "adverb": 72,
+          "noun": 3525,
+          "conjunction": 2,
+          "verb": 898,
+          "preposition": 12,
+          "adjective": 486
+        },
+        "highFrequency": 2496,
+        "withIPA": 5027
+      },
+      "swedish": {
+        "total": 4212,
+        "byPOS": {
+          "adjective": 601,
+          "noun": 2830,
+          "verb": 748,
+          "adverb": 3,
+          "pronoun": 9,
+          "numeral": 21
+        },
+        "highFrequency": 2360,
+        "withIPA": 4112
+      }
+    },
+    "overlap": {
+      "allThreeLanguages": 762,
+      "anyTwoLanguages": 1504,
+      "onlyOneLanguage": 3780,
+      "totalConcepts": 6046
+    },
+    "quality": {},
+    "recommendations": [
+      "Low three-way overlap suggests need for more comprehensive source data"
+    ]
+  },
+  "errors": [],
+  "recommendations": [
+    "Low three-way overlap suggests need for more comprehensive source data",
+    "Consider increasing batch sizes or adding more data sources"
+  ],
+  "nextSteps": [
+    "Run \"npm run build:dictionary\" to generate Nordum dictionary",
+    "Run \"npm run validate:dictionary\" to check linguistic consistency",
+    "Review generated dictionary for manual corrections"
+  ]
+}
