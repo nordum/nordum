@@ -102,7 +102,7 @@
                                role="menuitem">{{t 'nav.about'}}</a>
                         </li>
                         <li role="none">
-                            <a href="{{#if (eq lang 'en')}}/resources/grammar-guide.html{{else}}/{{lang}}/resources/grammar-guide.html{{/if}}"
+                            <a href="{{#if (eq lang 'en')}}/rules/language-specification.html{{else}}/{{lang}}/rules/language-specification.html{{/if}}"
                                class="nav-link {{#if (eq currentPage 'grammar')}}active{{/if}}"
                                role="menuitem">{{t 'nav.grammar'}}</a>
                         </li>
@@ -136,15 +136,11 @@
                             </ul>
                         </li>
                         <li role="none">
-                            <a href="{{#if (eq lang 'en')}}/{{else}}/{{lang}}/{{/if}}#resources"
-                               class="nav-link {{#if (eq currentPage 'resources')}}active{{/if}}"
-                               role="menuitem">{{t 'nav.resources'}}</a>
+                            <a href="{{#if (eq lang 'en')}}/faq.html{{else}}/{{lang}}/faq.html{{/if}}"
+                               class="nav-link {{#if (eq currentPage 'faq')}}active{{/if}}"
+                               role="menuitem">{{t 'nav.faq'}}</a>
                         </li>
-                        <li role="none">
-                            <a href="{{#if (eq lang 'en')}}/{{else}}/{{lang}}/{{/if}}#community"
-                               class="nav-link {{#if (eq currentPage 'community')}}active{{/if}}"
-                               role="menuitem">{{t 'nav.community'}}</a>
-                        </li>
+
                     </ul>
 
                     <!-- Language switcher -->
@@ -246,8 +242,8 @@
                         <h4>{{t 'footer.project.title'}}</h4>
                         <ul>
                             <li><a href="{{#if (eq lang 'en')}}/{{else}}/{{lang}}/{{/if}}#about">{{t 'footer.project.about'}}</a></li>
-                            <li><a href="{{#if (eq lang 'en')}}/resources/contribute.html{{else}}/{{lang}}/resources/contribute.html{{/if}}">{{t 'footer.project.contribute'}}</a></li>
-                            <li><a href="{{#if (eq lang 'en')}}/resources/methodology.html{{else}}/{{lang}}/resources/methodology.html{{/if}}">{{t 'footer.project.methodology'}}</a></li>
+                            <li><a href="{{#if (eq lang 'en')}}/faq.html{{else}}/{{lang}}/faq.html{{/if}}">FAQ</a></li>
+                            <li><a href="https://github.com/nordum/nordum" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                         </ul>
                     </div>
 

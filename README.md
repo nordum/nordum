@@ -691,7 +691,7 @@ See [LICENSE](LICENSE) for full details.
 - **[Language Specification](NORDUM_LANGUAGE_SPECIFICATION.md)** - Complete linguistic reference (single source)
 - **[Web Specification](https://nordum.org/rules/language-specification/)** - Interactive version
 - **[API Docs](https://nordum.org/api)** - Developer resources  
-- **[Grammar Guide](https://nordum.org/grammar)** - Learning materials
+- **[FAQ](FAQ.md)** - Frequently asked questions
 - **[Contributing Guide](CONTRIBUTING.md)** - How to contribute
 
 ### Community

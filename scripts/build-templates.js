@@ -298,7 +298,8 @@ class TemplateBuilder {
             { template: 'tools/translator.hbs', output: 'tools/translator.html' },
             { template: 'tools/editor.hbs', output: 'tools/editor.html' },
             { template: 'rules/index.hbs', output: 'rules/index.html' },
-            { template: 'rules/language-specification.hbs', output: 'rules/language-specification.html' }
+            { template: 'rules/language-specification.hbs', output: 'rules/language-specification.html' },
+            { template: 'faq.hbs', output: 'faq.html' }
         ];
 
         for (const lang of languages) {
@@ -370,9 +371,7 @@ class TemplateBuilder {
             'tools/spellcheck.html',
             'tools/translator.html',
             'tools/editor.html',
-            'resources/grammar-guide.html',
-            'resources/vocabulary.html',
-            'resources/methodology.html'
+            'faq.html'
         ];
 
         const urls = [];
