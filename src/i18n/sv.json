@@ -400,5 +400,9 @@
     "noSpaces": "Inga mellanslag tillåtna",
     "onlyLetters": "Endast bokstäver tillåtna",
     "onlyNumbers": "Endast siffror tillåtna"
+  },
+  "rules": {
+    "language_specification_title": "Nordum Språkspecifikation",
+    "table_of_contents": "Innehållsförteckning"
   }
 }

@@ -412,5 +412,9 @@
     "noSpaces": "Ingen mellomrom tillate",
     "onlyLetters": "Kun bokstavar tillate",
     "onlyNumbers": "Kun tal tillate"
+  },
+  "rules": {
+    "language_specification_title": "Nordum Språkspesifikasjon",
+    "table_of_contents": "Innhaldsforteljing"
   }
 }

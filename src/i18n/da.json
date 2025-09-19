@@ -412,5 +412,9 @@
     "noSpaces": "Ingen mellemrum tilladt",
     "onlyLetters": "Kun bogstaver tilladt",
     "onlyNumbers": "Kun tal tilladt"
+  },
+  "rules": {
+    "language_specification_title": "Nordum Sprogspecifikation",
+    "table_of_contents": "Indholdsfortegnelse"
   }
 }

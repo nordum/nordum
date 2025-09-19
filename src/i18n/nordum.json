@@ -1,8 +1,8 @@
 {
   "site": {
-    "title": "Nordum - Ett Pan-Skandinaviskt Språk",
-    "tagline": "Bygge broer gennem språk",
-    "description": "Et enhetlig skriftspråk designet for å forstås av talere av norsk, dansk og svensk"
+    "title": "Nordum - Ett Pan-Skandinaviskt Språg",
+    "tagline": "Bygge broer gennem språg",
+    "description": "Et enhetlig skriftspråg designet for å forstås av talere av norsk, dansk og svensk"
   },
   "nav": {
     "home": "Hem",
@@ -13,29 +13,29 @@
   },
   "hero": {
     "title": "Nordum",
-    "subtitle": "Ett felles skriftspråk for Skandinavia",
-    "description": "Ett enhetlig skriftspråk designet for å bygge broer mellom norsk, dansk og svensk - fremme gensidig forståelse over Skandinavia gennem språklig sammenheng og enkelhet.",
+    "subtitle": "Ett felles skriftspråg for Skandinavia",
+    "description": "Ett enhetlig skriftspråg designet for å bygge broar mellem norsk, dansk og svensk - fremme gensidig forståelse over Skandinavia gennem språglig sammenheng og enkelhet.",
     "learnMore": "Lære Mer",
-    "tryTools": "Teste Verktyg"
+    "tryTools": "Teste Verktøi"
   },
   "faq": {
     "title": "Ofte Stilte Spørsmål",
     "subtitle": "Svar på vanlige spørsmål om Nordum",
     "whatIsNordum": "Va er Nordum?",
-    "whatIsNordumAnswer": "Nordum er ett konstruert pan-skandinavisk skriftspråk designet for å tjene som en felles skriftlig standard for skandinavisk kommunikation i den moderne verden. Det tar sikte på å maksimere gensidig forståelighet mellom norsk (bokmål), dansk og svensk samtidig som det opprettholder systematisk regelmessighet og praktisk moderne bruk.",
+    "whatIsNordumAnswer": "Nordum er ett konstruert pan-skandinavisk skriftspråg designet for å tjene som en felles skriftlig standard for skandinavisk kommunikation i den moderne verden. Det tar sikte på å maksimere gensidig forståelighet mellom norsk (bokmål), dansk og svensk samtidig som det opprettholder systematisk regelmessighet og praktisk moderne brug.",
     "whyCreated": "Vorfor ble Nordum opprettet?",
     "whyCreatedAnswer": "Nordum ble opprettet som svar på flere moderne realiteter:",
-    "changingLandscape": "Endret språklig landskap: Engelsk har i økende grad blitt hovedspråket for international kommunikation, mens skandinaviske språk brukes i mindre grad i globale sammenhenger",
+    "changingLandscape": "Endret språglig landskap: Engelsk har i økende grad blitt hovedspråget for international kommunikation, mens skandinaviske språg bruges i mindre grad i globale sammenhenger",
     "geographicMobility": "Geografisk mobilitet: Folk reiser hyppigere på tvers av Skandinavia, noe som skaper behov for enklere grenseoverskridende kommunikation",
-    "digitalCommunication": "Digital kommunikation: Internett og digitale plattformer krever enkle, konsistente språkstandarder",
-    "replacementQuestion": "Er Nordum ment å erstatte eksisterende skandinaviske språk?",
-    "replacementAnswer1": "Absolutt ikke. Nordum er ikke designet for å forby eller erstatte de nåværende skriftspråkene (norsk, dansk, svensk). I stedet gir det et tilleggsalternativ for de som ønsker å bruke en felles skandinavisk standard for å gøre kommunikation enklere på tvers av nationale grenser.",
-    "replacementAnswer2": "Målet er å tillate bruk av Nordum som et supplerende skriftspråk som gør det mulig for skandinaver å kommunisere uten å måtte bytte språk ver få kilometer når de reiser over regionen.",
-    "nynorskRelationship": "Vordan forholder Nordum seg till nynorsk?",
-    "nynorskAnswer1": "Nordum tar en annen tilnærming enn nynorsk, som ble opprettet på 1800-tallet som en del av den norske nationalistbevegelsen. Nynorsk ble spesifikt designet for å skille seg fra danske og svenske påvirkninger så mye som mulig, og trakk tungt fra norske landsmålsdialekter.",
-    "nynorskAnswer2": "I kontrast omfavner Nordum det felles skandinaviske arvet og tar sikte på å bygge broer mellom språkene snarere enn å skille dem. Der nynorsk søkte distinktion, søker Nordum tilkobling og gensidig forståelighet.",
-    "historicalContext": "Vad er den historiske konteksten for skandinaviske språk?",
-    "historicalAnswer1": "Historisk sett dannet de skandinaviske språkene en dialektkontinuum der nærliggende dialekter var gensidig forståelige. De moderne standardiserte språkene oppsto gennem separate standardiseringsprosesser:",
+    "digitalCommunication": "Digital kommunikation: Internet og digitale plattformar krever enkle, konsistente språgstandardar",
+    "replacementQuestion": "Er Nordum ment å erstatte eksisterende skandinaviske språg?",
+    "replacementAnswer1": "Absolutt ikke. Nordum er ikke designet for å forby eller erstatte de nåværende skriftsprågarne (norsk, dansk, svensk). I stedet gir det et tilleggsalternativ for de som ønsker å bruge en felles skandinavisk standard for å gøre kommunikation enklere på tværs av nationale grænser.",
+    "replacementAnswer2": "Målet er å tillate brug av Nordum som et supplerende skriftspråg som gør det mulig for skandinaver å kommunisere uten å måtte bytte språg alla par kilometer når de reiser gennem Skandinavien.",
+    "nynorskRelationship": "Vordan forholder Nordum sei till nynorsk?",
+    "nynorskAnswer1": "Nordum tar en annen tilnærming enn nynorsk, som ble opprettet på 1800-tallet som en del av den norske nationalistbevegelsen. Nynorsk ble specifikt designet for å skille sei fra danske og svenske påvirkningar så mye som mulig, og trakk tungt fra norske landsmålsdialektar.",
+    "nynorskAnswer2": "I kontrast till dett omfavner Nordum det felles skandinaviske arvet og tar sikte på å bygge broer mellem språgarne snarere enn å skille dem. Der nynorsk søkte distinktion, søker Nordum tilkobling og gensidig forståelighet.",
+    "historicalContext": "Vad er den historiske konteksten for skandinaviske språg?",
+    "historicalAnswer1": "Historisk sett dannet de skandinaviske språgarne en dialektkontinuum der nærliggende dialekter var gensidig forståelige. De moderne standardiserte språgarne oppsto gennem separate standardiseringsprosesser:",
     "danishStandardization": "Dansk: Standardisert gennem administration og Luthers bibeloversettelse",
     "swedishStandardization": "Svensk: Utviklet gennem statsadministration og litteratur",
     "norwegianStandardization": "Norsk: Utviklet gennem både dansk påvirkning (bokmål) og nationalistbevegelser (nynorsk)",
@@ -48,11 +48,11 @@
     "travelers": "Reisende og ekspatriater som bor i Skandinavia",
     "anyoneInterested": "Alle som er interessert i pan-skandinavisk kommunikation",
     "learningDifficulty": "Er Nordum lett å lære for skandinaviske talere?",
-    "learningAnswer": "Ja! Nordum er designet for å være umiddelbart tilgengelig for talere av etvert skandinavisk språk. Den leksikalske utvelgelsen prioriterer ord som allerede er kjente på tvers av alle tre språkene, og det grammatiske systemet forenkler mange av uregelmessighetene som finnes i de enkelte språkene.",
+    "learningAnswer": "Ja! Nordum er designet for å være umiddelbart tilgengelig for talere av etvert skandinavisk språg. Den leksikalske utvelgelsen prioriterer ord som allerede er kjente på tvers av alle tre språgarne, og det grammatiske systemet forenkler mange av uregelmessighetarne som finnes i de enkelte språgarne.",
     "englishLoanwords": "Vordan håndterer Nordum engelske lånord?",
-    "englishAnswer": "Nordum bevarer engelske lånord for tekniske og moderne termer der de allerede er mye brukt på tvers av Skandinavia. Dette reflekterer virkeligheten i moderne skandinavisk kommunikation der engelske termer vanligvis er integrert, spesielt innen teknologi, næringsliv og akademiske sammenhenger.",
+    "englishAnswer": "Nordum bevarer engelske lånord for tekniske og moderne termer der de allerede er mye brugt på tvers av Skandinavia. Dette reflekterer virkeligheten i moderne skandinavisk kommunikation der engelske termer vanligvis er integrert, spesielt innen teknologi, næringsliv og akademiske sammenhenger.",
     "contribution": "Vordan kan jei bidra till Nordum?",
-    "contributionAnswer1": "Nordum ønsker velkommen bidrag fra lingvister, utviklere og skandinaviske språktalere. Du kan:",
+    "contributionAnswer1": "Nordum ønsker velkommen bidrag fra lingvister, developers og skandinaviske språgtalere. Du kan:",
     "submitEntries": "Sende inn ordboksoppføringer og forslag",
     "reportIssues": "Rapportere problemer eller foreslå forbedringer via GitHub Issues",
     "contactCollaboration": "Kontakte oss direkte for samarbeid",
@@ -62,7 +62,7 @@
     "communityAnswer1": "Nordum-projektet trives med fellesskapsengasjement. Slik kan du delta:",
     "githubIssues": "GitHub Issues: Rapporter feil, foreslå funktioner eller still spørsmål gennem vår Issue Tracker",
     "emailCollaboration": "E-post: Ta kontakt med oss direkte for samarbeidsmuligheter",
-    "discussion": "Diskution: Delta i samtaler om språkdesign og implementering",
+    "discussion": "Diskution: Delta i samtaler om språgdesign og implementering",
     "testing": "Testing: Jælp till med å teste nye funktioner og gi tilbakemelding",
     "communityAnswer2": "Vi tror på åpent samarbeid og ønsker velkommen alle former for konstruktive bidrag for å gøre Nordum till best mulig pan-skandinavisk kommunikationsverktøi."
   },
@@ -70,11 +70,11 @@
     "title": "Om Nordum",
     "purpose": {
       "title": "Formål",
-      "description": "Nordum sikter på å skape en skriftlig standard som maksimerer gensidig forståelighet mellom norske, danske og svenske talere mens det beholder Skandinavias rike språklige arv."
+      "description": "Nordum sikter på å skape en skriftlig standard som maksimerer gensidig forståelighet mellem norske, danske og svenske talere mens det beholder Skandinavias rike språglige arv."
     },
     "philosophy": {
       "title": "Filosofi",
-      "description": "Gennem å identifisere felles språklige mønstre og velge de mest vidt forståtte formene, søker Nordum å redusere hindringer for kommunikation over nordiske grenser."
+      "description": "Gennem å identifisere felles språglige mønstre og velge de mest vidt forståtte formene, søker Nordum å redusere hindringer for kommunikation over nordiske grenser."
     },
     "vision": {
       "title": "Vision",
@@ -85,17 +85,17 @@
     "title": "Grammatiske Prinsipper",
     "orthography": {
       "title": "Ortografisk Forenkling",
-      "description": "Nordum antar de mest fonetisk konsistente staveformene felles over de tre språkene, eliminerer stumme bokstaver der mulig.",
-      "example": "Eksempel: \"hus\" (hus) - konsistent over alle tre språk"
+      "description": "Nordum antar de mest fonetisk konsistente staveformarne felles over de tre språgene, eliminerer stumme bokstaver der mulig.",
+      "example": "Eksempel: \"hus\" (hus) - konsistent over alle tre språg"
     },
     "morphology": {
       "title": "Enhetlig Morfologi",
-      "description": "Verbbøining og substantivbøining følger de mest regulære mønstre funnet i kildespråkene, prioriterer klarhet og enkelhet.",
+      "description": "Verbbøining og substantivbøining følger de mest regulære mønstre funnet i kildesprågene, prioriterer klarhet og enkelhet.",
       "example": "Eksempel: Regulær verbending \"-er\" for presens (han arbeider - han arbeider)"
     },
     "lexicon": {
       "title": "Leksikalt Valg",
-      "description": "Når varianter eksisterer, velger Nordum ord som er mest vidt anerkjent over alle tre språk, eller skaper transparente sammensetninger.",
+      "description": "Når varianter eksisterer, velger Nordum ord som er mest vidt anerkjent over alle tre språg, eller skaper transparente sammensetninger.",
       "example": "Eksempel: \"bil\" (bil) istedenfor \"automobil\" - universelt forstått"
     },
     "syntax": {
@@ -118,7 +118,7 @@
     },
     "translator": {
       "title": "Oversetter",
-      "description": "Konvertere tekst mellom Nordum og de individuelle skandinaviske språkene for å jælpe innlæring og sammenligning.",
+      "description": "Konvertere tekst mellem Nordum og de individuelle skandinaviske språgarne for å jælpe innlæring og sammenligning.",
       "button": "Bruke Oversetter"
     },
     "editor": {
@@ -136,23 +136,23 @@
       "exercises": "Øvingsoppgaver"
     },
     "research": {
-      "title": "Språklig Forskning",
-      "methodology": "Språkdesign Metodologi",
-      "comparison": "Skandinavisk Språksammenligning",
+      "title": "Språglig Forskning",
+      "methodology": "Språgdesign Metodologi",
+      "comparison": "Skandinavisk Språgsammenligning",
       "corpus": "Nordum Tekstkorpus",
       "statistics": "Bruksstatistikk"
     },
     "developer": {
       "title": "Utviklerresurser",
       "api": "Nordum API Dokumentation",
-      "datasets": "Språkdatasett",
+      "datasets": "Språgdatasett",
       "contribute": "Bidragsretningslinjer",
       "github": "GitHub Repository"
     }
   },
   "community": {
     "title": "Ta kontakt",
-    "description": "Nordum er et åpent, samarbeidende projekt. Vi velkommer lingvister, utviklere og alle interesserte i skandinaviske språk å bidra till dette ambisiøse foretak.",
+    "description": "Nordum er et åpent, samarbeidende projekt. Vi velkommer lingvister, utviklere og alle interesserte i skandinaviske språg å bidra till dette ambisiøse foretak.",
     "stats": {
       "entries": "Ordboksposter",
       "contributors": "Bidragere",
@@ -207,14 +207,14 @@
     "back": "Tilbake",
     "forward": "Fremover",
     "home": "Hem",
-    "language": "Språk"
+    "language": "Språg"
   },
   "dictionary": {
     "title": "Nordum Ordbok",
     "subtitle": "Utforske Nordums enhetlige ordforråd med oversettelser og etymologisk information",
     "searchPlaceholder": "Søke etter ord i Nordum, norsk, dansk, svensk eller engelsk...",
     "searchFilters": {
-      "all": "Alle Språk",
+      "all": "Alle Språg",
       "nordum": "Kun Nordum",
       "translations": "Oversettelser"
     },
@@ -224,7 +224,7 @@
     "resultsFound": "Søkeresultater for \"{query}\" ({count} funnet)",
     "welcome": {
       "title": "Velkommen till Nordum Ordbok",
-      "description": "Begynne å skrive for å søke etter ord, eller bruke alfabetnavigationen ovenfor for å bla etter bokstav.",
+      "description": "Begynne å skrive for å søke etter ord, eller bruge alfabetnavigationen ovenfor for å bla etter bokstav.",
       "featuredWords": "Utvalgte Ord"
     },
     "wordDetails": {
@@ -274,7 +274,7 @@
       "title": "Teste Eksempeltekster",
       "correct": "Korrekt Tekst",
       "errors": "Tekst med Feil",
-      "mixed": "Blandede Språk"
+      "mixed": "Blandede Språg"
     },
     "readabilityLevels": {
       "simple": "Enkel",
@@ -284,10 +284,10 @@
   },
   "translator": {
     "title": "Nordum Oversetter",
-    "subtitle": "Oversette tekst mellom Nordum og de skandinaviske språkene",
+    "subtitle": "Oversette tekst mellem Nordum og de skandinaviske språgene",
     "from": "Fra:",
     "to": "Til:",
-    "swap": "Bytt språk",
+    "swap": "Bytt språg",
     "languages": {
       "nordum": "Nordum",
       "norwegian": "Norsk (Bokmål)",
@@ -323,7 +323,7 @@
   },
   "editor": {
     "title": "Nordum Teksteditor",
-    "subtitle": "Skrive og redigere dokumenter i Nordum med integrert språkstøtte",
+    "subtitle": "Skrive og redigere dokumenter i Nordum med integrert språgstøtte",
     "toolbar": {
       "new": "Ny",
       "open": "Åpne",
@@ -360,7 +360,7 @@
   },
   "grammarGuide": {
     "title": "Nordum Grammatikkguide",
-    "subtitle": "Komplett referanse for det pan-skandinaviske skriftspråket",
+    "subtitle": "Komplett referanse for det pan-skandinaviske skriftspråget",
     "toc": "Innholdsfortegnelse",
     "sections": {
       "introduction": "Introduktion",
@@ -396,8 +396,12 @@
     "tooLong": "Tekst er for lang",
     "invalidFormat": "Ugyldig format",
     "invalidEmail": "Ugyldig e-postadresse",
-    "noSpaces": "Ingen mellomrom tillatt",
+    "noSpaces": "Ingen mellemrum tillatt",
     "onlyLetters": "Kun bokstaver tillatt",
     "onlyNumbers": "Kun tall tillatt"
+  },
+  "rules": {
+    "language_specification_title": "Nordum Språkspesifikasjon",
+    "table_of_contents": "Innholdsfortegnelse"
   }
 }
