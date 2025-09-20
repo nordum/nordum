@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nordum Pan-Scandinavian Language\n"
 "Report-Msgid-Bugs-To: https://github.com/nordum/nordum/issues\n"
-"POT-Creation-Date: 2025-09-19T16:32:46.675Z\n"
-"PO-Revision-Date: 2025-09-19T16:32:46.675Z\n"
+"POT-Creation-Date: 2025-09-20T01:33:04.828Z\n"
+"PO-Revision-Date: 2025-09-20T01:33:04.828Z\n"
 "Last-Translator: Nordum Project <hei@nordum.org>\n"
 "Language-Team: English <hei@nordum.org>\n"
 "Language: en\n"
@@ -14,1057 +14,1513 @@ msgstr ""
 "X-Generator: Nordum JSON to PO Converter\n"
 
 #. Key: about.philosophy.description
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: about
 msgid "about.philosophy.description"
 msgstr ""
 
 #. Key: about.philosophy.title
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: about
 msgid "about.philosophy.title"
 msgstr ""
 
 #. Key: about.purpose.description
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: about
 msgid "about.purpose.description"
 msgstr ""
 
 #. Key: about.purpose.title
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: about
 msgid "about.purpose.title"
 msgstr ""
 
+#. Key: about.title
+#. #. Source: templates/index.hbs
+#. Category: about
+msgid "about.title"
+msgstr ""
+
 #. Key: about.vision.description
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: about
 msgid "about.vision.description"
 msgstr ""
 
 #. Key: about.vision.title
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: about
 msgid "about.vision.title"
 msgstr ""
 
-#. Key: common.language
-#. Source: Template reference
+#. Key: commands.checkCoverageGaps
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.checkCoverageGaps"
+msgstr ""
+
+#. Key: commands.findCognateGroups
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.findCognateGroups"
+msgstr ""
+
+#. Key: commands.generatePhoneticReport
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.generatePhoneticReport"
+msgstr ""
+
+#. Key: commands.importAllLanguages
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.importAllLanguages"
+msgstr ""
+
+#. Key: commands.importFromDanishSource
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.importFromDanishSource"
+msgstr ""
+
+#. Key: commands.importNorwegianWords
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.importNorwegianWords"
+msgstr ""
+
+#. Key: commands.importWithFrequency
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.importWithFrequency"
+msgstr ""
+
+#. Key: commands.updateChangedEntries
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.updateChangedEntries"
+msgstr ""
+
+#. Key: commands.validateAndFix
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.validateAndFix"
+msgstr ""
+
+#. Key: common.github
+#. #. Source: templates/partials/layout.hbs
 #. Category: common
-msgid "common.language"
+msgid "common.github"
+msgstr ""
+
+#. Key: common.githubIssues
+#. #. Source: templates/faq.hbs
+#. Category: common
+msgid "common.githubIssues"
+msgstr ""
+
+#. Key: common.issueTracker
+#. #. Source: templates/faq.hbs
+#. Category: common
+msgid "common.issueTracker"
+msgstr ""
+
+#. Key: common.language.label
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.label"
+msgstr ""
+
+#. Key: common.language.danish
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.danish"
+msgstr ""
+
+#. Key: common.language.english
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.english"
+msgstr ""
+
+#. Key: common.language.nordum
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.nordum"
+msgstr ""
+
+#. Key: common.language.norwegianBokmal
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.norwegianBokmal"
+msgstr ""
+
+#. Key: common.language.norwegianNynorsk
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.norwegianNynorsk"
+msgstr ""
+
+#. Key: common.language.swedish
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.swedish"
+msgstr ""
+
+#. Key: common.languageLabel.danish
+#. #. Source: templates/rules/index.hbs
+#. Category: common
+msgid "common.languageLabel.danish"
+msgstr ""
+
+#. Key: common.languageLabel.english
+#. #. Source: templates/rules/index.hbs
+#. Category: common
+msgid "common.languageLabel.english"
+msgstr ""
+
+#. Key: common.languageLabel.nordum
+#. #. Source: templates/rules/index.hbs
+#. Category: common
+msgid "common.languageLabel.nordum"
+msgstr ""
+
+#. Key: common.languageLabel.norwegian
+#. #. Source: templates/rules/index.hbs
+#. Category: common
+msgid "common.languageLabel.norwegian"
+msgstr ""
+
+#. Key: common.languageLabel.swedish
+#. #. Source: templates/rules/index.hbs
+#. Category: common
+msgid "common.languageLabel.swedish"
 msgstr ""
 
 #. Key: common.loading
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: common
 msgid "common.loading"
 msgstr ""
 
 #. Key: common.skipToContent
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: common
 msgid "common.skipToContent"
 msgstr ""
 
+#. Key: community.collaborate.description
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.collaborate.description"
+msgstr ""
+
+#. Key: community.collaborate.title
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.collaborate.title"
+msgstr ""
+
+#. Key: community.directCollaboration.description
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.directCollaboration.description"
+msgstr ""
+
+#. Key: community.directCollaboration.title
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.directCollaboration.title"
+msgstr ""
+
+#. Key: community.reportIssues.description
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.reportIssues.description"
+msgstr ""
+
+#. Key: community.reportIssues.title
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.reportIssues.title"
+msgstr ""
+
+#. Key: community.stats.dictionaryEntries
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.stats.dictionaryEntries"
+msgstr ""
+
+#. Key: community.stats.intelligibility
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.stats.intelligibility"
+msgstr ""
+
+#. Key: community.stats.languages
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.stats.languages"
+msgstr ""
+
+#. Key: community.stats.title
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.stats.title"
+msgstr ""
+
 #. Key: cookies.accept
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: cookies
 msgid "cookies.accept"
 msgstr ""
 
 #. Key: cookies.decline
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: cookies
 msgid "cookies.decline"
 msgstr ""
 
 #. Key: cookies.description
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: cookies
 msgid "cookies.description"
 msgstr ""
 
 #. Key: cookies.settings
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: cookies
 msgid "cookies.settings"
 msgstr ""
 
 #. Key: cookies.title
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: cookies
 msgid "cookies.title"
 msgstr ""
 
+#. Key: dictionary.example.big
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: dictionary
+msgid "dictionary.example.big"
+msgstr ""
+
+#. Key: dictionary.example.house
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: dictionary
+msgid "dictionary.example.house"
+msgstr ""
+
+#. Key: dictionary.example.works
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: dictionary
+msgid "dictionary.example.works"
+msgstr ""
+
 #. Key: dictionary.searchFilters.all
-#. Source: Template reference
+#. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
 msgid "dictionary.searchFilters.all"
 msgstr ""
 
 #. Key: dictionary.searchFilters.nordum
-#. Source: Template reference
+#. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
 msgid "dictionary.searchFilters.nordum"
 msgstr ""
 
 #. Key: dictionary.searchPlaceholder
-#. Source: Template reference
+#. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
 msgid "dictionary.searchPlaceholder"
 msgstr ""
 
+#. Key: dictionary.sourceLanguages
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: dictionary
+msgid "dictionary.sourceLanguages"
+msgstr ""
+
 #. Key: dictionary.stats.coverage
-#. Source: Template reference
+#. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
 msgid "dictionary.stats.coverage"
 msgstr ""
 
 #. Key: dictionary.stats.totalEntries
-#. Source: Template reference
+#. #. Source: templates/index.hbs, templates/tools/dictionary.hbs
 #. Category: dictionary
 msgid "dictionary.stats.totalEntries"
 msgstr ""
 
 #. Key: dictionary.welcome.description
-#. Source: Template reference
+#. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
 msgid "dictionary.welcome.description"
 msgstr ""
 
 #. Key: dictionary.welcome.featuredWords
-#. Source: Template reference
+#. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
 msgid "dictionary.welcome.featuredWords"
 msgstr ""
 
 #. Key: dictionary.welcome.title
-#. Source: Template reference
+#. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
 msgid "dictionary.welcome.title"
 msgstr ""
 
 #. Key: editor.statistics.characters
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.statistics.characters"
 msgstr ""
 
 #. Key: editor.statistics.charactersNoSpaces
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.statistics.charactersNoSpaces"
 msgstr ""
 
 #. Key: editor.statistics.lines
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.statistics.lines"
 msgstr ""
 
 #. Key: editor.statistics.minutes
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.statistics.minutes"
 msgstr ""
 
 #. Key: editor.statistics.paragraphs
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.statistics.paragraphs"
 msgstr ""
 
 #. Key: editor.statistics.readingTime
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.statistics.readingTime"
 msgstr ""
 
 #. Key: editor.statistics.title
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.statistics.title"
 msgstr ""
 
 #. Key: editor.statistics.words
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.statistics.words"
 msgstr ""
 
 #. Key: editor.status.characters
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.status.characters"
 msgstr ""
 
 #. Key: editor.status.column
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.status.column"
 msgstr ""
 
 #. Key: editor.status.line
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.status.line"
 msgstr ""
 
 #. Key: editor.status.saved
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.status.saved"
 msgstr ""
 
 #. Key: editor.status.words
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.status.words"
 msgstr ""
 
 #. Key: editor.toolbar.bold
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.toolbar.bold"
 msgstr ""
 
 #. Key: editor.toolbar.fullscreen
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.toolbar.fullscreen"
 msgstr ""
 
 #. Key: editor.toolbar.italic
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.toolbar.italic"
 msgstr ""
 
 #. Key: editor.toolbar.new
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.toolbar.new"
 msgstr ""
 
 #. Key: editor.toolbar.redo
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.toolbar.redo"
 msgstr ""
 
 #. Key: editor.toolbar.save
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.toolbar.save"
 msgstr ""
 
 #. Key: editor.toolbar.spellCheck
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.toolbar.spellCheck"
 msgstr ""
 
 #. Key: editor.toolbar.underline
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.toolbar.underline"
 msgstr ""
 
 #. Key: editor.toolbar.undo
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.toolbar.undo"
 msgstr ""
 
 #. Key: editor.toolbar.wordCount
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.toolbar.wordCount"
 msgstr ""
 
 #. Key: editor.welcome
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.welcome"
 msgstr ""
 
 #. Key: faq.anyoneInterested
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.anyoneInterested"
 msgstr ""
 
 #. Key: faq.changingLandscape
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.changingLandscape"
 msgstr ""
 
 #. Key: faq.communityAnswer1
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.communityAnswer1"
 msgstr ""
 
 #. Key: faq.communityAnswer2
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.communityAnswer2"
 msgstr ""
 
 #. Key: faq.communityInvolvement
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.communityInvolvement"
 msgstr ""
 
 #. Key: faq.contactCollaboration
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.contactCollaboration"
 msgstr ""
 
 #. Key: faq.contribution
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.contribution"
 msgstr ""
 
 #. Key: faq.contributionAnswer1
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.contributionAnswer1"
 msgstr ""
 
 #. Key: faq.contributionAnswer2
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.contributionAnswer2"
 msgstr ""
 
 #. Key: faq.danishStandardization
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.danishStandardization"
 msgstr ""
 
 #. Key: faq.digitalCommunication
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.digitalCommunication"
 msgstr ""
 
 #. Key: faq.discussion
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.discussion"
 msgstr ""
 
 #. Key: faq.educationalInstitutions
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.educationalInstitutions"
 msgstr ""
 
 #. Key: faq.emailCollaboration
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.emailCollaboration"
 msgstr ""
 
 #. Key: faq.englishAnswer
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.englishAnswer"
 msgstr ""
 
 #. Key: faq.englishLoanwords
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.englishLoanwords"
 msgstr ""
 
 #. Key: faq.geographicMobility
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.geographicMobility"
 msgstr ""
 
 #. Key: faq.githubIssues
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.githubIssues"
 msgstr ""
 
 #. Key: faq.historicalAnswer1
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.historicalAnswer1"
 msgstr ""
 
 #. Key: faq.historicalAnswer2
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.historicalAnswer2"
 msgstr ""
 
 #. Key: faq.historicalContext
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.historicalContext"
 msgstr ""
 
 #. Key: faq.internationalCompanies
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.internationalCompanies"
 msgstr ""
 
 #. Key: faq.learningAnswer
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.learningAnswer"
 msgstr ""
 
 #. Key: faq.learningDifficulty
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.learningDifficulty"
 msgstr ""
 
 #. Key: faq.norwegianStandardization
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.norwegianStandardization"
 msgstr ""
 
 #. Key: faq.nynorskAnswer1
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.nynorskAnswer1"
 msgstr ""
 
 #. Key: faq.nynorskAnswer2
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.nynorskAnswer2"
 msgstr ""
 
 #. Key: faq.nynorskRelationship
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.nynorskRelationship"
 msgstr ""
 
 #. Key: faq.replacementAnswer1
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.replacementAnswer1"
 msgstr ""
 
 #. Key: faq.replacementAnswer2
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.replacementAnswer2"
 msgstr ""
 
 #. Key: faq.replacementQuestion
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.replacementQuestion"
 msgstr ""
 
 #. Key: faq.reportIssues
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.reportIssues"
 msgstr ""
 
 #. Key: faq.scandinavians
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.scandinavians"
 msgstr ""
 
 #. Key: faq.submitEntries
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.submitEntries"
 msgstr ""
 
 #. Key: faq.subtitle
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.subtitle"
 msgstr ""
 
 #. Key: faq.swedishStandardization
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.swedishStandardization"
 msgstr ""
 
 #. Key: faq.targetAudience
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.targetAudience"
 msgstr ""
 
 #. Key: faq.targetAudienceList
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.targetAudienceList"
 msgstr ""
 
 #. Key: faq.technicalHelp
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.technicalHelp"
 msgstr ""
 
 #. Key: faq.testing
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.testing"
 msgstr ""
 
 #. Key: faq.title
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.title"
 msgstr ""
 
 #. Key: faq.travelers
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.travelers"
 msgstr ""
 
 #. Key: faq.whatIsNordum
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.whatIsNordum"
 msgstr ""
 
 #. Key: faq.whatIsNordumAnswer
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.whatIsNordumAnswer"
 msgstr ""
 
 #. Key: faq.whyCreated
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.whyCreated"
 msgstr ""
 
 #. Key: faq.whyCreatedAnswer
-#. Source: Template reference
+#. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.whyCreatedAnswer"
 msgstr ""
 
 #. Key: footer.community.contact
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.community.contact"
 msgstr ""
 
 #. Key: footer.community.discord
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.community.discord"
 msgstr ""
 
 #. Key: footer.community.github
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.community.github"
 msgstr ""
 
 #. Key: footer.community.title
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.community.title"
 msgstr ""
 
 #. Key: footer.copyright
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.copyright"
 msgstr ""
 
 #. Key: footer.privacy
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.privacy"
 msgstr ""
 
 #. Key: footer.project.about
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.project.about"
 msgstr ""
 
 #. Key: footer.project.title
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.project.title"
 msgstr ""
 
 #. Key: footer.terms
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.terms"
 msgstr ""
 
 #. Key: footer.tools.dictionary
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.tools.dictionary"
 msgstr ""
 
 #. Key: footer.tools.spellcheck
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.tools.spellcheck"
 msgstr ""
 
 #. Key: footer.tools.title
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.tools.title"
 msgstr ""
 
 #. Key: footer.tools.translator
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.tools.translator"
 msgstr ""
 
 #. Key: generated_from
-#. Source: Template reference
+#. #. Source: templates/rules/language-specification.hbs
 #. Category: generated_from
 msgid "generated_from"
 msgstr ""
 
 #. Key: grammar.morphology.description
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: grammar
 msgid "grammar.morphology.description"
 msgstr ""
 
 #. Key: grammar.morphology.title
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: grammar
 msgid "grammar.morphology.title"
 msgstr ""
 
 #. Key: grammar.orthography.description
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: grammar
 msgid "grammar.orthography.description"
 msgstr ""
 
 #. Key: grammar.orthography.title
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: grammar
 msgid "grammar.orthography.title"
 msgstr ""
 
+#. Key: grammar.title
+#. #. Source: templates/index.hbs
+#. Category: grammar
+msgid "grammar.title"
+msgstr ""
+
 #. Key: hero.description
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: hero
 msgid "hero.description"
 msgstr ""
 
+#. Key: hero.learnMore
+#. #. Source: templates/index.hbs
+#. Category: hero
+msgid "hero.learnMore"
+msgstr ""
+
 #. Key: hero.subtitle
-#. Source: Template reference
+#. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: hero
 msgid "hero.subtitle"
 msgstr ""
 
+#. Key: hero.tryTools
+#. #. Source: templates/index.hbs
+#. Category: hero
+msgid "hero.tryTools"
+msgstr ""
+
 #. Key: nav.about
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: nav
 msgid "nav.about"
 msgstr ""
 
 #. Key: nav.faq
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: nav
 msgid "nav.faq"
 msgstr ""
 
 #. Key: nav.grammar
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: nav
 msgid "nav.grammar"
 msgstr ""
 
 #. Key: nav.home
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: nav
 msgid "nav.home"
 msgstr ""
 
 #. Key: nav.main
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: nav
 msgid "nav.main"
 msgstr ""
 
 #. Key: nav.toggleMenu
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: nav
 msgid "nav.toggleMenu"
 msgstr ""
 
 #. Key: nav.tools
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: nav
 msgid "nav.tools"
 msgstr ""
 
 #. Key: on
-#. Source: Template reference
+#. #. Source: templates/rules/language-specification.hbs
 #. Category: on
 msgid "on"
 msgstr ""
 
+#. Key: phonetics.clearEVowel
+#. #. Source: templates/rules/index.hbs
+#. Category: phonetics
+msgid "phonetics.clearEVowel"
+msgstr ""
+
+#. Key: phonetics.kotSound
+#. #. Source: templates/rules/index.hbs
+#. Category: phonetics
+msgid "phonetics.kotSound"
+msgstr ""
+
+#. Key: phonetics.lamSound
+#. #. Source: templates/rules/index.hbs
+#. Category: phonetics
+msgid "phonetics.lamSound"
+msgstr ""
+
+#. Key: phonetics.longISound
+#. #. Source: templates/rules/index.hbs
+#. Category: phonetics
+msgid "phonetics.longISound"
+msgstr ""
+
+#. Key: phonetics.longUSound
+#. #. Source: templates/rules/index.hbs
+#. Category: phonetics
+msgid "phonetics.longUSound"
+msgstr ""
+
+#. Key: phonetics.olSound
+#. #. Source: templates/rules/index.hbs
+#. Category: phonetics
+msgid "phonetics.olSound"
+msgstr ""
+
+#. Key: questionWords.what
+#. #. Source: templates/rules/index.hbs
+#. Category: questionWords
+msgid "questionWords.what"
+msgstr ""
+
+#. Key: questionWords.when
+#. #. Source: templates/rules/index.hbs
+#. Category: questionWords
+msgid "questionWords.when"
+msgstr ""
+
+#. Key: questionWords.where
+#. #. Source: templates/rules/index.hbs
+#. Category: questionWords
+msgid "questionWords.where"
+msgstr ""
+
+#. Key: questionWords.which
+#. #. Source: templates/rules/index.hbs
+#. Category: questionWords
+msgid "questionWords.which"
+msgstr ""
+
+#. Key: questionWords.who
+#. #. Source: templates/rules/index.hbs
+#. Category: questionWords
+msgid "questionWords.who"
+msgstr ""
+
+#. Key: questionWords.why
+#. #. Source: templates/rules/index.hbs
+#. Category: questionWords
+msgid "questionWords.why"
+msgstr ""
+
 #. Key: rules.table_of_contents
-#. Source: Template reference
+#. #. Source: templates/rules/language-specification.hbs
 #. Category: rules
 msgid "rules.table_of_contents"
 msgstr ""
 
 #. Key: site.description
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: site
 msgid "site.description"
 msgstr ""
 
 #. Key: site.tagline
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: site
 msgid "site.tagline"
 msgstr ""
 
 #. Key: site.title
-#. Source: Template reference
+#. #. Source: templates/partials/layout.hbs
 #. Category: site
 msgid "site.title"
 msgstr ""
 
+#. Key: sources.bokmalDanishAgreement
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.bokmalDanishAgreement"
+msgstr ""
+
+#. Key: sources.bokmalDanishPreference
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.bokmalDanishPreference"
+msgstr ""
+
+#. Key: sources.danskSprogLitteraturselskab
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.danskSprogLitteraturselskab"
+msgstr ""
+
+#. Key: sources.englishLoanwordsPreserved
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.englishLoanwordsPreserved"
+msgstr ""
+
+#. Key: sources.frequencyWeight
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.frequencyWeight"
+msgstr ""
+
+#. Key: sources.korpusDK
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.korpusDK"
+msgstr ""
+
+#. Key: sources.morphologicalRegularity
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.morphologicalRegularity"
+msgstr ""
+
+#. Key: sources.nbuCorpus
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.nbuCorpus"
+msgstr ""
+
+#. Key: sources.norwegianNumberSystem
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.norwegianNumberSystem"
+msgstr ""
+
+#. Key: sources.phoneticSimilarity
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.phoneticSimilarity"
+msgstr ""
+
+#. Key: sources.saolSvenskaAkademien
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.saolSvenskaAkademien"
+msgstr ""
+
+#. Key: sources.selectionPriority
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.selectionPriority"
+msgstr ""
+
+#. Key: sources.sprakbanken
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.sprakbanken"
+msgstr ""
+
+#. Key: sources.sprakradetWordList
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.sprakradetWordList"
+msgstr ""
+
+#. Key: sources.standardFormat
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.standardFormat"
+msgstr ""
+
+#. Key: sources.vQuestionWords
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.vQuestionWords"
+msgstr ""
+
+#. Key: sources.wiktionaryDanish
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.wiktionaryDanish"
+msgstr ""
+
+#. Key: sources.wiktionaryNorwegian
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.wiktionaryNorwegian"
+msgstr ""
+
+#. Key: sources.wiktionarySwedish
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.wiktionarySwedish"
+msgstr ""
+
 #. Key: spellcheck.placeholder
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.placeholder"
 msgstr ""
 
 #. Key: spellcheck.readabilityLevels.good
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.readabilityLevels.good"
 msgstr ""
 
 #. Key: spellcheck.samples.correct
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.samples.correct"
 msgstr ""
 
 #. Key: spellcheck.samples.errors
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.samples.errors"
 msgstr ""
 
 #. Key: spellcheck.samples.mixed
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.samples.mixed"
 msgstr ""
 
 #. Key: spellcheck.samples.title
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.samples.title"
 msgstr ""
 
 #. Key: spellcheck.stats.characters
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.stats.characters"
 msgstr ""
 
 #. Key: spellcheck.stats.readability
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.stats.readability"
 msgstr ""
 
 #. Key: spellcheck.stats.sentences
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.stats.sentences"
 msgstr ""
 
 #. Key: spellcheck.stats.words
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.stats.words"
 msgstr ""
 
 #. Key: spellcheck.suggestions.noIssues
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs, templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.suggestions.noIssues"
 msgstr ""
 
 #. Key: spellcheck.suggestions.textLooksGood
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.suggestions.textLooksGood"
 msgstr ""
 
 #. Key: spellcheck.suggestions.title
-#. Source: Template reference
+#. #. Source: templates/tools/editor.hbs, templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.suggestions.title"
 msgstr ""
 
 #. Key: spellcheck.toolbar.clear
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.toolbar.clear"
 msgstr ""
 
 #. Key: spellcheck.toolbar.grammar
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.toolbar.grammar"
 msgstr ""
 
 #. Key: spellcheck.toolbar.paste
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.toolbar.paste"
 msgstr ""
 
 #. Key: spellcheck.toolbar.spelling
-#. Source: Template reference
+#. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.toolbar.spelling"
 msgstr ""
 
 #. Key: tools.dictionary.description
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: tools
 msgid "tools.dictionary.description"
 msgstr ""
 
 #. Key: tools.dictionary.title
-#. Source: Template reference
+#. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: tools
 msgid "tools.dictionary.title"
 msgstr ""
 
 #. Key: tools.editor.description
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: tools
 msgid "tools.editor.description"
 msgstr ""
 
+#. Key: tools.editor.features
+#. #. Source: templates/index.hbs
+#. Category: tools
+msgid "tools.editor.features"
+msgstr ""
+
 #. Key: tools.editor.title
-#. Source: Template reference
+#. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: tools
 msgid "tools.editor.title"
 msgstr ""
 
 #. Key: tools.spellcheck.description
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: tools
 msgid "tools.spellcheck.description"
 msgstr ""
 
+#. Key: tools.spellcheck.realTimeChecking
+#. #. Source: templates/index.hbs
+#. Category: tools
+msgid "tools.spellcheck.realTimeChecking"
+msgstr ""
+
 #. Key: tools.spellcheck.title
-#. Source: Template reference
+#. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: tools
 msgid "tools.spellcheck.title"
 msgstr ""
 
+#. Key: tools.title
+#. #. Source: templates/index.hbs
+#. Category: tools
+msgid "tools.title"
+msgstr ""
+
 #. Key: tools.translator.description
-#. Source: Template reference
+#. #. Source: templates/index.hbs
 #. Category: tools
 msgid "tools.translator.description"
 msgstr ""
 
+#. Key: tools.translator.languages
+#. #. Source: templates/index.hbs
+#. Category: tools
+msgid "tools.translator.languages"
+msgstr ""
+
 #. Key: tools.translator.title
-#. Source: Template reference
+#. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: tools
 msgid "tools.translator.title"
 msgstr ""
 
 #. Key: translator.characterLimit
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.characterLimit"
 msgstr ""
 
 #. Key: translator.confidence
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.confidence"
 msgstr ""
 
 #. Key: translator.detected
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.detected"
 msgstr ""
 
 #. Key: translator.from
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.from"
 msgstr ""
 
 #. Key: translator.history.clear
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.history.clear"
 msgstr ""
 
 #. Key: translator.history.empty
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.history.empty"
 msgstr ""
 
 #. Key: translator.history.title
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.history.title"
 msgstr ""
 
 #. Key: translator.inputPlaceholder
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.inputPlaceholder"
 msgstr ""
 
 #. Key: translator.languages.auto
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.languages.auto"
 msgstr ""
 
 #. Key: translator.languages.danish
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.languages.danish"
 msgstr ""
 
 #. Key: translator.languages.nordum
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.languages.nordum"
 msgstr ""
 
 #. Key: translator.languages.norwegian
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.languages.norwegian"
 msgstr ""
 
 #. Key: translator.languages.swedish
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.languages.swedish"
 msgstr ""
 
 #. Key: translator.outputPlaceholder
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.outputPlaceholder"
 msgstr ""
 
 #. Key: translator.phrases.cost
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.phrases.cost"
 msgstr ""
 
 #. Key: translator.phrases.goodbye
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.phrases.goodbye"
 msgstr ""
 
 #. Key: translator.phrases.hello
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.phrases.hello"
 msgstr ""
 
 #. Key: translator.phrases.help
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.phrases.help"
 msgstr ""
 
 #. Key: translator.phrases.thanks
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.phrases.thanks"
 msgstr ""
 
 #. Key: translator.phrases.understand
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.phrases.understand"
 msgstr ""
 
 #. Key: translator.quickTranslations
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.quickTranslations"
 msgstr ""
 
 #. Key: translator.swap
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.swap"
 msgstr ""
 
 #. Key: translator.to
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.to"
 msgstr ""
 
 #. Key: translator.toolbar.clear
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.toolbar.clear"
 msgstr ""
 
 #. Key: translator.toolbar.copy
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.toolbar.copy"
 msgstr ""
 
 #. Key: translator.toolbar.paste
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.toolbar.paste"
 msgstr ""
 
 #. Key: translator.toolbar.speak
-#. Source: Template reference
+#. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.toolbar.speak"
 msgstr ""

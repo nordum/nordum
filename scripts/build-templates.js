@@ -62,30 +62,29 @@ class TemplateBuilder {
     }
 
     async loadTranslations() {
-        try {
-            const langs = ['en', 'da', 'nb', 'nn', 'sv', 'nordum'];
-
+        const langs = ['en', 'da', 'nb', 'nn', 'sv', 'nordum'];
+        //try {
             for (const lang of langs) {
                 const moPath = path.join(this.buildDir, 'assets', 'i18n', `${lang}.mo`);
-                try {
+                //try {
                     const moContent = await fs.readFile(moPath);
                     const parsed = this.gettextParser.mo.parse(moContent);
                     this.translations[lang] = this.moToJson(parsed);
-                } catch (error) {
-                    console.warn(`Warning: Could not load MO translations for ${lang}`);
-                    this.translations[lang] = {};
-                }
+                    //} catch (error) {
+                   // console.warn(`Warning: Could not load MO translations for ${lang}`);
+                   // this.translations[lang] = {};
+                   // }
             }
-        } catch (error) {
-            console.warn('Warning: Could not load translations directory');
-            // Provide default translations to prevent build failures
-            for (const lang of langs) {
-                this.translations[lang] = {
-                    site: { title: 'Nordum', description: 'Pan-Scandinavian Language' },
-                    nav: { home: 'Home', about: 'About', grammar: 'Grammar', tools: 'Tools', resources: 'Resources', community: 'Community' }
-                };
-            }
-        }
+        // } catch (error) {
+        //     console.warn('Warning: Could not load translations directory');
+        //     // Provide default translations to prevent build failures
+        //     for (const lang of langs) {
+        //         this.translations[lang] = {
+        //             site: { title: 'Nordum', description: 'Pan-Scandinavian Language' },
+        //             nav: { home: 'Home', about: 'About', grammar: 'Grammar', tools: 'Tools', resources: 'Resources', community: 'Community' }
+        //         };
+        //     }
+        // }
     }
 
     async loadSiteData() {

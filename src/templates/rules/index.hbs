@@ -54,10 +54,10 @@
                     <div class="example-box">
                         <strong>{{t "common.example" "Example"}}:</strong>
                         <ul>
-                            <li><strong>Norwegian:</strong> arbeider</li>
-                            <li><strong>Danish:</strong> arbejder</li>
-                            <li><strong>Swedish:</strong> arbetar</li>
-                            <li><strong>Nordum:</strong> <span class="nordum-word">arbeider</span> (Norwegian/Danish form preferred)</li>
+                            <li><strong>{{t "common.languageLabel.norwegian"}}:</strong> arbeider</li>
+                            <li><strong>{{t "common.languageLabel.danish"}}:</strong> arbejder</li>
+                            <li><strong>{{t "common.languageLabel.swedish"}}:</strong> arbetar</li>
+                            <li><strong>{{t "common.languageLabel.nordum"}}:</strong> <span class="nordum-word">arbeider</span> (Norwegian/Danish form preferred)</li>
                         </ul>
                     </div>
                 </div>
@@ -74,22 +74,22 @@
                         <strong>{{t "common.examples" "Examples"}}:</strong>
                         <div class="word-grid">
                             <div class="word-comparison">
-                                <span class="source-lang">English:</span>
+                                <span class="source-lang">{{t "common.languageLabel.english"}}:</span>
                                 <span class="source-word">computer</span>
                                 <span class="nordum-result">→ <span class="nordum-word">computer</span></span>
                             </div>
                             <div class="word-comparison">
-                                <span class="source-lang">English:</span>
+                                <span class="source-lang">{{t "common.languageLabel.english"}}:</span>
                                 <span class="source-word">internet</span>
                                 <span class="nordum-result">→ <span class="nordum-word">internet</span></span>
                             </div>
                             <div class="word-comparison">
-                                <span class="source-lang">English:</span>
+                                <span class="source-lang">{{t "common.languageLabel.english"}}:</span>
                                 <span class="source-word">software</span>
                                 <span class="nordum-result">→ <span class="nordum-word">software</span></span>
                             </div>
                             <div class="word-comparison">
-                                <span class="source-lang">English:</span>
+                                <span class="source-lang">{{t "common.languageLabel.english"}}:</span>
                                 <span class="source-word">email</span>
                                 <span class="nordum-result">→ <span class="nordum-word">email</span></span>
                             </div>
@@ -175,42 +175,42 @@
                     <div class="question-grid">
                         <div class="question-word">
                             <span class="nordum-word">vad</span>
-                            <span class="english">what</span>
+                            <span class="english">{{t "questionWords.what"}}</span>
                             <div class="comparison">
                                 <small>No: <strike>hvad</strike> (Danish) <strike>hva</strike> (Norwegian)</small>
                             </div>
                         </div>
                         <div class="question-word">
                             <span class="nordum-word">var</span>
-                            <span class="english">where</span>
+                            <span class="english">{{t "questionWords.where"}}</span>
                             <div class="comparison">
                                 <small>No: <strike>hvor</strike> (Danish/Norwegian)</small>
                             </div>
                         </div>
                         <div class="question-word">
                             <span class="nordum-word">ven</span>
-                            <span class="english">when</span>
+                            <span class="english">{{t "questionWords.when"}}</span>
                             <div class="comparison">
                                 <small>No: <strike>hvornår</strike> (Danish) <strike>når</strike> (Norwegian)</small>
                             </div>
                         </div>
                         <div class="question-word">
                             <span class="nordum-word">vem</span>
-                            <span class="english">who</span>
+                            <span class="english">{{t "questionWords.who"}}</span>
                             <div class="comparison">
                                 <small>No: <strike>hvem</strike> (Danish/Norwegian)</small>
                             </div>
                         </div>
                         <div class="question-word">
                             <span class="nordum-word">varför</span>
-                            <span class="english">why</span>
+                            <span class="english">{{t "questionWords.why"}}</span>
                             <div class="comparison">
                                 <small>No: <strike>hvorfor</strike> (Danish/Norwegian)</small>
                             </div>
                         </div>
                         <div class="question-word">
                             <span class="nordum-word">vilken</span>
-                            <span class="english">which</span>
+                            <span class="english">{{t "questionWords.which"}}</span>
                             <div class="comparison">
                                 <small>No: <strike>hvilken</strike> (Danish/Norwegian)</small>
                             </div>
@@ -231,9 +231,9 @@
                             <h4>{{t "rules.phonetics.vowel_clarity" "Vowel Clarity"}}</h4>
                             <p>{{t "rules.phonetics.vowel_clarity_desc" "Spelling preserves vowel distinctions that are phonemically important:"}}</p>
                             <ul>
-                                <li><span class="nordum-word">hus</span> [huːs] - long /u/ sound</li>
-                                <li><span class="nordum-word">hest</span> [hɛst] - clear /ɛ/ vowel</li>
-                                <li><span class="nordum-word">tid</span> [tiːd] - long /i/ sound</li>
+                                <li><span class="nordum-word">hus</span> [huːs] - {{t "phonetics.longUSound"}}</li>
+                                <li><span class="nordum-word">hest</span> [hɛst] - {{t "phonetics.clearEVowel"}}</li>
+                                <li><span class="nordum-word">tid</span> [tiːd] - {{t "phonetics.longISound"}}</li>
                             </ul>
                         </div>
                         
@@ -241,9 +241,9 @@
                             <h4>{{t "rules.phonetics.consonant_clusters" "Consonant Simplification"}}</h4>
                             <p>{{t "rules.phonetics.consonant_clusters_desc" "Silent or unpronounced letters are eliminated:"}}</p>
                             <ul>
-                                <li><span class="nordum-word">øl</span> (not <strike>öhl</strike>) - /øːl/</li>
-                                <li><span class="nordum-word">kött</span> → <span class="nordum-word">köt</span> - /køːt/</li>
-                                <li><span class="nordum-word">lamm</span> → <span class="nordum-word">lam</span> - /lam/</li>
+                                <li><span class="nordum-word">øl</span> (not <strike>öhl</strike>) - {{t "phonetics.olSound"}}</li>
+                                <li><span class="nordum-word">kött</span> → <span class="nordum-word">köt</span> - {{t "phonetics.kotSound"}}</li>
+                                <li><span class="nordum-word">lamm</span> → <span class="nordum-word">lam</span> - {{t "phonetics.lamSound"}}</li>
                             </ul>
                         </div>
                     </div>

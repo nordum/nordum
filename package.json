@@ -34,7 +34,6 @@
     "translations:convert": "node scripts/json-to-po.js",
     "translations:check": "node scripts/check-translations.js",
     "translations:update": "node scripts/update-po-files.js",
-    "translations:cleanup": "node scripts/cleanup-json-translations.js",
     "test:apis": "node scripts/importers/test-apis.js quick",
     "test:apis-full": "node scripts/importers/test-apis.js full",
     "test:cache": "node scripts/importers/test-cache.js quick",

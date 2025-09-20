@@ -440,7 +440,6 @@ npm run version:history          # Show version changelog
 npm run translations:convert      # Extract keys from templates to POT
 npm run translations:update       # Update language PO files
 npm run translations:check        # Check translation coverage
-npm run translations:cleanup      # Clean up legacy JSON translations
 ```
 
 - **Dictionary Entries**: 170+ validated entries with inflections

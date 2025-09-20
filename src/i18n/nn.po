@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nordum Pan-Scandinavian Language\n"
 "Report-Msgid-Bugs-To: https://github.com/nordum/nordum/issues\n"
-"POT-Creation-Date: 2025-09-19T20:20:44.276Z\n"
+"POT-Creation-Date: 2025-09-20T01:12:24.301Z\n"
 "PO-Revision-Date: 2025-09-19T16:32:46.663Z\n"
 "Last-Translator: Nordum Project <hei@nordum.org>\n"
 "Language-Team: NN <hei@nordum.org>\n"
@@ -16,7 +16,6 @@ msgstr ""
 #. Key: about.philosophy.description
 #. #. Source: templates/index.hbs
 #. Category: about
-#. #. Source: templates/index.hbs
 msgid "about.philosophy.description"
 msgstr ""
 "Ved å identifisere felles språklege mønster og velje dei mest breitt "
@@ -26,14 +25,12 @@ msgstr ""
 #. Key: about.philosophy.title
 #. #. Source: templates/index.hbs
 #. Category: about
-#. #. Source: templates/index.hbs
 msgid "about.philosophy.title"
 msgstr "Filosofi"
 
 #. Key: about.purpose.description
 #. #. Source: templates/index.hbs
 #. Category: about
-#. #. Source: templates/index.hbs
 msgid "about.purpose.description"
 msgstr ""
 "Nordum har som mål å skape ein skriftleg standard som maksimerer gjensidig "
@@ -43,20 +40,18 @@ msgstr ""
 #. Key: about.purpose.title
 #. #. Source: templates/index.hbs
 #. Category: about
-#. #. Source: templates/index.hbs
 msgid "about.purpose.title"
 msgstr "Formål"
 
-#. #. Key: about.title
+#. Key: about.title
 #. #. Source: templates/index.hbs
-#. #. Category: about
+#. Category: about
 msgid "about.title"
 msgstr "Om Nordum"
 
 #. Key: about.vision.description
 #. #. Source: templates/index.hbs
 #. Category: about
-#. #. Source: templates/index.hbs
 msgid "about.vision.description"
 msgstr ""
 "Ei framtid der skandinavar kan kommunisere skriftleg utan å måtta bruka "
@@ -65,49 +60,248 @@ msgstr ""
 #. Key: about.vision.title
 #. #. Source: templates/index.hbs
 #. Category: about
-#. #. Source: templates/index.hbs
 msgid "about.vision.title"
 msgstr "Visjon"
 
-#. Key: common.language
+#. Key: commands.checkCoverageGaps
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.checkCoverageGaps"
+msgstr "Sjekk dekningshol"
+
+#. Key: commands.findCognateGroups
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.findCognateGroups"
+msgstr "Finn kognatgrupper"
+
+#. Key: commands.generatePhoneticReport
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.generatePhoneticReport"
+msgstr "Generer fonetisk rapport"
+
+#. Key: commands.importAllLanguages
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.importAllLanguages"
+msgstr "Importer alle språk"
+
+#. Key: commands.importFromDanishSource
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.importFromDanishSource"
+msgstr "Importer frå dansk kjelde"
+
+#. Key: commands.importNorwegianWords
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.importNorwegianWords"
+msgstr "Importer norske ord"
+
+#. Key: commands.importWithFrequency
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.importWithFrequency"
+msgstr "Importer med frekvens"
+
+#. Key: commands.updateChangedEntries
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.updateChangedEntries"
+msgstr "Oppdater endra oppføringar"
+
+#. Key: commands.validateAndFix
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: commands
+msgid "commands.validateAndFix"
+msgstr "Valider og fiks"
+
+#. Key: common.github
 #. #. Source: templates/partials/layout.hbs
 #. Category: common
+msgid "common.github"
+msgstr "GitHub"
+
+#. Key: common.githubIssues
+#. #. Source: templates/faq.hbs
+#. Category: common
+msgid "common.githubIssues"
+msgstr ""
+"GitHub Issues: Rapportera feil, føreslå funksjonar eller still spørsmål "
+"gjennom vår problemsporar"
+
+#. Key: common.issueTracker
+#. #. Source: templates/faq.hbs
+#. Category: common
+msgid "common.issueTracker"
+msgstr "Søk"
+
+#. Key: common.language.label
 #. #. Source: templates/partials/layout.hbs
-msgid "common.language"
+#. Category: common
+msgid "common.language.label"
 msgstr "Språk"
+
+#. Key: common.language.danish
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.danish"
+msgstr "Dansk"
+
+#. Key: common.language.english
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.english"
+msgstr "Engelsk"
+
+#. Key: common.language.nordum
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.nordum"
+msgstr "Nordum"
+
+#. Key: common.language.norwegianBokmal
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.norwegianBokmal"
+msgstr "Norsk bokmål"
+
+#. Key: common.language.norwegianNynorsk
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.norwegianNynorsk"
+msgstr "Norsk nynorsk"
+
+#. Key: common.language.swedish
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.swedish"
+msgstr "Svensk"
+
+#. Key: common.languageLabel.danish
+#. #. Source: templates/rules/index.hbs
+#. Category: common
+msgid "common.languageLabel.danish"
+msgstr "Dansk"
+
+#. Key: common.languageLabel.english
+#. #. Source: templates/rules/index.hbs
+#. Category: common
+msgid "common.languageLabel.english"
+msgstr "Engelsk"
+
+#. Key: common.languageLabel.nordum
+#. #. Source: templates/rules/index.hbs
+#. Category: common
+msgid "common.languageLabel.nordum"
+msgstr "Nordum"
+
+#. Key: common.languageLabel.norwegian
+#. #. Source: templates/rules/index.hbs
+#. Category: common
+msgid "common.languageLabel.norwegian"
+msgstr "Norsk"
+
+#. Key: common.languageLabel.swedish
+#. #. Source: templates/rules/index.hbs
+#. Category: common
+msgid "common.languageLabel.swedish"
+msgstr "Svensk"
 
 #. Key: common.loading
 #. #. Source: templates/partials/layout.hbs
 #. Category: common
-#. #. Source: templates/partials/layout.hbs
 msgid "common.loading"
 msgstr "Lastar..."
 
 #. Key: common.skipToContent
 #. #. Source: templates/partials/layout.hbs
 #. Category: common
-#. #. Source: templates/partials/layout.hbs
 msgid "common.skipToContent"
 msgstr "Gå til innhald"
+
+#. Key: community.collaborate.description
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.collaborate.description"
+msgstr ""
+"Nordum er eit ope, samarbeidande prosjekt. Vi ønskjer lingvistar, utviklarar "
+"og alle interesserte i skandinaviske språk velkomne til å bidra til dette "
+"ambisiøse prosjektet."
+
+#. Key: community.collaborate.title
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.collaborate.title"
+msgstr "Bli med i vårt fellesskap"
+
+#. Key: community.directCollaboration.description
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.directCollaboration.description"
+msgstr ""
+"Om du ønskjer å samarbeida, ta kontakt med oss på:"
+
+#. Key: community.directCollaboration.title
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.directCollaboration.title"
+msgstr "Kontakta oss direkte for samarbeid"
+
+#. Key: community.reportIssues.description
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.reportIssues.description"
+msgstr ""
+"Send inn feil, funksjonsførespurnader og språkforslag via vår GitHub "
+"Issues side:"
+
+#. Key: community.reportIssues.title
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.reportIssues.title"
+msgstr "Rapporter problem"
+
+#. Key: community.stats.dictionaryEntries
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.stats.dictionaryEntries"
+msgstr "Ordbokoppføringar"
+
+#. Key: community.stats.intelligibility
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.stats.intelligibility"
+msgstr "Gjensidig forståelegheit"
+
+#. Key: community.stats.languages
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.stats.languages"
+msgstr "Språk"
+
+#. Key: community.stats.title
+#. #. Source: templates/index.hbs
+#. Category: community
+msgid "community.stats.title"
+msgstr "Statistikk"
 
 #. Key: cookies.accept
 #. #. Source: templates/partials/layout.hbs
 #. Category: cookies
-#. #. Source: templates/partials/layout.hbs
 msgid "cookies.accept"
 msgstr "Godta alle"
 
 #. Key: cookies.decline
 #. #. Source: templates/partials/layout.hbs
 #. Category: cookies
-#. #. Source: templates/partials/layout.hbs
 msgid "cookies.decline"
 msgstr "Avslå"
 
 #. Key: cookies.description
 #. #. Source: templates/partials/layout.hbs
 #. Category: cookies
-#. #. Source: templates/partials/layout.hbs
 msgid "cookies.description"
 msgstr ""
 "Denne nettsida brukar informasjonskapslar for å sikre at du får den beste "
@@ -116,56 +310,72 @@ msgstr ""
 #. Key: cookies.settings
 #. #. Source: templates/partials/layout.hbs
 #. Category: cookies
-#. #. Source: templates/partials/layout.hbs
 msgid "cookies.settings"
 msgstr "Informasjonskapsel-innstillingar"
 
 #. Key: cookies.title
 #. #. Source: templates/partials/layout.hbs
 #. Category: cookies
-#. #. Source: templates/partials/layout.hbs
 msgid "cookies.title"
 msgstr "Informasjonskapsel-varsel"
+
+#. Key: dictionary.example.big
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: dictionary
+msgid "dictionary.example.big"
+msgstr "Velkomen til Nordum ordbok"
+
+#. Key: dictionary.example.house
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: dictionary
+msgid "dictionary.example.house"
+msgstr "Søk etter ord i Nordum, norsk, dansk, svensk eller engelsk..."
+
+#. Key: dictionary.example.works
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: dictionary
+msgid "dictionary.example.works"
+msgstr "Døme"
 
 #. Key: dictionary.searchFilters.all
 #. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
-#. #. Source: templates/tools/dictionary.hbs
 msgid "dictionary.searchFilters.all"
 msgstr "Alle språk"
 
 #. Key: dictionary.searchFilters.nordum
 #. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
-#. #. Source: templates/tools/dictionary.hbs
 msgid "dictionary.searchFilters.nordum"
 msgstr "Kun Nordum"
 
 #. Key: dictionary.searchPlaceholder
 #. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
-#. #. Source: templates/tools/dictionary.hbs
 msgid "dictionary.searchPlaceholder"
 msgstr "Søk etter ord i Nordum, norsk, dansk, svensk eller engelsk..."
+
+#. Key: dictionary.sourceLanguages
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: dictionary
+msgid "dictionary.sourceLanguages"
+msgstr "Dansk"
 
 #. Key: dictionary.stats.coverage
 #. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
-#. #. Source: templates/tools/dictionary.hbs
 msgid "dictionary.stats.coverage"
 msgstr "Dekning"
 
 #. Key: dictionary.stats.totalEntries
 #. #. Source: templates/index.hbs, templates/tools/dictionary.hbs
 #. Category: dictionary
-#. #. Source: templates/index.hbs, templates/tools/dictionary.hbs
 msgid "dictionary.stats.totalEntries"
 msgstr "Totale oppføringar"
 
 #. Key: dictionary.welcome.description
 #. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
-#. #. Source: templates/tools/dictionary.hbs
 msgid "dictionary.welcome.description"
 msgstr ""
 "Byrja å skrive for å søkje etter ord, eller bruk alfabetnavigasjonen ovanfor "
@@ -174,196 +384,168 @@ msgstr ""
 #. Key: dictionary.welcome.featuredWords
 #. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
-#. #. Source: templates/tools/dictionary.hbs
 msgid "dictionary.welcome.featuredWords"
 msgstr "Utvalde ord"
 
 #. Key: dictionary.welcome.title
 #. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
-#. #. Source: templates/tools/dictionary.hbs
 msgid "dictionary.welcome.title"
 msgstr "Velkomen til Nordum ordbok"
 
 #. Key: editor.statistics.characters
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.statistics.characters"
 msgstr "Teikn:"
 
 #. Key: editor.statistics.charactersNoSpaces
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.statistics.charactersNoSpaces"
 msgstr "Teikn (utan mellomrom):"
 
 #. Key: editor.statistics.lines
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.statistics.lines"
 msgstr "Linjer:"
 
 #. Key: editor.statistics.minutes
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.statistics.minutes"
 msgstr "min"
 
 #. Key: editor.statistics.paragraphs
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.statistics.paragraphs"
 msgstr "Avsnitt:"
 
 #. Key: editor.statistics.readingTime
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.statistics.readingTime"
 msgstr "Lesetid:"
 
 #. Key: editor.statistics.title
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.statistics.title"
 msgstr "Dokumentstatistikk"
 
 #. Key: editor.statistics.words
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.statistics.words"
 msgstr "Ord:"
 
 #. Key: editor.status.characters
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.status.characters"
 msgstr "teikn"
 
 #. Key: editor.status.column
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.status.column"
 msgstr "Kolonne"
 
 #. Key: editor.status.line
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.status.line"
 msgstr "Linje"
 
 #. Key: editor.status.saved
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.status.saved"
 msgstr "Lagra"
 
 #. Key: editor.status.words
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.status.words"
 msgstr "ord"
 
 #. Key: editor.toolbar.bold
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.toolbar.bold"
 msgstr "Feit"
 
 #. Key: editor.toolbar.fullscreen
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.toolbar.fullscreen"
 msgstr "Fullskjerm"
 
 #. Key: editor.toolbar.italic
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.toolbar.italic"
 msgstr "Kursiv"
 
 #. Key: editor.toolbar.new
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.toolbar.new"
 msgstr "Ny"
 
 #. Key: editor.toolbar.redo
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.toolbar.redo"
 msgstr "Gjer om"
 
 #. Key: editor.toolbar.save
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.toolbar.save"
 msgstr "Lagre"
 
 #. Key: editor.toolbar.spellCheck
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.toolbar.spellCheck"
 msgstr "Stavekontroll"
 
 #. Key: editor.toolbar.underline
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.toolbar.underline"
 msgstr "Understreka"
 
 #. Key: editor.toolbar.undo
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.toolbar.undo"
 msgstr "Angre"
 
 #. Key: editor.toolbar.wordCount
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.toolbar.wordCount"
 msgstr "Ordteljing"
 
 #. Key: editor.welcome
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
-#. #. Source: templates/tools/editor.hbs
 msgid "editor.welcome"
 msgstr "Velkomen til Nordum tekstredigerar!"
 
 #. Key: faq.anyoneInterested
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.anyoneInterested"
 msgstr "Alle som er interesserte i pan-skandinavisk kommunikasjon"
 
 #. Key: faq.changingLandscape
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.changingLandscape"
 msgstr ""
 "Endra språkleg landskap: Engelsk har i aukande grad vorte hovudspråket for "
@@ -373,7 +555,6 @@ msgstr ""
 #. Key: faq.communityAnswer1
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.communityAnswer1"
 msgstr ""
 "Nordum-prosjektet trivst med fellesskapsengasjement. Slik kan du delta:"
@@ -381,7 +562,6 @@ msgstr ""
 #. Key: faq.communityAnswer2
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.communityAnswer2"
 msgstr ""
 "Vi trur på ope samarbeid og ynskjer velkommen alle former for konstruktive "
@@ -391,28 +571,24 @@ msgstr ""
 #. Key: faq.communityInvolvement
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.communityInvolvement"
 msgstr "Korleis kan eg engasjera meg i Nordum-fellesskapet?"
 
 #. Key: faq.contactCollaboration
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.contactCollaboration"
 msgstr "Kontakta oss direkte for samarbeid"
 
 #. Key: faq.contribution
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.contribution"
 msgstr "Korleis kan eg bidra til Nordum?"
 
 #. Key: faq.contributionAnswer1
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.contributionAnswer1"
 msgstr ""
 "Nordum ynskjer velkommen bidrag frå lingvistar, utviklarar og skandinaviske "
@@ -421,21 +597,18 @@ msgstr ""
 #. Key: faq.contributionAnswer2
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.contributionAnswer2"
 msgstr "Sjå Bidragsvegleiinga for meir detaljert informasjon."
 
 #. Key: faq.danishStandardization
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.danishStandardization"
 msgstr "Dansk: Standardisert gjennom administrasjon og Luthers bibelomsetjing"
 
 #. Key: faq.digitalCommunication
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.digitalCommunication"
 msgstr ""
 "Digital kommunikasjon: Internett og digitale plattformer krev enkle, "
@@ -444,28 +617,24 @@ msgstr ""
 #. Key: faq.discussion
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.discussion"
 msgstr "Diskusjon: Delta i samtalar om språkdesign og implementering"
 
 #. Key: faq.educationalInstitutions
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.educationalInstitutions"
 msgstr "Utdanningsinstitusjonar som underviser i skandinaviske studium"
 
 #. Key: faq.emailCollaboration
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.emailCollaboration"
 msgstr "E-post: Ta kontakt med oss direkte for samarbeidsmoglegheiter"
 
 #. Key: faq.englishAnswer
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.englishAnswer"
 msgstr ""
 "Nordum bevarer engelske lånord for tekniske og moderne termer der dei "
@@ -476,14 +645,12 @@ msgstr ""
 #. Key: faq.englishLoanwords
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.englishLoanwords"
 msgstr "Korleis handterer Nordum engelske lånord?"
 
 #. Key: faq.geographicMobility
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.geographicMobility"
 msgstr ""
 "Geografisk mobilitet: Folk reiser oftare på tvers av Skandinavia, noko som "
@@ -492,7 +659,6 @@ msgstr ""
 #. Key: faq.githubIssues
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.githubIssues"
 msgstr ""
 "GitHub Issues: Rapportera feil, føreslå funksjonar eller still spørsmål "
@@ -501,7 +667,6 @@ msgstr ""
 #. Key: faq.historicalAnswer1
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.historicalAnswer1"
 msgstr ""
 "Historisk sett danna dei skandinaviske språka eit dialektkontinuum der "
@@ -511,7 +676,6 @@ msgstr ""
 #. Key: faq.historicalAnswer2
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.historicalAnswer2"
 msgstr ""
 "Nordum anerkjenner denne felles arven og skapar ein moderne skriftleg "
@@ -521,21 +685,18 @@ msgstr ""
 #. Key: faq.historicalContext
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.historicalContext"
 msgstr "Kva er den historiske konteksten for skandinaviske språk?"
 
 #. Key: faq.internationalCompanies
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.internationalCompanies"
 msgstr "Internasjonale selskap som opererer i fleire nordiske land"
 
 #. Key: faq.learningAnswer
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.learningAnswer"
 msgstr ""
 "Ja! Nordum er designa for å vera umiddelbart tilgjengeleg for talarar av kva "
@@ -546,14 +707,12 @@ msgstr ""
 #. Key: faq.learningDifficulty
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.learningDifficulty"
 msgstr "Er Nordum lett å læra for skandinaviske talarar?"
 
 #. Key: faq.norwegianStandardization
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.norwegianStandardization"
 msgstr ""
 "Norsk: Utvikla gjennom både dansk påverknad (bokmål) og nasjonalistrørsler "
@@ -562,7 +721,6 @@ msgstr ""
 #. Key: faq.nynorskAnswer1
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.nynorskAnswer1"
 msgstr ""
 "Nordum tek ei anna tilnærming enn nynorsk, som vart oppretta på 1800-talet "
@@ -573,7 +731,6 @@ msgstr ""
 #. Key: faq.nynorskAnswer2
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.nynorskAnswer2"
 msgstr ""
 "I kontrast omfamnar Nordum det felles skandinaviske arvet og sikta mot å "
@@ -583,14 +740,12 @@ msgstr ""
 #. Key: faq.nynorskRelationship
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.nynorskRelationship"
 msgstr "Korleis forheld Nordum seg til nynorsk?"
 
 #. Key: faq.replacementAnswer1
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.replacementAnswer1"
 msgstr ""
 "Absolutt ikkje. Nordum er ikkje designa for å forby eller erstatta dei "
@@ -601,7 +756,6 @@ msgstr ""
 #. Key: faq.replacementAnswer2
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.replacementAnswer2"
 msgstr ""
 "Målet er å tillata bruk av Nordum som eit supplerande skriftspråk som gjer "
@@ -611,98 +765,84 @@ msgstr ""
 #. Key: faq.replacementQuestion
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.replacementQuestion"
 msgstr "Er Nordum meint for å erstatta eksisterande skandinaviske språk?"
 
 #. Key: faq.reportIssues
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.reportIssues"
 msgstr "Rapportera problem eller føreslå forbetringar via GitHub Issues"
 
 #. Key: faq.scandinavians
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.scandinavians"
 msgstr "Skandinavar som kommuniserer på tvers av grenser"
 
 #. Key: faq.submitEntries
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.submitEntries"
 msgstr "Senda inn ordboksoppføringar og framlegg"
 
 #. Key: faq.subtitle
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.subtitle"
 msgstr "Svar på vanlege spørsmål om Nordum"
 
 #. Key: faq.swedishStandardization
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.swedishStandardization"
 msgstr "Svensk: Utvikla gjennom statsadministrasjon og litteratur"
 
 #. Key: faq.targetAudience
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.targetAudience"
 msgstr "Kven kan bruka Nordum?"
 
 #. Key: faq.targetAudienceList
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.targetAudienceList"
 msgstr "Nordum er designa for:"
 
 #. Key: faq.technicalHelp
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.technicalHelp"
 msgstr "Hjelpa med teknisk utvikling eller dokumentasjon"
 
 #. Key: faq.testing
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.testing"
 msgstr "Testing: Hjelp til med å testa nye funksjonar og gje tilbakemelding"
 
 #. Key: faq.title
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.title"
 msgstr "Ofte stilte spørsmål"
 
 #. Key: faq.travelers
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.travelers"
 msgstr "Reisande og ekspatriatar som bur i Skandinavia"
 
 #. Key: faq.whatIsNordum
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.whatIsNordum"
 msgstr "Kva er Nordum?"
 
 #. Key: faq.whatIsNordumAnswer
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.whatIsNordumAnswer"
 msgstr ""
 "Nordum er eit konstruert pan-skandinavisk skriftspråk designa for å tena som "
@@ -714,119 +854,102 @@ msgstr ""
 #. Key: faq.whyCreated
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.whyCreated"
 msgstr "Kvifor vart Nordum oppretta?"
 
 #. Key: faq.whyCreatedAnswer
 #. #. Source: templates/faq.hbs
 #. Category: faq
-#. #. Source: templates/faq.hbs
 msgid "faq.whyCreatedAnswer"
 msgstr "Nordum vart oppretta som svar på fleire moderne realitetar:"
 
 #. Key: footer.community.contact
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.community.contact"
 msgstr "Kontakt"
 
 #. Key: footer.community.discord
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.community.discord"
 msgstr "Discord"
 
 #. Key: footer.community.github
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.community.github"
 msgstr "GitHub"
 
 #. Key: footer.community.title
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.community.title"
 msgstr "Fellesskap"
 
 #. Key: footer.copyright
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.copyright"
 msgstr "Lisensiert under Creative Commons Attribution 4.0"
 
 #. Key: footer.privacy
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.privacy"
 msgstr "Personvernreglar"
 
 #. Key: footer.project.about
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.project.about"
 msgstr "Om"
 
 #. Key: footer.project.title
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.project.title"
 msgstr "Prosjekt"
 
 #. Key: footer.terms
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.terms"
 msgstr "Tenestevilkår"
 
 #. Key: footer.tools.dictionary
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.tools.dictionary"
 msgstr "Ordbok"
 
 #. Key: footer.tools.spellcheck
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.tools.spellcheck"
 msgstr "Stavekontroll"
 
 #. Key: footer.tools.title
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.tools.title"
 msgstr "Verktøy"
 
 #. Key: footer.tools.translator
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
-#. #. Source: templates/partials/layout.hbs
 msgid "footer.tools.translator"
 msgstr "Omsetjar"
 
 #. Key: generated_from
 #. #. Source: templates/rules/language-specification.hbs
 #. Category: generated_from
-#. #. Source: templates/rules/language-specification.hbs
 msgid "generated_from"
 msgstr ""
 
 #. Key: grammar.morphology.description
 #. #. Source: templates/index.hbs
 #. Category: grammar
-#. #. Source: templates/index.hbs
 msgid "grammar.morphology.description"
 msgstr ""
 "Verbbøyingar og substantivdeklinasjonar følgjer dei mest regelmessige "
@@ -835,14 +958,12 @@ msgstr ""
 #. Key: grammar.morphology.title
 #. #. Source: templates/index.hbs
 #. Category: grammar
-#. #. Source: templates/index.hbs
 msgid "grammar.morphology.title"
 msgstr "Samla morfologi"
 
 #. Key: grammar.orthography.description
 #. #. Source: templates/index.hbs
 #. Category: grammar
-#. #. Source: templates/index.hbs
 msgid "grammar.orthography.description"
 msgstr ""
 "Nordum adopterer dei mest fonetisk konsistente stavemønstra som er felles "
@@ -851,112 +972,171 @@ msgstr ""
 #. Key: grammar.orthography.title
 #. #. Source: templates/index.hbs
 #. Category: grammar
-#. #. Source: templates/index.hbs
 msgid "grammar.orthography.title"
 msgstr "Ortografisk forenkling"
 
-#. #. Key: grammar.title
+#. Key: grammar.title
 #. #. Source: templates/index.hbs
-#. #. Category: grammar
+#. Category: grammar
 msgid "grammar.title"
 msgstr "Grammatiske prinsipp"
 
 #. Key: hero.description
 #. #. Source: templates/index.hbs
 #. Category: hero
-#. #. Source: templates/index.hbs
 msgid "hero.description"
 msgstr ""
 "Eit samla skriftspråk designa for å byggje bruer mellom norsk, dansk og "
 "svensk - fremje gjensidig forståing på tvers av Skandinavia gjennom språkleg "
 "samanheng og enkelheit."
 
-#. #. Key: hero.learnMore
+#. Key: hero.learnMore
 #. #. Source: templates/index.hbs
-#. #. Category: hero
+#. Category: hero
 msgid "hero.learnMore"
 msgstr "Lær meir"
 
 #. Key: hero.subtitle
 #. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: hero
-#. #. Source: templates/index.hbs, templates/partials/layout.hbs
 msgid "hero.subtitle"
 msgstr "Eit felles skriftspråk for Skandinavia"
 
-#. #. Key: hero.tryTools
+#. Key: hero.tryTools
 #. #. Source: templates/index.hbs
-#. #. Category: hero
+#. Category: hero
 msgid "hero.tryTools"
 msgstr "Prøv verktøy"
 
 #. Key: nav.about
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
-#. #. Source: templates/partials/layout.hbs
 msgid "nav.about"
 msgstr "Om"
 
 #. Key: nav.faq
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
-#. #. Source: templates/partials/layout.hbs
 msgid "nav.faq"
 msgstr "FAQ"
 
 #. Key: nav.grammar
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
-#. #. Source: templates/partials/layout.hbs
 msgid "nav.grammar"
 msgstr "Grammatikk"
 
 #. Key: nav.home
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
-#. #. Source: templates/partials/layout.hbs
 msgid "nav.home"
 msgstr "Heim"
 
 #. Key: nav.main
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
-#. #. Source: templates/partials/layout.hbs
 msgid "nav.main"
 msgstr "Hovudnavigasjon"
 
 #. Key: nav.toggleMenu
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
-#. #. Source: templates/partials/layout.hbs
 msgid "nav.toggleMenu"
 msgstr "Byt meny"
 
 #. Key: nav.tools
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
-#. #. Source: templates/partials/layout.hbs
 msgid "nav.tools"
 msgstr "Verktøy"
 
 #. Key: on
 #. #. Source: templates/rules/language-specification.hbs
 #. Category: on
-#. #. Source: templates/rules/language-specification.hbs
 msgid "on"
 msgstr ""
+
+#. Key: phonetics.clearEVowel
+#. #. Source: templates/rules/index.hbs
+#. Category: phonetics
+msgid "phonetics.clearEVowel"
+msgstr ""
+
+#. Key: phonetics.kotSound
+#. #. Source: templates/rules/index.hbs
+#. Category: phonetics
+msgid "phonetics.kotSound"
+msgstr ""
+
+#. Key: phonetics.lamSound
+#. #. Source: templates/rules/index.hbs
+#. Category: phonetics
+msgid "phonetics.lamSound"
+msgstr ""
+
+#. Key: phonetics.longISound
+#. #. Source: templates/rules/index.hbs
+#. Category: phonetics
+msgid "phonetics.longISound"
+msgstr ""
+
+#. Key: phonetics.longUSound
+#. #. Source: templates/rules/index.hbs
+#. Category: phonetics
+msgid "phonetics.longUSound"
+msgstr ""
+
+#. Key: phonetics.olSound
+#. #. Source: templates/rules/index.hbs
+#. Category: phonetics
+msgid "phonetics.olSound"
+msgstr ""
+
+#. Key: questionWords.what
+#. #. Source: templates/rules/index.hbs
+#. Category: questionWords
+msgid "questionWords.what"
+msgstr "Kva"
+
+#. Key: questionWords.when
+#. #. Source: templates/rules/index.hbs
+#. Category: questionWords
+msgid "questionWords.when"
+msgstr "Når"
+
+#. Key: questionWords.where
+#. #. Source: templates/rules/index.hbs
+#. Category: questionWords
+msgid "questionWords.where"
+msgstr "Kor"
+
+#. Key: questionWords.which
+#. #. Source: templates/rules/index.hbs
+#. Category: questionWords
+msgid "questionWords.which"
+msgstr "Kva for ein"
+
+#. Key: questionWords.who
+#. #. Source: templates/rules/index.hbs
+#. Category: questionWords
+msgid "questionWords.who"
+msgstr "Kven"
+
+#. Key: questionWords.why
+#. #. Source: templates/rules/index.hbs
+#. Category: questionWords
+msgid "questionWords.why"
+msgstr "Kvifor"
 
 #. Key: rules.table_of_contents
 #. #. Source: templates/rules/language-specification.hbs
 #. Category: rules
-#. #. Source: templates/rules/language-specification.hbs
 msgid "rules.table_of_contents"
 msgstr "Innhaldsforteljing"
 
 #. Key: site.description
 #. #. Source: templates/partials/layout.hbs
 #. Category: site
-#. #. Source: templates/partials/layout.hbs
 msgid "site.description"
 msgstr ""
 "Eit samla skriftspråk designa for å bli forstått av talarar av norsk, dansk "
@@ -965,21 +1145,132 @@ msgstr ""
 #. Key: site.tagline
 #. #. Source: templates/partials/layout.hbs
 #. Category: site
-#. #. Source: templates/partials/layout.hbs
 msgid "site.tagline"
 msgstr "Byggjer bruer gjennom språk"
 
 #. Key: site.title
 #. #. Source: templates/partials/layout.hbs
 #. Category: site
-#. #. Source: templates/partials/layout.hbs
 msgid "site.title"
 msgstr "Nordum - Eit pan-skandinavisk språk"
+
+#. Key: sources.bokmalDanishAgreement
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.bokmalDanishAgreement"
+msgstr "Bokmål-dansk avtale"
+
+#. Key: sources.bokmalDanishPreference
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.bokmalDanishPreference"
+msgstr "Bokmål-dansk preferanse"
+
+#. Key: sources.danskSprogLitteraturselskab
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.danskSprogLitteraturselskab"
+msgstr "Dansk Sprog- og Litteraturselskab"
+
+#. Key: sources.englishLoanwordsPreserved
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.englishLoanwordsPreserved"
+msgstr "Engelske lånord bevarte"
+
+#. Key: sources.frequencyWeight
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.frequencyWeight"
+msgstr "Frekvensvekt"
+
+#. Key: sources.korpusDK
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.korpusDK"
+msgstr "KorpusDK"
+
+#. Key: sources.morphologicalRegularity
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.morphologicalRegularity"
+msgstr "Morfolosk regelmessigheit"
+
+#. Key: sources.nbuCorpus
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.nbuCorpus"
+msgstr "NBU Korpus"
+
+#. Key: sources.norwegianNumberSystem
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.norwegianNumberSystem"
+msgstr "Norsk talsystem"
+
+#. Key: sources.phoneticSimilarity
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.phoneticSimilarity"
+msgstr "Fonetisk likskap"
+
+#. Key: sources.saolSvenskaAkademien
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.saolSvenskaAkademien"
+msgstr "SAOL Svenska Akademien"
+
+#. Key: sources.selectionPriority
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.selectionPriority"
+msgstr "Utvalsprioritet"
+
+#. Key: sources.sprakbanken
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.sprakbanken"
+msgstr "Språkbanken"
+
+#. Key: sources.sprakradetWordList
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.sprakradetWordList"
+msgstr "Språkrådet si ordliste"
+
+#. Key: sources.standardFormat
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.standardFormat"
+msgstr "Standardformat"
+
+#. Key: sources.vQuestionWords
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.vQuestionWords"
+msgstr "KV-spørsmålsord"
+
+#. Key: sources.wiktionaryDanish
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.wiktionaryDanish"
+msgstr "Wiktionary dansk"
+
+#. Key: sources.wiktionaryNorwegian
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.wiktionaryNorwegian"
+msgstr "Wiktionary norsk"
+
+#. Key: sources.wiktionarySwedish
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: sources
+msgid "sources.wiktionarySwedish"
+msgstr "Wiktionary svensk"
 
 #. Key: spellcheck.placeholder
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.placeholder"
 msgstr ""
 "Byrja å skrive din Nordum-tekst her, eller lim inn eksisterande tekst for å "
@@ -988,144 +1279,102 @@ msgstr ""
 #. Key: spellcheck.readabilityLevels.good
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.readabilityLevels.good"
 msgstr "God"
 
 #. Key: spellcheck.samples.correct
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.samples.correct"
 msgstr "Korrekt tekst"
 
 #. Key: spellcheck.samples.errors
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.samples.errors"
 msgstr "Tekst med feil"
 
 #. Key: spellcheck.samples.mixed
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.samples.mixed"
 msgstr "Blanda språk"
 
 #. Key: spellcheck.samples.title
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.samples.title"
 msgstr "Prøv dømetekstar"
 
 #. Key: spellcheck.stats.characters
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.stats.characters"
 msgstr "Teikn:"
 
 #. Key: spellcheck.stats.readability
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.stats.readability"
 msgstr "Lesbarheit:"
 
 #. Key: spellcheck.stats.sentences
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.stats.sentences"
 msgstr "Setningar:"
 
 #. Key: spellcheck.stats.words
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.stats.words"
 msgstr "Ord:"
 
 #. Key: spellcheck.suggestions.noIssues
 #. #. Source: templates/tools/editor.hbs, templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/editor.hbs, templates/tools/spellcheck.hbs
 msgid "spellcheck.suggestions.noIssues"
 msgstr "Ingen problem funne!"
 
 #. Key: spellcheck.suggestions.textLooksGood
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.suggestions.textLooksGood"
 msgstr "Teksten din ser bra ut."
 
 #. Key: spellcheck.suggestions.title
 #. #. Source: templates/tools/editor.hbs, templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/editor.hbs, templates/tools/spellcheck.hbs
 msgid "spellcheck.suggestions.title"
 msgstr "Forslag"
 
 #. Key: spellcheck.toolbar.clear
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.toolbar.clear"
 msgstr "Tøm"
 
 #. Key: spellcheck.toolbar.grammar
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.toolbar.grammar"
 msgstr "Grammatikk"
 
 #. Key: spellcheck.toolbar.paste
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.toolbar.paste"
 msgstr "Lim inn"
 
 #. Key: spellcheck.toolbar.spelling
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
-#. #. Source: templates/tools/spellcheck.hbs
 msgid "spellcheck.toolbar.spelling"
 msgstr "Staving"
-
-#. #. Key: test.button.submit
-#. #. Source: templates/test.hbs
-#. #. Category: test
-#. #. Obsolete: Key no longer used in templates
-msgid "test.button.submit"
-msgstr ""
-
-#. #. Key: test.page.description
-#. #. Source: templates/test.hbs
-#. #. Category: test
-#. #. Obsolete: Key no longer used in templates
-#, fuzzy
-msgid "test.page.description"
-msgstr ""
-"Eit samla skriftspråk designa for å bli forstått av talarar av norsk, dansk "
-"og svensk"
-
-#. #. Key: test.page.title
-#. #. Source: templates/test.hbs
-#. #. Category: test
-#. #. Obsolete: Key no longer used in templates
-#, fuzzy
-msgid "test.page.title"
-msgstr "Nordum - Eit pan-skandinavisk språk"
 
 #. Key: tools.dictionary.description
 #. #. Source: templates/index.hbs
 #. Category: tools
-#. #. Source: templates/index.hbs
 msgid "tools.dictionary.description"
 msgstr ""
 "Omfattande Nordum-engelsk ordbok med etymologisk informasjon og "
@@ -1134,273 +1383,244 @@ msgstr ""
 #. Key: tools.dictionary.title
 #. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: tools
-#. #. Source: templates/index.hbs, templates/partials/layout.hbs
 msgid "tools.dictionary.title"
 msgstr "Ordbok"
 
 #. Key: tools.editor.description
 #. #. Source: templates/index.hbs
 #. Category: tools
-#. #. Source: templates/index.hbs
 msgid "tools.editor.description"
 msgstr ""
 "Skriv og rediger dokument i Nordum med integrert stavekontroll, "
 "grammatikkforslag og formateringsverktøy."
 
-#. #. Key: tools.editor.features
+#. Key: tools.editor.features
 #. #. Source: templates/index.hbs
-#. #. Category: tools
-#, fuzzy
+#. Category: tools
 msgid "tools.editor.features"
 msgstr "Tekstredigerar"
 
 #. Key: tools.editor.title
 #. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: tools
-#. #. Source: templates/index.hbs, templates/partials/layout.hbs
 msgid "tools.editor.title"
 msgstr "Tekstredigerar"
 
 #. Key: tools.spellcheck.description
 #. #. Source: templates/index.hbs
 #. Category: tools
-#. #. Source: templates/index.hbs
 msgid "tools.spellcheck.description"
 msgstr ""
 "Sanntids stave- og grammatikkkontroll spesielt designa for Nordums "
 "ortografiske og morfologiske reglar."
 
-#. #. Key: tools.spellcheck.realTimeChecking
+#. Key: tools.spellcheck.realTimeChecking
 #. #. Source: templates/index.hbs
-#. #. Category: tools
-#, fuzzy
+#. Category: tools
 msgid "tools.spellcheck.realTimeChecking"
 msgstr "Stavekontroll"
 
 #. Key: tools.spellcheck.title
 #. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: tools
-#. #. Source: templates/index.hbs, templates/partials/layout.hbs
 msgid "tools.spellcheck.title"
 msgstr "Stavekontroll"
 
-#. #. Key: tools.title
+#. Key: tools.title
 #. #. Source: templates/index.hbs
-#. #. Category: tools
+#. Category: tools
 msgid "tools.title"
 msgstr "Digitale verktøy"
 
 #. Key: tools.translator.description
 #. #. Source: templates/index.hbs
 #. Category: tools
-#. #. Source: templates/index.hbs
 msgid "tools.translator.description"
 msgstr ""
 "Konverter tekst mellom Nordum og dei individuelle skandinaviske språka for å "
 "hjelpe med læring og samanlikning."
 
-#. #. Key: tools.translator.languages
+#. Key: tools.translator.languages
 #. #. Source: templates/index.hbs
-#. #. Category: tools
-#, fuzzy
+#. Category: tools
 msgid "tools.translator.languages"
-msgstr "Omsetjar"
+msgstr "Språk"
 
 #. Key: tools.translator.title
 #. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: tools
-#. #. Source: templates/index.hbs, templates/partials/layout.hbs
 msgid "tools.translator.title"
 msgstr "Omsetjar"
 
 #. Key: translator.characterLimit
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.characterLimit"
 msgstr "teikn"
 
 #. Key: translator.confidence
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.confidence"
 msgstr "Tillit:"
 
 #. Key: translator.detected
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.detected"
 msgstr "Oppdaga:"
 
 #. Key: translator.from
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.from"
 msgstr "Frå:"
 
 #. Key: translator.history.clear
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.history.clear"
 msgstr "Tøm historikk"
 
 #. Key: translator.history.empty
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.history.empty"
 msgstr "Ingen siste omsetjingar"
 
 #. Key: translator.history.title
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.history.title"
 msgstr "Siste omsetjingar"
 
 #. Key: translator.inputPlaceholder
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.inputPlaceholder"
 msgstr "Skriv inn tekst å setje om..."
 
 #. Key: translator.languages.auto
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.languages.auto"
 msgstr "Auto-detekter"
 
 #. Key: translator.languages.danish
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.languages.danish"
 msgstr "Dansk"
 
 #. Key: translator.languages.nordum
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.languages.nordum"
 msgstr "Nordum"
 
 #. Key: translator.languages.norwegian
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.languages.norwegian"
 msgstr "Norsk (bokmål)"
 
 #. Key: translator.languages.swedish
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.languages.swedish"
 msgstr "Svensk"
 
 #. Key: translator.outputPlaceholder
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.outputPlaceholder"
 msgstr "Omsetjing vil visast her..."
 
 #. Key: translator.phrases.cost
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.phrases.cost"
 msgstr "Kor mykje kostar det?"
 
 #. Key: translator.phrases.goodbye
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.phrases.goodbye"
 msgstr "Pass på deg / Ha det"
 
 #. Key: translator.phrases.hello
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.phrases.hello"
 msgstr "Hei, korleis har du det?"
 
 #. Key: translator.phrases.help
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.phrases.help"
 msgstr "Kan du hjelpe meg?"
 
 #. Key: translator.phrases.thanks
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.phrases.thanks"
 msgstr "Takk for hjelpa"
 
 #. Key: translator.phrases.understand
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.phrases.understand"
 msgstr "Eg forstår ikkje"
 
 #. Key: translator.quickTranslations
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.quickTranslations"
 msgstr "Hurtigomsetjingar"
 
 #. Key: translator.swap
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.swap"
 msgstr "Byt språk"
 
 #. Key: translator.to
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.to"
 msgstr "Til:"
 
 #. Key: translator.toolbar.clear
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.toolbar.clear"
 msgstr "Tøm tekst"
 
 #. Key: translator.toolbar.copy
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.toolbar.copy"
 msgstr "Kopier omsetjing"
 
 #. Key: translator.toolbar.paste
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.toolbar.paste"
 msgstr "Lim inn frå utklippstavle"
 
 #. Key: translator.toolbar.speak
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
-#. #. Source: templates/tools/translator.hbs
 msgid "translator.toolbar.speak"
 msgstr "Lytt til omsetjing"
+
+#~ msgid "test.page.description"
+#~ msgstr ""
+#~ "Eit samla skriftspråk designa for å bli forstått av talarar av norsk, "
+#~ "dansk og svensk"
+
+#~ msgid "test.page.title"
+#~ msgstr "Nordum - Eit pan-skandinavisk språk"
 
 #~ msgid "hero.title"
 #~ msgstr "Nordum"
@@ -1475,9 +1695,6 @@ msgstr "Lytt til omsetjing"
 #~ msgid "resources.research.comparison"
 #~ msgstr "Skandinavisk språksamanlikning"
 
-#~ msgid "resources.research.corpus"
-#~ msgstr "Nordum tekstkorpus"
-
 #~ msgid "resources.research.statistics"
 #~ msgstr "Bruksstatistikk"
 
@@ -1490,29 +1707,11 @@ msgstr "Lytt til omsetjing"
 #~ msgid "resources.developer.datasets"
 #~ msgstr "Språkdatasett"
 
-#~ msgid "resources.developer.contribute"
-#~ msgstr "Bidragsretningsliner"
-
 #~ msgid "resources.developer.github"
 #~ msgstr "GitHub-repository"
 
-#~ msgid "community.title"
-#~ msgstr "Bli med i vårt fellesskap"
-
-#~ msgid "community.description"
-#~ msgstr ""
-#~ "Nordum er eit ope, samarbeidande prosjekt. Vi ønskjer lingvistar, "
-#~ "utviklarar og alle interesserte i skandinaviske språk velkomne til å "
-#~ "bidra til dette ambisiøse prosjektet."
-
-#~ msgid "community.stats.entries"
-#~ msgstr "Ordbokoppføringar"
-
 #~ msgid "community.stats.contributors"
 #~ msgstr "Bidragsytarar"
-
-#~ msgid "community.stats.intelligibility"
-#~ msgstr "Gjensidig forståelegheit"
 
 #~ msgid "community.links.discord"
 #~ msgstr "Discord-server"
@@ -1546,12 +1745,6 @@ msgstr "Lytt til omsetjing"
 
 #~ msgid "common.delete"
 #~ msgstr "Slett"
-
-#~ msgid "common.edit"
-#~ msgstr "Rediger"
-
-#~ msgid "common.search"
-#~ msgstr "Søk"
 
 #~ msgid "common.clear"
 #~ msgstr "Tøm"
@@ -1619,21 +1812,6 @@ msgstr "Lytt til omsetjing"
 
 #~ msgid "dictionary.wordDetails.etymology"
 #~ msgstr "Etymologi"
-
-#~ msgid "dictionary.wordDetails.examples"
-#~ msgstr "Døme"
-
-#~ msgid "dictionary.languages.norwegian"
-#~ msgstr "Norsk"
-
-#~ msgid "dictionary.languages.danish"
-#~ msgstr "Dansk"
-
-#~ msgid "dictionary.languages.swedish"
-#~ msgstr "Svensk"
-
-#~ msgid "dictionary.languages.english"
-#~ msgstr "Engelsk"
 
 #~ msgid "dictionary.languages.nordum"
 #~ msgstr "Nordum"
