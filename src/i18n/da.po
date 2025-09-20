@@ -1621,8 +1621,494 @@ msgstr "Sæt ind fra udklipsholder"
 msgid "translator.toolbar.speak"
 msgstr "Lyt til oversættelse"
 
+#. Key: common.danish
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.danish"
+msgstr "Dansk"
+
+#. Key: common.example
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: common
+msgid "common.example"
+msgstr "Eksempel"
+
+#. Key: common.examples
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: common
+msgid "common.examples"
+msgstr "Eksempler"
+
+#. Key: common.nordum
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.nordum"
+msgstr "Nordum"
+
+#. Key: common.norwegian
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.norwegian"
+msgstr "Norsk"
+
+#. Key: common.note
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: common
+msgid "common.note"
+msgstr "Bemærk"
+
+#. Key: common.number
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: common
+msgid "common.number"
+msgstr "Nummer"
+
+#. Key: common.swedish
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.swedish"
+msgstr "Svensk"
+
+#. Key: import.process.cognate
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.process.cognate"
+msgstr "Kognatidentifikation"
+
+#. Key: import.process.cognate_desc
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.process.cognate_desc"
+msgstr "Identificer ord med fælles skandinaviske rødder"
+
+#. Key: import.process.fetch
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.process.fetch"
+msgstr "Datahentning"
+
+#. Key: import.process.fetch_desc
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.process.fetch_desc"
+msgstr "Indsamle ord fra skandinaviske sprogkilder"
+
+#. Key: import.process.generate
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.process.generate"
+msgstr "Ordgenerering"
+
+#. Key: import.process.generate_desc
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.process.generate_desc"
+msgstr "Opret Nordum-former fra kildeord"
+
+#. Key: import.process.normalize
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.process.normalize"
+msgstr "Normalisering"
+
+#. Key: import.process.normalize_desc
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.process.normalize_desc"
+msgstr "Standardiser ordformer og stavning"
+
+#. Key: import.process.phonetic
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.process.phonetic"
+msgstr "Fonetisk analyse"
+
+#. Key: import.process.phonetic_desc
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.process.phonetic_desc"
+msgstr "Analyser udtalelsesmønstre"
+
+#. Key: import.process.title
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.process.title"
+msgstr "Importproces"
+
+#. Key: import.sources.title
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.sources.title"
+msgstr "Datakilder"
+
+#. Key: import.subtitle
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.subtitle"
+msgstr "Bygning af Nordum-ordbog fra skandinaviske sprogdata"
+
+#. Key: import.title
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.title"
+msgstr "Ordbogsimportværktøj"
+
+#. Key: import.usage.analysis
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.usage.analysis"
+msgstr "Sproglig analyse"
+
+#. Key: import.usage.batch
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.usage.batch"
+msgstr "Batchbehandling"
+
+#. Key: import.usage.single
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.usage.single"
+msgstr "Enkeltordsimport"
+
+#. Key: import.usage.title
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: import
+msgid "import.usage.title"
+msgstr "Brugseksempler"
+
+#. Key: nav.back_rules
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: navigation
+msgid "nav.back_rules"
+msgstr "Tilbage til regler"
+
+#. Key: nav.dictionary_import
+#. #. Source: templates/partials/layout.hbs
+#. Category: navigation
+msgid "nav.dictionary_import"
+msgstr "Ordbogsimport"
+
+#. Key: nav.dictionary_tool
+#. #. Source: templates/partials/layout.hbs
+#. Category: navigation
+msgid "nav.dictionary_tool"
+msgstr "Ordbogsværktøj"
+
+#. Key: nav.try_tools
+#. #. Source: templates/index.hbs
+#. Category: navigation
+msgid "nav.try_tools"
+msgstr "Prøv vores værktøjer"
+
 #~ msgid "test.button.submit"
 #~ msgstr "Send"
+
+#. Key: rules.dictionary_import
+#. #. Source: templates/rules/dictionary-import.hbs
+#. Category: rules
+msgid "rules.dictionary_import"
+msgstr "Ordbogsimport"
+
+#. Key: rules.features.balanced
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.features.balanced"
+msgstr "Balanceret tilgang"
+
+#. Key: rules.features.balanced_desc
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.features.balanced_desc"
+msgstr "Kombinerer de bedste funktioner fra alle tre sprog"
+
+#. Key: rules.features.flexible
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.features.flexible"
+msgstr "Fleksibel brug"
+
+#. Key: rules.features.flexible_desc
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.features.flexible_desc"
+msgstr "Tilpasser sig forskellige kommunikationskontekster"
+
+#. Key: rules.features.modern
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.features.modern"
+msgstr "Moderne ordforråd"
+
+#. Key: rules.features.modern_desc
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.features.modern_desc"
+msgstr "Inkluderer nutidige termer og udtryk"
+
+#. Key: rules.features.systematic
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.features.systematic"
+msgstr "Systematisk struktur"
+
+#. Key: rules.features.systematic_desc
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.features.systematic_desc"
+msgstr "Klar og konsekvent grammatiske regler"
+
+#. Key: rules.full_specification
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.full_specification"
+msgstr "Komplet sprogspecifikation"
+
+#. Key: rules.loanwords.note
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: rules
+msgid "rules.loanwords.note"
+msgstr "Bemærk: Internationale låneord beholder ofte deres oprindelige stavning"
+
+#. Key: rules.loanwords.title
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: rules
+msgid "rules.loanwords.title"
+msgstr "Låneord og internationale termer"
+
+#. Key: rules.loanwords.unchanged
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: rules
+msgid "rules.loanwords.unchanged"
+msgstr "Uændrede låneord"
+
+#. Key: rules.loanwords.unchanged_desc
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: rules
+msgid "rules.loanwords.unchanged_desc"
+msgstr "Ord adopteret direkte fra andre sprog uden modifikation"
+
+#. Key: rules.numbers.basic
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: rules
+msgid "rules.numbers.basic"
+msgstr "Grundlæggende tal"
+
+#. Key: rules.numbers.comparison
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: rules
+msgid "rules.numbers.comparison"
+msgstr "Talsammenligning"
+
+#. Key: rules.numbers.norwegian
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: rules
+msgid "rules.numbers.norwegian"
+msgstr "Norsk talsystem"
+
+#. Key: rules.numbers.norwegian_desc
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: rules
+msgid "rules.numbers.norwegian_desc"
+msgstr "Følger det norske talsystem for konsistens"
+
+#. Key: rules.numbers.title
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: rules
+msgid "rules.numbers.title"
+msgstr "Tal og tælling"
+
+#. Key: rules.overview.description
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.overview.description"
+msgstr "Nordum kombinerer elementer fra norsk, dansk og svensk for at skabe en gensidigt forståelig skriftlig standard"
+
+#. Key: rules.overview.title
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.overview.title"
+msgstr "Sprogoversigt"
+
+#. Key: rules.philosophy.bokmaal_danish
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.philosophy.bokmaal_danish"
+msgstr "Bokmål-dansk aftale"
+
+#. Key: rules.philosophy.bokmaal_danish_desc
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.philosophy.bokmaal_danish_desc"
+msgstr "Foretrækker former, der er fælles for både bokmål norsk og dansk"
+
+#. Key: rules.philosophy.title
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.philosophy.title"
+msgstr "Designdilosofi"
+
+#. Key: rules.phonetics.consonant_clusters
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.phonetics.consonant_clusters"
+msgstr "Konsonantklynger"
+
+#. Key: rules.phonetics.consonant_clusters_desc
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.phonetics.consonant_clusters_desc"
+msgstr "Forenkler komplekse konsonantkombinationer for lettere udtale"
+
+#. Key: rules.phonetics.title
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.phonetics.title"
+msgstr "Fonetik og udtale"
+
+#. Key: rules.phonetics.transcription
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.phonetics.transcription"
+msgstr "Fonetisk transskription"
+
+#. Key: rules.phonetics.transcription_desc
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.phonetics.transcription_desc"
+msgstr "Giver udtalevejledninger for alle ord"
+
+#. Key: rules.phonetics.vowel_clarity
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.phonetics.vowel_clarity"
+msgstr "Vokalklarhed"
+
+#. Key: rules.phonetics.vowel_clarity_desc
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.phonetics.vowel_clarity_desc"
+msgstr "Opretholder klare vokalforskelle for bedre forståelse"
+
+#. Key: rules.practical.code_switching
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.practical.code_switching"
+msgstr "Kodeskift-understøttelse"
+
+#. Key: rules.practical.code_switching_desc
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.practical.code_switching_desc"
+msgstr "Fasiliterer blanding af Nordum med indfødte skandinaviske sprog"
+
+#. Key: rules.practical.learning
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.practical.learning"
+msgstr "Nem læring"
+
+#. Key: rules.practical.learning_desc
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.practical.learning_desc"
+msgstr "Designet til at være intuitiv for skandinaviske sprogtalere"
+
+#. Key: rules.practical.multilingual
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.practical.multilingual"
+msgstr "Flersproget kompatibilitet"
+
+#. Key: rules.practical.multilingual_desc
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.practical.multilingual_desc"
+msgstr "Fungerer sammen med eksisterende skandinaviske sprog"
+
+#. Key: rules.practical.recognition
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.practical.recognition"
+msgstr "Høj genkendelse"
+
+#. Key: rules.practical.recognition_desc
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.practical.recognition_desc"
+msgstr "Ord er umiddelbart genkendelige for de fleste skandinaviske talere"
+
+#. Key: rules.practical.title
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.practical.title"
+msgstr "Praktiske fordele"
+
+#. Key: rules.questions.no_silent_h
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: rules
+msgid "rules.questions.no_silent_h"
+msgstr "Ingen stum H"
+
+#. Key: rules.questions.no_silent_h_desc
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: rules
+msgid "rules.questions.no_silent_h_desc"
+msgstr "Bogstavet H udtales altid i Nordum"
+
+#. Key: rules.questions.title
+#. #. Source: templates/rules/language-specification.hbs
+#. Category: rules
+msgid "rules.questions.title"
+msgstr "Almindelige spørgsmål"
+
+#. Key: rules.subtitle
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.subtitle"
+msgstr "Kerneprincipper der gør Nordum let at lære og bruge i dagens flersprogede verden"
+
+#. Key: rules.title
+#. #. Source: templates/rules/index.hbs
+#. Category: rules
+msgid "rules.title"
+msgstr "Sprogregler"
+
+#. Key: phonetics.clearEVowel
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: phonetics
+msgid "phonetics.clearEVowel"
+msgstr "Klar E-vokal"
+
+#. Key: phonetics.kotSound
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: phonetics
+msgid "phonetics.kotSound"
+msgstr "Kot-lyd"
+
+#. Key: phonetics.lamSound
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: phonetics
+msgid "phonetics.lamSound"
+msgstr "Lam-lyd"
+
+#. Key: phonetics.longISound
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: phonetics
+msgid "phonetics.longISound"
+msgstr "Lang I-lyd"
+
+#. Key: phonetics.longUSound
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: phonetics
+msgid "phonetics.longUSound"
+msgstr "Lang U-lyd"
+
+#. Key: phonetics.olSound
+#. #. Source: templates/tools/dictionary.hbs
+#. Category: phonetics
+msgid "phonetics.olSound"
+msgstr "Ol-lyd"
 
 #~ msgid "test.page.description"
 #~ msgstr ""

@@ -19,7 +19,7 @@ class TranslationChecker {
         
         for (const file of templateFiles) {
             const content = await fs.readFile(file, 'utf-8');
-            const matches = content.matchAll(/{{t\s+['"]([^'"]+)['"]\s*}}/g);
+            const matches = content.matchAll(/{{t\s*['"]([^'"]+)['"]/g);
             
             for (const match of matches) {
                 keys.add(match[1]);
