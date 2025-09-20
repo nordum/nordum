@@ -1156,7 +1156,7 @@ msgstr "Nordum - Ett Pan-Skandinaviskt Språk"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. Category: sources
 msgid "sources.bokmalDanishAgreement"
-msgstr "Bokmål-dansk överenskommelse"
+msgstr "Bokmål-dansk stemmer överens"
 
 #. Key: sources.bokmalDanishPreference
 #. #. Source: templates/rules/dictionary-import.hbs

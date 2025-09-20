@@ -182,7 +182,7 @@ baguette → baguette
 | G, g | [g] | god, lag | Always hard [g] |
 | H, h | [h] | hus, hånd | Never silent (eliminated in question words) |
 | J, j | [j] | ja, arbeide | Consistent [j] sound |
-| K, k | [k] | katt, kjøpe | Replaces ck combinations |
+| K, k | [k] | katt, købe | Replaces ck combinations |
 | L, l | [l] | liten, fall | Clear lateral |
 | M, m | [m] | mann, komme | Bilabial nasal |
 | N, n | [n] | ny, ingen | Alveolar nasal |
@@ -212,6 +212,62 @@ However, in lexical items where Norwegian and Swedish consistently use `t` and D
 This is a lexical selection decision, not a phonetic one. It ensures Nordum remains intuitive and recognizable to all users.
 
 In cases where the letter `t` is used as the primary spelling for what is a [ð]-sound in Danish, it is a secondary option to spell it with `d`.
+
+#### 3.3.3 Special Spelling Rules for K/J/G Sounds
+
+**Rule 1: K-sound in Norwegian, J-sound in Danish → G spelling**
+When Norwegian has a "k" sound and Danish has a "j" sound for the same morpheme, Nordum uses "g" spelling.
+
+**Examples**:
+- søke (Norwegian) / søge (Danish) → søge (search)
+- tak (Norwegian) / tag (Danish) → tag (roof)
+
+**Rule 2: G-sound in Danish, J-sound in Norwegian → G spelling**
+When Danish has a "g" sound and Norwegian has a "j" sound for the same morpheme, Nordum uses "g" spelling rather than "gj".
+
+**Examples**:
+- genstand (Danish) / gjenstand (Norwegian) → genstand (object)
+- gæst (Danish) / gjest (Norwegian) → gæst (guest)
+
+**Rule 3: Native Scandinavian words use "ks" instead of "x"**
+For native Scandinavian words, Nordum uses "ks" spelling (as in Danish/Norwegian) instead of "x" (as in Swedish).
+
+**Examples**:
+- fiks (Danish/Norwegian) / fix (Swedish) → fiks (fix)
+- maks (Danish/Norwegian) / max (Swedish) → maks (max)
+
+**Rule 4: [ç]-sound in Swedish/Norwegian, K-sound in Danish → K spelling**
+When Swedish and Norwegian have a [ç]-sound and Danish has a "k"-sound for the same morpheme, Nordum uses "k" spelling (as in Danish/Swedish) rather than "kj" (as in Norwegian).
+
+**Examples**:
+- köra (Swedish) / kjøre (Norwegian) / køre (Danish) → køre (drive)
+- köpa (Swedish) / kjøpe (Norwegian) / købe (Danish) → købe (buy)
+
+#### 3.3.4 Preposition Spelling (Bokmål Pattern)
+Prepositions in Nordum generally follow the Bokmål spelling pattern for consistency and mutual intelligibility. Exceptions occur where the spelling clashes with another rule.
+
+**Common Prepositions as in bokmål**:
+- i (in)
+- på (on)
+- fra (from)
+- med (with)
+- om (about)
+- av (of)
+- for (for)
+- ved (by)
+- over (over)
+- under (under)
+- mot (against)
+- før (before)
+- siden (since)
+- uten (without)
+- innen (within)
+
+**Exceptions:**
+- mellem (between)
+- gennem (through)
+- efter (after)
+- till (to)
 
 ### 3.4 Special Combinations
 
@@ -332,7 +388,7 @@ Conjunction:       Det er viktig att lære språket. (It is important to learn t
 Swedish `-ar` verbs become `-er` in Nordum:
 - `arbeta` → `arbeide` → `arbeider`
 - `tala` → `tale` → `snakker` (strategic lexical selection)
-- `köra` → `kjøre` → `kører`
+- `köra` → `køre` → `kører`
 
 ### 4.3 Noun System
 
@@ -554,7 +610,7 @@ When all three languages differ in spelling, prefer most systematic and secondly
 
 ```
 
-Swedish: kör, Norwegian: kjører, Danish: kører → kører (systematic + majority)
+Swedish: kör, Norwegian: kjøre, Danish: køre → køre (systematic + majority)
 Swedish: talar, Norwegian: snakker, Danish: snakker/taler → taler/snakker (systematic + majority)
 Danish: hedder, Norwegian: heter, Swedish: heter → heter (majority form, clearer pronunciation alignment)
 Danish: ikke, Norwegian: ikke, Swedish: inte → ikke (majority form, preserves Danish/Norwegian unity)
@@ -611,7 +667,7 @@ For places with multiple valid historical names or names that vary by Scandinavi
 *   `Slesvig` or `Schleswig`
 *   `Flensborg` or `Flensburg`
 *   `Hamborg` or `Hamburg`
-*   `Kjøbenhavn` or `København`
+*   `København` (primary) or `Kjøbenhavn` (alternative)
 *   `Göteborg` (endonym) / `Gøteborg` (Danish/Nordum primary) / `Gothenburg`
 
 **Policy**: The choice between endonyms, permitted exonyms, or historical variants is considered an orthographic preference and has no grammatical consequences. Consistency within a single text is encouraged.
