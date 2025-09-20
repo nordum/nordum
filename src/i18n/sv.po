@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nordum Pan-Scandinavian Language\n"
 "Report-Msgid-Bugs-To: https://github.com/nordum/nordum/issues\n"
-"POT-Creation-Date: 2025-09-20T10:16:47.184Z\n"
-"PO-Revision-Date: 2025-09-20 12:18+0200\n"
+"POT-Creation-Date: 2025-09-20T17:39:07.519Z\n"
+"PO-Revision-Date: 2025-09-20 19:55+0200\n"
 "Last-Translator: Nordum Project <hei@nordum.org>\n"
 "Language-Team: SV <hei@nordum.org>\n"
 "Language: sv\n"
@@ -264,7 +264,7 @@ msgstr "Nummer"
 #. #. Source: templates/partials/layout.hbs
 #. Category: common
 msgid "common.skipToContent"
-msgstr ""
+msgstr "Hoppa till innehåll"
 
 #. #. Key: common.swedish
 #. #. Source: templates/rules/dictionary-import.hbs, templates/rules/index.hbs
@@ -341,31 +341,31 @@ msgstr "Statistik"
 #. #. Source: templates/partials/layout.hbs
 #. Category: cookies
 msgid "cookies.accept"
-msgstr ""
+msgstr "Acceptera"
 
 #. Key: cookies.decline
 #. #. Source: templates/partials/layout.hbs
 #. Category: cookies
 msgid "cookies.decline"
-msgstr ""
+msgstr "Avböj"
 
 #. Key: cookies.description
 #. #. Source: templates/partials/layout.hbs
 #. Category: cookies
 msgid "cookies.description"
-msgstr ""
+msgstr "Vi använder kakor för att förbättra din upplevelse"
 
 #. Key: cookies.settings
 #. #. Source: templates/partials/layout.hbs
 #. Category: cookies
 msgid "cookies.settings"
-msgstr ""
+msgstr "Inställningar"
 
 #. Key: cookies.title
 #. #. Source: templates/partials/layout.hbs
 #. Category: cookies
 msgid "cookies.title"
-msgstr ""
+msgstr "Kakor"
 
 #. Key: dictionary.example.big
 #. #. Source: templates/tools/dictionary.hbs
@@ -946,7 +946,7 @@ msgstr "Licensierat under Creative Commons Attribution 4.0"
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.privacy"
-msgstr ""
+msgstr "Integritetspolicy"
 
 #. Key: footer.project.about
 #. #. Source: templates/partials/layout.hbs
@@ -964,7 +964,7 @@ msgstr "Projekt"
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.terms"
-msgstr ""
+msgstr "Användarvillkor"
 
 #. Key: footer.tools.dictionary
 #. #. Source: templates/partials/layout.hbs
@@ -994,7 +994,7 @@ msgstr "Översättare"
 #. #. Source: templates/rules/language-specification.hbs
 #. Category: generated_from
 msgid "generated_from"
-msgstr ""
+msgstr "Genererad från"
 
 #. Key: grammar.morphology.description
 #. #. Source: templates/index.hbs
@@ -1202,12 +1202,6 @@ msgstr "FAQ"
 msgid "nav.grammar"
 msgstr "Grammatik"
 
-#. Key: nav.rules
-#. #. Source: templates/partials/layout.hbs
-#. Category: nav
-msgid "nav.rules"
-msgstr "Regler"
-
 #. Key: nav.home
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
@@ -1218,13 +1212,19 @@ msgstr "Hem"
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
 msgid "nav.main"
-msgstr ""
+msgstr "Huvudmeny"
+
+#. #. Key: nav.rules
+#. #. Source: templates/partials/layout.hbs
+#. #. Category: nav
+msgid "nav.rules"
+msgstr "Regler"
 
 #. Key: nav.toggleMenu
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
 msgid "nav.toggleMenu"
-msgstr ""
+msgstr "Växla meny"
 
 #. Key: nav.tools
 #. #. Source: templates/partials/layout.hbs
@@ -1242,43 +1242,43 @@ msgstr "Prova våra verktyg"
 #. #. Source: templates/rules/language-specification.hbs
 #. Category: on
 msgid "on"
-msgstr ""
+msgstr "på"
 
 #. Key: phonetics.clearEVowel
 #. #. Source: templates/rules/index.hbs
 #. Category: phonetics
 msgid "phonetics.clearEVowel"
-msgstr ""
+msgstr "Klar E-vokal"
 
 #. Key: phonetics.kotSound
 #. #. Source: templates/rules/index.hbs
 #. Category: phonetics
 msgid "phonetics.kotSound"
-msgstr ""
+msgstr "Kot-ljud"
 
 #. Key: phonetics.lamSound
 #. #. Source: templates/rules/index.hbs
 #. Category: phonetics
 msgid "phonetics.lamSound"
-msgstr ""
+msgstr "Lam-ljud"
 
 #. Key: phonetics.longISound
 #. #. Source: templates/rules/index.hbs
 #. Category: phonetics
 msgid "phonetics.longISound"
-msgstr ""
+msgstr "Långt I-ljud"
 
 #. Key: phonetics.longUSound
 #. #. Source: templates/rules/index.hbs
 #. Category: phonetics
 msgid "phonetics.longUSound"
-msgstr ""
+msgstr "Långt U-ljud"
 
 #. Key: phonetics.olSound
 #. #. Source: templates/rules/index.hbs
 #. Category: phonetics
 msgid "phonetics.olSound"
-msgstr ""
+msgstr "Ol-ljud"
 
 #. Key: questionWords.what
 #. #. Source: templates/rules/index.hbs
@@ -2077,16 +2077,16 @@ msgstr "Lyssna på översättning"
 #~ "Kärnprinciper som gör Nordum enkelt att lära och använda i dagens "
 #~ "flerspråkiga värld"
 
+#~ msgid "grammar.morphology.example"
+#~ msgstr ""
+#~ "Exempel: Regelbunden verbändelse \"-ar\" för presens (han arbetar - han "
+#~ "arbetar)"
+
 #~ msgid "hero.title"
 #~ msgstr "Nordum"
 
 #~ msgid "grammar.orthography.example"
 #~ msgstr "Exempel: \"hus\" (hus) - konsekvent i alla tre språken"
-
-#~ msgid "grammar.morphology.example"
-#~ msgstr ""
-#~ "Exempel: Regelbunden verbändelse \"-ar\" för presens (han arbetar - han "
-#~ "arbetar)"
 
 #~ msgid "grammar.lexicon.title"
 #~ msgstr "Lexikal urval"
