@@ -76,7 +76,8 @@ class JsonToPoConverter {
             const content = await fs.readFile(file, 'utf-8');
             
             // Match {{t "key"}} and {{t "key" "default value"}} patterns
-            const matches = content.matchAll(/{{t\s*['"]([^'"]+)['"](?:\s*['"][^'"]*['"])?}}/g);
+            // Use non-greedy matching to handle apostrophes within strings
+            const matches = content.matchAll(/{{t\s*['"]([^'"]*(?:'[^'"]*)?[^'"]*)['"](?:\s*['"]([^'"]*(?:'[^'"]*)?[^'"]*)['"])?}}/g);
             
             for (const match of matches) {
                 const key = match[1];
@@ -93,7 +94,8 @@ class JsonToPoConverter {
             const content = await fs.readFile(file, 'utf-8');
             
             // Match t("key") and t('key') patterns
-            const matches = content.matchAll(/\bt\(['"]([^'"]+)['"]\)/g);
+            // Use non-greedy matching to handle apostrophes within strings
+            const matches = content.matchAll(/\bt\(['"]([^'"]*(?:'[^'"]*)?[^'"]*)['"]\)/g);
             
             for (const match of matches) {
                 const key = match[1];

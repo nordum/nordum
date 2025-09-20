@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nordum Pan-Scandinavian Language\n"
 "Report-Msgid-Bugs-To: https://github.com/nordum/nordum/issues\n"
-"POT-Creation-Date: 2025-09-20T17:39:07.519Z\n"
+"POT-Creation-Date: 2025-09-20T18:04:17.248Z\n"
 "PO-Revision-Date: 2025-09-20 19:46+0200\n"
 "Last-Translator: Nordum Project <hei@nordum.org>\n"
 "Language-Team: NB <hei@nordum.org>\n"
@@ -1568,6 +1568,14 @@ msgstr "Praktiske fordeler"
 msgid "rules.questions.title"
 msgstr "Vanlige spørsmål"
 
+#. #. Key: rules.subtitle
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.subtitle"
+msgstr ""
+"Kjerneprinsipper som gjør Nordum enkelt å lære og bruke i dagens "
+"flerspråklige verden"
+
 #. Key: rules.table_of_contents
 #. #. Source: templates/rules/language-specification.hbs
 #. Category: rules
@@ -2075,11 +2083,6 @@ msgstr "Lytt til oversettelse"
 
 #~ msgid "rules.questions.no_silent_h_desc"
 #~ msgstr "Bokstaven H uttales alltid i Nordum"
-
-#~ msgid "rules.subtitle"
-#~ msgstr ""
-#~ "Kjerneprinsipper som gjør Nordum enkelt å lære og bruke i dagens "
-#~ "flerspråklige verden"
 
 #~ msgid "test.button.submit"
 #~ msgstr "Send"
