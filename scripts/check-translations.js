@@ -12,16 +12,30 @@ class TranslationChecker {
     }
 
     async extractTranslationKeys() {
-        console.log('Extracting translation keys from templates...');
+        console.log('Extracting translation keys from templates and JavaScript files...');
         
         const keys = new Set();
-        const templateFiles = await this.findFiles(this.templatesDir, '.hbs');
         
+        // Extract from Handlebars templates
+        const templateFiles = await this.findFiles(this.templatesDir, '.hbs');
         for (const file of templateFiles) {
             const content = await fs.readFile(file, 'utf-8');
-            const matches = content.matchAll(/{{t\s*['"]([^'"]+)['"]/g);
-            
-            for (const match of matches) {
+            // Match {{t "key"}} and {{t "key" "default value"}} patterns
+            const templateMatches = content.matchAll(/{{t\s*['"]([^'"]+)['"](?:\s*['"][^'"]*['"])?}}/g);
+            for (const match of templateMatches) {
+
+                keys.add(match[1]);
+            }
+        }
+        
+        // Extract from JavaScript files
+        const jsFiles = await this.findFiles(this.srcDir, '.js');
+        for (const file of jsFiles) {
+            const content = await fs.readFile(file, 'utf-8');
+            // Match t("key") and t('key') patterns
+            const jsMatches = content.matchAll(/\bt\(['"]([^'"]+)['"]\)/g);
+            for (const match of jsMatches) {
+
                 keys.add(match[1]);
             }
         }

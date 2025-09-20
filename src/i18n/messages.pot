@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nordum Pan-Scandinavian Language\n"
 "Report-Msgid-Bugs-To: https://github.com/nordum/nordum/issues\n"
-"POT-Creation-Date: 2025-09-20T01:33:04.828Z\n"
-"PO-Revision-Date: 2025-09-20T01:33:04.828Z\n"
+"POT-Creation-Date: 2025-09-20T10:16:47.184Z\n"
+"PO-Revision-Date: 2025-09-20T10:16:47.184Z\n"
 "Last-Translator: Nordum Project <hei@nordum.org>\n"
 "Language-Team: English <hei@nordum.org>\n"
 "Language: en\n"
@@ -109,6 +109,24 @@ msgstr ""
 msgid "commands.validateAndFix"
 msgstr ""
 
+#. #. Key: common.danish
+#. #. Source: templates/rules/dictionary-import.hbs, templates/rules/index.hbs
+#. #. Category: common
+msgid "common.danish"
+msgstr ""
+
+#. #. Key: common.example
+#. #. Source: templates/rules/index.hbs
+#. #. Category: common
+msgid "common.example"
+msgstr ""
+
+#. #. Key: common.examples
+#. #. Source: templates/rules/index.hbs
+#. #. Category: common
+msgid "common.examples"
+msgstr ""
+
 #. Key: common.github
 #. #. Source: templates/partials/layout.hbs
 #. Category: common
@@ -127,12 +145,6 @@ msgstr ""
 msgid "common.issueTracker"
 msgstr ""
 
-#. Key: common.language.label
-#. #. Source: templates/partials/layout.hbs
-#. Category: common
-msgid "common.language.label"
-msgstr ""
-
 #. Key: common.language.danish
 #. #. Source: templates/partials/layout.hbs
 #. Category: common
@@ -143,6 +155,12 @@ msgstr ""
 #. #. Source: templates/partials/layout.hbs
 #. Category: common
 msgid "common.language.english"
+msgstr ""
+
+#. Key: common.language.label
+#. #. Source: templates/partials/layout.hbs
+#. Category: common
+msgid "common.language.label"
 msgstr ""
 
 #. Key: common.language.nordum
@@ -205,10 +223,40 @@ msgstr ""
 msgid "common.loading"
 msgstr ""
 
+#. #. Key: common.nordum
+#. #. Source: templates/rules/index.hbs
+#. #. Category: common
+msgid "common.nordum"
+msgstr ""
+
+#. #. Key: common.norwegian
+#. #. Source: templates/rules/dictionary-import.hbs, templates/rules/index.hbs
+#. #. Category: common
+msgid "common.norwegian"
+msgstr ""
+
+#. #. Key: common.note
+#. #. Source: templates/rules/index.hbs
+#. #. Category: common
+msgid "common.note"
+msgstr ""
+
+#. #. Key: common.number
+#. #. Source: templates/rules/index.hbs
+#. #. Category: common
+msgid "common.number"
+msgstr ""
+
 #. Key: common.skipToContent
 #. #. Source: templates/partials/layout.hbs
 #. Category: common
 msgid "common.skipToContent"
+msgstr ""
+
+#. #. Key: common.swedish
+#. #. Source: templates/rules/dictionary-import.hbs, templates/rules/index.hbs
+#. #. Category: common
+msgid "common.swedish"
 msgstr ""
 
 #. Key: community.collaborate.description
@@ -394,6 +442,7 @@ msgstr ""
 #. Key: editor.statistics.minutes
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
+#. #. Source: templates/tools/editor.hbs, js/main.js
 msgid "editor.statistics.minutes"
 msgstr ""
 
@@ -931,10 +980,136 @@ msgstr ""
 msgid "hero.tryTools"
 msgstr ""
 
+#. #. Key: import.process.cognate
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.process.cognate"
+msgstr ""
+
+#. #. Key: import.process.cognate_desc
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.process.cognate_desc"
+msgstr ""
+
+#. #. Key: import.process.fetch
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.process.fetch"
+msgstr ""
+
+#. #. Key: import.process.fetch_desc
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.process.fetch_desc"
+msgstr ""
+
+#. #. Key: import.process.generate
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.process.generate"
+msgstr ""
+
+#. #. Key: import.process.generate_desc
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.process.generate_desc"
+msgstr ""
+
+#. #. Key: import.process.normalize
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.process.normalize"
+msgstr ""
+
+#. #. Key: import.process.normalize_desc
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.process.normalize_desc"
+msgstr ""
+
+#. #. Key: import.process.phonetic
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.process.phonetic"
+msgstr ""
+
+#. #. Key: import.process.phonetic_desc
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.process.phonetic_desc"
+msgstr ""
+
+#. #. Key: import.process.title
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.process.title"
+msgstr ""
+
+#. #. Key: import.sources.title
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.sources.title"
+msgstr ""
+
+#. #. Key: import.subtitle
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.subtitle"
+msgstr ""
+
+#. #. Key: import.title
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.title"
+msgstr ""
+
+#. #. Key: import.usage.analysis
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.usage.analysis"
+msgstr ""
+
+#. #. Key: import.usage.batch
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.usage.batch"
+msgstr ""
+
+#. #. Key: import.usage.single
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.usage.single"
+msgstr ""
+
+#. #. Key: import.usage.title
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: import
+msgid "import.usage.title"
+msgstr ""
+
 #. Key: nav.about
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
 msgid "nav.about"
+msgstr ""
+
+#. #. Key: nav.back_rules
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: nav
+msgid "nav.back_rules"
+msgstr ""
+
+#. #. Key: nav.dictionary_import
+#. #. Source: templates/rules/index.hbs
+#. #. Category: nav
+msgid "nav.dictionary_import"
+msgstr ""
+
+#. #. Key: nav.dictionary_tool
+#. #. Source: templates/rules/dictionary-import.hbs
+#. #. Category: nav
+msgid "nav.dictionary_tool"
 msgstr ""
 
 #. Key: nav.faq
@@ -971,6 +1146,12 @@ msgstr ""
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
 msgid "nav.tools"
+msgstr ""
+
+#. #. Key: nav.try_tools
+#. #. Source: templates/rules/index.hbs
+#. #. Category: nav
+msgid "nav.try_tools"
 msgstr ""
 
 #. Key: on
@@ -1051,10 +1232,262 @@ msgstr ""
 msgid "questionWords.why"
 msgstr ""
 
+#. #. Key: rules.dictionary_import
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.dictionary_import"
+msgstr ""
+
+#. #. Key: rules.features.balanced
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.features.balanced"
+msgstr ""
+
+#. #. Key: rules.features.balanced_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.features.balanced_desc"
+msgstr ""
+
+#. #. Key: rules.features.flexible
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.features.flexible"
+msgstr ""
+
+#. #. Key: rules.features.flexible_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.features.flexible_desc"
+msgstr ""
+
+#. #. Key: rules.features.modern
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.features.modern"
+msgstr ""
+
+#. #. Key: rules.features.modern_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.features.modern_desc"
+msgstr ""
+
+#. #. Key: rules.features.systematic
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.features.systematic"
+msgstr ""
+
+#. #. Key: rules.features.systematic_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.features.systematic_desc"
+msgstr ""
+
+#. #. Key: rules.full_specification
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.full_specification"
+msgstr ""
+
+#. #. Key: rules.language_specification_title
+#. #. Source: templates/rules/language-specification.hbs
+#. #. Category: rules
+msgid "rules.language_specification_title"
+msgstr ""
+
+#. #. Key: rules.loanwords.note
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.loanwords.note"
+msgstr ""
+
+#. #. Key: rules.loanwords.title
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.loanwords.title"
+msgstr ""
+
+#. #. Key: rules.loanwords.unchanged
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.loanwords.unchanged"
+msgstr ""
+
+#. #. Key: rules.numbers.basic
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.numbers.basic"
+msgstr ""
+
+#. #. Key: rules.numbers.comparison
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.numbers.comparison"
+msgstr ""
+
+#. #. Key: rules.numbers.norwegian
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.numbers.norwegian"
+msgstr ""
+
+#. #. Key: rules.numbers.norwegian_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.numbers.norwegian_desc"
+msgstr ""
+
+#. #. Key: rules.numbers.title
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.numbers.title"
+msgstr ""
+
+#. #. Key: rules.overview.description
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.overview.description"
+msgstr ""
+
+#. #. Key: rules.overview.title
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.overview.title"
+msgstr ""
+
+#. #. Key: rules.philosophy.bokmaal_danish
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.philosophy.bokmaal_danish"
+msgstr ""
+
+#. #. Key: rules.philosophy.bokmaal_danish_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.philosophy.bokmaal_danish_desc"
+msgstr ""
+
+#. #. Key: rules.philosophy.title
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.philosophy.title"
+msgstr ""
+
+#. #. Key: rules.phonetics.consonant_clusters
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.phonetics.consonant_clusters"
+msgstr ""
+
+#. #. Key: rules.phonetics.consonant_clusters_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.phonetics.consonant_clusters_desc"
+msgstr ""
+
+#. #. Key: rules.phonetics.title
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.phonetics.title"
+msgstr ""
+
+#. #. Key: rules.phonetics.transcription
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.phonetics.transcription"
+msgstr ""
+
+#. #. Key: rules.phonetics.transcription_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.phonetics.transcription_desc"
+msgstr ""
+
+#. #. Key: rules.phonetics.vowel_clarity
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.phonetics.vowel_clarity"
+msgstr ""
+
+#. #. Key: rules.phonetics.vowel_clarity_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.phonetics.vowel_clarity_desc"
+msgstr ""
+
+#. #. Key: rules.practical.code_switching
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.practical.code_switching"
+msgstr ""
+
+#. #. Key: rules.practical.code_switching_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.practical.code_switching_desc"
+msgstr ""
+
+#. #. Key: rules.practical.learning
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.practical.learning"
+msgstr ""
+
+#. #. Key: rules.practical.learning_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.practical.learning_desc"
+msgstr ""
+
+#. #. Key: rules.practical.multilingual
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.practical.multilingual"
+msgstr ""
+
+#. #. Key: rules.practical.multilingual_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.practical.multilingual_desc"
+msgstr ""
+
+#. #. Key: rules.practical.recognition
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.practical.recognition"
+msgstr ""
+
+#. #. Key: rules.practical.recognition_desc
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.practical.recognition_desc"
+msgstr ""
+
+#. #. Key: rules.practical.title
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.practical.title"
+msgstr ""
+
+#. #. Key: rules.questions.title
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.questions.title"
+msgstr ""
+
 #. Key: rules.table_of_contents
 #. #. Source: templates/rules/language-specification.hbs
 #. Category: rules
 msgid "rules.table_of_contents"
+msgstr ""
+
+#. #. Key: rules.title
+#. #. Source: templates/rules/index.hbs
+#. #. Category: rules
+msgid "rules.title"
 msgstr ""
 
 #. Key: site.description
@@ -1252,6 +1685,7 @@ msgstr ""
 #. Key: spellcheck.suggestions.noIssues
 #. #. Source: templates/tools/editor.hbs, templates/tools/spellcheck.hbs
 #. Category: spellcheck
+#. #. Source: templates/tools/editor.hbs, templates/tools/spellcheck.hbs, js/main.js
 msgid "spellcheck.suggestions.noIssues"
 msgstr ""
 
@@ -1396,6 +1830,7 @@ msgstr ""
 #. Key: translator.history.empty
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
+#. #. Source: templates/tools/translator.hbs, js/main.js
 msgid "translator.history.empty"
 msgstr ""
 
@@ -1420,30 +1855,35 @@ msgstr ""
 #. Key: translator.languages.danish
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
+#. #. Source: templates/tools/translator.hbs, js/main.js
 msgid "translator.languages.danish"
 msgstr ""
 
 #. Key: translator.languages.nordum
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
+#. #. Source: templates/tools/translator.hbs, js/main.js
 msgid "translator.languages.nordum"
 msgstr ""
 
 #. Key: translator.languages.norwegian
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
+#. #. Source: templates/tools/translator.hbs, js/main.js
 msgid "translator.languages.norwegian"
 msgstr ""
 
 #. Key: translator.languages.swedish
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
+#. #. Source: templates/tools/translator.hbs, js/main.js
 msgid "translator.languages.swedish"
 msgstr ""
 
 #. Key: translator.outputPlaceholder
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
+#. #. Source: templates/tools/translator.hbs, js/main.js
 msgid "translator.outputPlaceholder"
 msgstr ""
 

@@ -41,18 +41,59 @@ class JsonToPoConverter {
         return files;
     }
 
+    async findJsFiles() {
+        const files = [];
+        const jsDir = path.join(this.srcDir, 'js');
+        
+        async function scanDirectory(currentDir) {
+            const entries = await fs.readdir(currentDir, { withFileTypes: true });
+            
+            for (const entry of entries) {
+                const fullPath = path.join(currentDir, entry.name);
+                
+                if (entry.isDirectory()) {
+                    await scanDirectory(fullPath);
+                } else if (entry.name.endsWith('.js')) {
+                    files.push(fullPath);
+                }
+            }
+        }
+        
+        await scanDirectory(jsDir);
+        return files;
+    }
+
     async extractTranslationKeys() {
-        console.log('Extracting translation keys from templates...');
+        console.log('Extracting translation keys from templates and JavaScript files...');
         
         const templateFiles = await this.findTemplateFiles();
+        const jsFiles = await this.findJsFiles();
         const keys = new Map(); // Use Map to track file references
         
+        // Extract from Handlebars templates
         for (const file of templateFiles) {
             const relativePath = path.relative(this.srcDir, file);
             const content = await fs.readFile(file, 'utf-8');
             
-            // Match {{t 'key'}} patterns
-            const matches = content.matchAll(/{{t\s+['"]([^'"]+)['"]\s*}}/g);
+            // Match {{t "key"}} and {{t "key" "default value"}} patterns
+            const matches = content.matchAll(/{{t\s*['"]([^'"]+)['"](?:\s*['"][^'"]*['"])?}}/g);
+            
+            for (const match of matches) {
+                const key = match[1];
+                if (!keys.has(key)) {
+                    keys.set(key, new Set());
+                }
+                keys.get(key).add(relativePath);
+            }
+        }
+        
+        // Extract from JavaScript files
+        for (const file of jsFiles) {
+            const relativePath = path.relative(this.srcDir, file);
+            const content = await fs.readFile(file, 'utf-8');
+            
+            // Match t("key") and t('key') patterns
+            const matches = content.matchAll(/\bt\(['"]([^'"]+)['"]\)/g);
             
             for (const match of matches) {
                 const key = match[1];
