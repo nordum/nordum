@@ -107,6 +107,11 @@
                                role="menuitem">{{t 'nav.about'}}</a>
                         </li>
                         <li role="none">
+                            <a href="{{#if (eq lang 'en')}}/rules/{{else}}/{{lang}}/rules/{{/if}}"
+                               class="nav-link {{#if (eq currentPage 'rules')}}active{{/if}}"
+                               role="menuitem">{{t 'nav.rules'}}</a>
+                        </li>
+                        <li role="none">
                             <a href="{{#if (eq lang 'en')}}/rules/language-specification.html{{else}}/{{lang}}/rules/language-specification.html{{/if}}"
                                class="nav-link {{#if (eq currentPage 'grammar')}}active{{/if}}"
                                role="menuitem">{{t 'nav.grammar'}}</a>

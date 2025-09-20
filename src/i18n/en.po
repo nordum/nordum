@@ -1212,6 +1212,12 @@ msgstr "Grammar"
 msgid "nav.home"
 msgstr "Home"
 
+#. Key: nav.rules
+#. #. Source: templates/partials/layout.hbs
+#. Category: nav
+msgid "nav.rules"
+msgstr "Rules"
+
 #. Key: nav.main
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
