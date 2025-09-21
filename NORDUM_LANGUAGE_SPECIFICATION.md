@@ -213,7 +213,7 @@ This is a lexical selection decision, not a phonetic one. It ensures Nordum rema
 
 In cases where the letter `t` is used as the primary spelling for what is a [ð]-sound in Danish, it is a secondary option to spell it with `d`.
 
-#### 3.3.3 Special Spelling Rules for K/J/G Sounds
+#### 3.3.3 Special Spelling Rules for K/J/G/ Sounds
 
 **Rule 1: K-sound in Norwegian, J-sound in Danish → G spelling**
 When Norwegian has a "k" sound and Danish has a "j" sound for the same morpheme, Nordum uses "g" spelling.
@@ -242,6 +242,28 @@ When Swedish and Norwegian have a [ç]-sound and Danish has a "k"-sound for the 
 **Examples**:
 - köra (Swedish) / kjøre (Norwegian) / køre (Danish) → køre (drive)
 - köpa (Swedish) / kjøpe (Norwegian) / købe (Danish) → købe (buy)
+
+**Rule 5: Norwegian [ʃ]-sound spelled "skj" vs Danish [ks] pronunciation → "ks" spelling**
+When Norwegian has a [ʃ]-sound spelled "skj" and Danish has a [ks] pronunciation for the same morpheme, Nordum uses "ks" spelling to align with Danish pronunciation and maintain consistency.
+
+**Examples**:
+- forskjell (Norwegian [fɔʂːɛl]) / forskel (Danish [fɒːsɡ̊l̩]) → forskel (difference)
+- skjære (Norwegian [ʃæːrə]) / skære (Danish [sɡ̊ɛːɐ]) → skære (cut)
+- skjorte (Norwegian [ʃuʈə]) / skjorte (Danish [sɡ̊oɐ̯d̥ə]) → skjorte (shirt) - Note: Danish retains "skj" spelling but pronounces as [sɡ̊]
+- kald (Danish [kʰalˀ]) / kald (Norwegian [kɑlː]) → kald (cold)
+- fuld (Danish [fulˀ]) / full (Norwegian [fʉlː]) → full (full)
+- gammel (Danish [ˈɡ̊ɑmˀl̩]) / gammel (Norwegian [ˈɡɑmːəl]) → gammel (old)
+
+**Rationale**: This rule specifically addresses cases where Norwegian palatalization creates a [ʃ] sound from "skj" combinations that correspond to [sk] or [sɡ̊] pronunciations in Danish. The "sk" spelling provides better pan-Scandinavian intelligibility, aligns with Danish pronunciation patterns, and follows the systematic approach of using phonetic clarity over etymological spelling. This is particularly important for words like "forskjell/forskel" where the Norwegian [ʃ] sound contrasts with Danish [sk].
+
+**Rule 6: Danish "ld" vs Norwegian "ll" pronunciation → "ll" spelling**
+When Danish uses "ld" spelling but Norwegian uses "ll" spelling for the same morpheme with similar pronunciation, Nordum uses "ll" spelling to align with Norwegian orthography and pronunciation clarity.
+
+**Examples**:
+- kold (Danish) / kall (Norwegian) → koll/kall (cold)
+- fuld (Danish) / full (Norwegian) → full (full)
+
+**Rationale**: This rule addresses cases where Danish orthography uses "ld" but Norwegian uses "ll" for words with similar pronunciation. The "ll" spelling provides better phonetic transparency and aligns with Norwegian spelling patterns while remaining recognizable to Danish and Swedish speakers.
 
 #### 3.3.4 Preposition Spelling (Bokmål Pattern)
 Prepositions in Nordum generally follow the Bokmål spelling pattern for consistency and mutual intelligibility. Exceptions occur where the spelling clashes with another rule.
@@ -274,8 +296,8 @@ Prepositions in Nordum generally follow the Bokmål spelling pattern for consist
 | Combination | IPA | Examples | Origin |
 |-------------|-----|----------|--------|
 | sk | [sk] | skog, fisk | Before front vowels |
-| skj | [ʃ] | skjorte | Norwegian pattern |
 | sj | [ʃ] | sjokolade | Danish/Norwegian pattern |
+| skj | [ʃ] (Norwegian) / [sɡ̊] (Danish) | skjære, skjorte | Norwegian [ʃ] pattern vs Danish [sɡ̊] pronunciation |
 | tj | [ç] | tjæne | Swedish pattern |
 | kj | [ç] | kjær | Norwegian pattern |
 | ng | [ŋ] | ring, sang | Final position |
@@ -634,11 +656,29 @@ Each lexical decision scored on:
 - **Practical utility**: Modern usage and learnability
 - **Pan-Scandinavian balance**: Equal treatment of source languages
 
-### 5.5 Treatment of Geographic Names
+### 5.5 Multiple Accepted Words Policy
+
+**Principle**: When vocabulary differs significantly across Norwegian, Danish, and Swedish, Nordum accepts multiple words for the same concept to maximize mutual intelligibility and accommodate regional preferences.
+
+**Implementation**:
+- Words from all three languages are accepted as valid alternatives
+- No single "correct" form is enforced for divergent vocabulary
+- Users can choose the form most familiar to them
+- Context determines which form provides optimal communication
+
+**Examples**:
+- **Girl**: jente (Norwegian), pije (from Danish), flikka (from Swedish) → all accepted
+- **Speak**: snakke (Norwegian/Danish), tale (from all three) → both accepted
+- **Work**: arbeide (Norwegian/Danish), arbete (Swedish) → both accepted
+- **Buy**: køpe (from Norwegian/Swedish), købe (Danish) → all accepted
+
+**Rationale**: This policy recognizes that Scandinavian languages have significant lexical variation and that forcing a single form would reduce intelligibility for speakers of the other languages. By accepting multiple forms, Nordum maintains its core philosophy of equal respect for all three source languages while maximizing practical utility.
+
+### 5.6 Treatment of Geographic Names
 
 **Principle**: Geographic place names (toponyms) shall, as a default, retain their most common endonym (name used within that place) to promote international recognition and neutrality, following the precedent set by modern Norwegian. A limited set of well-established exonyms (locally used names for foreign places) is permitted.
 
-#### 5.5.1 General Rule: Use of Endonyms
+#### 5.6.1 General Rule: Use of Endonyms
 
 The primary name for a country, region, or major city should be its common endonym, not a Scandinavian exonym.
 
@@ -652,14 +692,14 @@ The primary name for a country, region, or major city should be its common endon
 *   `Praha` (not *Prag*)
 *   `Bruxelles` (not *Bryssel*)
 
-#### 5.5.2 Permitted Exonyms
+#### 5.6.2 Permitted Exonyms
 
 A short list of common, pan-Scandinavian exonyms are permitted as official alternatives. The most notable exceptions are:
 *   `Tyskland` (as an accepted alternative to `Deutschland`)
 *   `Østerrike` (for `Österreich`)
 
 
-#### 5.5.3 Historical and Regional Variants
+#### 5.6.3 Historical and Regional Variants
 
 For places with multiple valid historical names or names that vary by Scandinavian dialect, multiple forms are acceptable. This often applies to regions with shared cultural history.
 

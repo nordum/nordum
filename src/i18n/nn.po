@@ -1327,13 +1327,13 @@ msgstr "Ordboksimport"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.features.balanced"
-msgstr "Balansert tilnærming"
+msgstr "Balansert pan-skandinavisk"
 
 #. #. Key: rules.features.balanced_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.features.balanced_desc"
-msgstr "Kombinerer dei beste funksjonane frå alle tre språk"
+msgstr "Lik respekt for norsk, dansk og svensk med strategisk utval"
 
 #. #. Key: rules.features.flexible
 #. #. Source: templates/rules/index.hbs
@@ -1351,13 +1351,13 @@ msgstr "Tilpassar seg ulike kommunikasjonskontekstar"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.features.modern"
-msgstr "Moderne ordforråd"
+msgstr "Moderne integrasjon"
 
 #. #. Key: rules.features.modern_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.features.modern_desc"
-msgstr "Inkluderer samtidige omgrep og uttrykk"
+msgstr "Tekniske termer og lånord bevart for praktisk kommunikasjon"
 
 #. #. Key: rules.features.systematic
 #. #. Source: templates/rules/index.hbs
@@ -1399,7 +1399,7 @@ msgstr "Låneord og internasjonale omgrep"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.loanwords.unchanged"
-msgstr "Uendra låneord"
+msgstr "Omfattande lånordsintegrasjon"
 
 #. #. Key: rules.numbers.basic
 #. #. Source: templates/rules/index.hbs
@@ -1417,13 +1417,13 @@ msgstr "Talsamanlikning"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.numbers.norwegian"
-msgstr "Norsk talsystem"
+msgstr "Regulært talsystem"
 
 #. #. Key: rules.numbers.norwegian_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.numbers.norwegian_desc"
-msgstr "Følgjer det norske talsystemet for konsistens"
+msgstr "Nordum innfører det norske talsystemet for maksimal regularitet og enkelheit, som eliminerer det komplekse vigesimale systemet samtidig som det forblir klart for alle skandinaviske talarar."
 
 #. #. Key: rules.numbers.title
 #. #. Source: templates/rules/index.hbs
@@ -1436,8 +1436,10 @@ msgstr "Tal og telling"
 #. #. Category: rules
 msgid "rules.overview.description"
 msgstr ""
-"Nordum kombinerer element frå norsk, dansk og svensk for å skape ein "
-"gjensidig forståeleg skriftleg standard"
+"Nordum er eit konstruert pan-skandinavisk skriftspråk designa for å maksimere "
+"gjensidig forståelegheit mellom norsk (bokmål), dansk og svensk samtidig som det "
+"oppretthald systematisk regularitet og praktisk moderne bruk. Det respekterer alle "
+"tre kildespråk likt og leverer balanserte lingvistiske løysingar."
 
 #. #. Key: rules.overview.title
 #. #. Source: templates/rules/index.hbs
@@ -1455,7 +1457,7 @@ msgstr "Bokmål-dansk avtale"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.philosophy.bokmaal_danish_desc"
-msgstr "Føretrekkjer former som er felles for både bokmål norsk og dansk"
+msgstr "Nordum respekterer alle tre kildespråk likt med strategisk utval for optimal klarheit. Former vert valde basert på pan-skandinavisk forståelegheitsoptimering, ikkje ved å føretrekke ein enkelt tradisjon."
 
 #. #. Key: rules.philosophy.title
 #. #. Source: templates/rules/index.hbs
@@ -1467,13 +1469,13 @@ msgstr "Designdilosofi"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.consonant_clusters"
-msgstr "Konsonantklynger"
+msgstr "Konsonantlyd-mønster"
 
 #. #. Key: rules.phonetics.consonant_clusters_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.consonant_clusters_desc"
-msgstr "Forenklar komplekse konsonantkombinasjonar for lettare uttale"
+msgstr "Systematiske reglar for konsonantlyder og stave-mønster: K/J/G-reglar, innfødde ord brukar 'ks' i staden for 'x', preposisjonar følgjer bokmål-mønster, lydmønster-normalisering"
 
 #. #. Key: rules.phonetics.title
 #. #. Source: templates/rules/index.hbs
@@ -1485,67 +1487,67 @@ msgstr "Fonetik og uttale"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.transcription"
-msgstr "Fonetisk transkripsjon"
+msgstr "Systematisk fonetisk gjennomsiktigheit"
 
 #. #. Key: rules.phonetics.transcription_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.transcription_desc"
-msgstr "Gjev uttalevegleiingar for alle ord"
+msgstr "Nordum-staving reflekterer konsekvent uttale med systematisk lyd-symbol-korrespondanse. Stumme bokstavar eliminerast der det er mogleg, og alternative staveformer imøtekom regionale uttaleforskjellar."
 
 #. #. Key: rules.phonetics.vowel_clarity
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.vowel_clarity"
-msgstr "Vokalklarheit"
+msgstr "Vokalsystem-fleksibilitet"
 
 #. #. Key: rules.phonetics.vowel_clarity_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.vowel_clarity_desc"
-msgstr "Bevarer klare vokalforskjellar for betre forståing"
+msgstr "Nordum støttar multiple vokalstavingssystem utan grammatiske konsekvensar: Primært: æ, ø (norsk/dansk mønster), Alternativt: ä, ö (svensk/tysk mønster)"
 
 #. #. Key: rules.practical.code_switching
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.code_switching"
-msgstr "Kodeskifting-støtte"
+msgstr "Systematisk morfologi"
 
 #. #. Key: rules.practical.code_switching_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.code_switching_desc"
-msgstr "Fasiliterer blanding av Nordum med innfødde skandinaviske språk"
+msgstr "Klar grammatiske forskjellar: verb alltid -er, substantiv fleirtal normalt -ar, komparativar -ere, superlativar -est for augneblinks parsing."
 
 #. #. Key: rules.practical.learning
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.learning"
-msgstr "Enkel læring"
+msgstr "Pronomen-standardisering"
 
 #. #. Key: rules.practical.learning_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.learning_desc"
-msgstr "Designa for å være intuitiv for skandinaviske språktalarar"
+msgstr "Omfattande pronomensystem: jei/mei, du/dei, han/hun, vi/oss, ni/er, de/dem med klare possessiv- og refleksivformer."
 
 #. #. Key: rules.practical.multilingual
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.multilingual"
-msgstr "Fleirspråkleg kompatibilitet"
+msgstr "Omfattande språksystem"
 
 #. #. Key: rules.practical.multilingual_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.multilingual_desc"
-msgstr "Fungerer saman med eksisterande skandinaviske språk"
+msgstr "Nordum leverer eit komplett lingvistisk system med systematiske morfologiske forskjellar, pronomen-standardisering og praktiske bruksmønster som verkar saman med innfødde skandinaviske språk."
 
 #. #. Key: rules.practical.recognition
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.recognition"
-msgstr "Høg gjenkjenning"
+msgstr "Geografiske namn"
 
 #. #. Key: rules.practical.recognition_desc
 #. #. Source: templates/rules/index.hbs

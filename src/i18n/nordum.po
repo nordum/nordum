@@ -533,7 +533,7 @@ msgstr "Fet"
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.toolbar.fullscreen"
-msgstr "Fullskjerm"
+msgstr "Fullskærm"
 
 #. Key: editor.toolbar.italic
 #. #. Source: templates/tools/editor.hbs
@@ -1138,7 +1138,7 @@ msgstr "Datakildar"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. #. Category: import
 msgid "import.subtitle"
-msgstr "Bygging av Nordum-ordbok fra skandinaviske språkdata"
+msgstr "Bygging av Nordum-ordbok fra skandinaviske språgdata"
 
 #. #. Key: import.title
 #. #. Source: templates/rules/dictionary-import.hbs
@@ -1150,7 +1150,7 @@ msgstr "Ordboksimportværktøi"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. #. Category: import
 msgid "import.usage.analysis"
-msgstr "Språklig analyse"
+msgstr "Språglig analyse"
 
 #. #. Key: import.usage.batch
 #. #. Source: templates/rules/dictionary-import.hbs
@@ -1330,13 +1330,13 @@ msgstr "Ordboksimport"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.features.balanced"
-msgstr "Balanserad tilnærming"
+msgstr "Balanserad pan-skandinavisk"
 
 #. #. Key: rules.features.balanced_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.features.balanced_desc"
-msgstr "Kombinerer de bedste funktioner fra alle tre språg"
+msgstr "Lik respekt for norsk, dansk og svensk med strategisk utvalg"
 
 #. #. Key: rules.features.flexible
 #. #. Source: templates/rules/index.hbs
@@ -1354,13 +1354,13 @@ msgstr "Tilpasser sei till forskellige kommunikationssammenhæng"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.features.modern"
-msgstr "Moderne ordforråd"
+msgstr "Moderne integration"
 
 #. #. Key: rules.features.modern_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.features.modern_desc"
-msgstr "Inkluderer samtidige termar og uttrykk"
+msgstr "Tekniske termer og lånord bevart for praktisk kommunikation"
 
 #. #. Key: rules.features.systematic
 #. #. Source: templates/rules/index.hbs
@@ -1403,7 +1403,7 @@ msgstr "Låneord og internationale termer"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.loanwords.unchanged"
-msgstr "Uændrede låneord"
+msgstr "Omfattende lånordsintegration"
 
 #. #. Key: rules.numbers.basic
 #. #. Source: templates/rules/index.hbs
@@ -1421,13 +1421,13 @@ msgstr "Tallsammenlikning"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.numbers.norwegian"
-msgstr "Norsk tallsystem"
+msgstr "Regulært tallsystem"
 
 #. #. Key: rules.numbers.norwegian_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.numbers.norwegian_desc"
-msgstr "Følger det norske tallsystemet for konsistens"
+msgstr "Nordum innfører det norske tallsystemet for maksimal regularitet og enkelhet, som eliminerer det komplekse vigesimale systemet samtidig som det forblir klart for alle skandinaviske talere."
 
 #. #. Key: rules.numbers.title
 #. #. Source: templates/rules/index.hbs
@@ -1459,7 +1459,7 @@ msgstr "Bokmål-dansk avtale"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.philosophy.bokmaal_danish_desc"
-msgstr "Føretrekker former som er fælles for både bokmål norsk og dansk"
+msgstr "Nordum respekterer alle tre kildespråg ligt med strategisk utvalg for optimal klarhet. Former væljes basert på pan-skandinavisk forståelighetsoptimering, ikke ved å foretrekke en enkelt tradisjon."
 
 #. #. Key: rules.philosophy.title
 #. #. Source: templates/rules/index.hbs
@@ -1471,13 +1471,13 @@ msgstr "Designdilosofi"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.consonant_clusters"
-msgstr "Konsonantklyngar"
+msgstr "Konsonantlyd-mønstre"
 
 #. #. Key: rules.phonetics.consonant_clusters_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.consonant_clusters_desc"
-msgstr "Forenklar komplekse konsonantkombinationar for lettere uttale"
+msgstr "Systematiske regler for konsonantlyder og stave-mønstre: K/J/G-regler, innfødte ord bruker 'ks' i stedet for 'x', preposisjoner følger bokmål-mønster, lydmønster-normalisering"
 
 #. #. Key: rules.phonetics.title
 #. #. Source: templates/rules/index.hbs
@@ -1489,61 +1489,61 @@ msgstr "Fonetik og uttale"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.transcription"
-msgstr "Fonetisk transkription"
+msgstr "Systematisk fonetisk gennemsigtighet"
 
 #. #. Key: rules.phonetics.transcription_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.transcription_desc"
-msgstr "Gir uttaleveiledningar for alle ord"
+msgstr "Nordum-staving reflekterer konsekvent uttale med systematisk lyd-symbol-korrespondanse. Stumme bokstaver elimineres der det er mulig, og alternative staveformer imøtekommer regionale uttaleforskeller."
 
 #. #. Key: rules.phonetics.vowel_clarity
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.vowel_clarity"
-msgstr "Vokalklarhet"
+msgstr "Vokalsystem-fleksibilitet"
 
 #. #. Key: rules.phonetics.vowel_clarity_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.vowel_clarity_desc"
-msgstr "Bevarer klare vokalforskellar for bedre forståelse"
+msgstr "Nordum støtter multiple vokalstavingssystemer uten grammatiske konsekvenser: Primært: æ, ø (norsk/dansk mønster), Alternativt: ä, ö (svensk/tysk mønster)"
 
 #. #. Key: rules.practical.code_switching
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.code_switching"
-msgstr "Kodeskifting-støtte"
+msgstr "Systematisk morfologi"
 
 #. #. Key: rules.practical.code_switching_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.code_switching_desc"
-msgstr "Fasiliterer blanding av Nordum med innfødte skandinaviske språg"
+msgstr "Klar grammatiske forskeller: verb alltid -er, substantiv flertall normalt -ar, komparativer -ere, superlative -est for øieblikkelig parsing."
 
 #. #. Key: rules.practical.learning
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.learning"
-msgstr "Enkel læring"
+msgstr "Pronomen-standardisering"
 
 #. #. Key: rules.practical.learning_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.learning_desc"
-msgstr "Designet for å være intuitiv for skandinaviske språktalere"
+msgstr "Omfattende pronomensystem: jei/mei, du/dei, han/ham, hun/henne, vi/oss, ni/er, de/dem med klare possessiv- og refleksivformer."
 
 #. #. Key: rules.practical.multilingual
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.multilingual"
-msgstr "Flerspråklig kompatibilitet"
+msgstr "Omfattende språgsystem"
 
 #. #. Key: rules.practical.multilingual_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.multilingual_desc"
-msgstr "Fungerer sammen med eksisterende skandinaviske språg"
+msgstr "Nordum leverer ett komplett lingvistisk system med systematiske morfologiske forskeller, pronomen-standardisering og praktiske brugsmønstre som virker sammen med innfødte skandinaviske språg."
 
 #. #. Key: rules.practical.recognition
 #. #. Source: templates/rules/index.hbs
@@ -1555,7 +1555,7 @@ msgstr "Høy genkenning"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.recognition_desc"
-msgstr "Ord er umiddelbart genkennelige for de fleste skandinaviske talere"
+msgstr "Stedsnavn bruger vanlige endonymar (Argentina, Hellas, España) med begrænsede tillatte eksonymar (Tyskland, Østerrike) for international genkennelse."
 
 #. #. Key: rules.practical.title
 #. #. Source: templates/rules/index.hbs
@@ -1574,8 +1574,8 @@ msgstr "Vanlige spørsmål"
 #. #. Category: rules
 msgid "rules.subtitle"
 msgstr ""
-"Kjerneprinsipper som gjør Nordum enkelt å lære og bruke i dagens "
-"flerspråklige verden"
+"Kjerneprinsipper som gør Nordum enkelt å lære og bruke i dagens "
+"flerspråglige verden"
 
 #. Key: rules.table_of_contents
 #. #. Source: templates/rules/language-specification.hbs
