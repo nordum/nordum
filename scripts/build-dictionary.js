@@ -135,11 +135,13 @@ class DictionaryBuilder {
 
     normalizeForComparison(word) {
         return word.toLowerCase()
-            .replace(/æ/g, 'ä')
-            .replace(/ø/g, 'ö')
+            .replace(/æ/g, 'ae')
+            .replace(/ø/g, 'oe')
+            .replace(/ä/g, 'ae')
+            .replace(/ö/g, 'oe')
             .replace(/ck/g, 'k')
             .replace(/dt$/, 't')
-            .replace(/[^a-zäöå]/g, '');
+            .replace(/[^a-zaeoeå]/g, '');
     }
 
     // Apply Nordum orthographic rules
@@ -148,10 +150,8 @@ class DictionaryBuilder {
 
         let nordumWord = word.toLowerCase();
 
-        // Language-specific preprocessing
-        if (sourceLanguage === 'danish' || sourceLanguage === 'norwegian') {
-            nordumWord = nordumWord.replace(/æ/g, 'ä').replace(/ø/g, 'ö');
-        }
+        // No language-specific preprocessing needed - Swedish ä/ö will be converted
+        // to primary æ/ø by orthographicRules below
 
         // Apply systematic rules
         for (const [pattern, replacement] of Object.entries(this.orthographicRules)) {
@@ -245,7 +245,7 @@ class DictionaryBuilder {
             if (word === 'hva' || word === 'hvad') return 'vad';
             if (word === 'hvor') return 'var';
             if (word === 'hvem') return 'vem';
-            if (word === 'hvorfor') return 'varför';
+            if (word === 'hvorfor') return 'varfør';
             if (word === 'hvilken') return 'vilken';
             if (word === 'hvornår') return 'ven';
 
@@ -288,7 +288,7 @@ class DictionaryBuilder {
         if (word.includes('silent')) score -= 0.3; // Placeholder for silent letter detection
 
         // Reward regular patterns
-        if (word.match(/^[a-zäöå]+$/)) score += 0.1; // Only standard letters
+        if (word.match(/^[a-zæøå]+$/)) score += 0.1; // Only standard letters
         if (word.length <= 8) score += 0.05; // Reasonable length
 
         return Math.max(0, score);
@@ -562,7 +562,7 @@ class DictionaryBuilder {
             }
         }
 
-        if (nordumForm.match(/^v(ad|ar|em|arför|ilken)/)) {
+        if (nordumForm.match(/^v(ad|ar|em|arfør|ilken)/)) {
             return 'Question word with v- (Swedish pattern, no silent H)';
         }
 
@@ -613,7 +613,8 @@ class DictionaryBuilder {
             'vad': [
                 { spelling: 'va', reason: 'Short form variant (common in speech)' }
             ],
-            'varför': [
+            'varfør': [
+                { spelling: 'varför', reason: 'Swedish/German vowel variant (ä/ö)' },
                 { spelling: 'vorfor', reason: 'Norwegian/Danish pronunciation variant' }
             ],
             'ven': [
@@ -660,7 +661,8 @@ class DictionaryBuilder {
             });
         }
 
-        // Vowel alternatives: æ/ø vs ä/ö variants
+        // Vowel alternatives: æ/ø (primary) has ä/ö variants (alternative)
+        // Only generate ä/ö alternatives if the primary form has æ/ø
         let altSpelling = nordumWord;
         let hasVowelAlternative = false;
 
@@ -680,25 +682,8 @@ class DictionaryBuilder {
             });
         }
 
-        // Reverse: ä/ö to æ/ø variants
-        altSpelling = nordumWord;
-        hasVowelAlternative = false;
-
-        if (nordumWord.includes('ä')) {
-            altSpelling = altSpelling.replace(/ä/g, 'æ');
-            hasVowelAlternative = true;
-        }
-        if (nordumWord.includes('ö')) {
-            altSpelling = altSpelling.replace(/ö/g, 'ø');
-            hasVowelAlternative = true;
-        }
-
-        if (hasVowelAlternative && altSpelling !== nordumWord) {
-            alternatives.push({
-                spelling: altSpelling,
-                reason: 'Norwegian/Danish vowel variant (æ/ø)'
-            });
-        }
+        // Note: We do NOT generate æ/ø alternatives for ä/ö words
+        // because ä/ö should already have been converted to æ/ø as primary form
 
         return alternatives;
     }

@@ -5,7 +5,7 @@
   "build": 1758124142536,
   "prerelease": null,
   "created": "2025-09-17T15:48:57.666Z",
-  "lastModified": "2025-09-20T18:10:42.911Z",
+  "lastModified": "2025-12-23T07:13:02.118Z",
   "features": {
     "balancedPanScandinavian": true,
     "englishLoanwords": true,
@@ -19,17 +19,17 @@
     "geographicNamesPolicy": true
   },
   "statistics": {
-    "totalEntries": 6980,
-    "alternativeSpellings": 1055,
+    "totalEntries": 6672,
+    "alternativeSpellings": 928,
     "languages": [
       "norwegian",
       "danish",
       "swedish"
     ],
     "ruleCompliance": 100,
-    "averageCognateScore": 0.5668721488392886,
-    "lastBuild": "2025-09-20T18:10:42.911Z",
-    "lastUpdated": "2025-09-20T18:10:42.911Z"
+    "averageCognateScore": 0.5704303694074391,
+    "lastBuild": "2025-12-23T07:13:02.118Z",
+    "lastUpdated": "2025-12-23T07:13:02.118Z"
   },
   "changelog": [
     {
