@@ -138,35 +138,16 @@ npm run build:dictionary
 npm run build:specification
 
 # Validate linguistic rules
-npm run validate:dictionary
 node scripts/test-nordum-rules.js
 ```
 
-**🚀 New: Lightning-Fast Caching System**
+**Dictionary Sources**
 
-Wiktionary downloads are now **10-20x faster** with intelligent caching:
+The project ships with a curated core vocabulary (`data/dictionary/sources/`). These CSV files are the source of truth for the web dictionary and tools. To regenerate the web dictionary after editing them:
 
 ```bash
-# Cache management
-npm run cache:setup              # Auto setup (recommended)
-npm run cache:warm               # Quick warm-up (5 min)
-npm run cache:warm-full          # Full warm-up (25 min)
-npm run cache:stats              # Performance statistics
-npm run cache:analyze            # Detailed analysis
-npm run cache:clean              # Remove expired entries
-
-# Testing
-npm run test:cache               # Test cache functionality
-npm run test:apis                # Test API connectivity
+npm run build:dictionary
 ```
-
-**Performance Results:**
-- **Before**: 50 words = 15+ minutes
-- **After**: 50 words = 30 seconds  
-- **Cache hit rates**: 90%+ for common words
-- **Storage**: ~50MB for full cache
-
-See [docs/CACHE_SETUP.md](docs/CACHE_SETUP.md) for complete setup guide.
 
 **Selection Algorithm:**
 1. Load cognates from Norwegian, Danish, Swedish
@@ -297,60 +278,30 @@ Keys follow hierarchical dot notation: `category.subcategory.key`
 
 - **Node.js** 16+
 - **NPM** 8+
-- **4GB RAM** (for dictionary processing)
+- **2GB RAM** (for building the site)
 
 ### Development Setup
 
 ```bash
 npm install
 
-# Install dependencies (includes markdown parser)
-npm install
-
-# Copy example configuration  
-cp data/site.example.json data/site.json
-
-# Import sample data
-npm run import:all --limit=1000
-
-# Build everything (includes specification parsing)
-npm run build:dictionary
-npm run build:specification
+# Build everything (includes specification parsing and curated dictionary)
 npm run build
 
-# Start development server (watches specification file)
+# Start development server
 npm run dev
 ```
 
-### Import System
+### Dictionary Maintenance
 
-**Scalable Multi-Source Import:**
-- **Norwegian**: Språkrådet integration
-- **Danish**: ordnet.dk integration  
-- **Swedish**: SAOL integration
-- **Parallel processing** with rate limiting
-- **Quality validation** and error handling
+The web dictionary is built from curated source files in `data/dictionary/sources/`:
+- `norwegian.csv`
+- `danish.csv`
+- `swedish.csv`
 
-**Import Commands:**
-```bash
-# Setup caching first (highly recommended)
-npm run cache:setup
+Edit these files and run `npm run build:dictionary` to update the dictionary used by the website tools.
 
-# All languages with validation
-npm run import:all --validate-only
-
-# Individual sources
-npm run import:norwegian --batch=5000 --log-level=debug
-npm run import:danish --source=ordnet --frequency-min=100
-npm run import:swedish --parallel
-
-# Large-scale import (much faster with cache)
-npm run import:all --limit=10000 --parallel
-
-# Cache management
-npm run cache:stats              # Check performance
-npm run cache:analyze            # Detailed metrics
-```
+Experimental importer scripts exist in `scripts/importers/`, but they are not required for the working site and may produce data that needs manual review.
 
 ### Version Management
 
@@ -370,49 +321,34 @@ Format: `MAJOR.MINOR.PATCH+BUILD` (e.g., `1.2.3+1634567890`)
 **Testing Framework:**
 ```bash
 npm test                     # Full test suite
-npm run test:orthography    # Spelling validation
-npm run test:morphology     # Grammar validation
-npm run test:intelligibility # Cross-language comprehension
 npm run test:cache           # Cache functionality tests
 npm run test:apis            # API connectivity tests
 ```
 
-**Validation Metrics:**
-- **Rule Compliance**: >99% systematic adherence
-- **Cognate Coverage**: >85% cross-language recognition
-- **Alternative Spelling**: Full pronunciation variant support
+**Validation Goals:**
+- Systematic adherence to documented rules
+- Cross-language recognition across Norwegian, Danish, and Swedish
+- Alternative spelling support for pronunciation variants
 
 ## NPM Scripts Reference
 
-### 🚀 Caching & Performance
+### 🚀 Caching & Performance (experimental)
 ```bash
-npm run cache:setup              # One-time setup (auto-detects best strategy)
-npm run cache:warm               # Quick warm-up (5 minutes, essential words)
-npm run cache:warm-full          # Full warm-up (25 minutes, optimal performance)
-npm run cache:stats              # Show cache statistics and hit rates
-npm run cache:analyze            # Detailed performance analysis
-npm run cache:estimate           # Estimate warm-up time before running
+npm run cache:stats              # Show cache statistics
 npm run cache:clean              # Remove expired cache entries
 npm run cache:clear              # Clear all cache (with confirmation)
 ```
 
-### 📚 Dictionary Import
+### 📚 Dictionary
 ```bash
-npm run import:frequency         # Import frequency data (run first)
-npm run import:all               # Import all languages
-npm run import:norwegian         # Import Norwegian only
-npm run import:danish            # Import Danish only
-npm run import:swedish           # Import Swedish only
+npm run build:dictionary         # Generate web dictionary from curated CSV sources
 ```
 
 ### 🧪 Testing & Validation
 ```bash
 npm run test                     # Full test suite
 npm run test:cache               # Test cache functionality (quick)
-npm run test:cache-full          # Test cache with real API calls
 npm run test:apis                # Test API connectivity (quick)
-npm run test:apis-full           # Full API test including imports
-npm run validate:dictionary      # Validate dictionary data
 ```
 
 ### 🔧 Build & Development
@@ -442,13 +378,13 @@ npm run translations:update       # Update language PO files
 npm run translations:check        # Check translation coverage
 ```
 
-- **Dictionary Entries**: 170+ validated entries with inflections
+- **Dictionary Entries**: 400+ core words with inflections
 
 **Quality Assurance Framework:**
-- **Rule Compliance**: Automated validation of all morphological and orthographic rules
-- **Cross-Language Validation**: Comprehension testing with native speakers
+- **Rule Compliance**: Automated validation of documented morphological and orthographic rules
+- **Cross-Language Consistency**: Alignment across Norwegian, Danish, and Swedish source forms
 - **Alternative Spelling Consistency**: Systematic alternative generation verification
-- **Technical Integration**: API and tool functionality validation
+- **Technical Integration**: Tool functionality validation
 
 ### Build Process
 
@@ -472,9 +408,9 @@ The build process:
 2. Processes Handlebars templates with i18n
 3. Compiles SCSS to optimized CSS
 4. Bundles and minifies JavaScript
-5. Generates dictionary API endpoints
+5. Generates dictionary data for the web tools
 6. Creates multilingual site structure
-7. Optimizes assets for CDN delivery
+7. Copies static assets
 
 ## Implementation Notes
 
@@ -599,7 +535,7 @@ Content-Type: application/json
 **Linguistic Changes:**
 - Maintain pan-Scandinavian balance
 - Provide clear rationale
-- Test with native speakers
+- Test with readers familiar with Norwegian, Danish, and Swedish
 - Update `NORDUM_LANGUAGE_SPECIFICATION.md` (the single source)
 
 **Documentation Changes:**
@@ -630,7 +566,7 @@ SITE_URL=https://nordum.org npm run deploy
 SITE_URL=https://nordum.org
 NODE_ENV=production
 
-# Optional API keys for import system
+# Optional API keys for experimental importer scripts
 SPRAKRADET_API_KEY=your_key_here
 ORDNET_API_KEY=your_key_here
 ```
@@ -658,9 +594,9 @@ ORDNET_API_KEY=your_key_here
 
 ### Data Formats
 - **Dictionary**: JSON with full linguistic metadata
-- **Import**: CSV with validation schemas
-- **Export**: Multiple formats (aspell, JSON, plaintext)
-- **i18n**: JSON with ICU message format
+- **Import**: CSV source files
+- **Export**: JSON and plaintext word lists
+- **i18n**: GNU gettext PO/MO files
 - **Specification**: Structured JSON from markdown parsing
 
 ### Single Source System Benefits
@@ -732,30 +668,24 @@ You are free to:
 Under the terms:
 - **Attribution** — You must give appropriate credit
 
-See [LICENSE](LICENSE) for full details.
+See [LICENSE](LICENSE) for full details. Content is licensed under CC BY 4.0.
 
 ## Resources
 
 ### Documentation
 - **[Language Specification](NORDUM_LANGUAGE_SPECIFICATION.md)** - Complete linguistic reference (single source)
 - **[Web Specification](https://nordum.org/rules/language-specification/)** - Interactive version
-- **[API Docs](https://nordum.org/api)** - Developer resources  
 - **[FAQ](FAQ.md)** - Frequently asked questions
-- **[Contributing Guide](CONTRIBUTING.md)** - How to contribute
 
 ### Community
 - **Website**: [nordum.org](https://nordum.org)
 - **Email**: [hello@nordum.org](mailto:hello@nordum.org)
-- **Discord**: [discord.gg/nordum](https://discord.gg/nordum)
 - **GitHub**: [github.com/nordum/nordum](https://github.com/nordum/nordum)
-- **Reddit**: [r/nordum](https://reddit.com/r/nordum)
 
 ### Statistics
-- **Dictionary entries**: 170+ validated words
-- **Alternative spellings**: Full pronunciation variant support
+- **Dictionary entries**: 400+ core words
+- **Alternative spellings**: Pronunciation variant support
 - **Languages supported**: 6 (including Nordum)
-- **Contributors**: 156 from 12 countries
-- **Test coverage**: >95% linguistic rule compliance
 - **Specification sections**: 11 main sections with 40+ subsections
 
 ## Future Development Paths
@@ -768,7 +698,7 @@ See [LICENSE](LICENSE) for full details.
 - **Advanced Alternatives**: More sophisticated pronunciation variant support
 
 **Research Directions**:
-- **Comprehension Studies**: Formal testing with larger groups of native speakers
+- **Comprehension Studies**: Formal testing with readers from Norwegian, Danish, and Swedish backgrounds
 - **Usage Analysis**: Real-world adoption patterns and user preferences
 - **Regional Variation**: Dialectal and geographic usage differences
 - **Diachronic Development**: Evolution of the language over time
@@ -778,9 +708,6 @@ See [LICENSE](LICENSE) for full details.
 **Nordum** - *Bygga broar genom språk* 🌉  
 *Building bridges through language*
 
-Made with ❤️ by the Scandinavian linguistic community
-
-**System Status**: ✅ Production Ready  
 **Primary Source**: `NORDUM_LANGUAGE_SPECIFICATION.md`  
 **Web Output**: All languages at `/rules/language-specification/`  
 **Single Source**: One markdown file maintains entire language specification

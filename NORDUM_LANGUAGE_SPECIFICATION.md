@@ -1079,4 +1079,4 @@ Va tykker du om det?
 **Status**: Complete Linguistic Reference
 **Language Version**: Nordum 0.9.0+production
 
-This specification serves as the authoritative reference for the Nordum pan-Scandinavian language, covering all linguistic features, rules, and usage patterns. For technical implementation details, build systems, and development information, see the project README.md and developer documentation.
+This specification serves as the authoritative reference for the Nordum pan-Scandinavian language, covering all linguistic features, rules, and usage patterns. For technical implementation details, build systems, and development information, see the project [README.md](README.md).

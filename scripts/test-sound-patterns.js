@@ -12,7 +12,7 @@ async function testSoundPatterns() {
     // Test cases for sound pattern transformations
     const testCases = [
         { input: 'arbejder', expected: 'arbeider', description: 'Danish arbejder -> arbeider (ej -> ei)' },
-        { input: 'jeg', expected: 'jei', description: 'Danish jeg -> jei (ej -> ei)' },
+        { input: 'jeg', expected: 'jeg', description: 'Danish jeg has no ej pattern' },
         { input: 'nej', expected: 'nei', description: 'Danish nej -> nei (ej -> ei)' },
         { input: 'vejr', expected: 'veir', description: 'Danish vejr -> veir (ej -> ei)' },
         { input: 'høj', expected: 'høy', description: 'Danish høj -> høy (øj -> øy)' },
@@ -46,7 +46,7 @@ async function testSoundPatterns() {
     // Test the full applyNordumRules method with sound patterns
     const fullTestCases = [
         { word: 'arbejder', source: 'danish', english: 'work', pos: 'verb', expected: 'arbeider' },
-        { word: 'jeg', source: 'danish', english: 'i', pos: 'pronoun', expected: 'jei' },
+        { word: 'jeg', source: 'danish', english: 'i', pos: 'pronoun', expected: 'jeg' },
         { word: 'nej', source: 'danish', english: 'no', pos: 'interjection', expected: 'nei' },
     ];
     

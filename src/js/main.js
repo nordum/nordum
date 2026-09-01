@@ -393,7 +393,9 @@ class NordumApp {
         
         const words = text.toLowerCase().match(/\b\w+\b/g) || [];
         const sentences = text.split(/[.!?]+/).filter(s => s.trim().length > 0);
-        const knownWords = new Set(Object.keys(this.dictionaryData.entries));
+        const knownWords = new Set(
+            Object.values(this.dictionaryData.entries).map(entry => entry.nordum.toLowerCase())
+        );
         
         const errors = [];
         const uniqueWords = new Set(words);
@@ -421,17 +423,22 @@ class NordumApp {
     
     findSuggestions(word) {
         if (!this.dictionaryData) return [];
-        
-        const entries = Object.keys(this.dictionaryData.entries);
+
+        const nordumWords = new Set();
+        const entries = Object.values(this.dictionaryData.entries);
         const suggestions = [];
-        
+
         for (const entry of entries) {
-            const distance = this.levenshteinDistance(word, entry);
+            const nordum = entry.nordum.toLowerCase();
+            if (nordumWords.has(nordum)) continue;
+            nordumWords.add(nordum);
+
+            const distance = this.levenshteinDistance(word, nordum);
             if (distance <= 2 && distance > 0) {
-                suggestions.push({ word: entry, distance });
+                suggestions.push({ word: nordum, distance });
             }
         }
-        
+
         return suggestions
             .sort((a, b) => a.distance - b.distance)
             .map(s => s.word);
@@ -1314,72 +1321,154 @@ class NordumApp {
             this.addToHistory(text, translation, fromLang, toLang);
         }
 
-        translateText(text, fromLang, toLang) {
-            // Mock translation logic - in a real implementation, this would use a translation API
-            const translations = {
-                'hello': {
-                    'nordum': 'hej',
-                    'norwegian': 'hei',
-                    'danish': 'hej',
-                    'swedish': 'hej'
-                },
-                'thank you': {
-                    'nordum': 'takk',
-                    'norwegian': 'takk',
-                    'danish': 'tak',
-                    'swedish': 'tack'
-                },
-                'house': {
-                    'nordum': 'hus',
-                    'norwegian': 'hus',
-                    'danish': 'hus',
-                    'swedish': 'hus'
-                }
+        buildTranslationIndexes() {
+            if (this._translationIndexes) return this._translationIndexes;
+
+            const byEnglish = new Map();
+            const byNordum = new Map();
+            const bySource = {
+                norwegian: new Map(),
+                danish: new Map(),
+                swedish: new Map()
+            };
+            const sourceLanguageWords = {
+                norwegian: new Set(),
+                danish: new Set(),
+                swedish: new Set()
             };
 
-            const lowerText = text.toLowerCase().trim();
-            if (translations[lowerText] && translations[lowerText][toLang]) {
-                return translations[lowerText][toLang];
+            for (const entry of Object.values(this.dictionaryData.entries)) {
+                if (!entry || !entry.nordum) continue;
+
+                const key = entry.nordum.toLowerCase();
+                if (!byNordum.has(key)) byNordum.set(key, entry);
+
+                if (entry.english) {
+                    const enKey = entry.english.toLowerCase();
+                    if (!byEnglish.has(enKey)) byEnglish.set(enKey, entry);
+                }
+
+                for (const lang of ['norwegian', 'danish', 'swedish']) {
+                    const source = entry.sources?.[lang];
+                    if (source?.word) {
+                        const sourceKey = source.word.toLowerCase();
+                        if (!bySource[lang].has(sourceKey)) bySource[lang].set(sourceKey, entry);
+                        sourceLanguageWords[lang].add(sourceKey);
+                    }
+                }
             }
 
-            // Simple word-by-word mock translation
-            return text.split(' ').map(word => {
-                const lower = word.toLowerCase();
-                if (translations[lower] && translations[lower][toLang]) {
-                    return translations[lower][toLang];
+            this._translationIndexes = { byEnglish, byNordum, bySource, sourceLanguageWords };
+            return this._translationIndexes;
+        }
+
+        translateWord(word, fromLang, toLang) {
+            if (!this.dictionaryData) return null;
+            const { byEnglish, byNordum, bySource } = this.buildTranslationIndexes();
+
+            const lowerWord = word.toLowerCase().trim();
+            if (!lowerWord) return '';
+
+            let entry = null;
+
+            if (fromLang === 'nordum') {
+                entry = byNordum.get(lowerWord);
+            } else if (fromLang === 'english') {
+                entry = byEnglish.get(lowerWord);
+            } else if (['norwegian', 'danish', 'swedish'].includes(fromLang)) {
+                entry = bySource[fromLang].get(lowerWord);
+            }
+
+            if (!entry) return null;
+
+            if (toLang === 'nordum') return entry.nordum;
+            if (toLang === 'english') return entry.english || word;
+            if (['norwegian', 'danish', 'swedish'].includes(toLang)) {
+                return entry.sources?.[toLang]?.word || word;
+            }
+
+            return word;
+        }
+
+        translateText(text, fromLang, toLang) {
+            if (!this.dictionaryData) return text;
+            if (fromLang === toLang) return text;
+
+            // Clean the input: split on whitespace and punctuation, but preserve
+            // spacing so the output remains readable.
+            const tokens = text.split(/([\s.,!?;:\-"'()]+)/);
+
+            let translatedCount = 0;
+            let totalWords = 0;
+
+            const translated = tokens.map(token => {
+                if (!token.trim() || /^[\s.,!?;:\-"'()]+$/.test(token)) {
+                    return token;
                 }
-                return word; // Return original if no translation found
-            }).join(' ');
+                totalWords++;
+                const translatedWord = this.translateWord(token, fromLang, toLang);
+                if (translatedWord) {
+                    translatedCount++;
+                    // Preserve original capitalization for single-letter uppercase
+                    if (token.length === 1 && token === token.toUpperCase()) {
+                        return translatedWord.charAt(0).toUpperCase() + translatedWord.slice(1);
+                    }
+                    return translatedWord;
+                }
+                return token;
+            });
+
+            this._lastTranslationCoverage = totalWords > 0
+                ? Math.round((translatedCount / totalWords) * 100)
+                : 0;
+
+            return translated.join('');
         }
 
         detectLanguage(text) {
-            // Mock language detection - in reality, this would use a language detection service
-            const norwegianWords = ['jeg', 'du', 'han', 'hun', 'vi', 'dere', 'de', 'hei', 'takk'];
-            const danishWords = ['jeg', 'du', 'han', 'hun', 'vi', 'I', 'de', 'hej', 'tak'];
-            const swedishWords = ['jag', 'du', 'han', 'hon', 'vi', 'ni', 'de', 'hej', 'tack'];
-        
-            const words = text.toLowerCase().split(/\s+/);
-        
+            if (!this.dictionaryData) return 'nordum';
+            const { byNordum, bySource, sourceLanguageWords } = this.buildTranslationIndexes();
+
+            const words = text.toLowerCase().match(/\b\w+\b/g) || [];
+            if (words.length === 0) return 'nordum';
+
+            let nordumScore = 0;
             let norScore = 0;
             let danScore = 0;
             let sweScore = 0;
-        
-            words.forEach(word => {
-                if (norwegianWords.includes(word)) norScore++;
-                if (danishWords.includes(word)) danScore++;
-                if (swedishWords.includes(word)) sweScore++;
-            });
-        
-            if (sweScore > norScore && sweScore > danScore) return 'swedish';
-            if (danScore > norScore) return 'danish';
-            if (norScore > 0) return 'norwegian';
-        
-            return 'nordum'; // Default
+
+            for (const word of words) {
+                if (byNordum.has(word)) nordumScore++;
+                if (sourceLanguageWords.norwegian.has(word)) norScore++;
+                if (sourceLanguageWords.danish.has(word)) danScore++;
+                if (sourceLanguageWords.swedish.has(word)) sweScore++;
+            }
+
+            // Swedish-specific pronouns are strong signals
+            const swedishOnly = ['jag', 'hon', 'ni', 'tack', 'hej'];
+            const danishOnly = ['jeg', 'hun', 'vi', 'de', 'hej', 'tak'];
+            const norwegianOnly = ['jeg', 'hun', 'vi', 'dere', 'hei', 'takk'];
+
+            for (const word of words) {
+                if (swedishOnly.includes(word)) sweScore += 2;
+                if (norwegianOnly.includes(word)) norScore += 2;
+                if (danishOnly.includes(word)) danScore += 2;
+            }
+
+            const maxScore = Math.max(nordumScore, norScore, danScore, sweScore);
+            if (maxScore === 0) return 'nordum';
+
+            if (sweScore === maxScore) return 'swedish';
+            if (danScore === maxScore) return 'danish';
+            if (norScore === maxScore) return 'norwegian';
+            return 'nordum';
         }
 
         calculateConfidence(text, fromLang, toLang) {
-            // Mock confidence calculation
-            return Math.floor(85 + Math.random() * 10); // 85-95%
+            if (typeof this._lastTranslationCoverage === 'number') {
+                return Math.min(99, Math.max(30, this._lastTranslationCoverage));
+            }
+            return 50;
         }
 
         displayTranslation(translation, confidence) {
@@ -1437,12 +1526,12 @@ class NordumApp {
 
         getQuickPhrase(phraseKey) {
             const phrases = {
-                'hello': 'Hello, how are you?',
-                'thanks': 'Thank you for the help',
-                'understand': "I don't understand",
-                'help': 'Can you help me?',
-                'cost': 'How much does it cost?',
-                'goodbye': 'Take care / Goodbye'
+                'hello': 'hello',
+                'thanks': 'thanks',
+                'understand': 'understand',
+                'help': 'help',
+                'cost': 'cost',
+                'goodbye': 'goodbye'
             };
             return phrases[phraseKey] || '';
         }

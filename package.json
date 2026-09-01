@@ -54,7 +54,7 @@
     "watch:dictionary": "chokidar 'data/dictionary/**/*' -c 'npm run build:dictionary'",
     "watch:i18n": "chokidar 'src/i18n/**/*' -c 'npm run build:i18n'",
     "watch:favicons": "chokidar 'src/static/images/logo*.svg' -c 'npm run build:favicons'",
-    "test": "jest",
+    "test": "node scripts/test-tools.js && node scripts/test-nordum-rules.js && node scripts/test-morphological.js && node scripts/test-sound-patterns.js",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "lint": "eslint src/**/*.js",

@@ -378,13 +378,18 @@ class DictionaryBuilder {
         for (const [lang, entries] of Object.entries(sourceData)) {
             for (const entry of entries) {
                 const english = entry.english?.toLowerCase();
+                const pos = entry.pos?.toLowerCase() || 'unknown';
                 if (!english) continue;
 
-                if (!conceptMap.has(english)) {
-                    conceptMap.set(english, {});
+                // Group by English meaning + part of speech so homonyms
+                // (e.g. "work" noun vs verb) are preserved separately.
+                const conceptKey = `${english}::${pos}`;
+
+                if (!conceptMap.has(conceptKey)) {
+                    conceptMap.set(conceptKey, { english, pos });
                 }
 
-                conceptMap.get(english)[lang] = {
+                conceptMap.get(conceptKey)[lang] = {
                     word: entry.word,
                     pos: entry.pos,
                     gender: entry.gender,
@@ -393,47 +398,58 @@ class DictionaryBuilder {
             }
         }
         // Analyze each concept using new Nordum selection rules
-        for (const [english, translations] of conceptMap.entries()) {
+        for (const [conceptKey, translations] of conceptMap.entries()) {
+            const english = translations.english;
+            const pos = translations.pos;
+
+            // Collect source-language entries (english and pos are metadata)
+            const sourceTranslations = {};
+            for (const lang of this.sourceLanguages) {
+                if (translations[lang]) sourceTranslations[lang] = translations[lang];
+            }
+
             // Skip if no valid translations
-            const langCount = Object.keys(translations).length;
+            const langCount = Object.keys(sourceTranslations).length;
             if (langCount < 1) continue;
 
-
-
             // Select best Nordum form using new priority system
-            const nordumForm = this.selectNordumForm(translations, english);
+            const nordumForm = this.selectNordumForm(sourceTranslations, english);
             if (!nordumForm) continue;
 
             // Determine best part of speech with Norwegian/Danish preference
-            const posOptions = Object.values(translations).map(t => t.pos).filter(Boolean);
-            const pos = this.selectBestPOS(posOptions, translations) || 'noun';
+            const posOptions = Object.values(sourceTranslations).map(t => t.pos).filter(Boolean);
+            const selectedPos = this.selectBestPOS(posOptions, sourceTranslations) || pos || 'noun';
 
             // Determine best gender with Norwegian/Danish preference
-            const genderOptions = Object.values(translations).map(t => t.gender).filter(Boolean);
-            const gender = pos === 'noun' ? this.selectBestGender(genderOptions, translations) : null;
+            const genderOptions = Object.values(sourceTranslations).map(t => t.gender).filter(Boolean);
+            const gender = selectedPos === 'noun' ? this.selectBestGender(genderOptions, sourceTranslations) : null;
 
             // Calculate weighted frequency favoring Norwegian/Danish
-            const avgFrequency = this.calculateWeightedFrequency(translations);
+            const avgFrequency = this.calculateWeightedFrequency(sourceTranslations);
 
             // Calculate cognate score based on cross-language similarity
             const cognateScore = this.calculateCognateScore(
-                Object.values(translations).map(t => t.word).filter(Boolean)
+                Object.values(sourceTranslations).map(t => t.word).filter(Boolean)
             );
 
             // Generate inflections for this entry
-            const inflections = this.generateInflections(nordumForm, pos, gender);
+            const inflections = this.generateInflections(nordumForm, selectedPos, gender);
 
-            this.nordumDictionary.set(nordumForm, {
+            // Key by Nordum form + POS so homonyms with different parts of
+            // speech (e.g. "work" noun vs verb) do not overwrite each other.
+            const entryKey = `${nordumForm}::${selectedPos}`;
+
+            this.nordumDictionary.set(entryKey, {
                 nordum: nordumForm,
                 english,
-                pos,
+                pos: selectedPos,
                 gender,
                 cognateScore: Math.max(cognateScore, 0.5), // Minimum reasonable score
                 langCount,
                 frequency: avgFrequency,
-                sources: translations,
+                sources: sourceTranslations,
                 inflections: inflections,
-                selectionReason: this.getSelectionReason(nordumForm, translations, english)
+                selectionReason: this.getSelectionReason(nordumForm, sourceTranslations, english)
             });
         }
 
@@ -443,10 +459,13 @@ class DictionaryBuilder {
         const entriesArray = Array.from(this.nordumDictionary.values());
         const entriesWithAlternatives = this.generateAlternativeSpellings(entriesArray);
 
-        // Add alternatives back to dictionary
+        // Add alternatives back to dictionary using the same unique key format
         for (const entry of entriesWithAlternatives) {
-            if (entry.alternativeOf && !this.nordumDictionary.has(entry.nordum)) {
-                this.nordumDictionary.set(entry.nordum, entry);
+            if (entry.alternativeOf && entry.pos) {
+                const altKey = `${entry.nordum}::${entry.pos}`;
+                if (!this.nordumDictionary.has(altKey)) {
+                    this.nordumDictionary.set(altKey, entry);
+                }
             }
         }
 
@@ -774,7 +793,8 @@ class DictionaryBuilder {
                 }
             },
             entries: sortedEntries.reduce((acc, entry) => {
-                acc[entry.nordum] = entry;
+                const key = `${entry.nordum}::${entry.pos}`;
+                acc[key] = entry;
                 return acc;
             }, {})
         };

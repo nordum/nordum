@@ -243,23 +243,26 @@
   },
   "tools": {
     "dictionary": {
-      "entryCount": 6978,
+      "entryCount": 400,
       "languages": ["nordum", "english", "norwegian", "danish", "swedish"],
-      "features": ["etymology", "cognate_analysis", "frequency_data", "inflections", "alternative_spellings"]
+      "features": ["etymology", "cognate_analysis", "inflections", "alternative_spellings"]
     },
     "spellchecker": {
-      "type": "morphological",
-      "features": ["compound_analysis", "inflection_validation", "suggestion_generation", "alternative_spelling_support"],
-      "accuracy": ">98%"
+      "type": "dictionary-based",
+      "features": ["suggestion_generation", "alternative_spelling_support"]
     },
     "translator": {
       "pairs": [
         "nordum-norwegian",
         "nordum-danish",
         "nordum-swedish",
-        "nordum-english"
+        "nordum-english",
+        "norwegian-nordum",
+        "danish-nordum",
+        "swedish-nordum",
+        "english-nordum"
       ],
-      "method": "rule_based_with_statistical_fallback"
+      "method": "dictionary-based_word_lookup"
     }
   },
   "community": {
@@ -270,7 +273,7 @@
   },
   "technical": {
     "buildSystem": "Node.js with Handlebars templating",
-    "i18n": "JSON-based with interpolation support",
+    "i18n": "GNU gettext PO/MO files",
     "deployment": "Static site generation with CDN",
     "analytics": "Privacy-focused usage statistics",
     "accessibility": "WCAG 2.1 AA compliance",

@@ -55,7 +55,4 @@ Nordum preserves English loanwords for technical and modern terms where they are
 
 Yes! Nordum is an open-source project that welcomes contributions from linguists, developers, and Scandinavian language speakers. You can contribute dictionary entries, suggest grammatical improvements, or help with technical development.
 
-See the [Contributing Guide](CONTRIBUTING.md) for more information on how to get involved.
-```
-
-Now let me update the README to replace the "Grammar Guide" link with "Language Specification" and add a link to the new FAQ page:
+See the [GitHub repository](https://github.com/nordum/nordum) to open an issue or pull request.

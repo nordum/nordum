@@ -30,8 +30,8 @@ This document provides comprehensive guidance for AI coding assistants working o
    - Auto-generated table of contents and navigation
 
 3. **Internationalization System**
-   - JSON-based source files in `src/i18n/`
-   - Automated conversion to PO/MO format for gettext compatibility
+   - GNU gettext PO/MO source files in `src/i18n/`
+   - Compilation to MO format for runtime use
    - Translation validation and consistency checking
    - Support for 6 languages across all templates
 
@@ -279,18 +279,18 @@ The system analyzes cognates from all three source languages and:
 
 ### 2. Internationalization Pattern
 
-**Translations flow from JSON to PO/MO:**
+**Translations are maintained in PO files:**
 ```
-src/i18n/*.json → build process → PO files → templates
+src/i18n/*.po → build process → MO files → templates
 ```
 
-Always edit the JSON source files, never the generated PO files.
+Always edit the PO source files in `src/i18n/`, never the generated MO files in `build/assets/i18n/`.
 
 ### 3. Dictionary Build Pipeline
 
-**Import → Process → Generate:**
+**Curated sources → Process → Generate:**
 ```
-External APIs → CSV cache → Import scripts → Nordum rules → Final dictionary
+data/dictionary/sources/*.csv → build-dictionary.js → Nordum rules → Final dictionary
 ```
 
 Use caching to avoid repeated API calls (respectful to external services).
