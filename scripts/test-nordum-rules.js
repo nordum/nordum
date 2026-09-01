@@ -190,14 +190,14 @@ class NordumRulesTest {
                         reason: 'Verb present tense: -er ending (systematic distinction from noun plurals)'
                     },
                     {
-                        english: 'girls',
+                        english: 'girl',
                         translations: {
-                            norwegian: { word: 'jenter', pos: 'noun', frequency: 1200 },
-                            danish: { word: 'piger', pos: 'noun', frequency: 1200 },
-                            swedish: { word: 'flickor', pos: 'noun', frequency: 1200 }
+                            norwegian: { word: 'jente', pos: 'noun', frequency: 1200 },
+                            danish: { word: 'pige', pos: 'noun', frequency: 1200 },
+                            swedish: { word: 'flicka', pos: 'noun', frequency: 1200 }
                         },
-                        expected: 'jentar', // Norwegian form preferred
-                        reason: 'Noun plurals: -ar ending (systematic distinction from verbs)'
+                        expected: 'jente', // Norwegian form preferred
+                        reason: 'Noun singular base form; plural inflection is -ar (jentar)'
                     }
                 ]
             },
@@ -335,6 +335,41 @@ class NordumRulesTest {
                 input: 'hvilken',
                 expected: 'vilken',
                 rule: 'hv → v transformation'
+            },
+            {
+                input: 'tack',
+                expected: 'takk',
+                rule: 'ck → kk'
+            },
+            {
+                input: 'fiks',
+                expected: 'fix',
+                rule: 'ks → x'
+            },
+            {
+                input: 'centrum',
+                expected: 'sentrum',
+                rule: 'c before e → s'
+            },
+            {
+                input: 'cirkel',
+                expected: 'sirkel',
+                rule: 'c before i → s, then c → k'
+            },
+            {
+                input: 'kald',
+                expected: 'kall',
+                rule: 'ld → ll'
+            },
+            {
+                input: 'phone',
+                expected: 'fone',
+                rule: 'ph → f'
+            },
+            {
+                input: 'skjønn',
+                expected: 'skønn',
+                rule: 'skj → sk'
             }
         ];
 

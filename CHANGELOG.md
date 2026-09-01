@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Implemented approved orthographic and morphological rules: `ck` → `kk`, `ks` → `x`, established Scandinavian `c` → `k`/`s`, `ld` → `ll`, `ph` → `f`, Norwegian `skj` → `sk`, `hv-` → `v-`, lower-case only, compounds by simple concatenation, verb infinitive always `-e`, and adjective neuter always `-t`.
+- Added curated source entries for `bicycle`, `centre`, and `circle` to demonstrate the `c` regularization rules.
+
 ### Fixed
 - Replaced unreliable scraped dictionary data with a curated 400+ word core vocabulary, making the dictionary, spellchecker, and translator actually usable.
 - Rewrote the translator to perform real dictionary-based word lookup instead of returning placeholder output.

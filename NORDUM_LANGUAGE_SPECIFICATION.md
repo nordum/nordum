@@ -176,14 +176,14 @@ baguette → baguette
 | Letter | IPA | Examples | Rules |
 |--------|-----|----------|-------|
 | B, b | [b] | bil, god | Never silent |
-| C, c | [k]/[s] | computer, centrum | Loanwords only |
-| D, d | [d]/[ð] | dag, god | Silent d eliminated |
-| F, f | [f] | fisk, kaffe | Consistent |
+| C, c | [k]/[s] | computer, sentrum | New English loanwords keep `c`; established Scandinavian words regularize `c` to `k`/`s` |
+| D, d | [d]/[ð] | dag, god | Silent word-final `d` dropped; pronounced `d` retained |
+| F, f | [f] | fisk, kaffe | Consistent; `ph` becomes `f` |
 | G, g | [g] | god, lag | Always hard [g] |
-| H, h | [h] | hus, hånd | Never silent (eliminated in question words) |
+| H, h | [h] | hus, hånd | Never silent; `h` dropped in `hv-` question words |
 | J, j | [j] | ja, arbeide | Consistent [j] sound |
-| K, k | [k] | katt, købe | Replaces ck combinations |
-| L, l | [l] | liten, fall | Clear lateral |
+| K, k | [k] | katt, købe | `ck` written as `kk`; `c` in established words becomes `k` or `s` |
+| L, l | [l] | liten, fall | Clear lateral; Danish `ld` becomes `ll` |
 | M, m | [m] | mann, komme | Bilabial nasal |
 | N, n | [n] | ny, ingen | Alveolar nasal |
 | P, p | [p] | penge, kop | Consistent |
@@ -192,78 +192,106 @@ baguette → baguette
 | T, t | [t]/[ð] | tid, hat, heter | Clear stop |
 | V, v | [v] | vad, have | Used in question words |
 | W, w | [v]/[w] | website | English loanwords |
-| X, x | [ks] | taxi | Rare, loanwords |
+| X, x | [ks] | taxi, max | Used for /ks/ in all vocabulary |
 | Z, z | [s]/[z] | zoo | Loanwords only |
 
 #### 3.3.1 Special Note: The Letter d and Regional Pronunciation
 
-In cases where the letter `d` is used in all three languages, it is always written in its standard orthographic position, regardless of whether it is pronounced as a voiced dental fricative [ð], an alveolar stop [d], or a bilabial stop [t] in different regional variations. Regional variation is accepted and expected:
-
-Danish speakers: May pronounce d as voiced dental fricative [ð], especially between vowels or word-finally.
-Norwegian speakers: Typically pronounce d as alveolar stop [d].
-Swedish speakers: Typically pronounce d as [d], but may devoice to [t] in casual or final position.
-
-#### 3.3.2 Clarification: When to Use d vs t
-
-The letter d is retained in words spelled with d across all or most source languages (e.g., mad, god, ved), with regional pronunciation accepted.
-
-However, in lexical items where Norwegian and Swedish consistently use `t` and Danish uses `d` for the same meaning and morphological position (e.g., heter), Nordum adopts `t` to align with majority usage and pronunciation clarity.
-
-This is a lexical selection decision, not a phonetic one. It ensures Nordum remains intuitive and recognizable to all users.
-
-In cases where the letter `t` is used as the primary spelling for what is a [ð]-sound in Danish, it is a secondary option to spell it with `d`.
-
-#### 3.3.3 Special Spelling Rules for K/J/G/ Sounds
-
-**Rule 1: K-sound in Norwegian, J-sound in Danish → G spelling**
-When Norwegian has a "k" sound and Danish has a "j" sound for the same morpheme, Nordum uses "g" spelling.
+Pronounced `d` is retained. Word-final `d` that is silent in Danish but pronounced in Norwegian and Swedish is written according to the majority pattern: if Norwegian and Swedish have a pronounced consonant (`d` or `t`), that form is preferred; if the consonant is silent across the majority of speakers, it is dropped.
 
 **Examples**:
-- søke (Norwegian) / søge (Danish) → søge (search)
-- tak (Norwegian) / tag (Danish) → tag (roof)
+- *kold/kall* → **kall** (cold): Danish silent `ld` becomes `ll` by Rule 9.
+- *god* → **god** (good): `d` is pronounced in Norwegian/Swedish, so it stays.
+- *mad/mat* → **mat** (food): Danish silent `d` is dropped; Norwegian/Swedish `t` is retained.
 
-**Rule 2: G-sound in Danish, J-sound in Norwegian → G spelling**
-When Danish has a "g" sound and Norwegian has a "j" sound for the same morpheme, Nordum uses "g" spelling rather than "gj".
+#### 3.3.2 Special Spelling Rules
 
-**Examples**:
-- genstand (Danish) / gjenstand (Norwegian) → genstand (object)
-- gæst (Danish) / gjest (Norwegian) → gæst (guest)
-
-**Rule 3: Native Scandinavian words use "ks" instead of "x"**
-For native Scandinavian words, Nordum uses "ks" spelling (as in Danish/Norwegian) instead of "x" (as in Swedish).
+**Rule 1: `ck` → `kk`**
+The `ck` spelling becomes `kk`, keeping the vowel-shortening signal familiar from Swedish and Norwegian.
 
 **Examples**:
-- fiks (Danish/Norwegian) / fix (Swedish) → fiks (fix)
-- maks (Danish/Norwegian) / max (Swedish) → maks (max)
+- *backa* → **bakka**
+- *tack/takk* → **takk**
 
-**Rule 4: [ç]-sound in Swedish/Norwegian, K-sound in Danish → K spelling**
-When Swedish and Norwegian have a [ç]-sound and Danish has a "k"-sound for the same morpheme, Nordum uses "k" spelling (as in Danish/Swedish) rather than "kj" (as in Norwegian).
-
-**Examples**:
-- köra (Swedish) / kjøre (Norwegian) / køre (Danish) → køre (drive)
-- köpa (Swedish) / kjøpe (Norwegian) / købe (Danish) → købe (buy)
-
-**Rule 5: Norwegian [ʃ]-sound spelled "skj" vs Danish [ks] pronunciation → "ks" spelling**
-When Norwegian has a [ʃ]-sound spelled "skj" and Danish has a [ks] pronunciation for the same morpheme, Nordum uses "ks" spelling to align with Danish pronunciation and maintain consistency.
+**Rule 2: `ks` → `x`**
+The /ks/ sound is written with `x` in all vocabulary. This is shorter, matches English and Swedish practice, and is easier for migrants and English speakers.
 
 **Examples**:
-- forskjell (Norwegian [fɔʂːɛl]) / forskel (Danish [fɒːsɡ̊l̩]) → forskel (difference)
-- skjære (Norwegian [ʃæːrə]) / skære (Danish [sɡ̊ɛːɐ]) → skære (cut)
-- skjorte (Norwegian [ʃuʈə]) / skjorte (Danish [sɡ̊oɐ̯d̥ə]) → skjorte (shirt) - Note: Danish retains "skj" spelling but pronounces as [sɡ̊]
-- kald (Danish [kʰalˀ]) / kald (Norwegian [kɑlː]) → kald (cold)
-- fuld (Danish [fulˀ]) / full (Norwegian [fʉlː]) → full (full)
-- gammel (Danish [ˈɡ̊ɑmˀl̩]) / gammel (Norwegian [ˈɡɑmːəl]) → gammel (old)
+- *fiks* → **fix**
+- *maks* → **max**
+- *boks* → **box**
 
-**Rationale**: This rule specifically addresses cases where Norwegian palatalization creates a [ʃ] sound from "skj" combinations that correspond to [sk] or [sɡ̊] pronunciations in Danish. The "sk" spelling provides better pan-Scandinavian intelligibility, aligns with Danish pronunciation patterns, and follows the systematic approach of using phonetic clarity over etymological spelling. This is particularly important for words like "forskjell/forskel" where the Norwegian [ʃ] sound contrasts with Danish [sk].
-
-**Rule 6: Danish "ld" vs Norwegian "ll" pronunciation → "ll" spelling**
-When Danish uses "ld" spelling but Norwegian uses "ll" spelling for the same morpheme with similar pronunciation, Nordum uses "ll" spelling to align with Norwegian orthography and pronunciation clarity.
+**Rule 3: Established Scandinavian `c` → `k` or `s`**
+Long-established Scandinavian words containing `c` are regularized. Before `e`, `i`, or `y`, `c` becomes `s`; elsewhere it becomes `k`. Fresh English/international loanwords keep their original spelling.
 
 **Examples**:
-- kold (Danish) / kall (Norwegian) → koll/kall (cold)
-- fuld (Danish) / full (Norwegian) → full (full)
+- *centrum* → **sentrum**
+- *cirkel* → **sirkel**
+- *cykel* → **sykkel** (Norwegian form is selected; *sykel* is also accepted)
+- *computer* → **computer** (English loanword, kept unchanged)
+- *chocolate* → **chocolate** (English loanword, kept unchanged)
 
-**Rationale**: This rule addresses cases where Danish orthography uses "ld" but Norwegian uses "ll" for words with similar pronunciation. The "ll" spelling provides better phonetic transparency and aligns with Norwegian spelling patterns while remaining recognizable to Danish and Swedish speakers.
+**Rule 4: `ph` → `f`**
+The `ph` digraph is replaced by `f` in all words.
+
+**Examples**:
+- *telefon* stays **telefon**
+- *filosofi* (not *philosophi*)
+
+**Rule 5: Norwegian `skj` → `sk`**
+Where Norwegian palatalizes "skj" to [ʃ], Nordum uses "sk" to match Danish and Swedish pronunciation/spelling.
+
+**Examples**:
+- *forskjell* → **forskel** (difference)
+- *skjære* → **skære** (cut)
+- *skjorte* → **skorte** (shirt)
+
+**Rule 6: `ld` → `ll`**
+The `ld` spelling becomes `ll`.
+
+**Examples**:
+- *kald* / *kold* / *kall* → **kall** (cold)
+- *fuld* / *full* → **full** (full)
+
+**Rule 7: `hv-` question words → `v-`**
+The silent `h` in question words is dropped.
+
+**Examples**:
+- *hva* / *hvad* → **vad** (what)
+- *hvor* → **var** (where)
+- *hvem* → **vem** (who)
+- *hvilken* → **vilken** (which)
+- *hvordan* → **vordan** (how)
+- *hvorfor* → **varfør** (why)
+
+**Rule 8: Silent word-final `d`**
+Word-final `d` that is silent in Danish and not matched by a pronounced consonant in Norwegian/Swedish is resolved by lexical selection: the form without the silent `d` is chosen when it exists in the majority of source languages.
+
+**Examples**:
+- *mad* / *mat* → **mat** (food)
+- *ved* (by) → **ved**, because Norwegian and Danish both pronounce the `d` here
+
+#### 3.3.3 Compounds
+
+Nordum compounds are formed by simple concatenation of base forms. No linking vowels (`-e-`, `-s-`) are inserted, and no consonant gemination occurs across the morpheme boundary.
+
+**Examples**:
+- *barn* + *hage* → **barnhage** (kindergarten), not *barnehage*
+- *tunn* + *skiva* → **tunskiva** (not *tunnskviva*)
+- *arbeid* + *dag* → **arbeiddag** (working day)
+
+**Rationale**: Simple concatenation makes compounds transparent and easy to decompose for learners, migrants, and anyone encountering the language for the first time.
+
+#### 3.3.4 Capitalization
+
+Nordum uses sentence case plus proper nouns only. Common nouns, nationalities, languages, months, days, titles, and other categories that some languages capitalize are written in lower case.
+
+**Examples**:
+- *english*, *swedish*, *norsk* (languages in lower case)
+- *january*, *monday* (months and days in lower case)
+- *doctor Smith* — *doctor* in lower case, *Smith* capitalized as a proper noun
+
+**Rationale**: This matches English and Scandinavian informal usage, removes a large class of spelling exceptions, and makes the writing system easier for migrants and English speakers to master.
 
 #### 3.3.4 Preposition Spelling (Bokmål Pattern)
 Prepositions in Nordum generally follow the Bokmål spelling pattern for consistency and mutual intelligibility. Exceptions occur where the spelling clashes with another rule.
@@ -381,7 +409,24 @@ Imperative:        arbeid! (stem form)
 
 **Note**: `-ede` remains the primary form, but the shorter `-a` past (arbeida) is **accepted as an optional secondary form**, reflecting widespread Scandinavian colloquial use.
 
-#### 4.2.3 Infinitive Marker: Distinction between "å" and "att"
+#### 4.2.3 Infinitive Form: Always `-e`
+
+**Rule**: All regular verb infinitives end in `-e`.
+
+**Examples**:
+- *arbeide* (to work)
+- *snakke* (to speak)
+- *komme* (to come)
+- *lære* (to learn)
+
+In compounds and derivations, the infinitive ending is dropped and the stem is used:
+- *arbeid* + *dag* → **arbeiddag** (working day)
+- *arbeid* + *plass* → **arbeidplass** (workplace)
+- *lær* + *er* → **lærer** (teacher)
+
+**Rationale**: A single infinitive ending removes the Swedish/Danish/Norwegian variation between `-a`, `-e`, and `-e`, and using the stem in compounds keeps compounds transparent and compact.
+
+#### 4.2.4 Infinitive Marker: Distinction between "å" and "att"
 
 **Principle**: Nordum maintains a clear distinction between "å" (the infinitive marker) and "att" (the conjunction meaning "that"), similar to the Norwegian distinction between "å" and "at".
 
@@ -492,6 +537,15 @@ god → bedre → bedst (good → better → best)
 ```
 
 #### 4.4.2 Adjective Agreement
+
+**Rule**: The neuter singular form of an adjective always ends in `-t`. There are no exceptions.
+
+**Examples**:
+- *stor* → *stort* (big → big-neuter)
+- *god* → *godt* (good → good-neuter)
+- *liten* → *litt* (small → small-neuter)
+
+Even historically irregular adjectives follow this pattern in Nordum.
 
 ```
 
@@ -1079,4 +1133,4 @@ Va tykker du om det?
 **Status**: Complete Linguistic Reference
 **Language Version**: Nordum 0.9.0+production
 
-This specification serves as the authoritative reference for the Nordum pan-Scandinavian language, covering all linguistic features, rules, and usage patterns. For technical implementation details, build systems, and development information, see the project [README.md](README.md).
+This specification serves as the authoritative reference for the Nordum pan-Scandinavian language, covering all linguistic features, rules, and usage patterns. For technical implementation details, build systems, and development information, see the project [README.md](https://github.com/nordum/nordum/blob/main/README.md).

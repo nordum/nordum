@@ -18,10 +18,11 @@ This document provides comprehensive guidance for AI coding assistants working o
 ### Core Components
 
 1. **Dictionary Generation System**
-   - Imports data from Norwegian, Danish, and Swedish dictionaries
+   - Builds from curated source CSVs in `data/dictionary/sources/`
    - Applies Nordum linguistic rules to create unified vocabulary
    - Generates cognate scores and selection reasons
    - Supports alternative spellings for regional pronunciation variants
+   - Experimental importers in `scripts/importers/` are not required for the working site
 
 2. **Language Specification System**
    - Single-source documentation in `NORDUM_LANGUAGE_SPECIFICATION.md`
@@ -50,7 +51,7 @@ nordum/
 │   │   ├── partials/       # Reusable UI components
 │   │   ├── tools/          # Interactive language tools
 │   │   └── rules/          # Language documentation pages
-│   ├── i18n/              # Translation files (JSON format)
+│   ├── i18n/              # Translation files (PO format)
 │   ├── styles/            # SCSS stylesheets
 │   ├── js/                # JavaScript modules
 │   └── static/            # Static assets (images, fonts)
@@ -93,7 +94,7 @@ npm run build
 #### 2. Adding/Modifying Translations
 ```bash
 # Edit translation source
-nano src/i18n/[language].json
+nano src/i18n/[language].po
 
 # Rebuild i18n system
 npm run build:i18n
@@ -101,22 +102,17 @@ npm run build:templates
 ```
 
 **Translation files:**
-- `src/i18n/nordum.json` - Nordum translations
-- `src/i18n/en.json` - English
-- `src/i18n/no.json` - Norwegian
-- `src/i18n/da.json` - Danish
-- `src/i18n/sv.json` - Swedish
-- `src/i18n/eo.json` - Esperanto
+- `src/i18n/nordum.po` - Nordum translations
+- `src/i18n/en.po` - English
+- `src/i18n/nb.po` - Norwegian Bokmål
+- `src/i18n/nn.po` - Norwegian Nynorsk
+- `src/i18n/da.po` - Danish
+- `src/i18n/sv.po` - Swedish
+- `src/i18n/eo.po` - Esperanto
 
 #### 3. Dictionary Operations
 ```bash
-# Setup caching (first time only, 5-10 minutes)
-npm run cache:setup
-
-# Import dictionary data (with caching, 10-20x faster)
-npm run import:all --limit=1000
-
-# Build Nordum dictionary from source data
+# Build Nordum dictionary from curated source CSVs
 npm run build:dictionary
 
 # Test dictionary generation rules
@@ -125,10 +121,9 @@ npm run test:nordum-rules
 ```
 
 **Key files:**
-- `scripts/import-dictionaries.js` - Main import orchestrator
-- `scripts/importers/` - Individual language importers
+- `data/dictionary/sources/*.csv` - Curated source-of-truth dictionaries
 - `scripts/build-dictionary.js` - Dictionary generation with Nordum rules
-- `data/dictionary/` - Source CSV files
+- `scripts/importers/` - Experimental importers (not required for the working site)
 
 #### 4. Template Development
 ```bash
@@ -217,7 +212,21 @@ npm run version:history  # Show version history
 2. **Intelligibility First**: Choose forms recognizable across all three languages
 3. **Systematic Regularity**: Predictable patterns, minimal exceptions
 4. **Alternative Spellings**: Support for regional pronunciation variants
-5. **Loanword Preservation**: Keep English technical terms unchanged
+5. **Loanword Preservation**: Keep English/international technical terms unchanged; established Scandinavian words follow Nordum spelling rules
+
+### Core Orthographic Rules
+
+- **ck → kk**: `tack` → `takk`
+- **ks → x**: `fiks` → `fix`
+- **c → k/s**: `centrum` → `sentrum`, `cirkel` → `sirkel`, `cykel` → `sykkel`
+- **ld → ll**: `kald` → `kall`, `fuld` → `full`
+- **ph → f**: `telefon` ← `telefon`/`telephone`
+- **skj → sk**: `forskjell` → `forskell`
+- **hv → v**: `hvad` → `vad`, `hvor` → `var`
+- **Silent final d**: handled by lexical selection (e.g. Danish `mad` → Norwegian/Swedish `mat`)
+- **Lower-case**: all words lower-case except proper nouns and sentence starts
+- **Verb infinitive**: always `-e`; silent `-e` drops in compounds
+- **Adjective neuter**: always `-t`
 
 ### Dictionary Generation Algorithm
 
@@ -317,17 +326,17 @@ npm run build:templates
 ```
 
 ### Problem: Translation missing in one language
-**Solution:** Check the source JSON file in `src/i18n/` and rebuild:
+**Solution:** Check the source PO file in `src/i18n/` and rebuild:
 ```bash
 npm run build:i18n
 npm run build:templates
 ```
 
-### Problem: Dictionary import is very slow
-**Solution:** Use the caching system:
+### Problem: Dictionary build has unexpected forms
+**Solution:** Check the curated source CSVs in `data/dictionary/sources/` and rebuild:
 ```bash
-npm run cache:setup    # One-time setup
-npm run import:all     # Now 10-20x faster
+npm run build:dictionary
+npm run build
 ```
 
 ### Problem: Build fails with file not found
@@ -366,8 +375,7 @@ npm run test:cache        # Caching system
 ## Performance Considerations
 
 ### Build Performance
-- Use caching for dictionary imports (10-20x speedup)
-- Limit initial imports with `--limit` flag during development
+- The web dictionary builds from curated CSVs in `data/dictionary/sources/`
 - Webpack production mode optimizes JavaScript bundles
 - SCSS compression reduces CSS file size
 

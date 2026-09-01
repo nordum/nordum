@@ -33,13 +33,14 @@ class DictionaryBuilder {
 
             // Silent letter removal
             'dt$': 't',    // width -> vidt -> vid
-            'ld$': 'l',    // world -> värld -> värl (when applicable)
 
             // Consonant standardization
-            'ck': 'k',     // back -> bak
+            'ck': 'kk',    // back -> bakk, tack -> takk
+            'ld': 'll',    // kald -> kall, fuld -> full
             'ph': 'f',     // phone -> fon
+            'ks': 'x',     // fiks -> fix, maks -> max
             'kj': 'kj',    // Keep Scandinavian kj sound
-            'skj': 'skj',  // Keep Scandinavian skj sound
+            'skj': 'sk',   // Norwegian skj -> sk (forskjell -> forskell)
 
             // Question word transformation (Swedish v- pattern, no silent H)
             '^hv': 'v',    // hvad -> vad, hvor -> var, etc.
@@ -49,12 +50,18 @@ class DictionaryBuilder {
             'sion$': 'sion'
         };
 
-        // English loanwords to preserve unchanged
+        // English/international loanwords to preserve unchanged.
+        // These keep their international spelling, including c, x, ph, etc.
         this.englishLoanwords = new Set([
             'computer', 'internet', 'email', 'software', 'website', 'app', 'smartphone',
             'online', 'download', 'upload', 'login', 'password', 'browser', 'server',
             'database', 'backup', 'cloud', 'streaming', 'podcast', 'blog', 'chat',
-            'social', 'media', 'digital', 'technology', 'system', 'network', 'platform'
+            'social', 'media', 'digital', 'technology', 'system', 'network', 'platform',
+            'chocolate', 'check', 'chance', 'champion', 'chef', 'chic', 'chorus',
+            'taxi', 'max', 'index', 'flex', 'box', 'fox', 'mix', 'sex', 'luxury',
+            'phoenix', 'photo', 'phrase', 'physical', 'physics', 'phone', 'photograph',
+            'x-ray', 'xray', 'axe',
+            'wc', 'www'
         ]);
 
         // Norwegian number system (preferred)
@@ -88,28 +95,28 @@ class DictionaryBuilder {
         // Load Nordum inflection patterns
         this.inflectionRules.set('noun', {
             common: {
-                singular: { indefinite: '', definite: '-en' },
-                plural: { indefinite: '-ar', definite: '-arna' }  // Simplified -arna ending
+                singular: { indefinite: '', definite: 'en' },
+                plural: { indefinite: 'ar', definite: 'arna' }  // Simplified -arna ending
             },
             neuter: {
-                singular: { indefinite: '', definite: '-et' },
-                plural: { indefinite: '-ar', definite: '-arna' }  // Consistent -ar/-arna for all nouns
+                singular: { indefinite: '', definite: 'et' },
+                plural: { indefinite: 'ar', definite: 'arna' }  // Consistent -ar/-arna for all nouns
             }
         });
 
         this.inflectionRules.set('adjective', {
-            positive: { common: '', neuter: '-t', plural: '-e', definite: '-e' },  // -e for adjective plurals/definite
-            comparative: '-ere',  // -ere for comparative (distinct from verb -er)
-            superlative: '-est'   // -est for superlative (distinct from other forms)
+            positive: { common: '', neuter: 't', plural: 'e', definite: 'e' },  // -e for adjective plurals/definite
+            comparative: 'ere',  // -ere for comparative (distinct from verb -er)
+            superlative: 'est'   // -est for superlative (distinct from other forms)
         });
 
         this.inflectionRules.set('verb', {
-            infinitive: '-a',
-            present: '-er',     // ALWAYS -er for verbs (never -ar)
-            past: '-ede',       // -ede for past tense (distinct from adjectives)
-            supine: '-et',      // -et for supine (neuter-like ending)
-            pastParticiple: '-et',  // -et for past participle (matches supine ending)
-            presentParticiple: '-ende', // -ende for present participle (distinct from other forms)
+            infinitive: 'e',   // ALWAYS -e for verb infinitives
+            present: 'er',     // ALWAYS -er for verbs (never -ar)
+            past: 'ede',       // -ede for past tense (distinct from adjectives)
+            supine: 'et',      // -et for supine (neuter-like ending)
+            pastParticiple: 'et',  // -et for past participle (matches supine ending)
+            presentParticiple: 'ende', // -ende for present participle (distinct from other forms)
             imperative: ''      // Bare stem for imperative
         });
     }
@@ -253,13 +260,44 @@ class DictionaryBuilder {
             nordumWord = nordumWord.replace(/^hv/, 'v');
         }
 
-        // 4. Apply systematic morphological rules
+        // 4. Specific source-language overrides for high-frequency words where
+        // the priority algorithm alone picks a form that conflicts with the
+        // documented Nordum form.
+        const sourceSpecificMappings = {
+            danish: {
+                'kold': 'kall'  // Danish kold -> kall (vowel adjusted, not koll)
+            },
+            norwegian: {},
+            swedish: {}
+        };
+        const sourceMapping = sourceSpecificMappings[sourceLanguage];
+        if (sourceMapping && sourceMapping[nordumWord]) {
+            nordumWord = sourceMapping[nordumWord];
+        }
+
+        // English-gloss overrides ensure a few very common words select the
+        // pan-Scandinavian majority form even when raw frequency/priority
+        // would choose differently.
+        const englishSpecificMappings = {
+            'food': 'mat'
+        };
+        if (english && englishSpecificMappings[english.toLowerCase()]) {
+            nordumWord = englishSpecificMappings[english.toLowerCase()];
+        }
+
+        // 5. C regularization: c before e,i,y -> s; remaining c -> k
+        // Applies to established Scandinavian words (cykel -> sykel/sykkel, centrum -> sentrum).
+        // English/international loanwords are returned unchanged earlier.
+        nordumWord = nordumWord.replace(/c([eiy])/g, 's$1');
+        nordumWord = nordumWord.replace(/c/g, 'k');
+
+        // 6. Apply systematic morphological rules
         nordumWord = this.applyMorphologicalTransformation(nordumWord, pos);
 
-        // 5. Apply systematic sound pattern transformations
+        // 7. Apply systematic sound pattern transformations
         nordumWord = this.applySoundPatterns(nordumWord);
 
-        // 6. Apply other orthographic rules
+        // 8. Apply other orthographic rules
         for (const [pattern, replacement] of Object.entries(this.orthographicRules)) {
             if (pattern.startsWith('^')) {
                 // Start-of-word pattern
@@ -294,6 +332,19 @@ class DictionaryBuilder {
         return Math.max(0, score);
     }
 
+    // Attach a suffix to a base form, applying simple vowel elision when
+    // the base ends in a vowel and the suffix starts with a vowel.
+    attachSuffix(baseForm, suffix) {
+        if (!suffix) return baseForm;
+        const lastChar = baseForm.slice(-1).toLowerCase();
+        const firstChar = suffix[0].toLowerCase();
+        const vowels = 'aeiouyæøåäö';
+        if (vowels.includes(lastChar) && vowels.includes(firstChar)) {
+            return baseForm.slice(0, -1) + suffix;
+        }
+        return baseForm + suffix;
+    }
+
     // Generate inflected forms
     generateInflections(baseForm, partOfSpeech, gender = null) {
         const rules = this.inflectionRules.get(partOfSpeech);
@@ -302,31 +353,42 @@ class DictionaryBuilder {
         const inflections = {};
 
         switch (partOfSpeech) {
-            case 'noun':
+            case 'noun': {
                 const nounRules = gender === 'neuter' ? rules.neuter : rules.common;
                 inflections.singular = {
                     indefinite: baseForm,
-                    definite: baseForm + nounRules.singular.definite
+                    definite: this.attachSuffix(baseForm, nounRules.singular.definite)
                 };
                 inflections.plural = {
-                    indefinite: baseForm + nounRules.plural.indefinite,  // Always -ar for noun plurals
-                    definite: baseForm + nounRules.plural.definite       // Always -arna for definite plurals
+                    indefinite: this.attachSuffix(baseForm, nounRules.plural.indefinite),  // Always -ar for noun plurals
+                    definite: this.attachSuffix(baseForm, nounRules.plural.definite)       // Always -arna for definite plurals
                 };
                 break;
+            }
 
             case 'adjective':
                 inflections.positive = {
                     common: baseForm,
-                    neuter: baseForm + rules.positive.neuter,
-                    plural: baseForm + rules.positive.plural,
-                    definite: baseForm + rules.positive.definite
+                    neuter: this.attachSuffix(baseForm, rules.positive.neuter),
+                    plural: this.attachSuffix(baseForm, rules.positive.plural),
+                    definite: this.attachSuffix(baseForm, rules.positive.definite)
                 };
-                inflections.comparative = baseForm + rules.comparative;
-                inflections.superlative = baseForm + rules.superlative;
+                inflections.comparative = this.attachSuffix(baseForm, rules.comparative);
+                inflections.superlative = this.attachSuffix(baseForm, rules.superlative);
                 break;
 
-            case 'verb':
-                const stem = baseForm.replace(/a$/, ''); // Remove infinitive ending
+            case 'verb': {
+                // Derive the verb stem from the base form. The base form may be an
+                // infinitive ending in -a (Swedish), -e (Norwegian/Danish), or a
+                // present tense form ending in -er.
+                let stem;
+                if (baseForm.endsWith('er')) {
+                    stem = baseForm.slice(0, -2);
+                } else if (baseForm.endsWith('e') || baseForm.endsWith('a')) {
+                    stem = baseForm.slice(0, -1);
+                } else {
+                    stem = baseForm;
+                }
                 inflections.infinitive = stem + rules.infinitive;
                 inflections.present = stem + rules.present;  // Now uses -er ending
                 inflections.past = stem + rules.past;
@@ -335,6 +397,7 @@ class DictionaryBuilder {
                 inflections.presentParticiple = stem + rules.presentParticiple;
                 inflections.imperative = stem;
                 break;
+            }
         }
 
         return inflections;
@@ -713,6 +776,10 @@ class DictionaryBuilder {
 
         switch (pos) {
             case 'verb':
+                // Verbs: infinitive always ends in -e (Swedish -a -> -e)
+                if (transformedWord.endsWith('a') && !transformedWord.endsWith('ar')) {
+                    transformedWord = transformedWord.slice(0, -1) + 'e';
+                }
                 // Verbs: ensure present tense uses -er (never -ar)
                 if (transformedWord.endsWith('ar')) {
                     transformedWord = transformedWord.slice(0, -2) + 'er';
@@ -724,10 +791,8 @@ class DictionaryBuilder {
                 break;
 
             case 'noun':
-                // Nouns: transform Norwegian -er plurals to Nordum -ar plurals
-                if (transformedWord.endsWith('er')) {
-                    transformedWord = transformedWord.slice(0, -2) + 'ar';
-                }
+                // Plurals are generated at inflection time (baseForm + -ar).
+                // Do not rewrite singular nouns ending in -er here.
                 break;
 
             case 'adjective':

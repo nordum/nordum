@@ -40,10 +40,26 @@ Visit `http://localhost:3000` to see the platform in action.
 Nordum creates a balanced pan-Scandinavian written standard through:
 
 - **Balanced selection** from Norwegian, Danish, and Swedish
-- **English loanword preservation** for technical terms
+- **English loanword preservation** for technical terms and newly arrived international words
 - **Systematic morphology** with distinctive grammatical endings
+- **Regular orthography** with simple, predictable spelling rules
 - **Alternative spellings** supporting regional pronunciation variants
 - **Regular number system** eliminating complexity
+
+### Core Spelling Rules
+
+- **ck → kk**: `tack` → `takk`, `backa` → `bakka`
+- **ks → x**: `fiks` → `fix`, `maks` → `max`
+- **c → k/s**: `centrum` → `sentrum`, `cirkel` → `sirkel`, `cykel` → `sykkel`
+- **ld → ll**: `kald` → `kall`, `fuld` → `full`
+- **ph → f**: `telefon` → `telefon` (already), `foto` from `photo`
+- **skj → sk**: `forskjell` → `forskell`
+- **hv → v**: `hvad` → `vad`, `hvor` → `var`
+- **Silent final d** handled by lexical selection (e.g. Danish `mad` → Norwegian/Swedish `mat`)
+- **Lower-case only** except proper nouns and sentence starts
+- **Verb infinitive always -e**; silent -e drops in compounds
+- **Adjective neuter always -t**
+- **Compounds** formed by simple concatenation
 
 For complete language documentation, see [NORDUM_LANGUAGE_SPECIFICATION.md](NORDUM_LANGUAGE_SPECIFICATION.md) and the interactive web version at `/rules/language-specification/`.
 
@@ -149,15 +165,18 @@ The project ships with a curated core vocabulary (`data/dictionary/sources/`). T
 npm run build:dictionary
 ```
 
+Experimental importer scripts exist in `scripts/importers/`, but they are not required for the working site and may produce data that needs manual review.
+
 **Selection Algorithm:**
 1. Load cognates from Norwegian, Danish, Swedish
 2. Apply English loanword preservation
 3. Transform question words (hv→v pattern)
 4. Apply Norwegian number system
-5. Use systematic morphological endings
-6. Generate alternative spellings
-7. Score for pan-Scandinavian intelligibility
-8. Export in multiple formats
+5. Apply regular orthographic rules (ck→kk, ks→x, c→k/s, ld→ll, ph→f, skj→sk)
+6. Use systematic morphological endings
+7. Generate alternative spellings
+8. Score for pan-Scandinavian intelligibility
+9. Export in multiple formats
 
 ### Language Specification System
 
