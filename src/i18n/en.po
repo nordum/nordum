@@ -1478,7 +1478,7 @@ msgstr "Consonant Sound Patterns"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.consonant_clusters_desc"
-msgstr "Systematic rules for consonant sounds and spelling patterns: K/J/G rules, native words use 'ks' instead of 'x', prepositions follow Bokmål pattern, sound pattern normalization"
+msgstr "Systematic rules for consonant sounds and spelling patterns: K/J/G rules, native words use 'x' instead of 'ks', prepositions follow Bokmål pattern, sound pattern normalization"
 
 #. #. Key: rules.phonetics.title
 #. #. Source: templates/rules/index.hbs

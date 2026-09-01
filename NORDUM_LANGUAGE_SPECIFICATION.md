@@ -109,7 +109,7 @@ baguette → baguette
 ```
 
 50 → femti (not halvtreds/femtio)
-60 → seksti (not tres/sextio)
+60 → sexti (not tres/sextio)
 70 → sytti (not halvfjerds/sjuttio)
 80 → åtti (not firs/åttio)
 90 → nitti (not halvfems/nittio)
@@ -606,7 +606,7 @@ The standard forms of personal pronouns in Nordum are as follows:
 | 3rd plur. | de (they) | dem (them) | deras (their) | deras (theirs) |
 
 **Notes and Explanations**:
-- **Subject and Object Forms**: The object forms are used when the pronoun is the object of a verb or preposition. For example: "Jei ser dei" (I see you), "Hun jælper mig" (She helps me).
+- **Subject and Object Forms**: The object forms are used when the pronoun is the object of a verb or preposition. For example: "Jei ser dei" (I see you), "Hun jælper mei" (She helps me).
 - **Possessive Forms**: Possessive adjectives modify nouns (e.g., "min bil" for "my car"), while possessive pronouns stand alone (e.g., "Bilen er min" for "The car is mine"). The forms agree with the gender and number of the noun they reference:
   - `min` (common gender singular), `mitt` (neuter gender singular), `mina` (plural).
   - Similarly for `din`, `vår`, `er`, etc.
@@ -642,7 +642,7 @@ The standard forms of personal pronouns in Nordum are as follows:
 - **Subject**: "Ni arbeider her" (You work here).
 - **Object**: "Jei ser er" (I see you all).
 - **Possessive Adjective**: "Vår bil er rød" (Our car is red).
-- **Possessive Pronoun**: "Computerene er våra" (The computers are ours).
+- **Possessive Pronoun**: "Computerarna er våra" (The computers are ours).
 - **Reflexive**: "De må vaske sei selv" (They must wash themselves).
 
 This standardization ensures clarity and reduces ambiguity in written Nordum, aligning with the design principles of mutual intelligibility and systematic regularity.
@@ -941,7 +941,7 @@ I work in Stockholm.
 De store jentar snakker nordum.
 The big girls speak Nordum.
 
-Kan du jælpe mig?
+Kan du jælpe mei?
 Can you help me?
 
 Vi skal køpe en ny computer.
@@ -1002,7 +1002,7 @@ I buy a horse for the door.
 Å köpe en ny computer er viktig.
 To buy a new computer is important.
 
-Det är göy å läre nordum.
+Det er göy å läre nordum.
 It is fun to learn Nordum.
 ```
 
@@ -1037,8 +1037,8 @@ Verb vs Noun Plural:
 
 ```
 
-Kvinnan arbeider. (The woman works - VERB)
-Jentar arbeider hær. (Girls work here - NOUN + VERB)
+Kvinnen arbeider. (The woman works - VERB)
+Jentar arbeider her. (Girls work here - NOUN + VERB)
 ```
 
 Adjective Comparison:
@@ -1055,17 +1055,17 @@ Det er det største huset. (It is the biggest house)
 ```
 
 Jei er femti år gammel. (I am fifty years old)
-Vi har seksti studenter. (We have sixty students)
-Hun bor på syttiende gatan. (She lives on seventieth street)
+Vi har sexti studenter. (We have sixty students)
+Hun bor på syttiende gaten. (She lives on seventieth street)
 ```
 
 ### 8.6 Comprehensive Text Example
 
 ```
 
-I dag arbeider de store jentar i huset med sina nya computere.
-De snakker nordum mykket bra och kann skrive email på språket.
-Varfør lærer de nordum? Fordi det er en praktisk språk for alla skandinavere.
+I dag arbeider de store jentar i huset med deras nye computerar.
+De snakker nordum mykket bra og kan skrive email på språket.
+Varfør lærer de nordum? Fordi det er ett praktiskt språk for alle skandinavar.
 Vad tykker du om det?
 
 Today the big girls work in the house with their new computers.
@@ -1078,9 +1078,9 @@ What do you think about it?
 
 ```
 
-I dag arbeider de stora jäntar i huset med sina nya computere.
-De snakker nordum mykket bra og kann skrive email på språket.
-Vorfor lærer de nordum? Fordi det er ett praktisk språk for alle skandinavare.
+I dag arbeider de store jäntar i huset med deras nye computerar.
+De snakker nordum mykket bra og kan skrive email på språket.
+Vorfor lærer de nordum? Fordi det er ett praktiskt språk for alle skandinavar.
 Va tykker du om det?
 ```
 

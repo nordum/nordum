@@ -1475,7 +1475,7 @@ msgstr "Konsonantlyd-mønster"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.consonant_clusters_desc"
-msgstr "Systematiske reglar for konsonantlyder og stave-mønster: K/J/G-reglar, innfødde ord brukar 'ks' i staden for 'x', preposisjonar følgjer bokmål-mønster, lydmønster-normalisering"
+msgstr "Systematiske reglar for konsonantlyder og stave-mønster: K/J/G-reglar, innfødde ord brukar 'x' i staden for 'ks', preposisjonar følgjer bokmål-mønster, lydmønster-normalisering"
 
 #. #. Key: rules.phonetics.title
 #. #. Source: templates/rules/index.hbs

@@ -66,7 +66,7 @@ class DictionaryBuilder {
 
         // Norwegian number system (preferred)
         this.norwegianNumbers = new Map([
-            ['femti', 'fifty'], ['seksti', 'sixty'], ['sytti', 'seventy'], ['åtti', 'eighty'], ['nitti', 'ninety'],
+            ['femti', 'fifty'], ['sexti', 'sixty'], ['sytti', 'seventy'], ['åtti', 'eighty'], ['nitti', 'ninety'],
             ['tjue', 'twenty'], ['trettio', 'thirty'], ['førti', 'forty'], ['hundre', 'hundred'], ['tusen', 'thousand']
         ]);
 

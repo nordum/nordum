@@ -21,8 +21,8 @@ msgstr ""
 #. Category: about
 msgid "about.philosophy.description"
 msgstr ""
-"Gennem å identifisere fælles språglige mønstre og vælje de mest vidt "
-"forståtte formarne, søger Nordum å redusere hindringar for kommunikation "
+"Gennem å identifisere fælles språklige mønstrar og vælje de mest vidt "
+"forståtte formarna, søger Nordum å redusere hindringar for kommunikation "
 "over nordiske grænsar."
 
 #. Key: about.philosophy.title
@@ -36,9 +36,9 @@ msgstr "Filosofi"
 #. Category: about
 msgid "about.purpose.description"
 msgstr ""
-"Nordum sikter på å skape en skriftlig standard som maksimerer gensidig "
+"Nordum sikter på å skape en skriftlig standard som maximerer gensidig "
 "forståelighet mellem norske, danske og svenske talere mens det beholder "
-"Skandinavias rike språglige arv."
+"Skandinavias rike språklige arv."
 
 #. Key: about.purpose.title
 #. #. Source: templates/index.hbs
@@ -88,7 +88,7 @@ msgstr "Generere fonetisk rapport"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. Category: commands
 msgid "commands.importAllLanguages"
-msgstr "Importere alle språg"
+msgstr "Importere alle språk"
 
 #. Key: commands.importFromDanishSource
 #. #. Source: templates/rules/dictionary-import.hbs
@@ -118,7 +118,7 @@ msgstr "Oppdater endrede oppføringer"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. Category: commands
 msgid "commands.validateAndFix"
-msgstr "Valider og fiks"
+msgstr "Valider og fix"
 
 #. #. Key: common.danish
 #. #. Source: templates/rules/dictionary-import.hbs, templates/rules/index.hbs
@@ -130,13 +130,13 @@ msgstr "Dansk"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: common
 msgid "common.example"
-msgstr "Eksempel"
+msgstr "Exempel"
 
 #. #. Key: common.examples
 #. #. Source: templates/rules/index.hbs
 #. #. Category: common
 msgid "common.examples"
-msgstr "Eksempler"
+msgstr "Exemplar"
 
 #. Key: common.github
 #. #. Source: templates/partials/layout.hbs
@@ -149,8 +149,8 @@ msgstr "GitHub"
 #. Category: common
 msgid "common.githubIssues"
 msgstr ""
-"GitHub Issues: Rapportere feil, foreslå funktioner eller stille spørgsmål "
-"gennem vores Issue Tracker"
+"GitHub Issues: Rapportere feil, foreslå funktioner eller stille spørsmål "
+"gennem vår Issue Tracker"
 
 #. Key: common.issueTracker
 #. #. Source: templates/faq.hbs
@@ -174,7 +174,7 @@ msgstr "Engelsk"
 #. #. Source: templates/partials/layout.hbs
 #. Category: common
 msgid "common.language.label"
-msgstr "Språg"
+msgstr "Språk"
 
 #. Key: common.language.nordum
 #. #. Source: templates/partials/layout.hbs
@@ -252,7 +252,7 @@ msgstr "Norsk"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: common
 msgid "common.note"
-msgstr "Notera"
+msgstr "Notere"
 
 #. #. Key: common.number
 #. #. Source: templates/rules/index.hbs
@@ -277,7 +277,7 @@ msgstr "Svensk"
 #. Category: community
 msgid "community.collaborate.description"
 msgstr ""
-"Nordum er ett åpen kildekode-projekt. Vi inviterer alle till å bidra med "
+"Nordum er ett åpent kildekode-projekt. Vi inviterer alle till å bidra med "
 "forbedringar, nye funktionar og bugrapportar."
 
 #. Key: community.collaborate.title
@@ -292,7 +292,7 @@ msgstr "Samarbeide"
 msgid "community.directCollaboration.description"
 msgstr ""
 "For direkte samarbeid eller spesielle projektar, kan du kontakte oss via "
-"email eller vores diskusionsforum."
+"email eller vårt diskussionsforum."
 
 #. Key: community.directCollaboration.title
 #. #. Source: templates/index.hbs
@@ -305,20 +305,20 @@ msgstr "Direkte samarbeid"
 #. Category: community
 msgid "community.reportIssues.description"
 msgstr ""
-"Rapportere feil, foreslå nye funktionar eller stille spørsmål gennem vores "
+"Rapportere feil, foreslå nye funktionar eller stille spørsmål gennem våra "
 "GitHub Issues."
 
 #. Key: community.reportIssues.title
 #. #. Source: templates/index.hbs
 #. Category: community
 msgid "community.reportIssues.title"
-msgstr "Bli med i vores fellesskap"
+msgstr "Bli med i vårt fællesskap"
 
 #. Key: community.stats.dictionaryEntries
 #. #. Source: templates/index.hbs
 #. Category: community
 msgid "community.stats.dictionaryEntries"
-msgstr "Ordbokspostar"
+msgstr "Ordbokpostar"
 
 #. Key: community.stats.intelligibility
 #. #. Source: templates/index.hbs
@@ -330,7 +330,7 @@ msgstr "Gensidig Forståelighet"
 #. #. Source: templates/index.hbs
 #. Category: community
 msgid "community.stats.languages"
-msgstr "Språg"
+msgstr "Språk"
 
 #. Key: community.stats.title
 #. #. Source: templates/index.hbs
@@ -342,7 +342,7 @@ msgstr "Statistikker"
 #. #. Source: templates/partials/layout.hbs
 #. Category: cookies
 msgid "cookies.accept"
-msgstr "Akseptere Alle"
+msgstr "Axeptere alle"
 
 #. Key: cookies.decline
 #. #. Source: templates/partials/layout.hbs
@@ -392,7 +392,7 @@ msgstr "arbeider"
 #. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
 msgid "dictionary.searchFilters.all"
-msgstr "Alle Språg"
+msgstr "Alle språk"
 
 #. Key: dictionary.searchFilters.nordum
 #. #. Source: templates/tools/dictionary.hbs
@@ -410,7 +410,7 @@ msgstr "Søge efter ord i Nordum, norsk, dansk, svensk eller engelsk..."
 #. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
 msgid "dictionary.sourceLanguages"
-msgstr "Kildespråg"
+msgstr "Kildespråk"
 
 #. Key: dictionary.stats.coverage
 #. #. Source: templates/tools/dictionary.hbs
@@ -422,7 +422,7 @@ msgstr "Dækning"
 #. #. Source: templates/index.hbs, templates/tools/dictionary.hbs
 #. Category: dictionary
 msgid "dictionary.stats.totalEntries"
-msgstr "Totale Postar"
+msgstr "Totale postar"
 
 #. Key: dictionary.welcome.description
 #. #. Source: templates/tools/dictionary.hbs
@@ -436,7 +436,7 @@ msgstr ""
 #. #. Source: templates/tools/dictionary.hbs
 #. Category: dictionary
 msgid "dictionary.welcome.featuredWords"
-msgstr "Utvalgte Ord"
+msgstr "Utvalgte ord"
 
 #. Key: dictionary.welcome.title
 #. #. Source: templates/tools/dictionary.hbs
@@ -563,7 +563,7 @@ msgstr "Lagre"
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.toolbar.spellCheck"
-msgstr "Stavekontroll"
+msgstr "Stavkontroll"
 
 #. Key: editor.toolbar.underline
 #. #. Source: templates/tools/editor.hbs
@@ -587,7 +587,7 @@ msgstr "Ordtelling"
 #. #. Source: templates/tools/editor.hbs
 #. Category: editor
 msgid "editor.welcome"
-msgstr "Velkommen till Nordum teksteditor!"
+msgstr "Velkommen till Nordum texteditor!"
 
 #. Key: faq.anyoneInterested
 #. #. Source: templates/faq.hbs
@@ -600,15 +600,15 @@ msgstr "Alle som er interessert i pan-skandinavisk kommunikation"
 #. Category: faq
 msgid "faq.changingLandscape"
 msgstr ""
-"Endret språglig landskap: Engelsk har i økende grad blitt hovedspråget for "
-"international kommunikation, mens skandinaviske språg bruges i mindre grad i "
+"Endret språklig landskap: Engelsk har i økende grad blitt hovedspråket for "
+"international kommunikation, mens skandinaviske språk bruges i mindre grad i "
 "globale sammenhængar"
 
 #. Key: faq.communityAnswer1
 #. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.communityAnswer1"
-msgstr "Nordum-projektet trives med fællesskapsengasjement. Slik kan du delta:"
+msgstr "Nordum-projektet trives med fællesskapengasjement. Slik kan du delta:"
 
 #. Key: faq.communityAnswer2
 #. #. Source: templates/faq.hbs
@@ -617,7 +617,7 @@ msgid "faq.communityAnswer2"
 msgstr ""
 "Vi tror på åpent samarbeid og ønsker velkommen alle formar for konstruktive "
 "bidrag for å gøre Nordum till best mulig pan-skandinavisk "
-"kommunikationsverktøi."
+"kommunikationverktøi."
 
 #. Key: faq.communityInvolvement
 #. #. Source: templates/faq.hbs
@@ -643,7 +643,7 @@ msgstr "Vordan kan jei bidra till Nordum?"
 msgid "faq.contributionAnswer1"
 msgstr ""
 "Nordum ønsker velkommen bidrag fra lingvister, developers og skandinaviske "
-"språgtalere. Du kan:"
+"språktalere. Du kan:"
 
 #. Key: faq.contributionAnswer2
 #. #. Source: templates/faq.hbs
@@ -664,25 +664,25 @@ msgstr ""
 msgid "faq.digitalCommunication"
 msgstr ""
 "Digital kommunikation: Internet og digitale plattformar kræver enkle, "
-"konsistente språgstandardar"
+"konsistente språkstandardar"
 
 #. Key: faq.discussion
 #. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.discussion"
-msgstr "Diskution: Delta i samtalar om språgdesign og implementering"
+msgstr "Diskussion: Delta i samtalar om språkdesign og implementering"
 
 #. Key: faq.educationalInstitutions
 #. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.educationalInstitutions"
-msgstr "Utdanningsinstitutionar som underviser i skandinaviske studiar"
+msgstr "Utdanninginstitutionar som underviser i skandinaviske studiar"
 
 #. Key: faq.emailCollaboration
 #. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.emailCollaboration"
-msgstr "E-post: Ta kontakt med oss direkte for samarbeidsmulighetar"
+msgstr "E-post: Ta kontakt med oss direkte for samarbeidmulighetar"
 
 #. Key: faq.englishAnswer
 #. #. Source: templates/faq.hbs
@@ -699,7 +699,7 @@ msgstr ""
 #. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.englishLoanwords"
-msgstr "Vordan håndterer Nordum engelske låneord?"
+msgstr "Vordan håndterer Nordum engelske lånord?"
 
 #. Key: faq.geographicMobility
 #. #. Source: templates/faq.hbs
@@ -722,9 +722,9 @@ msgstr ""
 #. Category: faq
 msgid "faq.historicalAnswer1"
 msgstr ""
-"Historisk sett dannet de skandinaviske språgarne en dialektkontinuum der "
+"Historisk sett dannet de skandinaviske språkarna en dialektkontinuum der "
 "nærliggende dialektar var gensidig forståelige. De moderne standardiserte "
-"språgarne oppsto gennem separate standardiseringsprosessar:"
+"språkarna oppsto gennem separate standardiseringsprosessar:"
 
 #. Key: faq.historicalAnswer2
 #. #. Source: templates/faq.hbs
@@ -733,13 +733,13 @@ msgid "faq.historicalAnswer2"
 msgstr ""
 "Nordum anerkjenner denne fælles arven og skaper en moderne skriftlig "
 "standard som hedrer alle tre traditionar samtidig som den gir praktisk nytte "
-"for samtidens kommunikationsbehov."
+"for samtidens kommunikationbehov."
 
 #. Key: faq.historicalContext
 #. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.historicalContext"
-msgstr "Vad er den historiske konteksten for skandinaviske språg?"
+msgstr "Vad er den historiske kontexten for skandinaviske språk?"
 
 #. Key: faq.internationalCompanies
 #. #. Source: templates/faq.hbs
@@ -753,10 +753,10 @@ msgstr "Internationale selskapar som opererer i flere nordiske land"
 msgid "faq.learningAnswer"
 msgstr ""
 "Ja! Nordum er designet for å være umiddelbart tilgængelig for talere av "
-"etvert skandinavisk språg. Den leksikalske utvæljelsen prioriterer ord som "
-"allerede er kjente på tværs av alle tre språgarne, og det grammatiske "
-"systemet forenkler mange av uregelmessighetarne som finnes i de enkelte "
-"språgarne."
+"etvert skandinavisk språk. Den lexikalske utvæljelsen prioriterer ord som "
+"allerede er kjente på tværs av alle tre språkarna, og det grammatiske "
+"systemet forenkler mange av uregelmessighetarna som finnes i de enkelte "
+"språkarna."
 
 #. Key: faq.learningDifficulty
 #. #. Source: templates/faq.hbs
@@ -788,7 +788,7 @@ msgstr ""
 msgid "faq.nynorskAnswer2"
 msgstr ""
 "I kontrast till det omfavner Nordum det fælles skandinaviske arvet og tar "
-"sikte på å bygge broer mellem språgarne snarere enn å skille dem. Der "
+"sikte på å bygge broer mellem språkarna snarere enn å skille dem. Der "
 "nynorsk søgte distinktion, søger Nordum tilkobling og gensidig forståelighet."
 
 #. Key: faq.nynorskRelationship
@@ -803,7 +803,7 @@ msgstr "Vordan forholder Nordum sei till nynorsk?"
 msgid "faq.replacementAnswer1"
 msgstr ""
 "Absolutt ikke. Nordum er ikke designet for å forby eller erstatte de "
-"nåværende skriftsprågarne (norsk, dansk, svensk). I stedet gir det ett "
+"nåværende skriftspråkarna (norsk, dansk, svensk). I stedet gir det ett "
 "tilleggsalternativ for de som ønsker å bruge en fælles skandinavisk standard "
 "for å gøre kommunikation enklere på tværs av nationale grænsar."
 
@@ -812,15 +812,15 @@ msgstr ""
 #. Category: faq
 msgid "faq.replacementAnswer2"
 msgstr ""
-"Målet er å tillate brug av Nordum som ett supplerende skriftspråg som gør "
-"det mulig for skandinavar å kommunisere uten å måtte bytte språg alla par "
+"Målet er å tillate bruk av Nordum som ett supplerende skriftspråk som gør "
+"det mulig for skandinavar å kommunisere uten å måtte bytte språk alle par "
 "kilometar når de reiser gennem Skandinavien."
 
 #. Key: faq.replacementQuestion
 #. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.replacementQuestion"
-msgstr "Er Nordum ment å erstatte eksisterende skandinaviske språg?"
+msgstr "Er Nordum ment å erstatte existerende skandinaviske språk?"
 
 #. Key: faq.reportIssues
 #. #. Source: templates/faq.hbs
@@ -838,7 +838,7 @@ msgstr "Skandinavar som kommuniserer på tværs av grænsar"
 #. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.submitEntries"
-msgstr "Sende inn ordboksoppføringar og forslag"
+msgstr "Sende inn ordbokoppføringar og forslag"
 
 #. Key: faq.subtitle
 #. #. Source: templates/faq.hbs
@@ -880,13 +880,13 @@ msgstr "Testing: Jælp till med å teste nye funktionar og gi tilbakemelding"
 #. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.title"
-msgstr "Ofte Stilte Spørsmål"
+msgstr "Ofte stilte spørsmål"
 
 #. Key: faq.travelers
 #. #. Source: templates/faq.hbs
 #. Category: faq
 msgid "faq.travelers"
-msgstr "Reisende og ekspatriatar som bor i Skandinavia"
+msgstr "Reisende og expatriatar som bor i Skandinavia"
 
 #. Key: faq.whatIsNordum
 #. #. Source: templates/faq.hbs
@@ -899,11 +899,11 @@ msgstr "Va er Nordum?"
 #. Category: faq
 msgid "faq.whatIsNordumAnswer"
 msgstr ""
-"Nordum er ett konstruert pan-skandinavisk skriftspråg designet for å tjene "
+"Nordum er ett konstruert pan-skandinavisk skriftspråk designet for å tjene "
 "som en fælles skriftlig standard for skandinavisk kommunikation i den "
-"moderne verden. Det tar sikte på å maksimere gensidig forståelighet mellem "
+"moderne verden. Det tar sikte på å maximere gensidig forståelighet mellem "
 "norsk (bokmål), dansk og svensk samtidig som det opprettholder systematisk "
-"regelmessighet og praktisk moderne brug."
+"regelmessighet og praktisk moderne bruk."
 
 #. Key: faq.whyCreated
 #. #. Source: templates/faq.hbs
@@ -939,7 +939,7 @@ msgstr "GitHub"
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.community.title"
-msgstr "Gemenskap"
+msgstr "Fællesskap"
 
 #. Key: footer.copyright
 #. #. Source: templates/partials/layout.hbs
@@ -981,7 +981,7 @@ msgstr "Ordbok"
 #. #. Source: templates/partials/layout.hbs
 #. Category: footer
 msgid "footer.tools.spellcheck"
-msgstr "Stavekontroll"
+msgstr "Stavkontroll"
 
 #. Key: footer.tools.title
 #. #. Source: templates/partials/layout.hbs
@@ -1006,61 +1006,61 @@ msgstr "generert av"
 #. Category: grammar
 msgid "grammar.morphology.description"
 msgstr ""
-"Verbbøining og substantivbøining følger de mest regulære mønstre funnet i "
-"kildesprågarne, prioriterer klarhet og enkelhet."
+"Verbbøining og substantivbøining følger de mest regulære mønstrar funnet i "
+"kildespråkarna, prioriterer klarhet og enkelhet."
 
 #. Key: grammar.morphology.title
 #. #. Source: templates/index.hbs
 #. Category: grammar
 msgid "grammar.morphology.title"
-msgstr "Enhetlig Morfologi"
+msgstr "Enhetlig morfologi"
 
 #. Key: grammar.orthography.description
 #. #. Source: templates/index.hbs
 #. Category: grammar
 msgid "grammar.orthography.description"
 msgstr ""
-"Nordum antar de mest fonetisk konsistente staveformarne fælles over de tre "
-"språgarne, eliminerer stumme bokstavar der mulig."
+"Nordum antar de mest fonetisk konsistente stavformarna fælles over de tre "
+"språkarna, eliminerer stumme bokstavar der mulig."
 
 #. Key: grammar.orthography.title
 #. #. Source: templates/index.hbs
 #. Category: grammar
 msgid "grammar.orthography.title"
-msgstr "Ortografisk Forenkling"
+msgstr "Ortografisk forenkling"
 
 #. Key: grammar.title
 #. #. Source: templates/index.hbs
 #. Category: grammar
 msgid "grammar.title"
-msgstr "Grammatiske Prinsippar"
+msgstr "Grammatiske prinsippar"
 
 #. Key: hero.description
 #. #. Source: templates/index.hbs
 #. Category: hero
 msgid "hero.description"
 msgstr ""
-"Ett enhetlig skriftspråg designet for å bygge broar mellem norsk, dansk og "
-"svensk - fremme gensidig forståelse i Skandinavia gennem språglig sammenheng "
+"Ett enhetlig skriftspråk designet for å bygge broar mellem norsk, dansk og "
+"svensk - fremme gensidig forståelse i Skandinavia gennem språklig sammenheng "
 "og enkelhet."
 
 #. Key: hero.learnMore
 #. #. Source: templates/index.hbs
 #. Category: hero
 msgid "hero.learnMore"
-msgstr "Lære Mer"
+msgstr "Lære mer"
 
 #. Key: hero.subtitle
 #. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: hero
 msgid "hero.subtitle"
-msgstr "Ett fælles skriftspråg for Skandinavia"
+msgstr "Ett fælles skriftspråk for Skandinavia"
 
 #. Key: hero.tryTools
 #. #. Source: templates/index.hbs
 #. Category: hero
 msgid "hero.tryTools"
-msgstr "Teste Verktøi"
+msgstr "Teste verktøi"
 
 #. #. Key: import.process.cognate
 #. #. Source: templates/rules/dictionary-import.hbs
@@ -1072,7 +1072,7 @@ msgstr "Kognatidentifikation"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. #. Category: import
 msgid "import.process.cognate_desc"
-msgstr "Identifisera ord med fælles skandinaviske rødder"
+msgstr "Identifisere ord med fælles skandinaviske rødder"
 
 #. #. Key: import.process.fetch
 #. #. Source: templates/rules/dictionary-import.hbs
@@ -1084,7 +1084,7 @@ msgstr "Datahenting"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. #. Category: import
 msgid "import.process.fetch_desc"
-msgstr "Samle ord fra skandinaviske språgkildar"
+msgstr "Samle ord fra skandinaviske språkkildar"
 
 #. #. Key: import.process.generate
 #. #. Source: templates/rules/dictionary-import.hbs
@@ -1120,7 +1120,7 @@ msgstr "Fonetisk analyse"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. #. Category: import
 msgid "import.process.phonetic_desc"
-msgstr "Analysera uttalsmønstrar"
+msgstr "Analysere uttalmønstrar"
 
 #. #. Key: import.process.title
 #. #. Source: templates/rules/dictionary-import.hbs
@@ -1138,19 +1138,19 @@ msgstr "Datakildar"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. #. Category: import
 msgid "import.subtitle"
-msgstr "Bygging av Nordum-ordbok fra skandinaviske språgdata"
+msgstr "Bygging av Nordum-ordbok fra skandinaviske språkdata"
 
 #. #. Key: import.title
 #. #. Source: templates/rules/dictionary-import.hbs
 #. #. Category: import
 msgid "import.title"
-msgstr "Ordboksimportværktøi"
+msgstr "Ordbokimportverktøi"
 
 #. #. Key: import.usage.analysis
 #. #. Source: templates/rules/dictionary-import.hbs
 #. #. Category: import
 msgid "import.usage.analysis"
-msgstr "Språglig analyse"
+msgstr "Språklig analyse"
 
 #. #. Key: import.usage.batch
 #. #. Source: templates/rules/dictionary-import.hbs
@@ -1168,7 +1168,7 @@ msgstr "Enkeltordsimport"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. #. Category: import
 msgid "import.usage.title"
-msgstr "Bruksdøme"
+msgstr "Brukdøme"
 
 #. Key: nav.about
 #. #. Source: templates/partials/layout.hbs
@@ -1186,13 +1186,13 @@ msgstr "Tillbaka till reglar"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: nav
 msgid "nav.dictionary_import"
-msgstr "Ordboksimport"
+msgstr "Ordbokimport"
 
 #. #. Key: nav.dictionary_tool
 #. #. Source: templates/rules/dictionary-import.hbs
 #. #. Category: nav
 msgid "nav.dictionary_tool"
-msgstr "Ordbogsværktøi"
+msgstr "Ordbokverktøi"
 
 #. Key: nav.faq
 #. #. Source: templates/partials/layout.hbs
@@ -1228,7 +1228,7 @@ msgstr "Reglar"
 #. #. Source: templates/partials/layout.hbs
 #. Category: nav
 msgid "nav.toggleMenu"
-msgstr "Veksle menu"
+msgstr "Vexle menu"
 
 #. Key: nav.tools
 #. #. Source: templates/partials/layout.hbs
@@ -1240,7 +1240,7 @@ msgstr "Verktøi"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: nav
 msgid "nav.try_tools"
-msgstr "Prøva våra værktøi"
+msgstr "Prøve våra verktøi"
 
 #. Key: on
 #. #. Source: templates/rules/language-specification.hbs
@@ -1324,7 +1324,7 @@ msgstr "vorfor"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.dictionary_import"
-msgstr "Ordboksimport"
+msgstr "Ordbokimport"
 
 #. #. Key: rules.features.balanced
 #. #. Source: templates/rules/index.hbs
@@ -1348,7 +1348,7 @@ msgstr "Fleksibel bruk"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.features.flexible_desc"
-msgstr "Tilpasser sei till forskellige kommunikationssammenhæng"
+msgstr "Tilpasser sei till forskellige kommunikationsammenhæng"
 
 #. #. Key: rules.features.modern
 #. #. Source: templates/rules/index.hbs
@@ -1378,32 +1378,32 @@ msgstr "Klar og konsekvent grammatiske reglar"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.full_specification"
-msgstr "Komplet språgspesifikation"
+msgstr "Komplet språkspesifikation"
 
 #. #. Key: rules.language_specification_title
 #. #. Source: templates/rules/language-specification.hbs
 #. #. Category: rules
 msgid "rules.language_specification_title"
-msgstr "Nordum Språgspesifikation"
+msgstr "Nordum språkspesifikation"
 
 #. #. Key: rules.loanwords.note
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.loanwords.note"
 msgstr ""
-"Notera: Internationale låneord behåller normalt deras opprindelige staving"
+"Notere: Internationale lånord behåller normalt deras opprindelige staving"
 
 #. #. Key: rules.loanwords.title
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.loanwords.title"
-msgstr "Låneord og internationale termer"
+msgstr "Lånord og internationale termer"
 
 #. #. Key: rules.loanwords.unchanged
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.loanwords.unchanged"
-msgstr "Omfattende lånordsintegration"
+msgstr "Omfattende lånordintegration"
 
 #. #. Key: rules.numbers.basic
 #. #. Source: templates/rules/index.hbs
@@ -1427,7 +1427,7 @@ msgstr "Regulært tallsystem"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.numbers.norwegian_desc"
-msgstr "Nordum innfører det norske tallsystemet for maksimal regularitet og enkelhet, som eliminerer det komplekse vigesimale systemet samtidig som det forblir klart for alle skandinaviske talere."
+msgstr "Nordum innfører det norske tallsystemet for maximal regularitet og enkelhet, som eliminerer det complexe vigesimale systemet samtidig som det forblir klart for alle skandinaviske talere."
 
 #. #. Key: rules.numbers.title
 #. #. Source: templates/rules/index.hbs
@@ -1447,7 +1447,7 @@ msgstr ""
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.overview.title"
-msgstr "Språgoversikt"
+msgstr "Språkoversikt"
 
 #. #. Key: rules.philosophy.bokmaal_danish
 #. #. Source: templates/rules/index.hbs
@@ -1459,25 +1459,25 @@ msgstr "Bokmål-dansk avtale"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.philosophy.bokmaal_danish_desc"
-msgstr "Nordum respekterer alle tre kildespråg ligt med strategisk utvalg for optimal klarhet. Former væljes basert på pan-skandinavisk forståelighetsoptimering, ikke ved å foretrekke en enkelt tradisjon."
+msgstr "Nordum respekterer alle tre kildespråk ligt med strategisk utvalg for optimal klarhet. Former væljes basert på pan-skandinavisk forståelighetoptimering, ikke ved å foretrekke en enkelt tradisjon."
 
 #. #. Key: rules.philosophy.title
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.philosophy.title"
-msgstr "Designdilosofi"
+msgstr "Designfilosofi"
 
 #. #. Key: rules.phonetics.consonant_clusters
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.consonant_clusters"
-msgstr "Konsonantlyd-mønstre"
+msgstr "Konsonantlyd-mønstrar"
 
 #. #. Key: rules.phonetics.consonant_clusters_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.consonant_clusters_desc"
-msgstr "Systematiske regler for konsonantlyder og stave-mønstre: K/J/G-regler, innfødte ord bruker 'ks' i stedet for 'x', preposisjoner følger bokmål-mønster, lydmønster-normalisering"
+msgstr "Systematiske regler for konsonantlyder og stav-mønstrar: K/J/G-regler, innfødte ord bruker 'x' i stedet for 'ks', preposisjoner følger bokmål-mønster, lydmønster-normalisering"
 
 #. #. Key: rules.phonetics.title
 #. #. Source: templates/rules/index.hbs
@@ -1495,7 +1495,7 @@ msgstr "Systematisk fonetisk gennemsigtighet"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.transcription_desc"
-msgstr "Nordum-staving reflekterer konsekvent uttale med systematisk lyd-symbol-korrespondanse. Stumme bokstaver elimineres der det er mulig, og alternative staveformer imøtekommer regionale uttaleforskeller."
+msgstr "Nordum-staving reflekterer konsekvent uttale med systematisk lyd-symbol-korrespondanse. Stumme bokstavr elimineres der det er mulig, og alternative stavformer imøtekommer regionale uttaleforskelar."
 
 #. #. Key: rules.phonetics.vowel_clarity
 #. #. Source: templates/rules/index.hbs
@@ -1507,7 +1507,7 @@ msgstr "Vokalsystem-fleksibilitet"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.phonetics.vowel_clarity_desc"
-msgstr "Nordum støtter multiple vokalstavingssystemer uten grammatiske konsekvenser: Primært: æ, ø (norsk/dansk mønster), Alternativt: ä, ö (svensk/tysk mønster)"
+msgstr "Nordum støtter multiple vokalstavingsystemer uten grammatiske konsekvenser: Primært: æ, ø (norsk/dansk mønster), Alternativt: ä, ö (svensk/tysk mønster)"
 
 #. #. Key: rules.practical.code_switching
 #. #. Source: templates/rules/index.hbs
@@ -1519,7 +1519,7 @@ msgstr "Systematisk morfologi"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.code_switching_desc"
-msgstr "Klar grammatiske forskeller: verb alltid -er, substantiv flertall normalt -ar, komparativer -ere, superlative -est for øieblikkelig parsing."
+msgstr "Klar grammatiske forskelar: verb alltid -er, substantiv flertall normalt -ar, komparativer -ere, superlative -est for øieblikkelig parsing."
 
 #. #. Key: rules.practical.learning
 #. #. Source: templates/rules/index.hbs
@@ -1531,19 +1531,19 @@ msgstr "Pronomen-standardisering"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.learning_desc"
-msgstr "Omfattende pronomensystem: jei/mei, du/dei, han/ham, hun/henne, vi/oss, ni/er, de/dem med klare possessiv- og refleksivformer."
+msgstr "Omfattende pronomensystem: jei/mei, du/dei, han/ham, hun/henne, vi/oss, ni/er, de/dem med klare possessiv- og reflexivformer."
 
 #. #. Key: rules.practical.multilingual
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.multilingual"
-msgstr "Omfattende språgsystem"
+msgstr "Omfattende språksystem"
 
 #. #. Key: rules.practical.multilingual_desc
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.multilingual_desc"
-msgstr "Nordum leverer ett komplett lingvistisk system med systematiske morfologiske forskeller, pronomen-standardisering og praktiske brugsmønstre som virker sammen med innfødte skandinaviske språg."
+msgstr "Nordum leverer ett komplett lingvistisk system med systematiske morfologiske forskelar, pronomen-standardisering og praktiske brukmønstrar som virker sammen med innfødte skandinaviske språk."
 
 #. #. Key: rules.practical.recognition
 #. #. Source: templates/rules/index.hbs
@@ -1555,7 +1555,7 @@ msgstr "Høy genkenning"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.practical.recognition_desc"
-msgstr "Stedsnavn bruger vanlige endonymar (Argentina, Hellas, España) med begrænsede tillatte eksonymar (Tyskland, Østerrike) for international genkennelse."
+msgstr "Stednavn bruger vanlige endonymar (Argentina, Hellas, España) med begrænsede tillatte exonymar (Tyskland, Østerrike) for international genkennelse."
 
 #. #. Key: rules.practical.title
 #. #. Source: templates/rules/index.hbs
@@ -1575,7 +1575,7 @@ msgstr "Vanlige spørsmål"
 msgid "rules.subtitle"
 msgstr ""
 "Kjerneprinsipper som gør Nordum enkelt å lære og bruke i dagens "
-"flerspråglige verden"
+"flerspråklige verden"
 
 #. Key: rules.table_of_contents
 #. #. Source: templates/rules/language-specification.hbs
@@ -1587,27 +1587,27 @@ msgstr "Innholdsfortegnelse"
 #. #. Source: templates/rules/index.hbs
 #. #. Category: rules
 msgid "rules.title"
-msgstr "Språgreglar"
+msgstr "Språkreglar"
 
 #. Key: site.description
 #. #. Source: templates/partials/layout.hbs
 #. Category: site
 msgid "site.description"
 msgstr ""
-"Ett enhetlig skriftspråg designet for å forstås av talere av norsk, dansk og "
+"Ett enhetlig skriftspråk designet for å forstås av talere av norsk, dansk og "
 "svensk"
 
 #. Key: site.tagline
 #. #. Source: templates/partials/layout.hbs
 #. Category: site
 msgid "site.tagline"
-msgstr "Bygge broar gennem språg"
+msgstr "Bygge broar gennem språk"
 
 #. Key: site.title
 #. #. Source: templates/partials/layout.hbs
 #. Category: site
 msgid "site.title"
-msgstr "Nordum - Ett Pan-Skandinaviskt Språg"
+msgstr "Nordum - Ett pan-skandinaviskt språk"
 
 #. Key: sources.bokmalDanishAgreement
 #. #. Source: templates/rules/dictionary-import.hbs
@@ -1649,7 +1649,7 @@ msgstr "Korpus DK"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. Category: sources
 msgid "sources.morphologicalRegularity"
-msgstr "Morfolosk regularitet"
+msgstr "Morfologisk regularitet"
 
 #. Key: sources.nbuCorpus
 #. #. Source: templates/rules/dictionary-import.hbs
@@ -1691,7 +1691,7 @@ msgstr "Språkbanken"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. Category: sources
 msgid "sources.sprakradetWordList"
-msgstr "Språgrådets ordliste"
+msgstr "Språkrådets ordliste"
 
 #. Key: sources.standardFormat
 #. #. Source: templates/rules/dictionary-import.hbs
@@ -1703,7 +1703,7 @@ msgstr "Standardformat"
 #. #. Source: templates/rules/dictionary-import.hbs
 #. Category: sources
 msgid "sources.vQuestionWords"
-msgstr "V-spørsmålsord"
+msgstr "V-spørsmålord"
 
 #. Key: sources.wiktionaryDanish
 #. #. Source: templates/rules/dictionary-import.hbs
@@ -1728,7 +1728,7 @@ msgstr "Wiktionary svensk"
 #. Category: spellcheck
 msgid "spellcheck.placeholder"
 msgstr ""
-"Begynne å skrive din Nordum-tekst her, eller lim inn eksisterende tekst for "
+"Begynne å skrive din Nordum-text her, eller lim inn existerende text for "
 "å kontrollere feil..."
 
 #. Key: spellcheck.readabilityLevels.good
@@ -1741,25 +1741,25 @@ msgstr "Bra"
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.samples.correct"
-msgstr "Korrekt Tekst"
+msgstr "Korrekt text"
 
 #. Key: spellcheck.samples.errors
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.samples.errors"
-msgstr "Tekst med Feil"
+msgstr "Text med feil"
 
 #. Key: spellcheck.samples.mixed
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.samples.mixed"
-msgstr "Blandede Språg"
+msgstr "Blandede språk"
 
 #. Key: spellcheck.samples.title
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.samples.title"
-msgstr "Teste Eksempeltekstar"
+msgstr "Teste Exempeltextar"
 
 #. Key: spellcheck.stats.characters
 #. #. Source: templates/tools/spellcheck.hbs
@@ -1796,7 +1796,7 @@ msgstr "Ingen problemar funnet!"
 #. #. Source: templates/tools/spellcheck.hbs
 #. Category: spellcheck
 msgid "spellcheck.suggestions.textLooksGood"
-msgstr "Din tekst ser bra ut."
+msgstr "Din text ser bra ut."
 
 #. Key: spellcheck.suggestions.title
 #. #. Source: templates/tools/editor.hbs, templates/tools/spellcheck.hbs
@@ -1847,7 +1847,7 @@ msgstr "Ordbok"
 #. Category: tools
 msgid "tools.editor.description"
 msgstr ""
-"Skrive og redigere dokumentar i Nordum med integrert stavekontroll, "
+"Skrive og redigere dokumentar i Nordum med integrert stavkontroll, "
 "grammatikkforslag og formateringsverktøi."
 
 #. Key: tools.editor.features
@@ -1860,47 +1860,47 @@ msgstr "Funktionar"
 #. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: tools
 msgid "tools.editor.title"
-msgstr "Teksteditor"
+msgstr "Texteditor"
 
 #. Key: tools.spellcheck.description
 #. #. Source: templates/index.hbs
 #. Category: tools
 msgid "tools.spellcheck.description"
 msgstr ""
-"Realtids stave- og grammatikkontroll spesifikt designet for Nordums "
+"Realtids stav- og grammatikkontroll spesifikt designet for Nordums "
 "ortografiske og morfologiske regler."
 
 #. Key: tools.spellcheck.realTimeChecking
 #. #. Source: templates/index.hbs
 #. Category: tools
 msgid "tools.spellcheck.realTimeChecking"
-msgstr "Realtids stavekontroll"
+msgstr "Realtids stavkontroll"
 
 #. Key: tools.spellcheck.title
 #. #. Source: templates/index.hbs, templates/partials/layout.hbs
 #. Category: tools
 msgid "tools.spellcheck.title"
-msgstr "Stavekontroll"
+msgstr "Stavkontroll"
 
 #. Key: tools.title
 #. #. Source: templates/index.hbs
 #. Category: tools
 msgid "tools.title"
-msgstr "Digitale Verktøi"
+msgstr "Digitale verktøi"
 
 #. Key: tools.translator.description
 #. #. Source: templates/index.hbs
 #. Category: tools
 msgid "tools.translator.description"
 msgstr ""
-"Konvertere tekst mellem Nordum og de individuelle skandinaviske språgarne "
+"Konvertere text mellem Nordum og de individuelle skandinaviske språkarna "
 "for å jælpe innlæring og sammenligning."
 
 #. Key: tools.translator.languages
 #. #. Source: templates/index.hbs
 #. Category: tools
 msgid "tools.translator.languages"
-msgstr "Språg"
+msgstr "Språk"
 
 #. Key: tools.translator.title
 #. #. Source: templates/index.hbs, templates/partials/layout.hbs
@@ -1936,7 +1936,7 @@ msgstr "Fra:"
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.history.clear"
-msgstr "Tømme Historikk"
+msgstr "Tømme historikk"
 
 #. Key: translator.history.empty
 #. #. Source: templates/tools/translator.hbs
@@ -1949,13 +1949,13 @@ msgstr "Ingen siste oversættelser"
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.history.title"
-msgstr "Siste Oversættelser"
+msgstr "Siste oversættelser"
 
 #. Key: translator.inputPlaceholder
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.inputPlaceholder"
-msgstr "Skrive tekst å oversætte..."
+msgstr "Skrive text å oversætte..."
 
 #. Key: translator.languages.auto
 #. #. Source: templates/tools/translator.hbs
@@ -1982,7 +1982,7 @@ msgstr "Nordum"
 #. Category: translator
 #. #. Source: templates/tools/translator.hbs, js/main.js
 msgid "translator.languages.norwegian"
-msgstr "Norsk (Bokmål)"
+msgstr "Norsk (bokmål)"
 
 #. Key: translator.languages.swedish
 #. #. Source: templates/tools/translator.hbs
@@ -2038,25 +2038,25 @@ msgstr "Jei forstår ikke"
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.quickTranslations"
-msgstr "Hurtige Oversættelsar"
+msgstr "Hurtige oversættelsar"
 
 #. Key: translator.swap
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.swap"
-msgstr "Bytt språg"
+msgstr "Bytt språk"
 
 #. Key: translator.to
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.to"
-msgstr "Til:"
+msgstr "Till:"
 
 #. Key: translator.toolbar.clear
 #. #. Source: templates/tools/translator.hbs
 #. Category: translator
 msgid "translator.toolbar.clear"
-msgstr "Tømme tekst"
+msgstr "Tømme text"
 
 #. Key: translator.toolbar.copy
 #. #. Source: templates/tools/translator.hbs
@@ -2080,23 +2080,23 @@ msgstr "Lytte till oversættelse"
 #~ msgstr "Tall og telling"
 
 #~ msgid "rules.loanwords.unchanged_desc"
-#~ msgstr "Ord adopterade direkte fra andre språg uten modifikation"
+#~ msgstr "Ord adopterade direkte fra andre språk uten modifikation"
 
 #~ msgid "rules.questions.no_silent_h"
 #~ msgstr "Ingen stumme H'er"
 
 #~ msgid "rules.questions.no_silent_h_desc"
-#~ msgstr "Bokstaven H uttales alltid i Nordum"
+#~ msgstr "Bokstavn H uttales alltid i Nordum"
 
 #~ msgid "hero.title"
 #~ msgstr "Nordum"
 
 #~ msgid "grammar.orthography.example"
-#~ msgstr "Eksempel: \"hus\" (hus) - konsistent over alle tre språg"
+#~ msgstr "Exempel: \"hus\" (hus) - konsistent over alle tre språk"
 
 #~ msgid "grammar.morphology.example"
 #~ msgstr ""
-#~ "Eksempel: Regulær verbending \"-er\" for presens (han arbeider - han "
+#~ "Exempel: Regulær verbending \"-er\" for presens (han arbeider - han "
 #~ "arbeider)"
 
 #~ msgid "grammar.lexicon.title"
@@ -2105,28 +2105,28 @@ msgstr "Lytte till oversættelse"
 #~ msgid "grammar.lexicon.description"
 #~ msgstr ""
 #~ "Når variantar eksisterer, væljer Nordum ord som er mest vidt anerkjent "
-#~ "over alle tre språg, eller skaper transparente sammensetninger."
+#~ "over alle tre språk, eller skaper transparente sammensetninger."
 
 #~ msgid "grammar.lexicon.example"
 #~ msgstr ""
-#~ "Eksempel: \"bil\" (bil) istedenfor \"automobil\" - universelt forstått"
+#~ "Exempel: \"bil\" (bil) istedenfor \"automobil\" - universelt forstått"
 
 #~ msgid "grammar.syntax.title"
 #~ msgstr "Syntaktisk Harmoni"
 
 #~ msgid "grammar.syntax.description"
 #~ msgstr ""
-#~ "Ordfølge følger de mest vanlige mønstre, typisk Subjekt-Verb-Objekt med "
+#~ "Ordfølge følger de mest vanlige mønstrar, typisk Subjekt-Verb-Objekt med "
 #~ "V2 ordfølge i hovedsetninger."
 
 #~ msgid "grammar.syntax.example"
-#~ msgstr "Eksempel: \"I dag arbeider jei\""
+#~ msgstr "Exempel: \"I dag arbeider jei\""
 
 #~ msgid "tools.dictionary.button"
 #~ msgstr "Åpne Ordbok"
 
 #~ msgid "tools.spellcheck.button"
-#~ msgstr "Teste Stavekontroll"
+#~ msgstr "Teste Stavkontroll"
 
 #~ msgid "tools.translator.button"
 #~ msgstr "Bruge Oversætter"
@@ -2150,13 +2150,13 @@ msgstr "Lytte till oversættelse"
 #~ msgstr "Øvingsoppgavar"
 
 #~ msgid "resources.research.title"
-#~ msgstr "Språglig Forskning"
+#~ msgstr "Språklig Forskning"
 
 #~ msgid "resources.research.methodology"
-#~ msgstr "Språgdesign Metodologi"
+#~ msgstr "Språkdesign Metodologi"
 
 #~ msgid "resources.research.comparison"
-#~ msgstr "Skandinavisk Språgsammenligning"
+#~ msgstr "Skandinavisk Språksammenligning"
 
 #~ msgid "resources.research.statistics"
 #~ msgstr "Bruksstatistikk"
@@ -2168,7 +2168,7 @@ msgstr "Lytte till oversættelse"
 #~ msgstr "Nordum API Dokumentation"
 
 #~ msgid "resources.developer.datasets"
-#~ msgstr "Språgdatasett"
+#~ msgstr "Språkdatasett"
 
 #~ msgid "resources.developer.github"
 #~ msgstr "GitHub Repository"
@@ -2180,7 +2180,7 @@ msgstr "Lytte till oversættelse"
 #~ msgstr "Discord Server"
 
 #~ msgid "community.links.reddit"
-#~ msgstr "Reddit Gemenskap"
+#~ msgstr "Reddit Fællesskap"
 
 #~ msgid "community.links.contact"
 #~ msgstr "Kontakte Oss"
@@ -2284,11 +2284,11 @@ msgstr "Lytte till oversættelse"
 #~ msgstr "Nye Denne Måned"
 
 #~ msgid "spellcheck.title"
-#~ msgstr "Nordum Stavekontroll"
+#~ msgstr "Nordum Stavkontroll"
 
 #~ msgid "spellcheck.subtitle"
 #~ msgstr ""
-#~ "Kontrollere din Nordum-tekst for stave- og grammatikkfeil med "
+#~ "Kontrollere din Nordum-text for stav- og grammatikkfeil med "
 #~ "realtidsforslag"
 
 #~ msgid "spellcheck.toolbar.style"
@@ -2310,13 +2310,13 @@ msgstr "Lytte till oversættelse"
 #~ msgstr "Nordum Oversætter"
 
 #~ msgid "translator.subtitle"
-#~ msgstr "Oversætte tekst mellem Nordum og de skandinaviske språgarne"
+#~ msgstr "Oversætte text mellem Nordum og de skandinaviske språkarna"
 
 #~ msgid "editor.title"
-#~ msgstr "Nordum Teksteditor"
+#~ msgstr "Nordum Texteditor"
 
 #~ msgid "editor.subtitle"
-#~ msgstr "Skrive og redigere dokumentar i Nordum med integrert språgstøtte"
+#~ msgstr "Skrive og redigere dokumentar i Nordum med integrert språkstøtte"
 
 #~ msgid "editor.toolbar.open"
 #~ msgstr "Åpne"
@@ -2331,7 +2331,7 @@ msgstr "Lytte till oversættelse"
 #~ msgstr "Nordum Grammatikkguide"
 
 #~ msgid "grammarGuide.subtitle"
-#~ msgstr "Komplett referanse for det pan-skandinaviske skriftspråget"
+#~ msgstr "Komplett referanse for det pan-skandinaviske skriftspråket"
 
 #~ msgid "grammarGuide.toc"
 #~ msgstr "Innholdsfortegnelse"
@@ -2409,10 +2409,10 @@ msgstr "Lytte till oversættelse"
 #~ msgstr "Dette feltet er obligatorisk"
 
 #~ msgid "validation.tooShort"
-#~ msgstr "Tekst er for kort"
+#~ msgstr "Text er for kort"
 
 #~ msgid "validation.tooLong"
-#~ msgstr "Tekst er for lang"
+#~ msgstr "Text er for lang"
 
 #~ msgid "validation.invalidFormat"
 #~ msgstr "Ugyldig format"
