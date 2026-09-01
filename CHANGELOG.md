@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### ✨ New Features
+Implemented approved orthographic and morphological rules (ck→kk, ks→x, c→k/s, ld→ll, ph→f, skj→sk, hv→v, lower-case, compounds, verb -e, adjective -t); curated dictionary now 442 entries
+
+**Upgraded from**: 0.9.0+1758124142536
+
+
 ### Added
 - Implemented approved orthographic and morphological rules: `ck` → `kk`, `ks` → `x`, established Scandinavian `c` → `k`/`s`, `ld` → `ll`, `ph` → `f`, Norwegian `skj` → `sk`, `hv-` → `v-`, lower-case only, compounds by simple concatenation, verb infinitive always `-e`, and adjective neuter always `-t`.
 - Added curated source entries for `bicycle`, `centre`, and `circle` to demonstrate the `c` regularization rules.

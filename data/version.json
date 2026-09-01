@@ -2,10 +2,10 @@
   "major": 0,
   "minor": 9,
   "patch": 0,
-  "build": 1758124142536,
+  "build": 1788256763774,
   "prerelease": null,
   "created": "2025-09-17T15:48:57.666Z",
-  "lastModified": "2026-09-01T09:45:26.669Z",
+  "lastModified": "2026-09-01T09:59:23.774Z",
   "features": {
     "balancedPanScandinavian": true,
     "englishLoanwords": true,
@@ -32,6 +32,14 @@
     "lastUpdated": "2026-09-01T09:45:26.669Z"
   },
   "changelog": [
+    {
+      "version": "0.10.0+1788256763774",
+      "date": "2026-09-01",
+      "type": "minor",
+      "description": "Implemented approved orthographic and morphological rules (ck→kk, ks→x, c→k/s, ld→ll, ph→f, skj→sk, hv→v, lower-case, compounds, verb -e, adjective -t); curated dictionary now 442 entries",
+      "breakingChanges": false,
+      "oldVersion": "0.9.0+1758124142536"
+    },
     {
       "version": "0.9.0",
       "date": "2025-09-18",

@@ -1,6 +1,6 @@
 {
   "name": "nordum",
-  "version": "0.9.0+1758124142536",
+  "version": "0.9.0+1788256763774",
   "description": "A pan-Scandinavian written language designed for maximum mutual intelligibility across Norwegian, Danish, and Swedish",
   "main": "build/index.html",
   "scripts": {
