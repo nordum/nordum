@@ -123,9 +123,9 @@ class DictionaryBuilder {
         // Irregular verbs (specification §4.2.1): only the explicit forms
         // are generated; the regular paradigm must not be applied to them.
         this.irregularVerbs = new Map([
-            ['være', { infinitive: 'være', present: 'er' }],
-            ['ha', { infinitive: 'ha', present: 'har' }],
-            ['gå', { infinitive: 'gå', present: 'går' }]
+            ['være', { infinitive: 'være', present: 'er', past: 'var', supine: 'vært', pastParticiple: 'vært' }],
+            ['ha', { infinitive: 'ha', present: 'har', past: 'hadde', supine: 'hatt', pastParticiple: 'hatt' }],
+            ['gå', { infinitive: 'gå', present: 'går', past: 'gikk', supine: 'gått', pastParticiple: 'gått' }]
         ]);
     }
 

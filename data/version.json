@@ -5,7 +5,7 @@
   "build": 1788256763774,
   "prerelease": null,
   "created": "2025-09-17T15:48:57.666Z",
-  "lastModified": "2026-09-20T02:44:49.668Z",
+  "lastModified": "2026-09-20T03:41:13.037Z",
   "features": {
     "balancedPanScandinavian": true,
     "englishLoanwords": true,
@@ -28,8 +28,8 @@
     ],
     "ruleCompliance": 100,
     "averageCognateScore": 0.7482312245321286,
-    "lastBuild": "2026-09-20T02:44:49.668Z",
-    "lastUpdated": "2026-09-20T02:44:49.668Z"
+    "lastBuild": "2026-09-20T03:41:13.037Z",
+    "lastUpdated": "2026-09-20T03:41:13.037Z"
   },
   "changelog": [
     {

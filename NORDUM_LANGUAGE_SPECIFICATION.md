@@ -389,9 +389,9 @@ være → er (be → is)
 ```
 
 **Irregular Verbs**:
-- `være → er`
-- `ha → har`
-- `gå → går`
+- `være → er`, past `var`, supine `vært`
+- `ha → har`, past `hadde`, supine `hatt`
+- `gå → går`, past `gikk`, supine `gått`
 
 #### 4.2.2 Complete Verb Paradigm
 

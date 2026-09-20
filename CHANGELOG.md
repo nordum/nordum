@@ -28,6 +28,7 @@ Implemented approved orthographic and morphological rules (ck→kk, ks→x, c→
 - Specification: rule 5 example is `forskjell` → `forskell` (doubled `l` after the short vowel), the definite singular follows the general `-en` ending (`flikken`), and the compound seam keeps doubled consonants (`tunn` + `skiva` → `tunnskiva`).
 - Irregular verbs `være`/`ha`/`gå` no longer run through the regular verb paradigm: the dictionary now generates `er`, `har` and `går` (with the `ha` lemma) instead of `gåer`, `gåede`, `gået`, `haver` and `havede`.
 - Removed the `K/J/G rules` claim (`søke` → `søge`, `gjenstand` → `genstand`) from the rules page; the specification does not define these rules.
+- Irregular verbs now carry their past/supine forms in the specification and the generator: `være` → `var`/`vært`, `ha` → `hadde`/`hatt`, `gå` → `gikk`/`gått`.
 
 ## [0.9.0] - 2025-09-18
 
