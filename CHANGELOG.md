@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Dual-licensed the project under CC BY 4.0 **or** LGPL-2.1-or-later (author
+  decision), to ease reuse in mixed-license software distributions.
+
 ### ✨ New Features
 Implemented approved orthographic and morphological rules (ck→kk, ks→x, c→k/s, ld→ll, ph→f, skj→sk, hv→v, lower-case, compounds, verb -e, adjective -t); curated dictionary now 442 entries
 

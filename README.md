@@ -1,6 +1,6 @@
 # Nordum - Pan-Scandinavian Language Platform
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY 4.0 OR LGPL-2.1+](https://img.shields.io/badge/License-CC%20BY%204.0%20OR%20LGPL--2.1%2B-lightgrey.svg)](#license)
 [![Build Status](https://github.com/nordum/nordum/actions/workflows/deploy.yml/badge.svg)](https://github.com/nordum/nordum/actions)
 [![Website](https://img.shields.io/badge/Website-nordum.org-blue.svg)](https://nordum.org)
 
@@ -678,7 +678,7 @@ npm run build
 
 ## License
 
-This project is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+This project is **dual-licensed** under **Creative Commons Attribution 4.0 International (CC BY 4.0)** or the **GNU Lesser General Public License 2.1 or later (LGPL-2.1-or-later)**; you may choose either.
 
 You are free to:
 - **Share** — copy and redistribute in any medium or format
@@ -687,7 +687,7 @@ You are free to:
 Under the terms:
 - **Attribution** — You must give appropriate credit
 
-See [LICENSE](LICENSE) for full details. Content is licensed under CC BY 4.0.
+See [LICENSE](LICENSE) for the dual-license statement and [LICENSE.LGPL-2.1](LICENSE.LGPL-2.1) for the LGPL text.
 
 ## Resources
 
