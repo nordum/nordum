@@ -242,7 +242,7 @@ The `ph` digraph is replaced by `f` in all words.
 Where Norwegian palatalizes "skj" to [ʃ], Nordum uses "sk" to match Danish and Swedish pronunciation/spelling.
 
 **Examples**:
-- *forskjell* → **forskel** (difference)
+- *forskjell* → **forskell** (difference)
 - *skjære* → **skære** (cut)
 - *skjorte* → **skorte** (shirt)
 
@@ -273,11 +273,11 @@ Word-final `d` that is silent in Danish and not matched by a pronounced consonan
 
 #### 3.3.3 Compounds
 
-Nordum compounds are formed by simple concatenation of base forms. No linking vowels (`-e-`, `-s-`) are inserted, and no consonant gemination occurs across the morpheme boundary.
+Nordum compounds are formed by simple concatenation of base forms. No linking vowels (`-e-`, `-s-`) are inserted, and doubled consonants at the seam are kept as written.
 
 **Examples**:
 - *barn* + *hage* → **barnhage** (kindergarten), not *barnehage*
-- *tunn* + *skiva* → **tunskiva** (not *tunnskviva*)
+- *tunn* + *skiva* → **tunnskiva** (thin slice)
 - *arbeid* + *dag* → **arbeiddag** (working day)
 
 **Rationale**: Simple concatenation makes compounds transparent and easy to decompose for learners, migrants, and anyone encountering the language for the first time.
@@ -480,7 +480,7 @@ barn → barnar (child → children - also accepted: barn/børn)
 ```
 
 Indefinite singular:  flikka
-Definite singular:    flikkan
+Definite singular:    flikken
 Indefinite plural:    flikkar
 Definite plural:      flikkarna
 ```

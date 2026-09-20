@@ -119,6 +119,14 @@ class DictionaryBuilder {
             presentParticiple: 'ende', // -ende for present participle (distinct from other forms)
             imperative: ''      // Bare stem for imperative
         });
+
+        // Irregular verbs (specification §4.2.1): only the explicit forms
+        // are generated; the regular paradigm must not be applied to them.
+        this.irregularVerbs = new Map([
+            ['være', { infinitive: 'være', present: 'er' }],
+            ['ha', { infinitive: 'ha', present: 'har' }],
+            ['gå', { infinitive: 'gå', present: 'går' }]
+        ]);
     }
 
     // Cognate analysis methods
@@ -279,7 +287,8 @@ class DictionaryBuilder {
         // pan-Scandinavian majority form even when raw frequency/priority
         // would choose differently.
         const englishSpecificMappings = {
-            'food': 'mat'
+            'food': 'mat',
+            'have': 'ha'
         };
         if (english && englishSpecificMappings[english.toLowerCase()]) {
             nordumWord = englishSpecificMappings[english.toLowerCase()];
@@ -378,6 +387,14 @@ class DictionaryBuilder {
                 break;
 
             case 'verb': {
+                const irregular = this.irregularVerbs && this.irregularVerbs.get(baseForm);
+                if (irregular) {
+                    inflections.infinitive = irregular.infinitive || baseForm;
+                    for (const form of ['present', 'past', 'supine', 'pastParticiple', 'presentParticiple', 'imperative']) {
+                        if (irregular[form]) inflections[form] = irregular[form];
+                    }
+                    break;
+                }
                 // Derive the verb stem from the base form. The base form may be an
                 // infinitive ending in -a (Swedish), -e (Norwegian/Danish), or a
                 // present tense form ending in -er.
@@ -776,6 +793,10 @@ class DictionaryBuilder {
 
         switch (pos) {
             case 'verb':
+                // Irregular verbs keep the explicit forms from the irregular table.
+                if (this.irregularVerbs && this.irregularVerbs.has(transformedWord)) {
+                    break;
+                }
                 // Verbs: infinitive always ends in -e (Swedish -a -> -e)
                 if (transformedWord.endsWith('a') && !transformedWord.endsWith('ar')) {
                     transformedWord = transformedWord.slice(0, -1) + 'e';
