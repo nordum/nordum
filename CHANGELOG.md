@@ -14,6 +14,8 @@ Implemented approved orthographic and morphological rules (ck→kk, ks→x, c→
 
 
 ### Added
+- `mykket` and `meget` are accepted spelling variants of `mye`, recorded as alternative entries and included in the generated word list.
+- Regression tests pin the `ks` → `x` rule on numerals (`seks` → `sex`, `seksten` → `sexten`, `sekstende` → `sextende`); the rule has no numeral exemption.
 - Implemented approved orthographic and morphological rules: `ck` → `kk`, `ks` → `x`, established Scandinavian `c` → `k`/`s`, `ld` → `ll`, `ph` → `f`, Norwegian `skj` → `sk`, `hv-` → `v-`, lower-case only, compounds by simple concatenation, verb infinitive always `-e`, and adjective neuter always `-t`.
 - Added curated source entries for `bicycle`, `centre`, and `circle` to demonstrate the `c` regularization rules.
 
@@ -29,6 +31,7 @@ Implemented approved orthographic and morphological rules (ck→kk, ks→x, c→
 - Irregular verbs `være`/`ha`/`gå` no longer run through the regular verb paradigm: the dictionary now generates `er`, `har` and `går` (with the `ha` lemma) instead of `gåer`, `gåede`, `gået`, `haver` and `havede`.
 - Removed the `K/J/G rules` claim (`søke` → `søge`, `gjenstand` → `genstand`) from the rules page; the specification does not define these rules.
 - Irregular verbs now carry their past/supine forms in the specification and the generator: `være` → `var`/`vært`, `ha` → `hadde`/`hatt`, `gå` → `gikk`/`gått`.
+- Specification: the `å`/`att` example now reads `Det er viktig att hun lærer språket.` — the conjunction `att` introduces a full clause, so the previous example was missing its subject.
 
 ## [0.9.0] - 2025-09-18
 

@@ -347,6 +347,21 @@ class NordumRulesTest {
                 rule: 'ks → x'
             },
             {
+                input: 'seks',
+                expected: 'sex',
+                rule: 'ks → x (numerals too)'
+            },
+            {
+                input: 'seksten',
+                expected: 'sexten',
+                rule: 'ks → x (numerals too)'
+            },
+            {
+                input: 'sekstende',
+                expected: 'sextende',
+                rule: 'ks → x (numerals too)'
+            },
+            {
                 input: 'centrum',
                 expected: 'sentrum',
                 rule: 'c before e → s'

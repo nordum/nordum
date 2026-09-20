@@ -445,7 +445,7 @@ Infinitive:        å snakke (to speak)
 Conjunction:       Hun sier att hun kan snakke nordum. (She says that she can speak Nordum.)
 
 Infinitive:        å lære (to learn)
-Conjunction:       Det er viktig att lære språket. (It is important to learn the language.)
+Conjunction:       Det er viktig att hun lærer språket. (It is important that she learns the language.)
 ```
 
 **Rationale**: This distinction provides clarity and prevents ambiguity, especially for Norwegian speakers who are accustomed to the "å"/"at" distinction. It also aligns with the systematic approach of Nordum to maintain clear grammatical distinctions.

@@ -727,6 +727,20 @@ class DictionaryBuilder {
             alternatives.push(...questionAlternatives[nordumWord]);
         }
 
+        // Owner-approved form variants that no orthographic rule derives:
+        // `mykket` and `meget` are accepted spellings of the same word as
+        // `mye` (spec §8.6 uses "mykket bra", Danish sources use "meget").
+        const acceptedVariants = {
+            'mye': [
+                { spelling: 'meget', reason: 'Approved form variant of mye' },
+                { spelling: 'mykket', reason: 'Approved form variant of mye' }
+            ]
+        };
+
+        if (acceptedVariants[nordumWord]) {
+            alternatives.push(...acceptedVariants[nordumWord]);
+        }
+
         // Sound pattern alternatives: ej/ei, øj/øy, aj/ai variants
         if (nordumWord.includes('ej')) {
             const eiVariant = nordumWord.replace(/ej/g, 'ei');
